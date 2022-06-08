@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true">
+
+    <com.example.ui_demo_start.view.widget.FocusMarkView
+        android:id="@+id/choose_box"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/choose_box"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_toRightOf="@id/choose_box"
+        android:src="@drawable/arrow1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_arrow"
+        android:layout_alignLeft="@id/iv_arrow"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/click_here_to_move_roi"
+        android:textColor="@color/color_dcdcdc_white" />
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:background="@drawable/shape_round_corner_dcdcdc_dash"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/got_it"
+        android:textColor="@color/color_dcdcdc_white" />
+</RelativeLayout>
