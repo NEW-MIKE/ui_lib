@@ -3,220 +3,258 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:scrollbars="vertical"
-    android:fadingEdge="vertical">
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
 
-        <Button
-            android:text="StackVideoInfo"
-            android:id="@+id/StackVideoInfo"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="StackVideoShow"
-            android:id="@+id/StackVideoShow"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="StackImage"
-            android:id="@+id/StackImage"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:text="LogList"
-            android:id="@+id/LogList"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="LogViewer"
-            android:id="@+id/LogViewer"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="Connect"
-            android:id="@+id/Connect"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/StackVideoInfo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="StackVideoInfo" />
 
-        <Button
-            android:text="ChooseObject"
-            android:id="@+id/ChooseObject"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="BigImage"
-            android:id="@+id/BigImage"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="SearchObject"
-            android:id="@+id/SearchObject"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/StackVideoShow"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="StackVideoShow" />
 
-        <Button
-            android:text="Air"
-            android:id="@+id/Air"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="LedAbnormal"
-            android:id="@+id/LedAbnormal"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="ConnectGuideStep"
-            android:id="@+id/ConnectGuideStep"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/StackImage"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="StackImage" />
+        </LinearLayout>
 
-        <Button
-            android:text="ImageManagement"
-            android:id="@+id/ImageManagement"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="ImagePreview"
-            android:id="@+id/ImagePreview"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="ImagePreviewVideo"
-            android:id="@+id/ImagePreviewVideo"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:text="PlanRunSetting"
-            android:id="@+id/PlanRunSetting"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="PlanRunObjectSeqs"
-            android:id="@+id/PlanRunObjectSeqs"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="Empty"
-            android:id="@+id/Empty"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/LogList"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="LogList" />
 
-        <Button
-            android:text="Dream"
-            android:id="@+id/Dream"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="Web"
-            android:id="@+id/Web"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="SkMap"
-            android:id="@+id/SkMap"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/LogViewer"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="LogViewer" />
 
-        <Button
-            android:text="CropImage"
-            android:id="@+id/CropImage"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="AlbumSelect"
-            android:id="@+id/AlbumSelect"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-        <Button
-            android:text="ImageSelect"
-            android:id="@+id/ImageSelect"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/Connect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Connect" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ChooseObject"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="ChooseObject" />
+
+            <Button
+                android:id="@+id/BigImage"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="BigImage" />
+
+            <Button
+                android:id="@+id/SearchObject"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="SearchObject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Air"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Air" />
+
+            <Button
+                android:id="@+id/LedAbnormal"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="LedAbnormal" />
+
+            <Button
+                android:id="@+id/ConnectGuideStep"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ConnectGuideStep" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ImageManagement"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="ImageManagement" />
+
+            <Button
+                android:id="@+id/ImagePreview"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImagePreview" />
+
+            <Button
+                android:id="@+id/ImagePreviewVideo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImagePreviewVideo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/PlanRunSetting"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="PlanRunSetting" />
+
+            <Button
+                android:id="@+id/PlanRunObjectSeqs"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="PlanRunObjectSeqs" />
+
+            <Button
+                android:id="@+id/Empty"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Empty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Dream"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Dream" />
+
+            <Button
+                android:id="@+id/Web"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Web" />
+
+            <Button
+                android:id="@+id/SkMap"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="SkMap" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CropImage"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="CropImage" />
+
+            <Button
+                android:id="@+id/AlbumSelect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="AlbumSelect" />
+
+            <Button
+                android:id="@+id/ImageSelect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImageSelect" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="update" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

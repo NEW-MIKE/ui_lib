@@ -9,9 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import com.example.ui_demo_start.activity.AirActivity
-import com.example.ui_demo_start.activity.ChooseObjectActivity
-import com.example.ui_demo_start.activity.ConnectGuideStepActivity
+import com.example.ui_demo_start.activity.*
 import com.example.ui_demo_start.databinding.ActivityMainBinding
 import com.example.ui_demo_start.util.inflate
 
@@ -37,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             ChooseObjectActivity.actionStart(this)
         }
         binding.Connect.setOnClickListener {
-
+            ConnectActivity.actionStart(this)
         }
         binding.ConnectGuideStep.setOnClickListener {
             ConnectGuideStepActivity.actionStart(this)
@@ -58,16 +56,16 @@ class MainActivity : AppCompatActivity() {
 
         }
         binding.ImagePreviewVideo.setOnClickListener {
-
+            ImagePreviewVideoActivity.actionStart(this)
         }
         binding.LedAbnormal.setOnClickListener {
-
+            LedAbnormalActivity.actionStart(this)
         }
         binding.LogList.setOnClickListener {
-
+            LogListActivity.actionStart(this)
         }
         binding.LogViewer.setOnClickListener {
-
+            LogViewerActivity.actionStart(this)
         }
         binding.PlanRunObjectSeqs.setOnClickListener {
 
@@ -92,6 +90,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.Web.setOnClickListener {
 
+        }
+        binding.update.setOnClickListener {
+            UpdateActivity.actionStart(this)
         }
     }
 }

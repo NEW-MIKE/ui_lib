@@ -568,10 +568,10 @@
             </LinearLayout>
         </LinearLayout>
 
-<!--        <com.wang.avi.AVLoadingIndicatorView
-            android:id="@+id/connect_enter_progress"
-            style="@style/loading_bar_style"
-            android:layout_gravity="center"
-            android:visibility="invisible" />-->
+        <!--        <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/connect_enter_progress"
+                    style="@style/loading_bar_style"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />-->
     </com.example.ui_demo_start.view.QMUINotchConsumeLayout>
 </FrameLayout>

@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@android:color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/high_light_area" android:background="@drawable/circular" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_10" android:src="@drawable/arrow" android:layout_toLeftOf="@id/high_light_area" android:layout_alignBottom="@id/high_light_area" />
-    <TextView android:textColor="@color/color_dcdcdc_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_90" android:layout_marginBottom="@dimen/dp_20" android:text="@string/click_here_to_take_an_image" android:layout_above="@id/iv_arrow" android:layout_alignParentRight="true" />
-    <TextView android:textColor="@color/color_dcdcdc_white" android:gravity="center" android:id="@id/ok" android:background="@drawable/shape_round_corner_dcdcdc_dash" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_16" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_100" android:text="@string/got_it" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true">
+
+    <View
+        android:id="@id/high_light_area"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circular" />
+
+    <ImageView
+        android:id="@id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/high_light_area"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toLeftOf="@id/high_light_area"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_90"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/click_here_to_take_an_image"
+        android:textColor="@color/color_dcdcdc_white" />
+
+    <TextView
+        android:id="@id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:background="@drawable/shape_round_corner_dcdcdc_dash"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/got_it"
+        android:textColor="@color/color_dcdcdc_white" />
 </RelativeLayout>

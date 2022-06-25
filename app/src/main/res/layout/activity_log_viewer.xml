@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.LogViewerActivity">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_15_dark_background_black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.example.ui_demo_start.view.QMUINotchConsumeLayout
+        android:id="@+id/connect_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tonight_best_icon_back" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/page_title"
+                    android:layout_toEndOf="@id/back_btn"
+                    android:text="@string/run_log_viewer_title"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_toEndOf="@id/tv_title"
+                    android:src="@drawable/common_icon_more" />
+
+                <TextView
+                    android:id="@+id/tv_sub_title"
+                    style="@style/page_title"
+                    android:layout_toEndOf="@id/iv_arrow"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@id/delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:button="@drawable/common_icon_delete"
+                    android:enabled="true"
+                    android:paddingStart="@dimen/dp_12"
+                    android:paddingEnd="@dimen/dp_12" />
+            </RelativeLayout>
+
+            <View style="@style/style_15_divider_horizontal" />
+
+            <LinearLayout
+                android:id="@id/content_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/log_det_recycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.ui_demo_start.view.QMUINotchConsumeLayout>
+</FrameLayout>

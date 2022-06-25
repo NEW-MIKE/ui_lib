@@ -1,9 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.UpdateActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_guide_bg">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.example.ui_demo_start.view.QMUINotchConsumeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/firmware_update_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44">
+
+                <ImageButton
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tonight_best_icon_back"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_state_1"
+                    style="@style/activity_sub_title"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_toLeftOf="@+id/tv_firmware_title"
+                    android:layout_toRightOf="@id/back_btn"
+                    android:ellipsize="end"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@id/tv_firmware_title"
+                    style="@style/style_15_light_page_title"
+                    android:text="@string/firmware_update_page_title" />
+
+                <TextView
+                    android:id="@+id/tv_connect_state_1"
+                    style="@style/activity_sub_title"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/dp_16" />
+
+                <View
+                    style="@style/style_15_divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/dp_16">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/btn_update_firmware"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_16">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <com.example.ui_demo_start.view.widget.AutoRunProgressView
+                                android:id="@+id/update_process_bar"
+                                android:layout_width="@dimen/dp_200"
+                                android:layout_height="@dimen/dp_200"
+                                android:layout_centerInParent="true"
+                                app:center_background_color="@android:color/transparent"
+                                app:progress_bar_width_percent="0.05" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_process"
+                                    style="@style/style_15_light_paragraph_body"
+                                    android:text=""
+                                    android:textSize="@dimen/sp_38" />
+
+                                <TextView
+                                    android:id="@+id/tv_process_tip"
+                                    style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dp_16">
+
+                        <LinearLayout
+                            android:id="@+id/firmware_update_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_firmware_sub_title"
+                                style="@style/style_15_light_paragraph_title"
+                                android:layout_marginBottom="@dimen/dp_16"
+                                android:text="@string/firmware_update_ready_title" />
+
+                            <TextView
+                                android:id="@+id/tv_firmware_info"
+                                style="@style/style_15_light_paragraph_tip"
+                                android:layout_marginBottom="@dimen/dp_16"
+                                android:text="@string/firmware_update_ready_info" />
+
+                            <TextView
+                                android:id="@+id/tv_firmware_update_tip_a"
+                                style="@style/style_15_light_paragraph_tip"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/firmware_update_ready_tip_1" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/firmware_update_b"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/tv_firmware_update_tip"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_transfer"
+                                    android:layout_width="@dimen/dp_18"
+                                    android:layout_height="@dimen/dp_18"
+                                    android:src="@drawable/icon_correct"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:id="@+id/tv_transfer"
+                                    style="@style/style_15_light_paragraph_body"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:layout_toEndOf="@id/iv_transfer"
+                                    android:text="@string/firmware_update_transfer_ed"
+                                    android:visibility="invisible" />
+
+                                <ImageView
+                                    android:id="@+id/iv_install"
+                                    android:layout_width="@dimen/dp_18"
+                                    android:layout_height="@dimen/dp_18"
+                                    android:layout_below="@id/iv_transfer"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:src="@drawable/icon_correct"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:id="@+id/tv_install"
+                                    style="@style/style_15_light_paragraph_body"
+                                    android:layout_alignBottom="@id/iv_install"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:layout_toEndOf="@id/iv_install"
+                                    android:text="@string/firmware_update_install_ed"
+                                    android:visibility="invisible" />
+
+                                <ImageView
+                                    android:id="@+id/iv_reboot"
+                                    android:layout_width="@dimen/dp_18"
+                                    android:layout_height="@dimen/dp_18"
+                                    android:layout_below="@id/iv_install"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:src="@drawable/icon_correct"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:id="@+id/tv_reboot"
+                                    style="@style/style_15_light_paragraph_body"
+                                    android:layout_alignBottom="@id/iv_reboot"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:layout_toEndOf="@id/iv_reboot"
+                                    android:text="@string/firmware_update_reboot_ed"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@id/tv_firmware_update_tip"
+                                style="@style/style_15_light_paragraph_tip"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/firmware_update_ready_tip_1" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/btn_update_firmware"
+                    style="@style/style_15_button_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/btn_firmware_update" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/software_update_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44">
+
+                <TextView
+                    style="@style/style_15_light_page_title"
+                    android:text="@string/software_update_page_title" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_state_2"
+                    style="@style/activity_sub_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_16" />
+
+                <TextView
+                    android:id="@+id/tv_connect_state_2"
+                    style="@style/activity_sub_title"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/dp_16" />
+
+                <View
+                    style="@style/style_15_divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/dp_16">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@id/btn_drop_update_software"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_software_update_tip"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/style_15_light_paragraph_title"
+                            android:layout_marginBottom="@dimen/dp_16"
+                            android:text="@string/software_update_ready_title" />
+
+                        <TextView
+                            android:id="@+id/tv_software_info"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:layout_marginBottom="@dimen/dp_16"
+                            android:text="@string/software_update_ready_info" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_software_update_tip"
+                        style="@style/style_15_light_paragraph_tip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/software_update_ready_tip" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_drop_update_software"
+                    style="@style/style_15_button_normal"
+                    android:layout_above="@id/btn_update_software"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:text="@string/btn_not_now"
+                    android:textColor="@color/air_colorPrimary" />
+
+                <Button
+                    android:id="@+id/btn_update_software"
+                    style="@style/style_15_button_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/btn_software_update" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.ui_demo_start.view.QMUINotchConsumeLayout>
+</FrameLayout>
