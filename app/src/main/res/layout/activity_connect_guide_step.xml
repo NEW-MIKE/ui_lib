@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_guide_bg">
+
+    <com.example.ui_demo_start.view.QMUINotchConsumeLayout
+        android:id="@+id/connect_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:src="@drawable/ic_air_home" />
+
+                <TextView
+                    android:id="@+id/curren_net_name"
+                    style="@style/activity_sub_title"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@id/iv_home"
+                    android:text="@string/current_network" />
+
+                <TextView
+                    android:id="@+id/curren_connect_state"
+                    style="@style/style_15_light_paragraph_body"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/air_unconnected"
+                    android:textColor="@color/color_15_function_red" />
+
+                <TextView
+                    android:id="@+id/tv_help"
+                    style="@style/activity_sub_title"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:gravity="center"
+                    android:text="@string/help" />
+
+                <View
+                    style="@style/style_15_divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <ScrollView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_20">
+
+                        <TextView
+                            android:id="@+id/tv_connect_log"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:layout_width="fill_parent"
+                            android:layout_marginBottom="@dimen/b_dp_20"
+                            android:lineSpacingExtra="@dimen/b_dp_5"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            style="@style/style_15_light_paragraph_title"
+                            android:layout_marginBottom="@dimen/dp_11"
+                            android:text="@string/connect_guide_power_title"
+                            android:textSize="@dimen/sp_15" />
+
+                        <TextView
+                            android:id="@+id/tv_policy"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/connect_guide_policy"
+                            android:textSize="@dimen/sp_13"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_tip_1"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:maxLines="1"
+                            android:text="@string/connect_guide_power_content"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_more_1"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:drawableRight="@drawable/guide_more_down"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/more"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            style="@style/style_15_light_paragraph_title"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:text="@string/connect_guide_connect_title"
+                            android:textSize="@dimen/sp_15" />
+
+                        <ImageView
+                            android:id="@+id/iv_wifi_con"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:maxWidth="@dimen/dp_300"
+                            android:maxHeight="@dimen/dp_88"
+                            android:src="@drawable/guide_wifi_and_en" />
+
+                        <TextView
+                            android:id="@+id/tv_tip_2"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:maxLines="2"
+                            android:text="@string/connect_guide_connect_content"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_more_2"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:drawableRight="@drawable/guide_more_down"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/more"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/led_abnormal"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:paddingTop="@dimen/dp_16"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/connect_guide_led"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    style="@style/style_15_divider_vertical"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_20" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:padding="@dimen/dp_20">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_scan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_30">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_manual_enter_ip_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toLeftOf="@+id/btn_scan">
+
+                            <TextView
+                                android:id="@+id/tv_scan_not_found_device_hint"
+                                style="@style/common_button_15"
+                                android:layout_alignParentEnd="true"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true"
+                                android:text="@string/guide_step_two_scan_null" />
+
+                            <TextView
+                                android:id="@+id/tv_ip_connect"
+                                style="@style/common_button_15"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true"
+                                android:paddingStart="@dimen/dp_0"
+                                android:text="@string/guide_step_two_ip_connect"
+                                android:textColor="@color/air_colorPrimary" />
+                        </RelativeLayout>
+
+
+                        <Button
+                            android:id="@+id/btn_scan"
+                            style="@style/style_15_button_small"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:text="@string/scan" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@+id/connect_btn"
+                        android:layout_below="@id/ll_scan"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_not_found_air_hint"
+                            style="@style/style_15_light_paragraph_tip"
+                            android:layout_width="fill_parent"
+                            android:paddingTop="@dimen/dp_13"
+                            android:paddingBottom="@dimen/dp_13"
+                            android:text="@string/guide_step_two_not_found_air"
+                            android:visibility="gone" />
+
+                        <View
+                            android:id="@+id/tv_not_found_air_hint_line"
+                            style="@style/style_15_divider_horizontal" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/lv_air_device"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/connect_btn"
+                        style="@style/style_15_button_normal"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/connect" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/connect_enter_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="gone"
+            >
+
+
+        </RelativeLayout>
+    </com.example.ui_demo_start.view.QMUINotchConsumeLayout>
+</FrameLayout>

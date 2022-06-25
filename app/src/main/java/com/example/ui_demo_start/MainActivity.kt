@@ -9,50 +9,89 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.example.ui_demo_start.activity.AirActivity
+import com.example.ui_demo_start.activity.ChooseObjectActivity
+import com.example.ui_demo_start.activity.ConnectGuideStepActivity
 import com.example.ui_demo_start.databinding.ActivityMainBinding
+import com.example.ui_demo_start.util.inflate
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
-
+    val binding: ActivityMainBinding by inflate(ActivityMainBinding::inflate)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        init()
+    }
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.toolbar)
-
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+    private fun init(){
+        binding.Air.setOnClickListener {
+            AirActivity.actionStart(this)
         }
-    }
+        binding.AlbumSelect.setOnClickListener {
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
         }
-    }
+        binding.BigImage.setOnClickListener {
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+        }
+        binding.ChooseObject.setOnClickListener {
+            ChooseObjectActivity.actionStart(this)
+        }
+        binding.Connect.setOnClickListener {
+
+        }
+        binding.ConnectGuideStep.setOnClickListener {
+            ConnectGuideStepActivity.actionStart(this)
+        }
+        binding.CropImage.setOnClickListener {
+
+        }
+        binding.Dream.setOnClickListener {
+
+        }
+        binding.Empty.setOnClickListener {
+
+        }
+        binding.ImageManagement.setOnClickListener {
+
+        }
+        binding.ImagePreview.setOnClickListener {
+
+        }
+        binding.ImagePreviewVideo.setOnClickListener {
+
+        }
+        binding.LedAbnormal.setOnClickListener {
+
+        }
+        binding.LogList.setOnClickListener {
+
+        }
+        binding.LogViewer.setOnClickListener {
+
+        }
+        binding.PlanRunObjectSeqs.setOnClickListener {
+
+        }
+        binding.PlanRunSetting.setOnClickListener {
+
+        }
+        binding.SearchObject.setOnClickListener {
+
+        }
+        binding.SkMap.setOnClickListener {
+
+        }
+        binding.StackImage.setOnClickListener {
+
+        }
+        binding.StackVideoInfo.setOnClickListener {
+
+        }
+        binding.StackVideoShow.setOnClickListener {
+
+        }
+        binding.Web.setOnClickListener {
+
+        }
     }
 }

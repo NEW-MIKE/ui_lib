@@ -7,4 +7,5 @@ import android.view.View
 class FocusMarkView (
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
+
 }

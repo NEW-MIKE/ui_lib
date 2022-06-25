@@ -8,12 +8,81 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Ui_demo_start">
+        android:theme="@style/Theme.Ui_demo_start.NoActionBar">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.stack.StackVideoInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stack.StackVideoShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stack.StackImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DreamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PlanRunObjectSeqsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PlanRunSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ImagePreviewVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ImagePreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ImageManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConnectGuideStepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LedAbnormalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BigImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChooseObjectActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LogViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LogListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QRScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConnectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Ui_demo_start.NoActionBar">

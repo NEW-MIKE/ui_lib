@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toStartOf="@+id/right_layout"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="@dimen/dp_290"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@color/color_15_dark_background_mainland"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_47">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/custom_object_list"
+                android:textColor="@color/color_dcdcdc_white"
+                android:textSize="@dimen/sp_17" />
+
+            <TextView
+                android:id="@+id/create_list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/dp_16"
+                android:text="@string/custom_object_list_add"
+                android:textColor="@color/air_colorAccent"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                style="@style/style_15_divider_horizontal"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/object_list_recycler"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

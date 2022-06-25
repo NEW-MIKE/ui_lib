@@ -7,22 +7,22 @@ import android.widget.FrameLayout
 import androidx.core.view.WindowInsetsCompat
 
 
-class QMUINotchConsumeLayout(context: Context, attrs: AttributeSet? = null) : FrameLayout(context, attrs) {
-    fun QMUINotchConsumeLayout(paramContext: Context?) {
-        QMUINotchConsumeLayout(paramContext, null)
-    }
+class QMUINotchConsumeLayout(
+    paramContext: Context,
+    paramAttributeSet: AttributeSet?,
+    paramInt: Int
+) : FrameLayout(paramContext, paramAttributeSet, paramInt) {
 
-    fun QMUINotchConsumeLayout(paramContext: Context?, paramAttributeSet: AttributeSet?) {
-        QMUINotchConsumeLayout(paramContext, paramAttributeSet, 0)
-    }
+    constructor(paramContext: Context) : this(paramContext, null)
 
-    fun QMUINotchConsumeLayout(
-        paramContext: Context?,
-        paramAttributeSet: AttributeSet?,
-        paramInt: Int
-    ) {
-/*        super(paramContext, paramAttributeSet, paramInt)
-        QMUIWindowInsetHelper.setOnApplyWindowInsetsListener(
+    constructor(paramContext: Context, paramAttributeSet: AttributeSet?) : this(
+        paramContext,
+        paramAttributeSet,
+        0
+    )
+
+    init {
+/*        QMUIWindowInsetHelper.setOnApplyWindowInsetsListener(
             this,
             object : OnApplyWindowInsetsListener {
                 fun onApplyWindowInsets(
@@ -33,7 +33,9 @@ class QMUINotchConsumeLayout(context: Context, attrs: AttributeSet? = null) : Fr
                     return paramAnonymousWindowInsetsCompat
                 }
             },
-            true)*/
+            true
+        )*/
     }
+
 
 }

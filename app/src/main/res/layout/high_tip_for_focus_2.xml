@@ -5,7 +5,7 @@
     android:background="@android:color/transparent"
     android:clickable="true">
 
-    <com.example.ui_demo_start.view.widget.FocusMarkView
+    <TextView
         android:id="@+id/choose_box"
         android:layout_width="@dimen/dp_100"
         android:layout_height="@dimen/dp_100"
