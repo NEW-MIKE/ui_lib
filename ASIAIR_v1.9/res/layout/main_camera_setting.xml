@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_camera_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/main_setting_title" android:text="@string/camera_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" style="@style/setting_block">
+                        <TextView android:id="@id/main_camera_tv" android:text="@string/main_camera" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/text_setting_item_name" />
+                        <Spinner android:id="@id/main_camera_spinner" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_50" android:layout_toLeftOf="@id/main_camera_switch" android:layout_toRightOf="@id/main_camera_tv" android:layout_centerVertical="true" style="@style/MySpinner" />
+                        <TextView android:textSize="@dimen/dp_11" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:id="@id/main_camera_is_usb3" android:layout_width="@dimen/dp_40" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" android:text="" android:lines="1" android:layout_toLeftOf="@id/main_camera_switch" android:layout_centerVertical="true" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/main_camera_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_camera_format_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_main_camera_format" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/main_camera_format_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/main_camera_format_radio_full_frame" android:text="@string/setting_main_camera_full_frame" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/main_camera_format_radio_aps_c" android:text="@string/setting_main_camera_aps_c" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/main_focal" android:text="@string/main_focal_length" style="@style/text_setting_item_name" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                            <EditText android:id="@id/main_focal_len_et" android:hint="@string/unknown_na" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text_small" />
+                            <TextView android:layout_marginLeft="@dimen/dp_8" android:text="mm" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:text="@string/air_main_focal_desc" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_exp_with_cable_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/dlsr_cable_switch_tv" android:text="@string/setting_exp_with_cable" style="@style/text_setting_item_name" />
+                        <ImageView android:id="@id/iv_tip_for_dlsr_cable" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_toRightOf="@id/dlsr_cable_switch_tv" android:layout_centerVertical="true" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/main_exp_with_cable_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_iso_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="ISO" style="@style/text_setting_item_name" />
+                        <Spinner android:id="@id/iso_spinner" android:layout_width="@dimen/dp_100" android:layout_alignParentEnd="true" style="@style/MySpinner" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_save_2_camera_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_save_2_camera" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/main_camera_save_2_camera_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_gain_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/tv_gain" android:text="@string/gain_symbol" style="@style/text_setting_item_name" />
+                        <TextView android:id="@id/main_gain_val_tv" android:layout_marginLeft="@dimen/dp_5" android:text="" android:hint="@string/unknown_na" android:layout_toRightOf="@id/tv_gain" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/main_gain_segment_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/main_gain_segment_radio_low" android:text="@string/low" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/main_gain_segment_radio_middle" android:text="@string/middle" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/main_gain_segment_radio_high" android:text="@string/high" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/main_gain_adjust_layout" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:layout_height="@dimen/dp_50" style="@style/setting_block">
+                        <ImageView android:gravity="center" android:id="@id/main_gain_reduce_iv" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/common_icon_stepper_minus" android:layout_centerVertical="true" />
+                        <ImageView android:gravity="center" android:id="@id/main_gain_add_iv" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/common_icon_stepper_plus" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:gravity="center" android:id="@id/main_gain_min_tv" android:paddingLeft="@dimen/dp_10" android:layout_width="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:text="0" android:layout_alignParentLeft="true" style="@style/text_setting_item_hint" />
+                        <TextView android:gravity="center" android:id="@id/main_gain_max_tv" android:layout_width="@dimen/dp_50" android:text="100" android:layout_alignParentRight="true" style="@style/text_setting_item_hint" />
+                        <SeekBar android:id="@id/main_gain_seekbar" android:layout_height="@dimen/dp_50" android:layout_toLeftOf="@id/main_gain_max_tv" android:layout_toRightOf="@id/main_gain_min_tv" android:layout_centerVertical="true" style="@style/common_seekbar" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_cooler_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/camera_temp" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/main_cooler_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <TextView android:text="@string/camera_temp_tip" style="@style/text_setting_item_tip" />
+                    <RelativeLayout android:id="@id/main_cooler_radio_layout" android:visibility="gone" style="@style/setting_block">
+                        <TextView android:id="@id/tv_temp" android:text="@string/target_temp" style="@style/text_setting_item_name" />
+                        <TextView android:id="@id/main_cooler_target_temp_tv" android:layout_marginLeft="@dimen/dp_5" android:hint="@string/unknown_na" android:layout_toRightOf="@id/tv_temp" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup1 android:id="@id/main_cooler_segment_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/main_cooler_segment_radio_low" android:text="-20℃" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/main_cooler_segment_radio_middle" android:text="-10℃" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/main_cooler_segment_radio_high" android:text="0℃" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup1>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/main_cooler_adjust_layout" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:visibility="gone" android:layout_height="@dimen/dp_50" style="@style/setting_block">
+                        <ImageView android:gravity="center" android:id="@id/main_cooler_reduce_iv" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/common_icon_stepper_minus" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:gravity="center" android:id="@id/main_cooler_add_iv" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/common_icon_stepper_plus" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:gravity="center" android:id="@id/main_cooler_min_tv" android:paddingLeft="@dimen/dp_10" android:layout_width="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:text="-40℃" android:layout_alignParentLeft="true" style="@style/text_setting_item_hint" />
+                        <TextView android:gravity="center" android:id="@id/main_cooler_max_tv" android:layout_width="@dimen/dp_50" android:text="20℃" android:layout_alignParentRight="true" style="@style/text_setting_item_hint" />
+                        <SeekBar android:id="@id/main_cooler_seekbar" android:layout_height="@dimen/dp_50" android:layout_toLeftOf="@id/main_cooler_max_tv" android:layout_toRightOf="@id/main_cooler_min_tv" android:layout_centerVertical="true" style="@style/common_seekbar" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_antidew_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/anti_dew" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/main_antidew_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_filename_setting_item" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_filename_title" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/main_advanced_setting_item" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/advanced_setting" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/main_advanced_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/main_advanced_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_advanced_setting_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/advanced_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_advanced_setting_title">
+            <LinearLayout android:orientation="vertical" android:id="@id/hist_nonlinear_switch_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:id="@id/hist_nonlinear_switch_tv" android:text="@string/histograms_nonlinear" style="@style/text_setting_item_name" />
+                    <Switch android:id="@id/hist_nonlinear_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/hist_log_switch_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:id="@id/hist_log_switch_tv" android:text="@string/histograms_using_a_log_scale" style="@style/text_setting_item_name" />
+                    <Switch android:id="@id/hist_log_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/auto_balance_switch_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:id="@id/auto_balance_switch_tv" android:text="@string/auto_white_balance" style="@style/text_setting_item_name" />
+                    <Switch android:id="@id/auto_balance_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/mono_bin_switch_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:id="@id/mono_bin_switch_tv" android:text="@string/mono_bin" style="@style/text_setting_item_name" />
+                    <ImageView android:id="@id/iv_tip_for_mono_bin" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_toRightOf="@id/mono_bin_switch_tv" android:layout_centerVertical="true" />
+                    <Switch android:id="@id/mono_bin_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/continuous_preview_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:text="@string/continuous_preview" style="@style/text_setting_item_name" />
+                    <Switch android:id="@id/continuous_preview_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/main_filename_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/main_filename_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_filename_setting_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/setting_filename_title" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_filename_setting_title">
+            <TextView android:textColor="@color/color_text_setting_hub_title" android:text="@string/setting_filename_tip" style="@style/text_setting_item_name" />
+            <LinearLayout android:id="@id/main_filename_layout" android:paddingLeft="@dimen/dp_0" style="@style/setting_block">
+                <CheckBox android:id="@id/main_filename_cb_camera" android:layout_marginLeft="@dimen/dp_0" android:checked="true" android:text="@string/setting_filename_rb_camera" style="@style/style_15_dark_radio_button_filename" />
+                <CheckBox android:id="@id/main_filename_cb_gain" android:checked="true" android:text="@string/setting_filename_rb_gain" style="@style/style_15_dark_radio_button_filename" />
+                <CheckBox android:id="@id/main_filename_cb_time" android:text="@string/setting_filename_rb_time" style="@style/style_15_dark_radio_button_filename" />
+                <CheckBox android:id="@id/main_filename_cb_temp" android:layout_marginRight="@dimen/dp_0" android:text="@string/setting_filename_rb_temp" style="@style/style_15_dark_radio_button_filename" />
+            </LinearLayout>
+            <TextView android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_file_name_checked" android:layout_marginTop="@dimen/dp_10" android:text="@string/setting_filename_selected_tip" style="@style/text_setting_item_name" />
+            <com.zwoasi.asiair.view.widget.AutoSplitTextView android:textColor="@color/color_dcdcdc" android:id="@id/filename_preview_tv" android:paddingLeft="@dimen/dp_0" android:layout_marginTop="@dimen/dp_10" android:text="@string/setting_filename_eg" android:lineSpacingExtra="@dimen/dp_4" style="@style/text_setting_item_tip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/main_setting_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

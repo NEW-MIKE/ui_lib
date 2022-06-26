@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_dark_background_black" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/camera_video" android:background="@color/color_15_light_text_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.zwoasi.asiair.view.widget.media.ZwoVideoPlayer2 android:id="@id/video_player" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TableLayout android:layout_gravity="center|right" android:id="@id/hud_view" android:background="#77000000" android:padding="8.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <ImageView android:id="@id/img_video_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            <com.wang.avi.AVLoadingIndicatorView android:id="@id/pb_loading" android:visibility="gone" android:layout_centerInParent="true" style="@style/loading_bar_style" />
+            <ImageView android:id="@id/btn_start_playback" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_66" android:src="@drawable/video_background_play" android:layout_centerInParent="true" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/title_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/back_btn" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/back_btn">
+                    <TextView android:textSize="@dimen/sp_16" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:layout_constraintBottom_toTopOf="@id/gl_title_center_horizontal" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/page_title" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_text_888888" android:id="@id/tv_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/gl_title_center_horizontal" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_text_888888" android:id="@id/tv_file_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" app:layout_constraintStart_toEndOf="@id/tv_file_size" app:layout_constraintTop_toBottomOf="@id/gl_title_center_horizontal" />
+                    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/gl_title_center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_15_dark_ele_normal" android:id="@id/tv_fps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+            <View android:layout_below="@id/title_layout" style="@style/style_15_divider_horizontal" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_video_operate" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_layout_stack" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/ic_stack" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_15_dark_ele_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/txt_stack" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video_download" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_image_download" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/img_file_mgn_download_normal" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_15_dark_ele_normal" android:gravity="center" android:id="@id/tv_image_download" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/save" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/iv_video_more" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_image_rename" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/ic_more" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_15_dark_ele_normal" android:gravity="center" android:id="@id/tv_image_rename" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/more" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

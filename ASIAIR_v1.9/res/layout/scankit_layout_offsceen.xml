@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/scan_touch_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_marginBottom="100.0dip" />
+    <FrameLayout android:id="@id/scan_off_corn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:background="@drawable/scankit_off_scan_lebal_unselect" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="1.0dip" />
+        <View android:background="@drawable/scankit_off_scan_lebal" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" />
+    </FrameLayout>
+    <ImageView android:gravity="center" android:id="@id/scan_off_back_img_out" android:padding="10.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="4.0dip" android:src="#00ffffff" android:layout_marginStart="12.0dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

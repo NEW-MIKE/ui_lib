@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="horizontal" android:id="@id/pop_plan_list_left_layout" android:background="@color/transparent_40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/right_layout" />
+    <FrameLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="@dimen/dp_290" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_48">
+            <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_dcdcdc_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_plan_list_title" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/air_colorAccent" android:gravity="center_vertical" android:id="@id/tv_create_plan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/autorun_plan_list_add" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+            <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/plan_list_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:gravity="center" android:id="@id/tv_empty_plan_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty_tip_of_plans_in_list" />
+    </FrameLayout>
+</RelativeLayout>

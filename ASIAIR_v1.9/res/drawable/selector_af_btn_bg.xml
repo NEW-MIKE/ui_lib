@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/af_btn_shape_round_corner_dcdcdc" />
+    <item android:state_enabled="false" android:drawable="@drawable/af_btn_shape_round_corner_707070" />
+</selector>

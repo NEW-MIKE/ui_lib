@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp_0" android:layout_width="@dimen/dp_206" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_add_target" android:layout_width="@dimen/dp_190" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" app:cardBackgroundColor="#ff272727" app:cardCornerRadius="6.0dip" app:cardElevation="16.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="@dimen/dp_88" android:layout_height="@dimen/dp_88" android:src="@drawable/image_icon_task_add" android:layout_centerInParent="true" />
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

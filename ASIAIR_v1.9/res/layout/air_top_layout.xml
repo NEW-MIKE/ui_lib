@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/iv_home" android:background="@drawable/ic_air_home" android:visibility="gone" android:clickable="true" android:layout_centerVertical="true" style="@style/top_image_btn" />
+        <ImageButton android:id="@id/back_btn_in_guider" android:background="@drawable/nav_icon_guide_zoom_normal" android:visibility="visible" android:clickable="true" android:layout_centerVertical="true" style="@style/top_image_btn" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_time_battery" android:padding="@dimen/dp_10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_44" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <RelativeLayout android:orientation="horizontal" android:background="@drawable/battery_normal" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_10" android:layout_marginLeft="@dimen/dp_8">
+                <ProgressBar android:id="@id/battery_progress_bar" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_7" android:layout_marginLeft="@dimen/dp_2" android:max="100" android:progress="50" android:progressDrawable="@drawable/progress_bar_bg_green" android:layout_centerVertical="true" style="@android:style/Widget.Material.ProgressBar.Horizontal" />
+                <ImageView android:id="@id/iv_battery_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/battery_recharging" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.zwoasi.asiair.view.widget.MyTextClock android:textSize="@dimen/sp_11" android:textColor="@color/color_dcdcdc_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:format12Hour="h:mm a" android:format24Hour="H:mm" />
+            <ImageView android:id="@id/under_volt_iv" android:background="@drawable/asiairsetting_image_undervoltagewarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+            <ImageView android:id="@id/over_temp_iv" android:background="@drawable/asiairsetting_image_cputemperature" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_0" />
+            <ImageView android:id="@id/over_current_iv" android:background="@drawable/asiairsetting_image_overload" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/debug_version_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp_8" android:textColor="@color/color_dcdcdc_white" android:id="@id/tv_debug_app_version" android:lines="1" android:singleLine="true" style="@style/text_title" />
+            <TextView android:textSize="@dimen/sp_8" android:textColor="@color/color_dcdcdc_white" android:id="@id/tv_debug_firmware_version" android:lines="1" android:singleLine="true" style="@style/text_title" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_8" android:textColor="@color/color_dcdcdc_white" android:id="@id/tv_rssi" android:layout_marginLeft="@dimen/dp_8" android:lineSpacingExtra="@dimen/dp_2" style="@style/text_title" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/top_air_iv" android:background="@drawable/nav_icon_box_default" android:onClick="openWifiSettingWithCheck" style="@style/top_image_btn" />
+        <ImageView android:id="@id/top_main_iv" android:background="@drawable/nav_icon_main_camera_disabled" android:onClick="openMainSetting" style="@style/top_image_btn" />
+        <ImageView android:id="@id/top_guide_iv" android:background="@drawable/nav_icon_guide_disabled" android:onClick="openGuiderSetting" style="@style/top_image_btn" />
+        <ImageView android:id="@id/top_telescope_iv" android:background="@drawable/nav_icon_telescope_disabled" android:onClick="openTelescopeSetting" style="@style/top_image_btn" />
+        <RelativeLayout android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" style="@style/top_image_btn">
+            <ImageView android:id="@id/top_wheel_iv" android:background="@drawable/nav_icon_filter_wheel_disabled" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:onClick="openWheelSetting" />
+            <TextView android:textSize="@dimen/sp_8" android:textStyle="bold" android:textColor="@color/color_15_dark_background_black" android:layout_gravity="bottom" android:id="@id/top_wheel_subscript_tv" android:paddingTop="@dimen/dp_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/top_focuser_iv" android:background="@drawable/nav_icon_focuser_disabled" android:onClick="openFocusSetting" style="@style/top_image_btn" />
+        <ImageView android:id="@id/top_sdcard_iv" android:background="@drawable/setting_sdcard_btn_selector" android:onClick="openSdcardSetting" style="@style/top_image_btn" />
+        <ImageView android:id="@id/top_common_setting_compound" android:background="@drawable/nav_icon_menu_default" android:onClick="openGeneralSetting" style="@style/top_image_btn" />
+    </LinearLayout>
+</RelativeLayout>

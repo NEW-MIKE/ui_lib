@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_margin="@dimen/dp_8" app:cardBackgroundColor="@color/color_15_dark_background_mainland" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_object" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/dp_10" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_object_name" android:background="@color/transparent_80" android:paddingLeft="@dimen/dp_2" android:paddingRight="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_14" android:lines="1" style="@style/style_15_light_paragraph_body" />
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/del_object" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_margin="@dimen/dp_4" android:src="@drawable/tonight_best_target_delete" />
+</FrameLayout>

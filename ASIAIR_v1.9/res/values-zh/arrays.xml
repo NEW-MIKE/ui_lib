@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dc_12v_type">
+        <item>赤道仪</item>
+        <item>相机</item>
+        <item>电调</item>
+        <item>加热带</item>
+        <item>平场板</item>
+        <item>其他设备</item>
+    </string-array>
+    <string-array name="dc_12v_type_tip">
+        <item>赤道仪</item>
+        <item>相机</item>
+        <item>电调</item>
+        <item>加热带</item>
+        <item>平场板</item>
+        <item>其他设备</item>
+    </string-array>
+    <string-array name="issue_report_arr">
+        <item>网络连接</item>
+        <item>赤道仪相关</item>
+        <item>单反相关</item>
+        <item>导星</item>
+        <item>中天翻转</item>
+        <item>自动对焦</item>
+        <item>计划拍摄</item>
+        <item>图像解析</item>
+        <item>视频</item>
+        <item>实时叠加</item>
+        <item>多目标</item>
+        <item>其他</item>
+    </string-array>
+</resources>

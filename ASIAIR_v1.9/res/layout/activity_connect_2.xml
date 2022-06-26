@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/connect_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textColor="@color/color_15_function_red" android:id="@id/curren_connect_state" style="@style/activity_title" />
+                <ImageButton android:id="@id/iv_home" android:background="@drawable/ic_air_home" android:visibility="visible" android:clickable="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_image_btn" />
+                <TextView android:id="@id/current_wifi_tv" android:layout_marginLeft="@dimen/dp_16" android:text="@string/current_network" android:layout_toRightOf="@id/iv_home" style="@style/activity_sub_title" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentEnd="true">
+                    <TextView android:id="@id/sn_tv" android:text="SN: " style="@style/activity_sub_title" />
+                    <TextView android:gravity="center_vertical" android:id="@id/sn_val" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_10" style="@style/activity_sub_title" />
+                    <TextView android:id="@id/firmware_version_tv" android:text="App: " style="@style/activity_sub_title" />
+                    <TextView android:id="@id/firmware_version_val" style="@style/activity_sub_title" />
+                </LinearLayout>
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text_888888" android:id="@id/tv_phone_info" android:text="@string/connect_date_location" android:layout_alignParentStart="true" style="@style/style_15_light_paragraph_title" />
+                            <TextView android:textSize="@dimen/sp_13" android:gravity="center" android:id="@id/tv_refresh_location" android:text="@string/refresh" android:drawableRight="@drawable/ic_location" android:drawablePadding="@dimen/dp_3" android:layout_alignParentEnd="true" style="@style/style_15_light_paragraph_title" />
+                        </RelativeLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_date" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColorHint="@color/color_15_input_hint" android:gravity="center" android:id="@id/tv_date_value" android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:singleLine="true" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_location_lat" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/color_15_input_text" android:gravity="center" android:id="@id/lat_tv" android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:singleLine="true" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_location_long" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/color_15_input_text" android:gravity="center" android:id="@id/long_tv" android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:singleLine="true" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_gps_info" android:visibility="gone" android:layout_marginTop="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text_888888" android:layout_marginTop="@dimen/dp_16" android:text="@string/connect_setting_tip_title" style="@style/style_15_light_paragraph_title" />
+                        <TextView android:textSize="@dimen/sp_13" android:layout_marginTop="@dimen/dp_16" android:text="@string/connect_setting_tip_context" style="@style/style_15_light_paragraph_tip" />
+                    </LinearLayout>
+                </ScrollView>
+                <View android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" style="@style/style_15_divider_vertical" />
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_other_mount" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <Spinner android:id="@id/mount_spinner" style="@style/MySpinner" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_focal" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_8">
+                                <RelativeLayout android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30">
+                                    <EditText android:gravity="center" android:id="@id/main_focal_et" android:background="@null" android:text="0" android:hint="@string/connect_focal_main" android:layout_toLeftOf="@id/main_focal_et_unit" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                                    <TextView android:textColor="@color/color_15_input_hint" android:id="@id/main_focal_et_unit" android:layout_marginRight="@dimen/dp_14" android:text="mm" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/style_15_light_paragraph_body" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8">
+                                <RelativeLayout android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30">
+                                    <EditText android:gravity="center" android:id="@id/guider_focal_et" android:background="@null" android:text="0" android:hint="@string/connect_focal_guide" android:layout_toLeftOf="@id/guider_focal_et_unit" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                                    <TextView android:textColor="@color/color_15_input_hint" android:id="@id/guider_focal_et_unit" android:layout_marginRight="@dimen/dp_14" android:text="mm" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/style_15_light_paragraph_body" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_cameras_main" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <Spinner android:id="@id/main_camera_spinner" style="@style/MySpinner" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_cameras_guide" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <Spinner android:id="@id/guide_camera_spinner" style="@style/MySpinner" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:minHeight="@dimen/dp_30" android:text="@string/connect_other" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_8">
+                                <TextView android:textColor="@color/color_15_input_text" android:textColorHint="@color/color_15_input_hint" android:gravity="center" android:id="@id/tv_wheel_value" android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:hint="@string/connect_other_wheel" android:singleLine="true" style="@style/style_15_light_paragraph_body" />
+                                <Spinner android:id="@id/wheel_spinner" android:visibility="gone" style="@style/MySpinner" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8">
+                                <TextView android:textColor="@color/color_15_input_text" android:textColorHint="@color/color_15_input_hint" android:gravity="center" android:id="@id/tv_focuser_value" android:background="@drawable/bg_input_text_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:hint="@string/connect_other_focuser" android:singleLine="true" style="@style/style_15_light_paragraph_body" />
+                                <Spinner android:id="@id/focuser_spinner" android:visibility="gone" style="@style/MySpinner" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_8" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8">
+                                <Button android:id="@id/enter_btn" android:layout_width="fill_parent" android:text="@string/enter" android:onClick="gotoAirActivity" style="@style/common_button_15" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/connect_enter_progress" android:visibility="invisible" style="@style/loading_bar_style" />
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

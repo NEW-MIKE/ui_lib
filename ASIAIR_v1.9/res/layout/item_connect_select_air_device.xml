@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/cb_select_device" android:clickable="false" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:button="@drawable/selector_check_box" android:layout_centerVertical="true" />
+    <TextView android:id="@id/tv_air_device_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@id/cb_select_device" style="@style/style_15_light_paragraph_body" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_15_light_text_tip" android:id="@id/tv_air_device_ip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" style="@style/style_15_light_paragraph_body" />
+    <View android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_0" style="@style/style_15_divider_horizontal" />
+</RelativeLayout>

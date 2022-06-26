@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_file_path" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/ll_right_menu" android:layout_toEndOf="@id/back_btn" />
+                <TextView android:id="@id/tv_title" android:visibility="gone" android:text="@string/sdcard_image_manage" style="@style/page_title" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_right_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_dcdcdc" android:gravity="center|right" android:id="@id/make_choose_btn" android:background="@null" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" />
+                    <CheckBox android:id="@id/choose_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:button="@drawable/selector_image_file_manager_select_all_cb" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_8" />
+                    <CheckBox android:id="@id/cb_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:button="@drawable/selector_image_file_manager_edit_cb" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_8" />
+                    <CheckBox android:id="@id/cb_list_layout_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:button="@drawable/selector_image_file_manager_layout_switch_cb" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_8" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/divider" android:layout_below="@id/title_layout" style="@style/style_15_divider_horizontal" />
+            <RelativeLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_20" android:gravity="center" android:id="@id/iv_no_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:text="@string/empty_list_tip_image" android:drawableTop="@drawable/icon_empty_list" android:drawablePadding="@dimen/dp_20" />
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_no_pic">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_2" android:layout_marginEnd="@dimen/dp_2" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </RelativeLayout>
+            <include layout="@layout/layout_image_file_manager_footer_edit" />
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

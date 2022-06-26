@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout android:orientation="vertical" android:id="@id/fragment_guider_container" android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_guide_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_tip_image_zh" android:layout_centerInParent="true" android:contentDescription="" app:layout_heightPercent="41.6%h" app:layout_widthPercent="120%h" />
+    <RelativeLayout android:id="@id/right_layout" android:background="@color/color_15_dark_background_menu" android:layout_width="@dimen/dp_56" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <CheckBox android:id="@id/calibrate_btn" android:background="@drawable/calibrate_compound_selector" android:layout_marginBottom="@dimen/dp_22" android:button="@null" android:layout_above="@id/guide_loop_img_btn" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/guide_loop_img_btn" android:background="@drawable/guide_loop_compound_selector" android:layout_marginBottom="@dimen/dp_22" android:button="@null" android:layout_above="@id/guide_start_guide_img_btn" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/guide_start_guide_img_btn" android:background="@drawable/guide_guide_selector" android:layout_centerInParent="true" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/guide_stop_img_btn" android:background="@drawable/guide_stop_selector" android:layout_marginTop="@dimen/dp_22" android:layout_below="@id/guide_start_guide_img_btn" style="@style/checkbox_textview" />
+        <CheckBox android:id="@id/exp_display_compound" android:background="@drawable/exp_compound_selector" android:layout_marginTop="@dimen/dp_22" android:button="@null" android:layout_below="@id/guide_stop_img_btn" style="@style/checkbox_textview" />
+        <CheckedTextView android:textSize="@dimen/sp_10" android:id="@id/exp_display_tv" android:layout_alignBottom="@id/exp_display_compound" android:layout_centerHorizontal="true" style="@style/main_textview" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/guide_camera_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_layout">
+        <com.zwoasi.asiair.view.widget.CameraView android:id="@id/guide_camera_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/guide_top_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentTop="true" layout="@layout/air_top_layout" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_28" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bottom_layout_guider" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/guider_graph_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_112" android:layout_marginLeft="@dimen/dp_12" android:layout_marginRight="@dimen/dp_12" android:layout_toLeftOf="@id/right_layout" android:layout_above="@id/bottom_layout">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/guider_graph_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/guider_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_44" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/star_profile_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_44" android:layout_marginRight="@dimen/dp_12" android:layout_toLeftOf="@id/right_layout">
+        <include android:id="@id/star_profile_include" android:visibility="gone" android:layout_width="@dimen/dp_102" android:layout_height="wrap_content" layout="@layout/guide_star_layout" />
+    </LinearLayout>
+    <include android:id="@id/calibrate_include" android:visibility="gone" android:layout_width="@dimen/dp_102" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_44" android:layout_marginRight="@dimen/dp_12" android:layout_toLeftOf="@id/right_layout" layout="@layout/calibrate_layout" />
+    <include android:id="@id/exp_include" android:visibility="gone" android:layout_toLeftOf="@id/right_layout" app:layout_heightPercent="100%h" app:layout_widthPercent="21.6%h" layout="@layout/preview_exp_layout" />
+    <FrameLayout android:orientation="vertical" android:id="@id/left_ctrl_layout2" android:paddingLeft="@dimen/dp_10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.zwoasi.asiair.view.widget.AirCheckedView android:gravity="center" android:id="@id/graph_menu" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:checked_box_background="@drawable/toolbar_icon_graph" app:checked_text_color="@color/color_selector_dark_radio_button" app:text="@string/menu_guide_graph" />
+        </LinearLayout>
+    </FrameLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

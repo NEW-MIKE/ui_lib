@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/setting_block">
+        <TextView android:id="@id/tv_update_name" android:text="@string/setting_update_log_title" style="@style/text_setting_item_name" />
+        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/style_15_divider_horizontal_padding_left" />
+</LinearLayout>

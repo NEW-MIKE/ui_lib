@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_item_select" android:layout_width="fill_parent" android:layout_height="@dimen/dp_47"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/title_tv" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:lines="1" android:layout_toLeftOf="@id/count_tv" android:layout_alignParentLeft="true" style="@style/text_setting_item_name" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:id="@id/count_tv" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_setting_item_name" />
+</RelativeLayout>

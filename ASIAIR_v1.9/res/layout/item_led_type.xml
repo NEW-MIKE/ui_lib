@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_43">
+        <ImageView android:id="@id/iv_icon" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_30" android:src="@drawable/selector_led_wifi" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_led_show" android:id="@id/tv_name" android:layout_marginLeft="@dimen/dp_14" style="@style/style_text_base" />
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+</LinearLayout>

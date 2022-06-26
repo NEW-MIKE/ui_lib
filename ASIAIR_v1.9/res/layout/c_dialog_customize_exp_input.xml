@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/dialog_title" android:paddingBottom="@dimen/dp_10" style="@style/custom_dialog_text_title" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_4">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_dialog_title" android:gravity="start" android:id="@id/tv_custom_exp" android:text="@string/stack_exp_time_customize_exp_s" android:layout_centerVertical="true" style="@style/custom_dialog_text_content" />
+            <EditText android:gravity="start|center" android:id="@id/et" android:inputType="numberDecimal" android:imeOptions="actionDone|flagNoExtractUi" android:layout_marginStart="@dimen/dp_30" android:layout_toEndOf="@id/tv_custom_exp" style="@style/style_15_dark_edit_text" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/color_dialog_content" android:id="@id/tv_tip" android:paddingLeft="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:layout_margin="@dimen/dp_4" style="@style/text_setting_item_tip" />
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+        <TextView android:textColor="@color/color_dialog_title" android:gravity="center" android:id="@id/dialog_negative_btn" android:text="@string/cancel" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_finish" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/btn_confirm" android:text="@string/confirm" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

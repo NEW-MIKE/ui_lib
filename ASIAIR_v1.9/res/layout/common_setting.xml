@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/common_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/common_setting_title" android:text="@string/common_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_24">
+                    <RelativeLayout android:id="@id/rl_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="@dimen/dp_52" android:layout_height="@dimen/dp_52" android:src="@drawable/ic_launcher_round" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_toRightOf="@id/rl_logo" android:layout_centerVertical="true">
+                        <TextView android:id="@id/tv_app_name" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/text_setting_item_name" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_build_version" android:layout_marginTop="@dimen/dp_2" style="@style/text_setting_item_name" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+                <LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/issue_report" style="@style/text_setting_item_name" />
+                        <Button android:text="@string/submit" android:layout_alignParentRight="true" android:onClick="showIssueReportDialog" style="@style/style_15_button_small" />
+                    </RelativeLayout>
+                    <TextView android:text="@string/issue_report_tip" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="showDreamPartner">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_dream_partner" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/update_log_layout" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_update_log" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="showServiceAgreements">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_service_agreements" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/open_lab_test_layout" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/setting_lab_test" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/open_rollback_layout" android:background="?android:selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/rollback_title" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/open_credits_layout" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="showCreditsWeb">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="Credits" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/setting_update_log_list_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/tv_setting_update_log_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/setting_update_log_list_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/setting_update_log" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view_update_log" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_setting_update_log_list" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/setting_webview_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_setting_webview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/setting_update_log_details_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tv_setting_webview_title" android:text="@string/setting_update_log" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <com.zwoasi.asiair.view.widget.CustomWebView android:id="@id/setting_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_setting_webview" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/setting_test_details_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tv_lab_test_page" android:text="@string/setting_lab_test" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/sp_18" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:text="@string/setting_lab_test_title" android:drawableLeft="@drawable/ic_lab" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" style="@style/text_setting_title" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:text="@string/setting_lab_test_sub_title" android:layout_centerInParent="true" />
+                <RelativeLayout android:id="@id/lab_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_dcdcdc" android:gravity="center" android:padding="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_lab_test_empty" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout_3pa" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:id="@id/tv_lab_test_key_3pa" android:text="@string/setting_lab_test_3pa" style="@style/text_setting_item_name" />
+                            <Switch android:id="@id/lab_test_switch_3pa" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout_solve" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:id="@id/tv_lab_test_key_solve" android:text="@string/setting_lab_test_solve" style="@style/text_setting_item_name" />
+                            <ImageView android:id="@id/lab_test_solve_unknown" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/tv_lab_test_key_solve" />
+                            <Switch android:id="@id/lab_test_switch_solve" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout_inner" android:paddingTop="@dimen/dp_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="left" android:padding="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_lab_test_alpha" android:layout_centerInParent="true" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/setting_lab_test_plan" style="@style/text_setting_item_name" />
+                            <Switch android:id="@id/lab_test_switch_goto" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout_threshold" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/setting_lab_test_threshold" style="@style/text_setting_item_name" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                                <EditText android:id="@id/lab_test_threshold_et" android:hint="@string/unknown_na" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text_small" />
+                                <TextView android:layout_marginLeft="@dimen/dp_8" android:text="%" style="@style/text_setting_item_name" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <TextView android:text="@string/setting_lab_test_threshold_tip" style="@style/text_setting_item_tip" />
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lab_test_layout_3pa_angle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/setting_lab_test_3pa_angle" style="@style/text_setting_item_name" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                                <EditText android:id="@id/lab_test_3pa_angle_et" android:hint="@string/unknown_na" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text_small" />
+                                <TextView android:layout_marginLeft="@dimen/dp_8" android:text="°" style="@style/text_setting_item_name" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="left" android:padding="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="结束测试的功能" android:layout_centerInParent="true" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:id="@id/tv_lab_test_key_multi_star" android:text="@string/setting_lab_test_multi_star" style="@style/text_setting_item_name" />
+                            <ImageView android:id="@id/lab_test_multi_star_unknown" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/tv_lab_test_key_multi_star" />
+                            <Switch android:id="@id/lab_test_switch_multi_star" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

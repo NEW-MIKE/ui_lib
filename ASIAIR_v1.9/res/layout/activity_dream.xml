@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_dream_partner" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_dream_partner" android:scaleType="fitCenter" />
+        <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/solved_title" android:paddingBottom="@dimen/dp_10" android:text="@string/solved_failed_title_info" style="@style/custom_dialog_text_title" />
+        <TextView android:gravity="center" android:id="@id/solved_failed_msg" android:layout_marginTop="@dimen/dp_10" android:lineSpacingExtra="@dimen/dp_5" style="@style/custom_dialog_text_content" />
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/solved_cancel_cancel_btn" android:text="@string/ok" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+    </LinearLayout>
+</LinearLayout>

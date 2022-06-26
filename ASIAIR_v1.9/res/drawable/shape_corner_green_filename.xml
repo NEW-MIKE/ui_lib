@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="2.0dip" />
+            <solid android:color="@null" />
+            <stroke android:width="1.0dip" android:color="@color/color_15_dark_ele_checked" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center|right|top" android:src="@drawable/maincamerasetting_image_checkbox" />
+    </item>
+</layer-list>

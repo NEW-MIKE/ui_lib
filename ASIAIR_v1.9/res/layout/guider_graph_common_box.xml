@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_box_card" android:layout_width="@dimen/dp_252" android:layout_height="@dimen/dp_76"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_9" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_50" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_ra" android:text="@string/str_ra_only" style="@style/ra_dec_info_tv2" />
+                <TextView android:gravity="center|right" android:id="@id/ra_val_tv" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_dec" android:text="@string/str_dec_only" style="@style/ra_dec_info_tv2" />
+                <TextView android:gravity="center|right" android:id="@id/dec_val_tv" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_text_888888" android:text="@string/string_rms_total" style="@style/ra_dec_info_tv2" />
+                <TextView android:gravity="center|right" android:id="@id/total_val_tv" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv2" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="@color/color_15_function_yellow" android:id="@id/tv_state_in_mini_box" android:paddingLeft="@dimen/dp_8" android:paddingBottom="@dimen/dp_6" android:text="@string/guide_state_stopped" android:layout_alignParentBottom="true" style="@style/ra_dec_info_tv2" />
+        <TextView android:ellipsize="end" android:id="@id/tv_msg_in_mini_box" android:paddingBottom="@dimen/dp_6" android:layout_marginLeft="@dimen/dp_10" android:lines="1" android:layout_toRightOf="@id/tv_state_in_mini_box" android:layout_alignParentBottom="true" style="@style/ra_dec_info_tv2" />
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/dynamic_chart2" android:background="@android:color/transparent" android:layout_width="@dimen/dp_186" android:layout_height="@dimen/dp_65" android:layout_marginTop="@dimen/dp_m_2" />
+    <ImageView android:layout_gravity="end|bottom|center" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_margin="@dimen/dp_2" android:src="@drawable/nav_icon_guide_narrow_normal" />
+</FrameLayout>

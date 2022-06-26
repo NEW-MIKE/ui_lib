@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_box_card_2" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_15_dark_text_main" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_calibration" android:lines="1" />
+            <ImageView android:id="@id/calibration_tip" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/b_dp_0_5" android:src="@drawable/ic_help" android:layout_marginStart="@dimen/dp_4" />
+        </LinearLayout>
+        <com.zwoasi.asiair.view.widget.CalibrateView android:layout_gravity="center_horizontal" android:id="@id/calibrate_view" android:layout_width="@dimen/dp_78" android:layout_height="@dimen/dp_78" android:layout_marginTop="@dimen/dp_6" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="@dimen/dp_6" android:layout_width="fill_parent" android:layout_height="@dimen/dp_43">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <CheckBox android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/calibration_flip" android:background="@drawable/bg_selector_flip_calibration_button" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:checked="false" android:button="@null" android:layout_centerVertical="true" />
+                <CheckedTextView android:textSize="@dimen/sp_10" android:textColor="@color/color_selector_dark_radio_button" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/calibration_flip_tv" android:layout_marginTop="@dimen/dp_m_2" android:text="@string/invert" android:lines="1" style="@style/ra_dec_info_tv" />
+            </LinearLayout>
+            <View android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_6" android:layout_marginRight="@dimen/dp_6" android:layout_centerVertical="true" style="@style/style_15_divider_vertical" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:textColor="@color/color_15_dark_text_main" android:layout_gravity="center_horizontal" android:id="@id/calibrate_clear" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/bg_selector_clear_calibration_button" android:text="@string/clear" android:layout_centerVertical="true" android:textAllCaps="false" />
+                <CheckedTextView android:textSize="@dimen/sp_10" android:textColor="@color/color_selector_dark_radio_button" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/calibrate_clear_tv" android:layout_marginTop="@dimen/dp_m_2" android:text="@string/clear" android:lines="1" style="@style/ra_dec_info_tv" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

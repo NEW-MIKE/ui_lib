@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/options_layout" android:background="@drawable/shape_big_corner_dcdcdc" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_15_function_red" android:gravity="center" android:id="@id/tv_delete" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_15_function_red" android:gravity="center" android:id="@id/tv_remove" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/remove" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/air_colorAccent" android:gravity="center" android:id="@id/tv_dadd_to" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/star_add_to" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/air_colorAccent" android:gravity="center" android:id="@id/tv_rename" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/rename" />
+    </LinearLayout>
+    <ImageView android:layout_width="14.0dip" android:layout_height="10.0dip" android:layout_marginTop="-3.0dip" android:src="@drawable/triangle_white" android:layout_below="@id/options_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

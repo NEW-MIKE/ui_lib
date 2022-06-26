@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_light_text_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_list_tip" android:drawableTop="@drawable/icon_empty_list" android:drawablePadding="@dimen/dp_10" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_title" android:visibility="visible" android:text="@string/run_log_viewer_title" android:layout_toEndOf="@id/back_btn" style="@style/page_title" />
+                <CheckBox android:enabled="true" android:id="@id/delete_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@drawable/common_icon_clean_up" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" android:layout_alignParentEnd="true" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48">
+                <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/log_recycle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/rl_log_list_loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/pb_loading" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_27" style="@style/loading_bar_style" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

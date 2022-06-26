@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.zwoasi.asiair" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_air" android:label="@string/app_name_air" android:largeHeap="true" android:name="com.zwoasi.runapp.App" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:screenOrientation="sensorLandscape" android:supportsRtl="false" android:theme="@style/AirTheme" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.SplashActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="Channel" android:value="google"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="android.vendor.full_screen" android:value="true"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="a58900d916b974c442ee104ed60e588b"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.zwoasi.asiair.service.ASIService" android:process=":air">
+            <intent-filter>
+                <action android:name="com.zwoasi.asiair.service.ASIService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.zwoasi.asiair.service.ThirdService" android:process=":process">
+            <intent-filter>
+                <action android:name="com.zwoasi.asiair.service.ThirdService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.zwoasi.asiair.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zwoasi.asiair.activity.stack.StackVideoInfoActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zwoasi.asiair.activity.stack.StackVideoShowActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zwoasi.asiair.activity.stack.StackImageActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.UpdateActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.QRScanActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.VerifyActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.LogListActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.LogViewerActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ConnectActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ChooseObjectActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.BigImageActivity" android:process=":air" android:theme="@style/AirTransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.SearchObjectActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zwoasi.asiair.activity.AirActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.LedAbnormalActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ConnectGuideStepActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:name="com.zwoasi.asiair.activity.BaseActivity" android:process=":air"/>
+        <activity android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ImageManagementActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ImagePreviewActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.zwoasi.asiair.activity.ImagePreviewVideoActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.PlanRunSettingActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.PlanRunObjectSeqsActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.zwoasi.asiair.activity.EmptyActivity" android:process=":air" android:theme="@style/OnePxActivityStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.DreamActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zwoasi.asiair.activity.WebActivity" android:process=":air" android:screenOrientation="sensorLandscape" android:theme="@style/AirTheme" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.zwoasi.asiair.service.ObbDownloaderService" android:process=":air"/>
+        <receiver android:name="com.zwoasi.asiair.receiver.ObbAlarmReceiver" android:process=":air"/>
+        <service android:name="com.zwoasi.asiair.view.widget.media.ZwoMediaPlayerService" android:process=":air"/>
+        <activity android:name="com.zwoasi.newstartmap.SkMapActivity" android:process=":map" android:screenOrientation="sensorLandscape" android:theme="@style/MySkyMapTheme"/>
+        <service android:enabled="false" android:exported="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.services.MediaPlayerService"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:name="com.lxj.xpopup.util.XPermission$PermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity" android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="xiaofei.library.hermeseventbus.HermesEventBus$Service"/>
+        <activity android:exported="false" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:theme="@style/EasyPermissions.Transparent"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.zwoasi.asiair.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.zwoasi.asiair.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.zwoasi.asiair.utilcode.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.zwoasi.asiair.messenger"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="huawei_module_scankit_local" android:value="10320300"/>
+        <meta-data android:name="huawei_module_scankit_sdk_version" android:value="scan:1.3.2.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:scan" android:value="scan:1.3.2.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scan:huawei_module_scankit" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scan:hmscore" android:value="1"/>
+        <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ml-computer-camera-inner" android:value="ml-computer-camera-inner:2.0.3.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ml-computer-ha-inner" android:value="ml-computer-ha-inner:2.0.3.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.13.303"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="2"/>
+        <provider android:authorities="com.zwoasi.asiair.MLInitializerProvider" android:exported="false" android:name="com.huawei.hms.mlsdk.common.provider.MLInitializerProvider"/>
+        <provider android:authorities="com.zwoasi.asiair.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+    </application>
+</manifest>

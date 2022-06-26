@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingBottom="@dimen/dp_10" android:text="@string/focus_update_title" style="@style/custom_dialog_text_title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center|left" android:layout_gravity="left" android:text="@string/focus_update_content" style="@style/custom_dialog_text_content" />
+            <TextView android:gravity="center|left" android:layout_gravity="left" android:paddingTop="@dimen/dp_10" android:text="@string/focus_update_tip" style="@style/custom_dialog_text_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/dialog_negative_btn" android:text="@string/got_it" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+    </LinearLayout>
+</LinearLayout>

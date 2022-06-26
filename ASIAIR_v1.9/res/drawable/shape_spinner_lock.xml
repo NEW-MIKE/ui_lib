@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="2.0dip" />
+            <solid android:color="@color/color_15_input_dark_background" />
+            <stroke android:width="0.5dip" android:color="@color/color_15_input_dark_border" />
+        </shape>
+    </item>
+    <item android:right="@dimen/dp_8">
+        <bitmap android:gravity="right" android:src="@drawable/common_icon_down_lock" />
+    </item>
+</layer-list>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/rim" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:alpha="0.1" />
+            <TextView android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/scan_tip" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_above="@id/scan_area" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+            <ImageView android:id="@id/scan_area" android:background="@drawable/cloors" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/flush_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:src="@drawable/flashlight_off" android:layout_below="@id/scan_area" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textColor="@color/color_dcdcdc" android:id="@id/tv_title" android:text="@string/verify_page_title" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" style="@style/style_15_light_page_title" />
+                <ImageButton android:id="@id/back_btn" android:background="@android:color/transparent" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tonight_best_icon_back" android:scaleType="fitCenter" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+                <TextView android:textColor="@color/color_dcdcdc" android:id="@id/tv_wifi_state_3" android:visibility="gone" android:layout_marginLeft="@dimen/dp_16" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentLeft="true" style="@style/activity_sub_title" />
+                <TextView android:textColor="@color/color_dcdcdc" android:id="@id/tv_connect_state_3" android:layout_marginRight="@dimen/dp_16" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentEnd="true" style="@style/activity_sub_title" />
+                <View android:visibility="gone" android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <RelativeLayout android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/color_dcdcdc" android:layout_marginLeft="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:text="@string/scan_existed_license_to_authorize" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_toLeftOf="@id/btn_verify_from_album" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentStart="true" style="@style/style_15_light_paragraph_tip" />
+                <Button android:textColor="@color/air_colorPrimary" android:id="@id/btn_verify_from_album" android:background="?android:selectableItemBackground" android:clickable="true" android:text="@string/verify_from_album" android:shadowColor="#ff2c2c2c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" style="@style/style_15_button_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/qr_layout" android:background="@drawable/img_verify_qr_cn" android:visibility="invisible" android:layout_width="315.0dip" android:layout_height="435.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_qr_image" android:layout_width="210.0dip" android:layout_height="210.0dip" android:layout_marginTop="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_ra" android:layout_gravity="center" android:id="@id/tv_qr_sn" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" />
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

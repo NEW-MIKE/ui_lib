@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame" android:background="@drawable/bg_dialog_shape_corner" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:paddingBottom="@dimen/dp_10" android:text="@string/star_add_to_title" style="@style/custom_dialog_text_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

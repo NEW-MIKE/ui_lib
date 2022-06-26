@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/solving_tv" android:paddingBottom="@dimen/dp_10" android:text="@string/solving_msg2" style="@style/custom_dialog_text_title" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/focal_length_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solving_focal_length" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/chip_size_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solving_chip_size" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/fov_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solving_fov" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/focal_length_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/chip_size_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/fov_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/solving_hint_tv" android:layout_marginTop="@dimen/dp_10" android:text="@string/solving_hint" android:lineSpacingExtra="@dimen/dp_5" style="@style/custom_dialog_text_content" />
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/color_dialog_title" android:id="@id/solving_cancel_btn" android:text="@string/cancel" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+    </LinearLayout>
+</LinearLayout>

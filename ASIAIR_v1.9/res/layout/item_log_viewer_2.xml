@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/log_text_error" />
+    <ImageView android:paddingLeft="@dimen/dp_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/log_text_opened" />
+    <ImageView android:id="@id/iv_tag" android:paddingLeft="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/log_text_opened" />
+    <TextView android:id="@id/tv_log" android:paddingLeft="@dimen/dp_10" style="@style/text_autorun_log" />
+    <TextView android:id="@id/tv_tag" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" style="@style/text_autorun_log" />
+    <TextView android:id="@id/tv_ps" style="@style/text_autorun_log" />
+</LinearLayout>

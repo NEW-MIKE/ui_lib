@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/ll_image_operate" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout2" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_copy" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+            <ImageView android:id="@id/iv_image_copy" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/img_file_mgn_copy_normal" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_copy" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/copy_to" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout3" app:layout_constraintStart_toEndOf="@id/linearLayout1" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_cut" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+            <ImageView android:id="@id/iv_image_cut" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/img_file_mgn_cut_normal" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_cut" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/move_to" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout3" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/linearLayout4" app:layout_constraintStart_toEndOf="@id/linearLayout2" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_clear_or_delete" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+            <ImageView android:id="@id/iv_image_delete" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/img_file_mgn_delete_normal" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_clear_or_delete" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/linearLayout3" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_download" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+            <ImageView android:id="@id/iv_image_download" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/img_file_mgn_download_normal" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_download" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/save" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

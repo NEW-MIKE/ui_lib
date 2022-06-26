@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/file_img" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_25" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/log_icon" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_dcdcdc" android:ellipsize="end" android:id="@id/tv_log_group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" />
+</LinearLayout>

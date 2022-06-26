@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_title" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:text="@string/hint" style="@style/custom_dialog_text_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="@dimen/dp_180">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+            <TextView android:gravity="start" android:layout_gravity="start" android:layout_marginTop="@dimen/dp_6" android:text="@string/dialog_tip_for_dslr_cable_1" style="@style/custom_dialog_text_content" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_delr" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:layout_marginTop="@dimen/dp_6" android:text="@string/dialog_tip_for_dslr_cable_2" style="@style/custom_dialog_text_content" />
+        </LinearLayout>
+    </ScrollView>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+        <TextView android:id="@id/dialog_positive_btn" android:text="@string/ok" style="@style/custom_dialog_text_button" />
+    </LinearLayout>
+</LinearLayout>

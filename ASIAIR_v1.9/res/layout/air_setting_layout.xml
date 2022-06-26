@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/setting_mask_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/rl_all_setting" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/rl_all_setting" android:background="@color/color_15_dark_background_mainland" android:layout_width="@dimen/dp_484" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/tab_layout1" android:layout_width="@dimen/dp_44" android:layout_height="fill_parent">
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/wifi_setting_checkbox" android:background="@drawable/setting_box_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/main_setting_checkbox" android:background="@drawable/setting_main_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/guider_setting_checkbox" android:background="@drawable/setting_guider_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/equatorial_setting_checkbox" android:background="@drawable/setting_equatorial_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/wheel_setting_checkbox" android:background="@drawable/setting_wheel_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/focus_setting_checkbox" android:background="@drawable/setting_focus_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/sdcard_setting_checkbox" android:background="@drawable/setting_sdcard_btn_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_image_layout">
+                <com.zwoasi.asiair.view.widget.SpecialCheckBox android:id="@id/common_setting_checkbox" android:background="@drawable/common_setting_compound_selector" style="@style/setting_checkbox" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/divider" android:background="@color/color_15_dark_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toRightOf="@id/tab_layout1" />
+        <FrameLayout android:id="@id/frame_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/divider" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/divider">
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/wifi_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/main_camera_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/guider_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/telescope_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/wheel_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/focus_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/sdcard_setting" />
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_setting" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

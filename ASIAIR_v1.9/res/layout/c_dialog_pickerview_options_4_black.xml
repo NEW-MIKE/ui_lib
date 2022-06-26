@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rv_topbar" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45">
+        <Button android:textSize="@dimen/sp_17" android:textColor="@color/color_dialog_content" android:gravity="center|left" android:id="@id/btnCancel" android:background="@android:color/transparent" android:paddingLeft="@dimen/pickerview_topbar_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" />
+        <TextView android:textSize="@dimen/sp_19" android:textColor="@color/color_dialog_title" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnSubmit" android:layout_toRightOf="@id/btnCancel" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/sp_17" android:textColor="@color/air_colorAccent" android:gravity="center|right" android:id="@id/btnSubmit" android:background="@android:color/transparent" android:paddingRight="@dimen/pickerview_topbar_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ok" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/optionspicker4" android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="@dimen/dp_175">
+        <com.contrarywind.view.WheelView android:id="@id/options1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/options2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/options3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/options4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

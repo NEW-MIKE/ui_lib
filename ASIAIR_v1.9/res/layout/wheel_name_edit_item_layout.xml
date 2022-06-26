@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_55"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:gravity="center" android:id="@id/index_tv" android:background="@drawable/shape_round_333333" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_marginLeft="@dimen/dp_27" android:text="1" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/input_edit_layout" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_toRightOf="@id/index_tv" android:layout_centerVertical="true">
+        <EditText android:id="@id/edit_text" android:background="@drawable/bg_input_text_dark" android:visibility="gone" android:layout_width="fill_parent" android:singleLine="true" android:maxLength="4" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_" android:inputType="text" android:imeOptions="actionDone" style="@style/style_15_dark_edit_text" />
+        <Spinner android:id="@id/spinner" android:visibility="visible" android:layout_width="fill_parent" style="@style/MySpinner" />
+    </FrameLayout>
+    <CheckBox android:id="@id/input_switch" android:background="@drawable/autorun_item_check_box_selector" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:layout_marginLeft="@dimen/dp_8" android:checked="false" android:button="@null" android:layout_toRightOf="@id/input_edit_layout" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/af_exp_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_toRightOf="@id/input_switch" android:layout_centerVertical="true">
+        <Spinner android:id="@id/spinner_af_exp_time" android:layout_width="@dimen/dp_81" style="@style/MySpinner" />
+        <TextView android:id="@id/tv_second" android:layout_marginLeft="@dimen/dp_12" android:text="s" style="@style/text_setting_item_name" />
+    </LinearLayout>
+    <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal_padding_left" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:paddingEnd="@dimen/dp_20" style="@style/style_15_check_box_pick_file" />
+    <RelativeLayout android:layout_width="@dimen/dp_27" android:layout_height="@dimen/dp_22">
+        <View android:id="@id/bg_border" android:background="@color/color_white_20" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/file_img" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_21" android:src="@drawable/common_image_fit" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/file_img_video_play" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:src="@drawable/video_list_play" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:ellipsize="end" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_999999" android:ellipsize="end" android:id="@id/tv_file_number" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_4" android:layout_toEndOf="@id/tv_file_name" />
+            <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_999999" android:id="@id/avi_duration" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

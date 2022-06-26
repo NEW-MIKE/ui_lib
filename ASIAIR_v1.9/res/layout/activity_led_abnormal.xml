@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/led_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <ImageButton android:id="@id/back_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tonight_best_icon_back" android:scaleType="fitCenter" />
+                <TextView android:text="@string/led_state_desc" android:layout_centerInParent="true" style="@style/style_15_light_page_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_m_1">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/led_recycle" android:layout_width="@dimen/dp_146" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dp_70" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/led_box_bg" />
+                        <ImageView android:id="@id/iv_cover_pwr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/led_box_pwr" />
+                        <ImageView android:id="@id/iv_cover_sys" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/led_box_sys" />
+                        <ImageView android:id="@id/iv_cover_wifi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/led_box_wifi" />
+                        <ImageView android:id="@id/iv_cover_reset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/led_box_reset" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_15_dark_text_main" android:gravity="center" android:id="@id/tv_describe" android:paddingLeft="@dimen/dp_40" android:paddingRight="@dimen/dp_40" android:layout_marginTop="@dimen/dp_28" style="@style/style_text_base" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

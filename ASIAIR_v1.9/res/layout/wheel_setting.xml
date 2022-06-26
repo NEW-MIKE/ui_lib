@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wheel_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wheel_setting_main" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/wheel_setting_title" android:text="@string/wheel_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" style="@style/setting_block">
+                <TextView android:id="@id/wheel_tv" android:text="@string/wheel" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/text_setting_item_name" />
+                <Spinner android:id="@id/wheel_spinner" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_50" android:layout_toLeftOf="@id/wheel_switch" android:layout_toRightOf="@id/wheel_tv" android:layout_centerVertical="true" style="@style/MySpinner" />
+                <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/wheel_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_filter_name_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:text="@string/edit_filter_name" style="@style/text_setting_item_name" />
+                <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wheel_position_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:id="@id/wheel_positon_tv" android:text="@string/filter_position" style="@style/text_setting_item_name" />
+                <Spinner android:id="@id/wheel_position_spinner" android:layout_width="@dimen/dp_100" android:layout_alignParentEnd="true" style="@style/MySpinner" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:text="@string/rotate_in_one_way" style="@style/text_setting_item_name" />
+                <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/rotate_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wheel_calibration_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:id="@id/wheel_calibration_tv" android:text="@string/setting_wheel_recalibration_desc" style="@style/text_setting_item_name" />
+                <Button android:id="@id/btn_wheel_calibration_start" android:background="@drawable/green_grey_btn_selector" android:text="@string/setting_wheel_calibration_start" android:layout_alignParentEnd="true" style="@style/style_15_button_small" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/wheel_setting_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wheel_setting_edit_name_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/edit_wheel_name_quit_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/wheel_setting_edit_name_title" android:text="@string/edit_filter_name" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+                    <TextView android:textColor="@color/color_text_setting_hub_title" android:layout_marginLeft="@dimen/dp_10" android:text="@string/setting_wheel_index" style="@style/text_setting_item_name" />
+                    <TextView android:textColor="@color/color_text_setting_hub_title" android:layout_marginLeft="@dimen/dp_50" android:text="@string/setting_wheel_name" style="@style/text_setting_item_name" />
+                    <TextView android:textColor="@color/color_text_setting_hub_title" android:layout_marginLeft="@dimen/dp_90" android:text="@string/setting_wheel_exp" style="@style/text_setting_item_name" />
+                </LinearLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/wheel_names_recycle_view" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                <TextView android:id="@id/tv_efw_filter_tip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_50" style="@style/text_setting_item_tip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

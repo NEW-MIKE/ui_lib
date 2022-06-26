@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_dark_background_black" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/connect_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_loading" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/sp_18" android:textColor="@color/color_15_light_text_main" android:gravity="center" android:background="@drawable/bg_dialog_shape_corner" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/img_file_preview_loading" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/title_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/back_btn" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/back_btn">
+                    <TextView android:textSize="@dimen/sp_16" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:layout_constraintBottom_toTopOf="@id/gl_title_center_horizontal" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/page_title" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_text_888888" android:id="@id/tv_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/gl_title_center_horizontal" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_text_888888" android:id="@id/tv_file_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" app:layout_constraintStart_toEndOf="@id/tv_file_size" app:layout_constraintTop_toBottomOf="@id/gl_title_center_horizontal" />
+                    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/gl_title_center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+            <View android:id="@id/split_line" android:layout_below="@id/title_layout" style="@style/style_15_divider_horizontal" />
+            <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_2" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_bar_bg_green" android:layout_below="@id/title_layout" style="?android:progressBarStyleHorizontal" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/ll_image_operate" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout_star_marked" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout_star_hfd_marked" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_star_marked" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_star_marked" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/toolbar_icon_annotate_default" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_star_marked" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/menu_annotate" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout_star_hfd_marked" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout4" app:layout_constraintStart_toEndOf="@id/linearLayout_star_marked" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_star_hfd_marked" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_star_hfd_marked" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/toolbar_icon_star_default" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_star_hfd_marked" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/star_hfd_detect" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout_more" app:layout_constraintStart_toEndOf="@id/linearLayout_star_hfd_marked" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_goto" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_image_goto" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/toolbar_icon_goto_default" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_goto" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/go_to" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout_more" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/linearLayout4" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_image_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                        <ImageView android:id="@id/iv_image_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/toolbar_icon_more_default" />
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_dcdcdc" android:gravity="center" android:id="@id/tv_image_more" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:text="@string/more" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

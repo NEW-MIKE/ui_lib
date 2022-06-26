@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/left_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/right_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="@dimen/dp_290" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_47">
+            <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_dcdcdc_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_object_list" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/air_colorAccent" android:gravity="center_vertical" android:id="@id/create_list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/custom_object_list_add" android:paddingEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+            <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/object_list_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

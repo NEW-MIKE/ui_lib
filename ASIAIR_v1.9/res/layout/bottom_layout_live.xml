@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.android.percent.support.PercentRelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/resolution_val_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_gain_tv" android:layout_toRightOf="@id/resolution_val_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_temp_tv" android:layout_toRightOf="@id/bottom_gain_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_battery_tv" android:layout_toRightOf="@id/bottom_temp_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_live_used_tv" android:layout_toRightOf="@id/bottom_battery_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_live_drop_tv" android:layout_toRightOf="@id/bottom_live_used_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_live_duration_tv" android:layout_toRightOf="@id/bottom_live_drop_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:textColor="@color/color_15_function_yellow" android:gravity="right" android:id="@id/main_exp_state" android:layout_width="wrap_content" android:layout_alignParentRight="true" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/net_speed_tv" android:visibility="invisible" android:layout_toLeftOf="@id/main_exp_state" style="@style/tv_speed_style" />
+        <ProgressBar android:id="@id/main_img_progress" android:visibility="invisible" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_6" android:progressDrawable="@drawable/bg_download_progress_bar" android:layout_toLeftOf="@id/net_speed_tv" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_8" style="?android:progressBarStyleHorizontal" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</RelativeLayout>

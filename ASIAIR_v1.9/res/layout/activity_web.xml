@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_light_text_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/close_web_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_title" android:visibility="visible" android:layout_toEndOf="@id/close_web_btn" style="@style/page_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48">
+                <ProgressBar android:id="@id/web_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_2" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_bar_bg_green" style="?android:progressBarStyleHorizontal" />
+                <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_result" android:drawableTop="@drawable/icon_empty_list" android:drawablePadding="@dimen/dp_10" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_47" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/back_btn" android:background="@drawable/tonight_best_icon_back" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_18" android:textColor="@color/color_dcdcdc_white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_tonight_best" android:layout_centerInParent="true" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/search_menu" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:src="@drawable/tonight_best_icon_search" android:layout_toLeftOf="@id/list_menu" android:layout_centerInParent="true" app:tint="#ffffffff" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/list_menu" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/tonight_best_icon_menu" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/object_recycler_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/search_progress_bar" style="@style/loading_bar_style" />
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_opt_bar" android:background="@drawable/shape_round_muti_choose_object_right" android:paddingTop="@dimen/dp_10" android:layout_width="@dimen/dp_48" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_choose" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                    <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_selected" />
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_confirm" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_goto" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                    <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_goto" />
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_goto" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_center" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                    <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_center" />
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_add_custom_obj" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                    <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_add_object" />
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_add" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/goto_top_fab" android:background="@drawable/tonight_best_icon_backtop" android:visibility="invisible" android:clickable="true" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom|center|left" android:orientation="vertical" android:id="@id/ll_multi_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_64" android:layout_marginRight="@dimen/dp_88" android:layout_marginBottom="@dimen/dp_20">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_multi_choose_object" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/pop_group_layout" android:background="@color/transparent_40" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/pop_group_list" layout="@layout/layout_choose_object_pop_list" />
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

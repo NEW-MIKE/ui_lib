@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/ic_splash_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/ic_splash" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/logo_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:layout_marginRight="@dimen/dp_40" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_splash_logo" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:id="@id/tv_timer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="" android:layout_marginStart="@dimen/dp_20" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_15_dark_divider" android:id="@id/tv_init_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:text="@string/launch_step_prepare" android:layout_marginStart="@dimen/dp_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

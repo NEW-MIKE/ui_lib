@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/telescope_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/telescope_setting_title" android:text="@string/telescope_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/telescope_layout" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" style="@style/setting_block">
+                    <TextView android:id="@id/telescope_tv" android:text="@string/telescope" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/text_setting_item_name" />
+                    <Spinner android:id="@id/telescope_spinner" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_40" android:layout_toStartOf="@id/telescope_switch" android:layout_toEndOf="@id/telescope_tv" style="@style/MySpinner" />
+                    <ImageView android:id="@id/img_telescope_attention" android:padding="@dimen/dp_4" android:visibility="invisible" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ic_help_2" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/telescope_switch" />
+                    <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/telescope_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_protocol_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <Button android:layout_gravity="center_vertical" android:id="@id/btn_telescope_connect_switch" android:layout_width="@dimen/dp_65" android:text="@string/serial" style="@style/style_15_button_small" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/telescope_port_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_75" android:layout_weight="1.0" style="@style/setting_sub_obj">
+                                <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_serial_port" android:text="@string/not_found" style="@style/text_setting_item_name" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/baud_rate_layout" android:paddingLeft="@dimen/dp_16" android:layout_weight="1.0" style="@style/setting_sub_obj">
+                                <TextView android:textSize="@dimen/sp_13" android:text="@string/baud_rate" style="@style/text_setting_item_name" />
+                                <Spinner android:gravity="center" android:id="@id/baud_rate_spinner" android:layout_width="@dimen/dp_100" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/MySpinner" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/telescope_ip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_65">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_alignParentRight="true" style="@style/setting_sub_obj">
+                                <TextView android:textSize="@dimen/sp_13" android:text="IP" style="@style/text_setting_item_name" />
+                                <EditText android:textSize="@dimen/sp_13" android:id="@id/telescope_ip_et" android:layout_width="@dimen/dp_120" android:layout_marginLeft="@dimen/dp_10" android:singleLine="true" android:digits="0123456789." android:inputType="numberDecimal" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text_small" />
+                                <TextView android:textSize="@dimen/sp_13" android:layout_marginLeft="@dimen/dp_20" android:text="@string/port" style="@style/text_setting_item_name" />
+                                <EditText android:textSize="@dimen/sp_13" android:id="@id/telescope_ip_port_et" android:layout_marginLeft="@dimen/dp_10" android:singleLine="true" android:digits="\ 0123456789" android:inputType="numberDecimal" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text_small" />
+                                <ToggleButton android:id="@id/telescope_tcp_udp_switch" android:layout_marginLeft="@dimen/dp_12" android:button="@null" android:textOn="@string/udp" android:textOff="@string/tcp" android:layout_alignParentEnd="true" style="@style/style_15_button_small" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </FrameLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/scope_setting_open_objects" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/scope_setting_open_objects" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_sync_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_sub_obj">
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/setting_sub_obj">
+                            <TextView android:text="@string/scope_info" style="@style/text_setting_hub_title" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_sync_location" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_longitude_tv" android:text="@string/str_longitude_symbol" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_longitude_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_latitude_tv" android:text="@string/str_latitude_symbol" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_latitude_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_ra_tv" android:text="@string/str_ra_symbol" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_ra_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_dec_tv" android:text="@string/str_dec_symbol" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_dec_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_sync_time" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_time_zone_tv" android:text="@string/scope_time_zone" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_time_zone_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_time_tv" android:text="@string/str_time_symbol" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:id="@id/telescope_time_val" android:hint="@string/unknown_na" android:lines="1" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_time_zone_tip" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_13" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:text="@string/scope_time_zone_tip" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                    </LinearLayout>
+                    <View android:layout_marginTop="@dimen/dp_7" style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_ra_dec_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_sync3" style="@style/setting_block">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:text="@string/phone_info" style="@style/text_setting_hub_title" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <Button android:id="@id/telescope_sync_btn" android:text="@string/sync_to_scope" style="@style/style_15_button_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_location_layout" android:paddingTop="@dimen/dp_0" style="@style/setting_block">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_lat_tv" android:text="@string/str_longitude_only" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_long_val" android:layout_width="@dimen/dp_120" android:layout_marginLeft="@dimen/dp_10" android:hint="@string/unknown_na" style="@style/style_15_dark_edit_text_small" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_long_tv" android:text="@string/str_latitude_only" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/telescope_lat_val" android:layout_width="@dimen/dp_120" android:layout_marginLeft="@dimen/dp_10" android:hint="@string/unknown_na" style="@style/style_15_dark_edit_text_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/telescope_location_tip" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_13" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:text="@string/scope_location_tip" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                    </LinearLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/amf_setting_item" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/amf_settings" style="@style/text_setting_item_name" />
+                        <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_auto_center_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/scope_goto_auto_center" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/telescope_auto_center_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/telescope_guide_goto_exp_layout" android:visibility="gone" style="@style/setting_block">
+                        <TextView android:text="@string/scope_goto_auto_exp" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/guide_goto_exp_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/guide_goto_exp_radio_a" android:text="2s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_goto_exp_radio_b" android:text="5s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_goto_exp_radio_c" android:text="10s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_goto_exp_radio_d" android:text="20s" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_guide_rate_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/telescope_rate_tv" android:text="@string/scope_guiding_rate" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/guide_rate_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/guide_rate_radio_1" android:text="@string/guide_rate1" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_rate_radio_2" android:text="@string/guide_rate2" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_rate_radio_3" android:text="@string/guide_rate3" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/guide_rate_radio_4" android:text="@string/guide_rate4" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_tracking_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/telescope_tracking_tv" android:text="@string/scope_tracking" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/telescope_tracking_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/telescope_tracking_mode_layout" android:visibility="gone" style="@style/setting_block">
+                        <TextView android:text="@string/scope_tracking_rate" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/tracking_rate_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <RadioButton android:id="@id/tracking_rate_radio_1" android:text="@string/scope_tracking_rate_1" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/tracking_rate_radio_2" android:text="@string/scope_tracking_rate_2" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/tracking_rate_radio_3" android:text="@string/scope_tracking_rate_3" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/telescope_park_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/telescope_park_tv" android:text="@string/scope_park" android:layout_centerVertical="true" style="@style/text_setting_item_name" />
+                        <Button android:id="@id/telescope_park_toggle_btn" android:text="@string/park_start" android:layout_alignParentEnd="true" style="@style/style_15_button_small" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/amf_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/amf_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/amf_setting_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/amf_settings" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/amf_setting_title">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:paddingBottom="@dimen/dp_0" android:layout_marginTop="@dimen/dp_10" android:text="@string/amf_fun_tip" style="@style/text_setting_item_tip" />
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/amf_before" style="@style/text_setting_item_name" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                            <Spinner android:id="@id/amf_before_spinner" android:layout_width="@dimen/dp_100" android:layout_alignParentEnd="true" style="@style/MySpinner" />
+                            <TextView android:layout_marginLeft="@dimen/dp_8" android:text="min" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:text="@string/amf_before_tip" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/amf_after" style="@style/text_setting_item_name" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                            <Spinner android:id="@id/amf_after_spinner" android:layout_width="@dimen/dp_100" android:layout_alignParentEnd="true" style="@style/MySpinner" />
+                            <TextView android:layout_marginLeft="@dimen/dp_8" android:text="min" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:text="@string/amf_after_tip" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <RelativeLayout style="@style/setting_block">
+                    <TextView android:id="@id/tv_amp_recalibrate" android:text="@string/merid_flip_setting_recalibrate" style="@style/text_setting_item_name" />
+                    <ImageView android:id="@id/iv_tip_for_amf_recalibrate" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_toRightOf="@id/tv_amp_recalibrate" android:layout_centerVertical="true" />
+                    <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/switch_merid_flip_setting_recalibrate" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/telscope_setting_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

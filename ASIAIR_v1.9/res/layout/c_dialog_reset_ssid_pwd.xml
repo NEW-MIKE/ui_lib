@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingBottom="@dimen/dp_10" android:text="@string/edit_wifi_title" style="@style/custom_dialog_text_title" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/color_dialog_title" android:gravity="start" android:text="@string/dialog_add_custom_object_name" android:layout_centerVertical="true" style="@style/custom_dialog_text_content" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="@dimen/dp_186" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                <EditText android:id="@id/et_ssid" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_" android:inputType="text" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_15_input_hint" android:id="@id/tv_text_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textColor="@color/color_dialog_title" android:gravity="start" android:text="@string/edit_wifi_pwd" android:layout_centerVertical="true" style="@style/custom_dialog_text_content" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="@dimen/dp_186" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                <EditText android:id="@id/edt_password" android:hint="@string/please_enter_password" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:inputType="textPassword" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                <ToggleButton android:id="@id/tb_password_visiblity" android:background="@drawable/selector_password_visiable_andr_invisable" android:padding="10.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textColor="@color/color_dialog_content" android:gravity="center" android:id="@id/tv_tip" android:paddingLeft="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:layout_width="fill_parent" android:layout_marginTop="@dimen/dp_10" android:text="@string/reset_wifi_name_hint" style="@style/text_setting_item_tip" />
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+        <TextView android:textColor="@color/color_dialog_title" android:gravity="center" android:id="@id/dialog_negative_btn" android:text="@string/cancel" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_finish" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/btn_confirm" android:text="@string/change" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

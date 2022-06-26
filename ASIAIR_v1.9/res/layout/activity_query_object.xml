@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/query_container" android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_search_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_result_for_search" android:drawableTop="@drawable/icon_empty_list" android:drawablePadding="@dimen/dp_10" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/top_layout" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55">
+            <RelativeLayout android:background="@drawable/bg_input_text_object_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_toLeftOf="@id/back_tv" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_search" android:layout_width="@dimen/dp_20" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/tonight_best_icon_search" android:layout_centerVertical="true" />
+                <requestFocus />
+                <EditText android:textColor="@color/color_dcdcdc" android:id="@id/search_et" android:background="@null" android:layout_height="fill_parent" android:hint="@string/object_search_input_hint" android:layout_toLeftOf="@id/clear_iv" android:layout_toRightOf="@id/iv_search" android:layout_centerVertical="true" android:imeOptions="actionSearch|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                <ImageView android:id="@id/clear_iv" android:layout_width="@dimen/dp_25" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/tonight_best_icon_search_clean" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/air_colorAccent" android:id="@id/back_tv" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/dp_16" android:clickable="true" android:layout_width="wrap_content" android:minWidth="@dimen/dp_80" android:text="@string/cancel" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/common_button_15" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/history_recommend_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_55">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recommend_rv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_44" android:layout_marginRight="@dimen/dp_131" />
+            <LinearLayout android:orientation="vertical" android:id="@id/history_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:background="@color/color_15_dark_background_mainland" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_history" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/clear_search_history_iv" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_delete" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/search_history_rv" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@id/search_result_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_55">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/search_result_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_20">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_opt_bar" android:background="@drawable/shape_round_muti_choose_object_right" android:paddingTop="@dimen/dp_10" android:layout_width="@dimen/dp_48" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_choose" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                        <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_selected" />
+                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_confirm" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_goto" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                        <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_goto" />
+                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_goto" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ensure_object_center" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                        <ImageView android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/tonight_best_icon_center" />
+                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_15_light_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tonight_best_center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/goto_top_fab" android:background="@drawable/tonight_best_icon_backtop" android:visibility="invisible" android:clickable="true" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom|center|left" android:orientation="vertical" android:id="@id/ll_multi_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_64" android:layout_marginRight="@dimen/dp_88" android:layout_marginBottom="@dimen/dp_20">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_multi_choose_object" />
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

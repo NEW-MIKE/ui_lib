@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="@dimen/dp_56" android:layout_height="fill_parent" android:layout_below="@id/top_layout" android:layout_alignParentRight="true">
+        <CheckBox android:textStyle="bold" android:textColor="@color/preview_type_text_color" android:id="@id/preview_check_box" android:background="@drawable/mode_compound_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_6" android:button="@null" android:text="@string/work_scene_auto_run" android:layout_above="@id/autorun_setting_img_btn" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/autorun_setting_img_btn" android:background="@drawable/autorun_setting_btn_selector" android:layout_marginBottom="@dimen/dp_26" android:layout_above="@id/start_check_box" style="@style/checkbox_textview" />
+        <com.zwoasi.asiair.view.widget.MyCheckBox android:id="@id/start_check_box" android:background="@drawable/autorun_start_btn_selector" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_centerInParent="true" style="@style/checkbox_textview" />
+        <com.zwoasi.asiair.view.widget.AutoRunTotalProgressView android:id="@id/autorun_exp_progress_bar" android:visibility="invisible" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_centerInParent="true" app:center_background_color="@android:color/transparent" app:progress_bar_width_percent="0.08" style="@style/checkbox_textview" />
+        <TextView android:textSize="@dimen/sp_10" android:id="@id/autorun_exp_progress_tv" android:visibility="invisible" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_below="@id/start_check_box" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/save_img_list_btn" android:background="@drawable/autorun_file_list_selector" android:layout_marginTop="@dimen/dp_26" android:layout_below="@id/start_check_box" style="@style/checkbox_textview" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/autorun_bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_28" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bottom_layout_preview" />
+    </RelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout android:id="@id/total_progress_rl" android:visibility="visible" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_44" android:layout_marginRight="@dimen/dp_20" android:layout_toLeftOf="@id/right_layout">
+        <com.zwoasi.asiair.view.widget.AutoRunTotalProgressView android:id="@id/total_progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:center_background_color="@android:color/transparent" app:progress_bar_width_percent="0.08" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/air_colorAccent" android:gravity="center" android:id="@id/total_progress_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <include android:id="@id/preview_include" android:visibility="invisible" android:layout_width="@dimen/dp_100" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_layout" layout="@layout/preview_preview_layout" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

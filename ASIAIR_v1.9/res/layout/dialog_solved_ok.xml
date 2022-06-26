@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/solved_title" android:paddingBottom="@dimen/dp_10" android:text="@string/solved_title_info" style="@style/custom_dialog_text_title" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/solved_ra_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/str_ra_symbol" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/solved_dec_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/str_dec_symbol" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/solved_angle_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solved_angle" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/solved_focal_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solved_focal_length" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="right" android:id="@id/solved_fov_title" android:layout_marginTop="@dimen/dp_5" android:text="@string/solved_fov" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/solved_ra_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/solved_dec_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/solved_angle_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/solved_focal_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/color_dialog_title" android:layout_gravity="left" android:id="@id/solved_fov_val" android:layout_marginTop="@dimen/dp_5" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/solved_sync_retry_line" style="@style/style_15_divider_horizontal" />
+    <TextView android:id="@id/solved_sync_retry_btn" android:layout_height="@dimen/dp_44" android:text="@string/sync_retry" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/color_dialog_title" android:id="@id/solved_cancel_btn" android:text="@string/cancel" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_ok" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/solved_sync_btn" android:text="@string/sync" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

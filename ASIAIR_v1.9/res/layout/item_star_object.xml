@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingRight="@dimen/dp_80" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_100"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:enabled="false" android:id="@id/check_box" android:background="@drawable/choose_object_list_item_bg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:button="@null" />
+    <View android:id="@id/click_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:layout_gravity="center_vertical" android:id="@id/iv_cardview" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:cardBackgroundColor="@color/color_15_dark_background_mainland" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_object" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/object_info" android:layout_width="@dimen/dp_240" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_cardview" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@id/name_tv" android:lines="1" style="@style/text_title_tonight_best" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ff555555" android:text="@string/str_ra_only" style="@style/text_content_tonight_best" />
+                        <TextView android:textColor="#ff555555" android:layout_marginTop="@dimen/dp_4" android:text="@string/str_dec_only" style="@style/text_content_tonight_best" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4">
+                        <TextView android:textColor="@color/color_15_light_text_tip" android:ellipsize="end" android:id="@id/ra_tv" android:lines="1" style="@style/text_content_tonight_best" />
+                        <TextView android:textColor="@color/color_15_light_text_tip" android:ellipsize="end" android:id="@id/dec_tv" android:layout_marginTop="@dimen/dp_4" android:lines="1" style="@style/text_content_tonight_best" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4">
+                        <TextView android:textColor="#ff555555" android:id="@id/tv_key_2" style="@style/text_content_tonight_best" />
+                        <TextView android:textColor="#ff555555" android:id="@id/tv_key_1" android:layout_marginTop="@dimen/dp_4" style="@style/text_content_tonight_best" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4">
+                        <TextView android:textColor="@color/color_15_light_text_tip" android:ellipsize="end" android:id="@id/tv_value_2" android:lines="1" style="@style/text_content_tonight_best" />
+                        <TextView android:textColor="@color/color_15_light_text_tip" android:ellipsize="end" android:id="@id/tv_value_1" android:layout_marginTop="@dimen/dp_4" android:lines="1" style="@style/text_content_tonight_best" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_0" android:layout_marginRight="@dimen/dp_2" android:layout_toLeftOf="@id/object_az" android:layout_toRightOf="@id/object_info" android:layout_centerVertical="true">
+            <com.github.mikephil.charting.charts.CombinedChart android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_3" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/object_az" android:layout_width="wrap_content" android:layout_height="@dimen/dp_80" android:layout_marginRight="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="center" android:background="@drawable/tonight_norte_bg" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_48">
+                <ImageView android:id="@id/iv_object_az" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/tonight_norte" android:scaleType="centerInside" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_10" android:gravity="center" android:id="@id/tv_object_az" android:layout_width="fill_parent" android:layout_marginTop="@dimen/dp_6" android:lines="1" style="@style/text_content_tonight_best" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_330" android:layout_marginRight="@dimen/dp_60" android:layout_centerVertical="true">
+        <com.jaygoo.widget.RangeSeekBar android:id="@id/sb_range" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_25" app:rsb_indicator_background_color="@android:color/transparent" app:rsb_indicator_height="wrap_content" app:rsb_indicator_show_mode="alwaysShow" app:rsb_indicator_text_color="#ff888888" app:rsb_indicator_text_size="@dimen/sp_10" app:rsb_indicator_width="wrap_content" app:rsb_mode="single" app:rsb_progress_color="@android:color/transparent" app:rsb_progress_default_color="@android:color/transparent" app:rsb_thumb_height="0.0dip" app:rsb_thumb_width="0.0dip" />
+        <TextView android:textColor="#ff555555" android:text="@string/altitude_in_chart" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/text_content_tonight_best_small" />
+        <TextView android:textColor="#ff555555" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/time_in_chart" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/text_content_tonight_best_small" />
+    </RelativeLayout>
+</FrameLayout>

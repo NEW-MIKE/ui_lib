@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/activity_stack_image_0" android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/connect_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/title_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true" android:elevation="2.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/back_btn" android:tag="binding_1" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_txt" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/sp_16" android:gravity="center" android:id="@id/tv_savepic" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stack_save_to_album" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/dp_20" />
+            </RelativeLayout>
+            <ProgressBar android:id="@id/progress_bar" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="@dimen/dp_2" android:max="100" android:progressDrawable="@drawable/progress_bar_bg_green" android:layout_below="@id/title_layout" android:elevation="@dimen/dp_50" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_layout" style="?android:progressBarStyleHorizontal" />
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/camera_img" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="0.0dip" app:horizontalPanEnabled="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maxZoom="3.0" app:minZoom="1.0" app:verticalPanEnabled="true" app:zoomEnabled="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_5" android:background="@color/color_15_dark_background_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48" android:paddingEnd="@dimen/dp_10" app:layout_constraintEnd_toEndOf="parent">
+                <View android:background="@color/color_dcdcdc" android:layout_width="@dimen/dp_3" android:layout_height="@dimen/dp_22" android:layout_marginLeft="@dimen/dp_16" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_dcdcdc" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_sharpen" />
+                    <TextView android:textSize="@dimen/sp_10" android:textColor="#ffc2c2c2" android:id="@id/tv_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+                </LinearLayout>
+                <include android:id="@id/video_tiaojie_layout" android:layout_width="@dimen/dp_60" android:layout_height="fill_parent" android:elevation="1.0dip" layout="@layout/video_tiaojie_wss" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/AVLoadingIndicatorView" android:tag="binding_6" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="@id/camera_img" app:layout_constraintEnd_toEndOf="@id/camera_img" app:layout_constraintStart_toStartOf="@id/camera_img" app:layout_constraintTop_toTopOf="@id/title_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

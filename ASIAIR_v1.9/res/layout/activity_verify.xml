@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/software_update_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:text="@string/verify_page_title" style="@style/style_15_light_page_title" />
+                <ImageButton android:id="@id/iv_home" android:background="@drawable/ic_air_home" android:visibility="visible" android:clickable="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_image_btn" />
+                <TextView android:id="@id/tv_wifi_state" android:layout_marginLeft="@dimen/dp_16" android:layout_toRightOf="@id/iv_home" style="@style/activity_sub_title" />
+                <TextView android:id="@id/tv_connect_state" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentEnd="true" style="@style/activity_sub_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <RelativeLayout android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/verify_qr_btn">
+                    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_verify_top_tip" android:layout_height="fill_parent" android:text="@string/verify_page_title" android:layout_weight="2.0" android:layout_above="@id/center_layout" android:layout_centerHorizontal="true" android:lineSpacingExtra="@dimen/dp_5" style="@style/style_15_light_page_title" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/center_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/iv_verify_state" android:visibility="visible" android:layout_width="@dimen/dp_105" android:layout_height="@dimen/dp_120" android:src="@drawable/img_scan_warn" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_network_change_step" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/sp_13" android:gravity="center" android:text="@string/change_network_1" android:drawableTop="@drawable/activation_network" android:drawablePadding="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                            <TextView android:enabled="true" android:id="@id/tv_step_arrow_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginRight="@dimen/dp_40" android:drawableTop="@drawable/selector_verify_step" />
+                            <TextView android:enabled="true" android:textSize="@dimen/sp_13" android:gravity="center" android:id="@id/tv_step_icon_1" android:text="@string/change_network_2" android:drawableTop="@drawable/selector_verify_step_2" android:drawablePadding="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                            <TextView android:enabled="false" android:id="@id/tv_step_arrow_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginRight="@dimen/dp_40" android:drawableTop="@drawable/selector_verify_step" />
+                            <TextView android:enabled="false" android:textSize="@dimen/sp_13" android:gravity="center" android:id="@id/tv_step_icon_2" android:text="@string/change_network_3" android:drawableTop="@drawable/selector_verify_step_3" android:drawablePadding="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/sp_13" android:gravity="center" android:id="@id/tv_verify_bottom_tip" android:layout_height="fill_parent" android:text="@string/verify_welcome_tip" android:layout_weight="2.0" android:layout_below="@id/center_layout" android:layout_centerHorizontal="true" style="@style/style_15_light_paragraph_tip" />
+                </LinearLayout>
+                <Button android:textColor="@color/air_colorPrimary" android:id="@id/verify_qr_btn" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_marginBottom="@dimen/dp_16" android:text="@string/btn_verify_scan" android:layout_above="@id/verify_main_btn" android:layout_alignParentEnd="true" style="@style/style_15_button_normal" />
+                <Button android:id="@id/verify_main_btn" android:layout_width="fill_parent" android:text="@string/btn_verify_online" android:layout_alignParentBottom="true" style="@style/style_15_button_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/qr_layout" android:background="@drawable/img_verify_qr_cn" android:visibility="invisible" android:layout_width="315.0dip" android:layout_height="435.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_qr_image" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_ra" android:layout_gravity="center" android:id="@id/tv_qr_sn" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="N_A">N/A</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_unknown">Unknown</string>
+    <string name="TrackType_video">Video</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+    <string name="a_cache">a-cache</string>
+    <string name="a_d">A.D.</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="ac_below_horizon">Below the horizon</string>
+    <string name="ac_custom_center_here">Center Here</string>
+    <string name="ac_custom_connect_mount_first">Connect Mount first</string>
+    <string name="ac_custom_current_pos_calculate_failed">Current position calculate failed</string>
+    <string name="ac_custom_ensure_focal"><Data>Ensure Focal Length is correct and &lt;br>FOV is in the range of 0.2°-33° </Data></string>
+    <string name="ac_custom_ensure_focal_pi3"><Data>Ensure Focal Length is correct and &lt;br>FOV is in the range of 0.4°-33° </Data></string>
+    <string name="ac_custom_solving_and_calculate_current_pos">Solving and calculating Current Position</string>
+    <string name="ac_custom_solving_fail">Solve failed, maybe clouds rolled in or too few stars</string>
+    <string name="ac_dialog_ac_attempt_2">Auto-centering attempt once</string>
+    <string name="ac_dialog_ac_attempt_3">Auto-centering attempt twice</string>
+    <string name="ac_dialog_ac_attempt_4">Auto-centering attempt third</string>
+    <string name="ac_dialog_ac_fail_attempt_2">Solving Failed, attempt once</string>
+    <string name="ac_dialog_ac_fail_attempt_3">Solving Failed, attempt twice</string>
+    <string name="ac_dialog_ac_fail_attempt_4">Solving Failed, attempt third</string>
+    <string name="ac_dialog_ac_fail_attempt_5">Auto-center failed, retry 5th</string>
+    <string name="ac_dialog_ac_failed">Auto-center failed, distance is too far</string>
+    <string name="ac_dialog_ac_failed_exp">Shooting Failure</string>
+    <string name="ac_dialog_ac_failed_solve">Plate Solving Failed</string>
+    <string name="ac_dialog_ac_merid_flip_failed">Meridian flip failed， wait for the next Flip.</string>
+    <string name="ac_dialog_ac_mount_get_coord">Failed to read the RA/DEC of the mount</string>
+    <string name="ac_dialog_ac_mount_goto">Failed to slew the mount</string>
+    <string name="ac_dialog_ac_mount_opt">Mount Operation Failed</string>
+    <string name="ac_dialog_ac_mount_set_pierside_failed">The Pier Side is wrong</string>
+    <string name="ac_dialog_ac_mount_sync">Failed to set</string>
+    <string name="ac_dialog_ac_success">Auto-center succeeded</string>
+    <string name="ac_dialog_ac_uncentered_attempt_1">Uncentered, retry once</string>
+    <string name="ac_dialog_ac_uncentered_attempt_2">Uncentered, retry twice</string>
+    <string name="ac_dialog_ac_uncentered_attempt_3">Uncentered, retry third</string>
+    <string name="ac_dialog_ac_uncentered_attempt_n">Uncentered, retry %1$d th</string>
+    <string name="ac_dialog_attempt_ac_ing">Uncentered, attempt to auto-center</string>
+    <string name="ac_dialog_check_in_center">Validate centered or not</string>
+    <string name="ac_dialog_current">Current: </string>
+    <string name="ac_dialog_move_to_target_pos">Mount slews to target position</string>
+    <string name="ac_dialog_target">Target: </string>
+    <string name="ac_dialog_target_in_center">Target is centered</string>
+    <string name="ac_downloading">Loading...</string>
+    <string name="ac_flip_dialog_ac_try">Uncentered, retrying %1$d th</string>
+    <string name="ac_flip_dialog_exit">Autorun will be stopped after exiting</string>
+    <string name="ac_flip_dialog_exit_title">Exit Meridian Flip</string>
+    <string name="ac_flip_dialog_solve_try">Solving Failed, attempt %1$d th</string>
+    <string name="ac_flip_dialog_title_1">First Meridian Flip</string>
+    <string name="ac_flip_dialog_title_2">Second Meridian Flip</string>
+    <string name="ac_flip_dialog_title_3">3rd Meridian Flip</string>
+    <string name="ac_flip_dialog_title_n">%1$dth Meridian Flip</string>
+    <string name="ac_shooting">Shooting...</string>
+    <string name="ac_solving">Solving...</string>
+    <string name="ac_solving_with_star">Detected %1$s stars</string>
+    <string name="ac_wait_flip_dialog_title_1">Wait for Meridian Flip</string>
+    <string name="ac_wait_flip_dialog_title_2">Wait for the 2nd Meridian Flip</string>
+    <string name="ac_wait_flip_dialog_title_3">Wait for the 3rd Meridian Flip</string>
+    <string name="ac_wait_flip_dialog_title_n">Wait for the %1$dth Meridian Flip</string>
+    <string name="accept">Accept</string>
+    <string name="access_external_storage_rationale">We need access external storage to save pictures</string>
+    <string name="access_storage_and_camera">We need access storage and camera</string>
+    <string name="action_add">Add</string>
+    <string name="add">Add</string>
+    <string name="advanced_setting">Advanced Settings</string>
+    <string name="af">AF</string>
+    <string name="af_auto_run_condition_after_med_flip">after Auto Meridian flipped</string>
+    <string name="af_auto_run_condition_attention">"'every X change' and 'every X hours' is based on the last EAF record, 'before each target starting' does not take effect after resume from shooting"</string>
+    <string name="af_auto_run_condition_before_shoot">before each object starting</string>
+    <string name="af_auto_run_condition_change_filter_wheel">after filter change</string>
+    <string name="af_auto_run_condition_temperature">every X change</string>
+    <string name="af_auto_run_condition_time_interval">every X hour</string>
+    <string name="af_auto_run_title">Run Auto Focus in Autorun and Plan Modes</string>
+    <string name="af_chart_title">EAF Position</string>
+    <string name="af_desc">Tracking will be enabled when in the AF routine</string>
+    <string name="af_dialog_device_abnormal_content">Ensure current position is away from 0 and Max Step Limit so the EAF is movable</string>
+    <string name="af_dialog_device_abnormal_ok">OK</string>
+    <string name="af_dialog_device_abnormal_title">Device Abnormal</string>
+    <string name="af_dialog_device_change_content">EAF was plugged out, please connect it manually</string>
+    <string name="af_dialog_device_change_ok">OK</string>
+    <string name="af_dialog_device_change_title">Device Changed</string>
+    <string name="af_dialog_stop_af_auto_run_cancel">Cancel</string>
+    <string name="af_dialog_stop_af_auto_run_content">EAF position will be returned to the last focus point and Autorun will be continued</string>
+    <string name="af_dialog_stop_af_auto_run_stop">Stop</string>
+    <string name="af_dialog_stop_af_auto_run_title">Stop Auto Focus</string>
+    <string name="af_dialog_stop_af_cancel">Cancel</string>
+    <string name="af_dialog_stop_af_content">Not found focus position yet, the EAF will be returned to the last focus position if you stop it</string>
+    <string name="af_dialog_stop_af_stop">Stop</string>
+    <string name="af_dialog_stop_af_title">Stop Auto Focus</string>
+    <string name="af_eaf_step">Step Size</string>
+    <string name="af_eaf_step_desc">Define the moving step size of EAF each time to adjust the intensity of the star size, and it only affects AF</string>
+    <string name="af_exit">Exit</string>
+    <string name="af_exp_time">AF EXP</string>
+    <string name="af_exp_time_desc">Set EXP for each filter in Filter Wheel Settings</string>
+    <string name="af_ffp_detect_and_calculate_star_hfd">Calculate Focus Point: detect and calculate star size</string>
+    <string name="af_ffp_detect_star_failed_exp_or_gain">Calculate Focus Point: detect star failed, try to increase EXP time or Gain</string>
+    <string name="af_ffp_eaf_abnormal_or_movement_less_900">Calculate Focus Point: EAF abnormal or movement range not enough, try adjusting the step size</string>
+    <string name="af_ffp_exposure_failed">Calculate Focus Point: exposure failed</string>
+    <string name="af_ffp_shotting">Calculate Focus Point: shooting…</string>
+    <string name="af_ffp_star_hfd_too_large_run_again">Calculate Focus Point: Star size is too big to be detected, decrease the Step Size and retry</string>
+    <string name="af_ffp_upper_limit_of_data_point_run_again">Find Focus Point: Cannot find focus point, increase the Step Size and retry</string>
+    <string name="af_ffs_exposure_failed">Find Focus Stars: exposure failed</string>
+    <string name="af_ffs_finding_an_appropriate_star">Find Focus Stars: finding appropriate stars</string>
+    <string name="af_ffs_not_found_try_increase_exp_or_gain">Find Focus Stars: not found, try to increase EXP time or Gain</string>
+    <string name="af_ffs_shotting">Find Focus Stars: shooting…</string>
+    <string name="af_hfd">Star Size</string>
+    <string name="af_pvc_calculate_vc_trendency_failed">Calculate V-Curve: calculate V-Curve trendency failed, run again</string>
+    <string name="af_pvc_detect_and_calculate_star_hfd">Calculate V-Curve: detect and calculate star HFD</string>
+    <string name="af_pvc_detect_star_failed_exp_or_gain">Calculate V-Curve: detect star failed, try to increase EXP time or Gain</string>
+    <string name="af_pvc_eaf_abnormal_or_movement_less_900">Calculate V-Curve: EAF abnormal or movement range not enough, try adjusting the step size</string>
+    <string name="af_pvc_exposure_failed">Calculate V-Curve: exposure failed</string>
+    <string name="af_pvc_shotting">Calculate V-Curve: shooting…</string>
+    <string name="af_pvc_start">Focus manually until you see the stars, then tap the start button on the right to start AF</string>
+    <string name="af_pvc_succeeded">Calculate Focus Point: calculate and move EAF to Focus Point</string>
+    <string name="af_run">Run</string>
+    <string name="af_setting_title">Auto Focus Settings</string>
+    <string name="af_stop">Stop</string>
+    <string name="af_stopped">Auto Focus stopped</string>
+    <string name="af_succeeded">Auto focus succeeded</string>
+    <string name="af_succeeded_eaf">Auto focus succeeded, the focused position is</string>
+    <string name="af_title">Auto Focus</string>
+    <string name="af_trigger_reason_after_hours">Run AF because %1$d hours passed</string>
+    <string name="af_trigger_reason_after_meridian_flip">Run AF because Auto Meridian Flip finished</string>
+    <string name="af_trigger_reason_before_autorun">Run AF before each target starting</string>
+    <string name="af_trigger_reason_filter_changed">Run AF because filter changed from %1$s to %2$s</string>
+    <string name="af_trigger_reason_manual">Run AF manually</string>
+    <string name="af_trigger_reason_temperature_changed">Run AF because temperature changed from %1$s to %2$s</string>
+    <string name="air_connected">Service Connected</string>
+    <string name="air_guide_focal_desc">Accurate value required</string>
+    <string name="air_guide_focal_tip">Enter the accurate focal length of guide scope</string>
+    <string name="air_guide_focal_title">Focal length incorrect</string>
+    <string name="air_input_current">Input Current</string>
+    <string name="air_input_voltage">Input Voltage</string>
+    <string name="air_main_camera_cooler_too_slow_content">The Main Camera may not be powered, please check the power cable connection status</string>
+    <string name="air_main_focal_desc">Enter 0 if unknown, the true FL will be auto filled in after Plate Solve succeeded</string>
+    <string name="air_plus_tip">"ASIAIR PRO doesn't support power monitor"</string>
+    <string name="air_power_draw">Total Power</string>
+    <string name="air_power_draw_desc">Current overload warning - Input Current is too high, might lead to overheat and damage of ASIAIR device</string>
+    <string name="air_serial">Serial Number</string>
+    <string name="air_serial_short">SN</string>
+    <string name="air_temp">CPU Temperature</string>
+    <string name="air_temp_desc">Over-temperature warning - CPU Temp > 80°C, the performance of ASIAIR may decrease</string>
+    <string name="air_temp_short">CPU Temp</string>
+    <string name="air_unconnected">Service Unconnected</string>
+    <string name="air_undervoltage">Undervoltage Warning</string>
+    <string name="air_undervoltage_desc">Undervoltage warning - The Input voltage is insufficient, and this might lead to crash, restart and USB device disconnection</string>
+    <string name="air_wifi_5g_desc">5G WiFi is faster than 2.4G WiFi, but the range is shorter</string>
+    <string name="air_will_goto_zero">Mount will goto home position after finishing autorun</string>
+    <string name="air_will_goto_zero_title">Goto Home Position</string>
+    <string name="air_will_goto_zero_with_shutdown">After finishing autorun, ASIAIR will power off and mount will goto home position</string>
+    <string name="air_will_goto_zero_with_shutdown_title">Shutdown &amp; Goto Home Position</string>
+    <string name="air_will_open_main_camera_cooler_content">"The Main Camera cooling hasn't been turned on, ensure the power is properly supplied then set a reasonable temperature for higher quality images"</string>
+    <string name="air_will_open_main_camera_cooler_donot_set">Ignore</string>
+    <string name="air_will_open_main_camera_cooler_goto_set">Go To Set</string>
+    <string name="air_will_open_main_camera_cooler_title">Turn On Cooling</string>
+    <string name="air_will_shutdown">ASIAIR will be power off after finishing autorun</string>
+    <string name="air_will_shutdown_title">Shutdown</string>
+    <string name="album_view">Select photo</string>
+    <string name="alert">Alert</string>
+    <string name="aliases">Popular Name: </string>
+    <string name="align_all_frames">Align all frames</string>
+    <string name="all_permission_request">"Welcome to ASIAIR, We need the following permissions:
+ - LOCATION: Synchronize to the mounts;
+ - STORAGE: Ensure the normal preview of the picture;
+ - CAMERA: Activate the ASIAIR(or ASIAIR PRO/Plus);"</string>
+    <string name="all_permission_request_positive">Settings</string>
+    <string name="altitude_in_chart">Alt/°</string>
+    <string name="amf_after">Do AMF x min after Meridian</string>
+    <string name="amf_after_tip">"Because there's a calculation error of the Meridian between the ASIAIR and mount, it's necessary to set a suitable delay time to ensure the mount will perform the AMF"</string>
+    <string name="amf_before">Stop tracking x min before Meridian</string>
+    <string name="amf_before_tip">The mount will pause tracking before Meridian to avoid colliding with a tripod</string>
+    <string name="amf_fun_tip">This feature is only available for Autorun</string>
+    <string name="amf_settings">Meridian Flip Settings</string>
+    <string name="annotate_failed">Annotate failed</string>
+    <string name="annotate_solve_and_cal_pos">Solving and calculating Object Position</string>
+    <string name="annotate_unmarkable">No DSO or Named Star to annotate</string>
+    <string name="anti_dew">Anti-dew Heater</string>
+    <string name="app_name">runApp</string>
+    <string name="app_name_air">ASIAIR</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="apply">Apply</string>
+    <string name="auth_in_progress">Authenticating...</string>
+    <string name="auto">Auto</string>
+    <string name="auto_restore_calibration">Auto Restore Calibration</string>
+    <string name="auto_restore_calibration_tip">"You can use the calibration data from the last calibration. If you do not often reinstall your equipment, we suggest you turn on the 'Auto Restore Calibration' option, so the calibration data will be saved after power disconnection
+If the camera is rotated or the Graph is not good, try to clear the calibration data, stop the current guide, and restart guide. The calibration will automatically restart and generate new calibration data"</string>
+    <string name="auto_run_block">Guider is calibrating, please wait</string>
+    <string name="auto_run_dark_filter_tip">"Dark Filter can't be used to shoot %1$s Frames, we will shoot Dark Frames because you have selected Dark Filter"</string>
+    <string name="auto_white_balance">Auto White Balance on Screen</string>
+    <string name="autorun_delay">Shooting Delay</string>
+    <string name="autorun_delay_between">Interval</string>
+    <string name="autorun_delay_first">First Delay</string>
+    <string name="autorun_dialog_for_delete_plan_title">Are you sure to delete this Plan?</string>
+    <string name="autorun_dialog_for_delete_seq_title">Are you sure to delete this Task?</string>
+    <string name="autorun_dialog_for_delete_target_title">Are you sure to delete this Target?</string>
+    <string name="autorun_dialog_for_reset_plan_title">Are you sure to reset this Plan?</string>
+    <string name="autorun_dialog_for_reset_target_title">Are you sure to reset this Target?</string>
+    <string name="autorun_disable_operation">Stop and reset capture progress first</string>
+    <string name="autorun_disable_operation_1">Please stop capturing first</string>
+    <string name="autorun_disable_operation_2">Please reset progress first</string>
+    <string name="autorun_estimate_count">Selected Frame(s): </string>
+    <string name="autorun_estimate_flip_time">Meridian: </string>
+    <string name="autorun_estimate_time">Estimate: </string>
+    <string name="autorun_group_by_slot">Group by Slot</string>
+    <string name="autorun_object_config_seqs_exp">EXP</string>
+    <string name="autorun_object_config_seqs_filter">Filter</string>
+    <string name="autorun_object_config_seqs_repeat">Repeat</string>
+    <string name="autorun_object_config_seqs_tab">Events</string>
+    <string name="autorun_object_config_seqs_type">Type</string>
+    <string name="autorun_object_config_setting_choose_object">Object</string>
+    <string name="autorun_object_config_setting_current_info">Current Info</string>
+    <string name="autorun_object_config_setting_first_delay">Delay First</string>
+    <string name="autorun_object_config_setting_object_name">Target Name</string>
+    <string name="autorun_object_config_setting_tab">Settings</string>
+    <string name="autorun_object_detail">Details</string>
+    <string name="autorun_object_move_left_refuse">"It's already the first one"</string>
+    <string name="autorun_object_move_right_refuse">"It's already the last one"</string>
+    <string name="autorun_plan_auto_amf">Auto Meridian Flip</string>
+    <string name="autorun_plan_auto_cooler">Auto Cooling</string>
+    <string name="autorun_plan_auto_cooler_tip">Camera cooling is auto-turned on when starting Plan. After reached the target temp or 10 mins later, camera exposure starts</string>
+    <string name="autorun_plan_auto_guiding">Start guiding</string>
+    <string name="autorun_plan_close_cooler">Turn off Cooler</string>
+    <string name="autorun_plan_complete">End Options</string>
+    <string name="autorun_plan_delete">Delete Plan</string>
+    <string name="autorun_plan_end_time_customize">End at</string>
+    <string name="autorun_plan_end_time_dawn">Astronomical morning light</string>
+    <string name="autorun_plan_end_time_none">When Plan ends</string>
+    <string name="autorun_plan_list_add">Add</string>
+    <string name="autorun_plan_list_title">Plans</string>
+    <string name="autorun_plan_name">Plan Name</string>
+    <string name="autorun_plan_name_exist">This name already exists</string>
+    <string name="autorun_plan_name_hint">Please enter a plan name</string>
+    <string name="autorun_plan_park">GoTo Home POS</string>
+    <string name="autorun_plan_power_off">Shutdown ASIAIR</string>
+    <string name="autorun_plan_reset">Rest Plan</string>
+    <string name="autorun_plan_start_time_customize">Start at</string>
+    <string name="autorun_plan_start_time_none">Start now</string>
+    <string name="autorun_plan_time">Timer</string>
+    <string name="autorun_plan_time_complete">End at</string>
+    <string name="autorun_plan_time_star">Start at</string>
+    <string name="autorun_reset_failed">Reset failed</string>
+    <string name="autorun_reset_success">Reset succeeded</string>
+    <string name="autorun_state_exp_process">Exposed</string>
+    <string name="autorun_state_target_process">Target</string>
+    <string name="autorun_target">Target</string>
+    <string name="avi_fps">AVI: %1$s fps</string>
+    <string name="avi_video_record_cannot_change_storage_location">The Storage location cannot be changed during video recording</string>
+    <string name="avi_video_save_tip_failed">AVI Save Failed</string>
+    <string name="avi_video_save_tip_failed_external_storage">External storage device disconnected, AVI file save failed</string>
+    <string name="b_c">B.C.</string>
+    <string name="battery_level">Battery: </string>
+    <string name="baud_rate">Baud</string>
+    <string name="bias">Bias</string>
+    <string name="bit_rate">bit_rate</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="brightness_bright">Bright</string>
+    <string name="brightness_faint">Faint</string>
+    <string name="brightness_midrange">Midrange</string>
+    <string name="brvah_load_complete">Click to load more</string>
+    <string name="brvah_load_end">No more data</string>
+    <string name="brvah_load_failed">load more failed</string>
+    <string name="brvah_loading">Loading...</string>
+    <string name="btn_firmware_rollback">Start</string>
+    <string name="btn_firmware_update">Update Now</string>
+    <string name="btn_not_now">Not Now</string>
+    <string name="btn_software_update">Go to Update</string>
+    <string name="btn_stop_rotate">Stop Rotating</string>
+    <string name="btn_tonight_best_add">Add</string>
+    <string name="btn_tonight_best_center">Center</string>
+    <string name="btn_tonight_best_confirm">Confirm</string>
+    <string name="btn_tonight_best_goto">GoTo</string>
+    <string name="btn_verify_active">Activate</string>
+    <string name="btn_verify_online">Online Activation</string>
+    <string name="btn_verify_re_active">Reactivate</string>
+    <string name="btn_verify_scan">Activate with QR Code</string>
+    <string name="btn_verify_web_request">Get Authorization Code</string>
+    <string name="btn_verify_web_request_ing">Getting authorization code, please wait...</string>
+    <string name="calculate_average_frames">Calculate average frames</string>
+    <string name="calibrate_failed">Calibrate Calibrate Failed, Please check your setting and recalibrate</string>
+    <string name="calibrating_clearing_backlash">Clearing backlash step %1$s</string>
+    <string name="calibrating_east_step">East step %1$s, dist = %2$s</string>
+    <string name="calibrating_north_step">North step %1$s, dist = %2$s</string>
+    <string name="calibrating_nudge_south">Nudge South %1$s</string>
+    <string name="calibrating_south_step">South step %1$s, dist = %2$s</string>
+    <string name="calibrating_west_step">West step %1$s, dist = %2$s</string>
+    <string name="calibration_step">Calibration Step</string>
+    <string name="camera_auto_cooler">Turn on Cooling after Main Camera connected</string>
+    <string name="camera_has_opened_as_guider">The camera has been turned on as a guide camera</string>
+    <string name="camera_has_opened_as_imaging_camera">The camera has been turned on as a imaging camera</string>
+    <string name="camera_setting">Main Camera Settings</string>
+    <string name="camera_temp">Cooling</string>
+    <string name="camera_temp_cooling">Cooling</string>
+    <string name="camera_temp_tip">Camera will be cooled down gradually to avoid condensation</string>
+    <string name="cancel">Cancel</string>
+    <string name="cannot_stack">Cannot stack during shooting</string>
+    <string name="change">Change</string>
+    <string name="change_2">Change</string>
+    <string name="change_device">Switch Device</string>
+    <string name="change_device_dialog_hint">Scan ASIAIR in current network</string>
+    <string name="change_device_dialog_hint_air_offline">Disconnected. Please reconnect</string>
+    <string name="change_network_1">Connect to the Internet</string>
+    <string name="change_network_2">Get Authorization Code</string>
+    <string name="change_network_3">Connect to ASIAIR WiFi</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="chip_text">Chip text</string>
+    <string name="choose">Choose</string>
+    <string name="clear">Clear</string>
+    <string name="clear_calibrate_hint">Will recalibrate on next guide</string>
+    <string name="clear_calibrate_title">Clear calibration</string>
+    <string name="clear_log_warning_content">Log cannot be recovered once cleared</string>
+    <string name="clear_log_warning_dialog_btn">Clear</string>
+    <string name="clear_log_warning_title">Clear Log</string>
+    <string name="clear_storage_dialog_content_all">Only files saved by the ASIAIR will be deleted. This action cannot be undone</string>
+    <string name="clear_storage_dialog_title">Delete Saved Files</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="clear_up">Clear</string>
+    <string name="click_here_to_enter_roi">Tap the button to start the further Focusing</string>
+    <string name="click_here_to_move_roi">Move the green box to select area to magnify</string>
+    <string name="click_here_to_set_the_exposure_time">Tap here to set the exposure</string>
+    <string name="click_here_to_set_the_exposure_time_of_the_guide_camera">Tap here to set the exposure of the guiding camera</string>
+    <string name="click_here_to_sky_map">Tap here to enter the SkyAtlas</string>
+    <string name="click_here_to_start_focusing">Tap here to Focus</string>
+    <string name="click_here_to_start_guiding">Tap here to start the guide</string>
+    <string name="click_here_to_start_looping">Tap here to start image looping</string>
+    <string name="click_here_to_switch_other_mode">Tap here to switch mode</string>
+    <string name="click_here_to_take_an_image">Tap here to take an image</string>
+    <string name="close">Close</string>
+    <string name="close_station_mode">Turn Off Station Mode</string>
+    <string name="close_station_mode_warning">ASIAIR will auto reconnect after turning off Station Mode</string>
+    <string name="com_goto_cancel">GoTo Cancelled</string>
+    <string name="com_goto_complete">GoTo completed</string>
+    <string name="com_goto_ing">GoTo...</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_setting">About</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="confirm">Confirm</string>
+    <string name="connect">Connect</string>
+    <string name="connect_cameras">Cameras</string>
+    <string name="connect_cameras_guide">Guide Camera</string>
+    <string name="connect_cameras_main">Main Camera</string>
+    <string name="connect_date">Date</string>
+    <string name="connect_date_location">Phone Info</string>
+    <string name="connect_failed_and_try_again">Connection failed, please try again</string>
+    <string name="connect_failed_ethernet">Please check the connection method, IP, port and protocol of your mount are correct</string>
+    <string name="connect_failed_serial_1">The device on the USB serial port is not recognized, unable to connect</string>
+    <string name="connect_failed_serial_2">Please make sure the mount is connected with the serial cable and the baud are correct</string>
+    <string name="connect_failed_serial_more">"1 Ensure the mount is connected with the serial cable and the baud is correct
+2 If using G series or newest iOptron mounts, please connect ASIAIR via a USB hub"</string>
+    <string name="connect_failed_st4">Please open guide camera first</string>
+    <string name="connect_failed_title">Connect Failed</string>
+    <string name="connect_focal">Main/Guide Scope FL</string>
+    <string name="connect_focal_guide">Guide Scope</string>
+    <string name="connect_focal_main">Main Scope</string>
+    <string name="connect_guide_connect_content"><Data>Connect to ASIAIR WiFi, eg. ASIAIR_xxxxxxxx, default password is &lt;font color=#DCDCDC>12345678&lt;/font>&lt;br>If ASIAIR device is connected via STA Mode or Ethernet, tap Scan, select and Connect</Data></string>
+    <string name="connect_guide_connect_title">Connect to ASIAIR Device</string>
+    <string name="connect_guide_led"><Data>Have problems? &lt;font color=#259B24>Check LED Status&lt;/font></Data></string>
+    <string name="connect_guide_policy">开始使用前，请阅读并同意《用户协议》和《隐私政策》</string>
+    <string name="connect_guide_power_content">"Power the ASIAIR with a 12V power adapter and turn it on
+You will hear the booting sound in 1 minute"</string>
+    <string name="connect_guide_power_title">Power the ASIAIR and Turn It On</string>
+    <string name="connect_guide_tip_context">"1 Ensure the SD Card is inserted
+2 Plug in the power cord. Move switch to ON position
+3 Wait for 15 seconds and ensure the WiFi light is on and steady"</string>
+    <string name="connect_help_tip">如有疑惑，请联系 support@zwoptical.com</string>
+    <string name="connect_location_lat">Latitude</string>
+    <string name="connect_location_long">Longitude</string>
+    <string name="connect_other">Other Devices</string>
+    <string name="connect_other_focuser">No EAF</string>
+    <string name="connect_other_mount">Mount</string>
+    <string name="connect_other_wheel">No EFW</string>
+    <string name="connect_setting_tip_context">"1 Enter 0 if Main ScopeFocal Length (FL) is unknown, ASIAIR will auto fill in after plate solve
+2 Enter correct FL when using Guide Scope"</string>
+    <string name="connect_setting_tip_title">Setting Tips</string>
+    <string name="connected">Connected</string>
+    <string name="connection_failed_and_check_ip">"You can try:
+1 Quit and reopen the ASIAIR app
+2 Turn off WLAN then turn on it
+3 Forget ASIAIR WiFi then reconnect
+4 Reboot your Phone/Table"</string>
+    <string name="connection_failed_and_restart_and_upload">Log has been recorded, Please restart the APP and upload logs</string>
+    <string name="constellation_and">Andromeda</string>
+    <string name="constellation_ant">Air Pump</string>
+    <string name="constellation_aps">Bird of Paradise</string>
+    <string name="constellation_aql">Eagle</string>
+    <string name="constellation_aqr">Water Bearer</string>
+    <string name="constellation_aquila">Aquila</string>
+    <string name="constellation_ara">Altar</string>
+    <string name="constellation_ari">Ram</string>
+    <string name="constellation_aur">Charioteer</string>
+    <string name="constellation_auriga">Auriga</string>
+    <string name="constellation_boo">Bootes</string>
+    <string name="constellation_cae">"Sculptor's Chisel"</string>
+    <string name="constellation_cam">Giraffe</string>
+    <string name="constellation_camelopardalis">Camelopardalis</string>
+    <string name="constellation_cancer">Cancer</string>
+    <string name="constellation_canis_major">Canis Major</string>
+    <string name="constellation_cap">Goat</string>
+    <string name="constellation_car">Keel</string>
+    <string name="constellation_cas">Cassiopeia</string>
+    <string name="constellation_cassiopeia">Cassiopeia</string>
+    <string name="constellation_cen">Centaur</string>
+    <string name="constellation_cep">Cepheus</string>
+    <string name="constellation_cepheus">Cepheus</string>
+    <string name="constellation_cet">Whale</string>
+    <string name="constellation_cha">Chameleon</string>
+    <string name="constellation_cir">Compasses</string>
+    <string name="constellation_cma">Great Dog</string>
+    <string name="constellation_cmi">Lesser Dog</string>
+    <string name="constellation_cnc">Crab</string>
+    <string name="constellation_col">Dove</string>
+    <string name="constellation_com">"Berenice's Hair"</string>
+    <string name="constellation_cra">Southern Crown</string>
+    <string name="constellation_crb">Northern Crown</string>
+    <string name="constellation_crt">Cup</string>
+    <string name="constellation_cru">Cross</string>
+    <string name="constellation_crv">Crow</string>
+    <string name="constellation_cvn">Hunting Dogs</string>
+    <string name="constellation_cyg">Swan</string>
+    <string name="constellation_cygnus">Cygnus</string>
+    <string name="constellation_del">Dolphin</string>
+    <string name="constellation_dor">Swordfish</string>
+    <string name="constellation_dra">Dragon</string>
+    <string name="constellation_equ">Foal</string>
+    <string name="constellation_eri">River Eridanus</string>
+    <string name="constellation_for">Chemical Furnace</string>
+    <string name="constellation_gem">Twins</string>
+    <string name="constellation_gemini">Gemini</string>
+    <string name="constellation_gru">Crane</string>
+    <string name="constellation_her">Hercules</string>
+    <string name="constellation_hercules">Hercules</string>
+    <string name="constellation_hor">Clock</string>
+    <string name="constellation_hya">Water Snake</string>
+    <string name="constellation_hydra">Hydra</string>
+    <string name="constellation_hyi">Sea Serpent</string>
+    <string name="constellation_ind">Indian</string>
+    <string name="constellation_lac">Lizard</string>
+    <string name="constellation_lacerta">Lacerta</string>
+    <string name="constellation_leo">Lion</string>
+    <string name="constellation_lep">Hare</string>
+    <string name="constellation_lib">Scales</string>
+    <string name="constellation_lmi">Lesser Lion</string>
+    <string name="constellation_lup">Wolf</string>
+    <string name="constellation_lyn">Lyne</string>
+    <string name="constellation_lyr">Lyre</string>
+    <string name="constellation_lyra">Lyra</string>
+    <string name="constellation_men">Table Mountain</string>
+    <string name="constellation_mic">Microscope</string>
+    <string name="constellation_mon">Unicorn</string>
+    <string name="constellation_monoceros">Monoceros</string>
+    <string name="constellation_mus">Fly</string>
+    <string name="constellation_nor">Level</string>
+    <string name="constellation_oct">Octant</string>
+    <string name="constellation_oph">Serpent Bearer</string>
+    <string name="constellation_ophiuchus">Ophiuchus</string>
+    <string name="constellation_ori">Hunter</string>
+    <string name="constellation_orion">Orion</string>
+    <string name="constellation_pav">Peacock</string>
+    <string name="constellation_peg">Perscus</string>
+    <string name="constellation_pegasus">Pegasus</string>
+    <string name="constellation_per">Persus</string>
+    <string name="constellation_perseus">Perseus</string>
+    <string name="constellation_phe">Phoenix</string>
+    <string name="constellation_pic">Painter</string>
+    <string name="constellation_psa">Southern Fish</string>
+    <string name="constellation_psc">Fishes</string>
+    <string name="constellation_pup">Poop</string>
+    <string name="constellation_puppis">Puppis</string>
+    <string name="constellation_pyx">"Mariner's Compass"</string>
+    <string name="constellation_pyxis">Pyxis</string>
+    <string name="constellation_ret">Rhomboidal Net</string>
+    <string name="constellation_sagitta">Sagitta</string>
+    <string name="constellation_sagittarius">Sagittarius</string>
+    <string name="constellation_scl">"Sculptor's Workshop"</string>
+    <string name="constellation_sco">Scorpion</string>
+    <string name="constellation_scorpius">Scorpius</string>
+    <string name="constellation_sct">"Sobieski's Shield"</string>
+    <string name="constellation_scutum">Scutum</string>
+    <string name="constellation_ser">Serpent</string>
+    <string name="constellation_serpens">Serpens</string>
+    <string name="constellation_serpens_cauda">Serpens Cauda</string>
+    <string name="constellation_sex">Sextant</string>
+    <string name="constellation_sge">Arrow</string>
+    <string name="constellation_sgr">Archer</string>
+    <string name="constellation_tau">Bull</string>
+    <string name="constellation_taurus">Taurus</string>
+    <string name="constellation_tel">Telescope</string>
+    <string name="constellation_tra">Southern Triangle</string>
+    <string name="constellation_tri">Triangle</string>
+    <string name="constellation_tuc">Tourcan</string>
+    <string name="constellation_uma">Great Bear</string>
+    <string name="constellation_umi">Lesser Bear</string>
+    <string name="constellation_ursa_minor">Ursa Minor</string>
+    <string name="constellation_vel">Sail</string>
+    <string name="constellation_vir">Maiden</string>
+    <string name="constellation_vol">Flying Fish</string>
+    <string name="constellation_vul">Little Fox</string>
+    <string name="constellation_vulpecula">Vulpecula</string>
+    <string name="continue_txt">Continue</string>
+    <string name="continuous_preview">Continuous Preview</string>
+    <string name="cooler_off">Off</string>
+    <string name="copy">Copy</string>
+    <string name="copy_to">Copy to</string>
+    <string name="create_align_frames">Create Align Points</string>
+    <string name="create_new_sequence">Create New Sequence</string>
+    <string name="create_new_sequence_bin">Bin</string>
+    <string name="create_new_sequence_exp">EXP(s)</string>
+    <string name="create_new_sequence_filter">Filter</string>
+    <string name="create_new_sequence_repeat">Repeat</string>
+    <string name="create_new_sequence_type">Type</string>
+    <string name="crop__cancel">CANCEL</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="current_net_speed_down">Current Download Speed</string>
+    <string name="current_network">Mobile Network: </string>
+    <string name="custom_object_list">Category</string>
+    <string name="custom_object_list_add">Add</string>
+    <string name="dark">Dark</string>
+    <string name="dc_12V_name_20_char_limit">20 characters is the upper limit</string>
+    <string name="dc_12v_output">Power Output Settings</string>
+    <string name="dc_output_edit_name">Edit</string>
+    <string name="dec_aggressive">DEC Aggr</string>
+    <string name="dec_guide">DEC Mode</string>
+    <string name="dec_guide_auto">Auto</string>
+    <string name="dec_guide_north">North</string>
+    <string name="dec_guide_off">Off</string>
+    <string name="dec_guide_south">South</string>
+    <string name="delay">Delay</string>
+    <string name="delay_wait">Wait to start: </string>
+    <string name="delete">Delete</string>
+    <string name="delete_log_warning_content">Log cannot be recovered once deleted</string>
+    <string name="delete_log_warning_title">Delete Log</string>
+    <string name="delete_sequence_hint">Unable to recover</string>
+    <string name="delete_sequence_hint_title">Delete sequence</string>
+    <string name="device_change_camera_in">Camera %s has been plugged in, please connect it manually</string>
+    <string name="device_change_camera_out">Camera %s lost connection, please re-plug in and connect manually</string>
+    <string name="device_change_storage_emmc">eMMC</string>
+    <string name="device_change_storage_in_content">Switch storage device to %1$s Detected?</string>
+    <string name="device_change_storage_in_opt_keep">Current Storage</string>
+    <string name="device_change_storage_out_content">Files will be saved to %1$s</string>
+    <string name="device_change_storage_out_title">%1$s Ejected</string>
+    <string name="device_change_storage_sd">SD Card</string>
+    <string name="device_change_storage_u">USB Drive</string>
+    <string name="device_change_title">Device Changed</string>
+    <string name="device_change_wheels_in">%s has been plugged in, please connect it manually</string>
+    <string name="device_change_wheels_out">%s lost connection, please re-plug in and connect manually</string>
+    <string name="dialog_add_custom_object_name">Name</string>
+    <string name="dialog_add_custom_object_title">Custom Object</string>
+    <string name="dialog_align_scpoe_content">Confirm to align on %1$s ?</string>
+    <string name="dialog_align_scpoe_title">Align Scope</string>
+    <string name="dialog_copy_failed_content">%1$d file(s) copy failed, check the storage space</string>
+    <string name="dialog_copy_failed_title">Copy Failed</string>
+    <string name="dialog_custom_obj_name_not_null">Input can not be empty</string>
+    <string name="dialog_custom_obj_please_enter_dec">Please enter the DEC</string>
+    <string name="dialog_custom_obj_please_enter_ra">Please enter the RA</string>
+    <string name="dialog_custom_obj_telescope_current_position">Use Current Position of Mount</string>
+    <string name="dialog_cut_failed_content">%1$d file(s) move failed, check the storage space</string>
+    <string name="dialog_cut_failed_title">Move Failed</string>
+    <string name="dialog_delete_custom_object">Delete the custom object?</string>
+    <string name="dialog_dslr_content">Set the following options before using the DSLR</string>
+    <string name="dialog_dslr_content2">Turn off any power-saving and WiFi/NFC features</string>
+    <string name="dialog_dslr_content3">"Current Camera doesn't support Bulb mode, the exposure limit is 30s"</string>
+    <string name="dialog_dslr_k1">Shooting Mode: </string>
+    <string name="dialog_dslr_k2">Image Format: </string>
+    <string name="dialog_dslr_k3">RAW Bit depth: </string>
+    <string name="dialog_dslr_k4">Image Size: </string>
+    <string name="dialog_dslr_k5">Bracketing (BKT): </string>
+    <string name="dialog_dslr_title">Camera Setting Requirements</string>
+    <string name="dialog_dslr_v1">M &amp; Bulb</string>
+    <string name="dialog_dslr_v2">RAW(only)</string>
+    <string name="dialog_dslr_v3">Max(14bit/12bit)</string>
+    <string name="dialog_dslr_v4">L</string>
+    <string name="dialog_dslr_v5">Close or 0</string>
+    <string name="dialog_forget_ssid_content">Your ASIAIR will not auto-connect to this network. Password required to reconnect</string>
+    <string name="dialog_forget_ssid_title">Forget Network</string>
+    <string name="dialog_format_action">Format Now</string>
+    <string name="dialog_format_content">The eMMC has encountered an error and needs to be formatted. Please backup the files in it before formatting</string>
+    <string name="dialog_format_title">eMMC Corruption</string>
+    <string name="dialog_image_manager_copy_content">%1$d files(s) will be copied to %2$s</string>
+    <string name="dialog_image_manager_copy_title">Copying</string>
+    <string name="dialog_image_manager_cut_content">%1$d files(s) will be moved to %2$s</string>
+    <string name="dialog_image_manager_cut_title">Moving</string>
+    <string name="dialog_image_manager_delete_content">%1$d files(s) selected, total size %2$s. Unable to restore</string>
+    <string name="dialog_image_manager_delete_content_short">Unable to restore after deletion</string>
+    <string name="dialog_image_manager_delete_title">Delete Files(s)</string>
+    <string name="dialog_jpg_format_err_content">Only supports RAW, correct and continue</string>
+    <string name="dialog_jpg_format_err_title">Image Format Setting Error</string>
+    <string name="dialog_open_camera_content">Please check if the Camera is connected properly, try to re-plug in the Camera</string>
+    <string name="dialog_open_camera_title">Open Camera Failed</string>
+    <string name="dialog_pick_dec">Select DEC(Coord. in JNow)</string>
+    <string name="dialog_pick_exp">Select EXP</string>
+    <string name="dialog_pick_latitude">Select Latitude</string>
+    <string name="dialog_pick_longitude">Select Longitude</string>
+    <string name="dialog_pick_ra">Select RA(Coord. in JNow)</string>
+    <string name="dialog_policy_content1_a">"ASIAIR软件服务协议
+欢迎您使用ASIAIR软件及相关服务！
+
+为使用ASIAIR软件（以下简称“本软件”）及相关服务，您应当阅读并遵守《ASIAIR软件服务协议》（以下简称“本协议”）等相关协议、规则。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款，以及开通或使用某项服务的单独协议、规则。
+
+除非您已阅读并接受本协议及相关协议、规则等所有条款，否则您应立即停止使用本软件及相关服务。您使用本软件及相关服务，即视为您已阅读并同意上述协议、规则等的约束。您有违反本协议的任何行为时，苏州振旺光电有限公司（以下简称“ZWO”）有权依照违反情况，随时单方限制、中止或终止向您提供本软件及相关服务，并有权追究您的相关责任。
+总则
+
+您确认：
+在您注册成为本软件用户以及使用本软件及相关服务之前，您已充分阅读、理解并接收本协议的所有全部内容，一旦您选择“同意”并完成注册开启流程或使用本软件及相关服务，即表示您同意遵守本协议之约定，并与ZWO达成一致。本协议自您点击确认或以其他方式选择接受本协议之日起成立。
+
+您同意：
+本协议条款变更后，如果您继续使用本软件及相关服务，即视为您已接受变更后的协议。
+
+您承诺：
+在您同意接受本协议并注册成为本软件及相关服务用户时，您是具有法律规定的完全民事权利能力和民事行为能力，能够独立承担民事责任的自然人、法人或其他组织；本协议内容不违反您所属国家地区法律。不具备前述条件的，您应立即终止注册或停止使用本软件及相关服务。
+
+一、协议范围
+
+1.1 协议适用主体范围
+本协议是您与ZWO关于您下载、安装、使用、复制本软件，以及使用ZWO相关服务所订立的协议。
+
+1.2 协议关系及冲突条款
+本协议与 《法律声明及隐私权政策》构成统一整体，上述内容与本协议存在冲突的，以《法律声明及隐私权政策》为准。本协议内容同时包括ZWO可能不时发布并修订的关于本软件及相关服务的相关协议、规则、规范、公告、通知或业务规则等内容。
+
+1.3 本协议签订地为中华人民共和国江苏省苏州市工业园区。
+
+1.4 本协议可能存在多种语言的版本，包含但不限于中文、英文等，以中文版本为准。
+
+二、关于本软件及相关服务
+
+2.1 本软件及相关服务的内容 本软件及相关服务内容为由ZWO为您提供的相关服务，包括但不限于社区图片浏览、图片分享、图片上传、在线交友等功能或内容等服务，具体服务内容以ZWO提供的为准。您知晓并同意，ZWO可能会根据需要更新服务的内容。
+
+2.2 本软件及相关服务的形式
+本软件客户端可能提供多个版本，包括但不限于iOS、Android等多个应用版本，您必须选择与所安装终端设备相匹配的软件版本。
+
+2.3 许可的范围
+ZWO给予您一项个人的、不可转让及非排他性的许可，以按照本协议相关规定使用本软件及相关服务。您可以为非商业目的在单一台终端设备上下载、安装、使用、显示、运行本软件。本条及本协议其他条款未明示授权的其他一切权利仍由ZWO保留，您在行使这些权利时须另外取得ZWO的书面许可。ZWO如果未行使前述任何权利，并不构成对该权利的放弃。
+
+三、用户个人信息保护
+
+3.1 保护用户个人信息是ZWO的一项基本原则，ZWO将按照本协议及《法律声明及隐私权政策》、有关本软件及服务的隐私保护指引（如有）的规定收集、使用、储存和分享您的个人信息，因此，建议您完整地阅读《法律声明及隐私权政策》、有关本软件及服务的隐私保护指引（如有），以帮助您更好地保护您的隐私权。ZWO会采取合理的措施保护用户的个人信息。除法律法规规定的情形外，未经用户许可ZWO不会向第三方公开、透露用户个人信息。ZWO对相关信息采用专业加密存储与传输方式，保障用户个人信息的安全。
+
+3.2 您在注册账号或使用本软件及相关服务的过程中，需要提供一些必要的信息，例如：为向您提供账号注册服务或进行用户身份识别，需要您填写手机号码或或邮箱；附近的人功能需要您同意使用您所在的地理位置信息；若国家法律法规或政策有特殊规定的，您需要提供真实的身份信息。若您提供的信息不完整，则无法使用本软件及相关服务或在使用过程中受到限制。
+
+3.3 一般情况下，您可随时浏览、修改您提交的信息，但出于安全性和身份识别（如号码申诉服务）的考虑，您无法修改注册时提供的初始注册信息及其他验证信息。若您通过已有本软件账号辅助注册新账号，ZWO将视为新账号与前述“已有本软件账号”的初始注册手机号码相同。
+
+3.4 ZWO将运用各种安全技术和程序建立完善的管理制度来保护您的个人信息，以免遭受未经授权的访问、使用或披露。
+
+3.5 未经您的同意，ZWO不会向ZWO以外的任何公司、组织和个人披露您的个人信息，但另有约定及法律法规另有规定的除外。
+
+3.6 ZWO非常重视对未成年人个人信息的保护。若您是18周岁以下的未成年人，在使用ZWO的服务前，应事先取得您家长或法定监护人的书面同意。
+
+3.7 对于本软件及相关服务会如何收集、使用、存储和保护您的个人信息及您享有何种权利，您还可以阅读《法律声明及隐私政策》予以进一步了解。
+
+四、用户权利和义务
+
+4.1 账号使用规范
+您确认，在您开始注册程序使用本软件及相关服务前，您应当具备中华人民共和国法律规定的与您行为相适应的民事行为能力。若您不具备前述与您行为相适应的民事行为能力，则您及您的监护人应依照法律规定承担因此而导致的一切后果。
+此外，您还需确保您不是任何国家、国际组织或者地域实施的贸易限制、制裁或其他法律、规则限制的对象，否则您将自行承担相应责任，包括但不限于无法正常注册及使用本软件及相关服务等。
+4.1.1 账号注册
+在使用本软件及相关服务前，您必须先行注册，取得ZWO提供给您的本软件账号（以下简称“账号”），您同意并承诺：
+4.1.1.1 您应当使用电子邮箱或手机号注册本软件账号以成为本软件用户，账号一经注册成功，您应对您的账户负责，只有您本人可以使用您的账户，账号不可转让、不可赠与、不可继承等。
+4.1.1.2 您注册账号时，应使用您拥有合法使用权的电子邮箱或手机号，并遵守相关协议、规则等的约束。
+4.1.1.3 您所填写的用户信息是真实、准确、完整、有效的，并且没有任何引人误解或者虚假的陈述，且保证ZWO可以通过您所填写的联系方式与您取得联系。
+4.1.1.4 ZWO将向您所填写的联系方式其中之一或其中若干送达各类通知，而此类通知的内容可能对您的权利义务产生重大的有利或不利影响，请您务必及时关注。
+4.1.1.5 您应根据ZWO对于相关服务的要求及时提供相应的身份证明等资料，否则ZWO有权拒绝向您提供相关服务。
+4.1.1.6 您承诺将及时更新您的用户信息以维持该等信息的有效性。
+4.1.1.7 您若以代理人身份代理其他自然人或者单位进行注册的，必须向ZWO提供代理人和被代理人的详细资料和信息及授权书面文件，未向ZWO提供上述资料信息及文件的，ZWO将视注册者为用户。
+
+4.1.2 账号安全
+4.1.2.1 您注册账号使用的电子邮箱或手机号，是您登录及使用本软件及相关服务的凭证。您应当做好电子邮箱账号、手机号、密码的保密措施，因您保密措施不当或您的其他行为，致使上述账号、密码等丢失或泄漏所引起的一切损失和后果，均由您自行承担。您保证不向其他任何人泄露账号及密码，亦不使用其他任何人的本软件账号及密码。
+4.1.2.2 若您发现有他人冒用或盗用您的账号及密码、或任何其他未经您合法授权的情形时，应立即以有效方式通知ZWO（包括但不限于提供您的身份信息和相关身份资料、相关事实情况及您的要求等）。ZWO收到您的有效请求并核实身份后，会根据不同情况采取相应措施。若您提供的信息不完全，导致ZWO无法核实您的身份，而导致ZWO无法进行及时处理，给您带来的损失，您应自行承担。同时，ZWO对您的请求采取措施需要合理期限，对于您通知ZWO以及ZWO根据您的有效通知采取措施之前，由于他人行为给您造成的损失，ZWO不承担任何责任。
+
+4.1.3 账号注销
+4.1.3.1 ZWO保留在您违反国家、地方法律法规规定或违反本协议条款的情况下，中止或终止为您提供部分或全部服务、直至注销ZWO账号的权利。
+4.1.3.2 您理解并同意，如您连续12个月未使用您的邮箱、手机或本软件及相关服务认可的其他方式和密码登录过本软件，且您的账户下不存在任何未到期的服务，ZWO有权注销您的账户，所有的服务将同时终止。
+
+4.2 用户行为规范
+4.2.1 信息内容规范
+4.2.1.1 您对您在本软件及相关服务中发布的相关消息、内容（包括但不限于留言、消息、评论、名称等）负责，保证其不违反相关法律、法规、政策的规定以及公序良俗等。否则，您应及时采取修改、删除或其他措施，或ZWO可对您发布的信息依法或依本协议进行删除或屏蔽。
+4.2.1.2 您发布的相关信息、内容等，不违反相关法律、法规、政策等的规定及本协议或相关协议、规则等，也不会侵犯任何人的合法权益。
+4.2.1.3 您发布的相关消息、内容应当坚持诚信原则，不误导、欺诈、混淆其他用户，尊重其他用户的隐私，不骚扰其他用户，不制造垃圾信息。
+4.2.1.4 您不得从事任何包括但不限于以下的违反法规的行为，也不得为以下违反法规的行为提供便利：
+（1）反对宪法所确定的基本原则的行为；
+（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的行为；
+（3）损害国家荣誉和利益的行为；
+（4）煽动民族仇恨、民族歧视，破坏民族团结的行为；
+（5）破坏国家宗教政策，宣扬邪教和封建迷信的行为；
+（6）散布谣言，扰乱社会秩序，破坏社会稳定的行为；
+（7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的行为；
+（8）侮辱或者诽谤他人，侵害他人合法权益的行为；
+（9）侵害他人知识产权、商业秘密等合法权利的行为；
+（10）恶意虚构事实、隐瞒真相以误导、欺骗他人的行为；
+（11）发布、传送、传播广告信息及垃圾信息；
+（12）违反法律法规底线、社会主义制度底线、国家利益底线、公民合法权益底线、社会公共秩序底线、道德风尚底线和信息真实性底线的“七条底线”要求的；
+（13）其他法律法规禁止的行为。
+
+4.2.2 软件使用规范
+除非法律允许或ZWO书面许可，您使用本软件及相关服务过程中不得从事下列行为：
+4.2.2.1 删除本软件及其副本上关于著作权的信息；
+4.2.2.2 对本软件及相关服务进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现本软件及相关服务的源代码；
+4.2.2.3 对ZWO拥有知识产权的内容实施包括但不限于使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版、建立镜像站点等行为；
+4.2.2.4 对本软件及相关服务或者本软件及相关服务运行过程中释放到任何终端内存中的数据、软件运行过程中客户端与服务器端的交互数据，以及本软件及相关服务运行所必需的系统数据，实施包括但不限于复制、修改、增加、删除、挂接运行或创作任何衍生作品等行为，形式包括但不限于使用插件、外挂或非ZWO经授权的第三方工具/服务接入本软件及相关服务和相关系统；
+4.2.2.5 通过修改或伪造软件运行中的指令、数据，增加、删减、变动软件的功能或运行效果，或者将用于上述用途的软件、方法进行运营或向公众传播，无论这些行为是否为商业目的；
+4.2.2.6 通过非ZWO开发、授权的第三方软件、插件、外挂、系统等，登录或使用ZWO软件及服务，或制作、发布、传播上述工具；
+4.2.2.7 自行或者授权他人、第三方软件对本软件及其相关服务的组件、模块、数据进行干扰；
+4.2.2.8 其他未经ZWO明示授权的行为
+
+4.2.3 您理解并同意，基于用户体验或相关服务平台运营安全、平台规则要求及健康发展等综合因素，ZWO有权选择提供服务的对象，有权决定功能设置，有权决定功能开放、数据接口和相关数据披露的对象和范围。针对以下情形，有权视具体情况中止或终止提供本软件及相关服务，包括但不限于：
+4.2.3.1 违反法律法规或本协议规定的；
+4.2.3.2 影响服务体验的；
+4.2.3.3 存在安全隐患的；
+4.2.3.4 与本软件及相关服务或其服务平台已有主要功能或功能组件相似、相同，或可实现上述功能或功能组件的主要效用的；"</string>
+    <string name="dialog_policy_content1_b">"
+4.2.3.5 直接或间接提供界面、风格、功能、描述或使用者体验与本软件及相关服务或其服务平台类似，可能造成本软件及相关服务用户认为其所使用的功能或服务来源于ZWO或经ZWO授权的；
+4.2.3.6 违背本软件及相关服务或其服务平台运营原则，或不符合ZWO其他管理要求的。
+
+4.2.4 服务运营规范
+除非法律允许或ZWO书面许可，您使用本软件及相关服务过程中不得从事下列行为，也不得为以下行为提供便利：
+4.2.4.1 删除、隐匿、改变开放平台显示或其中包含的任何专利、著作权、商标或其他所有权声明；
+4.2.4.2 以任何方式干扰或企图干扰ZWO任何产品、任何部分或功能的正常运行，或者制作、发布、传播上述工具、方法等；
+4.2.4.3 未经ZWO书面许可，您在应用中不得使用包括但不限于“振旺”、 “振旺光电”、或其他ZWO商标标识或其任何变体、缩写、改写等；
+4.2.4.4 避开、尝试避开或声称能够避开任何内容保护机制，或导致用户认为其直接与本软件及相关服务或ZWO相关产品进行交互；
+4.2.4.5 在未获得ZWO书面许可的情况下，以任何方式使用或为第三方应用申请使用ZWO的URL地址、技术接口等；
+4.2.4.6 在未经过用户同意的情况下，向任何其他用户及他方显示或以其他任何方式提供该用户的任何信息；
+4.2.4.7 公开表达或暗示，您与ZWO之间存在合作关系，包括但不限于相互持股、商业往来或合作关系等，或声称ZWO对您的认可；
+4.2.4.8 以包括但不限于实物或虚拟物品奖励、胁迫、煽动用户分享等任何形式，实施强制、诱导其他用户关注账号、点击链接页面、打开应用程序APP或分享信息等强制、诱导行为的；
+4.2.4.9 其他ZWO认为侵犯ZWO或ZWO其他用户的行为。
+
+4.2.5 对自己行为负责
+4.2.5.1 您充分了解并同意，您必须为自己使用本软件及相关服务及注册账号下的一切行为负责，包括您所发表的任何内容以及由此产生的任何后果。您应对本软件及相关服务中的内容自行加以判断，并自行承担因使用内容而引起的所有风险。
+4.2.5.2 如果ZWO收到权利人通知，主张您的行为，包括但不限于发送或传播的内容侵犯其相关权利的，您同意ZWO有权进行独立判断并采取删除、屏蔽或断开链接等措施。您使用本软件及相关服务或本软件时不得违反国家法律法规、侵害他人合法权益。
+4.2.5.3 您理解并同意，如您被他人投诉侵权或您投诉他人侵权，ZWO有权将争议中相关方的主体、联系方式、投诉相关内容等必要信息提供给其他争议方或相关部门，以便及时解决投诉纠纷，保护他人或您的合法权益。
+
+4.2.6 违约处理
+4.2.6.1 您理解并同意：若您违反法律法规或本协议约定的，ZWO有权随时单方根据相应情形采取以下一项或多项措施（为方便描述，以下称“处罚”。处罚的具体时间长短由ZWO根据您的违法违约情节确定），并公告处理结果：
+（1）警告；
+（2）限制或终止您使用本软件或本软件及相关服务部分或全部功能；
+（3）删除、屏蔽相关内容或断开链接；
+（4）中止、终止您对相应账号的使用；
+（5）注销您的账号；
+（6）要求您自行承担损失并赔偿ZWO因此受到的损失。
+4.2.6.2 您理解并同意，ZWO有权依合理判断对违反有关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门报告等，用户应独自承担由此而产生的一切法律责任。
+4.2.6.3 您理解并同意，因您违反本协议或相关服务条款的规定，导致或产生第三方主张的任何索赔、要求或损失，您应当独立承担责任；ZWO因此遭受损失的，您也应当一并赔偿。
+4.3 第三方产品和服务
+4.3.1 本软件及相关服务可能会使用第三方软件或技术（包括本软件及相关服务可能使用的开源代码和公共领域代码等），这种使用已经获得合法授权。
+4.3.2 您在使用本软件第三方提供的产品或服务时，除遵守本协议约定外，还应遵守第三方的用户协议。如果您没有遵守这些要求，该第三方或者国家机关可能会对您提起诉讼、罚款或采取其他制裁措施，并要求ZWO给予协助，您应当自行承担法律责任。
+4.3.3 因用户使用本软件及相关服务或要求ZWO提供特定服务时，本软件及相关服务可能会调用第三方系统或者通过第三方支持用户的使用或访问，使用或访问的结果由该第三方提供，ZWO不保证通过第三方提供服务及内容的安全性、准确性、有效性及其他不确定的风险，由此若引发的任何争议，应由该第三方负责解决，与ZWO无关，ZWO不承担任何责任，但法律另有强制性规定除外。
+4.3.4 第三方服务提供者可以通过本软件及相关服务向您提供产品或者服务，如您使用兔小巢用户反馈服务、高德地图的定位功能服务等，在此过程中，第三方服务提供者可能会收集、使用和存储您的相关数据或信息，ZWO通过与第三方服务提供者签署的有关协议、本软件及相关服务相关规范以及合理的产品流程设计，严格要求第三方服务提供者获取您的任何数据均应遵守相关法律法规的规定，必须事先获得您的明确同意，采取必要的数据保护措施，且仅为产品或服务之目的合理使用您的相关数据，向您提供修改或删除自己数据的方式，并在停止服务时必须删除全部数据等，尽最大可能保障您的数据和隐私不受侵害。您在接受或使用第三方产品或服务前应充分了解第三方产品或服务的条款及政策。如果您发现有第三方服务提供者存有相关违法违规行为，可以向ZWO投诉，ZWO将查实后予以处理。
+4.3.5 您理解并同意，ZWO有权决定将本软件及相关服务作商业用途，包括但不限于开发、使用本软件及相关服务的部分服务为第三方作推广等，ZWO承诺在推广过程中严格按照本协议约定保护您的个人信息，同时您亦可以根据系统设置选择屏蔽、拒绝接收相关推广信息。
+
+五、免责声明
+
+5.1 软件更新的免责
+5.1.1 为了改善用户体验、完善服务内容，ZWO将不断努力开发新的服务，并为您不时提供软件更新（这些更新可能会采取软件替换、修改、功能强化、版本升级等形式）。
+5.1.2 为了保证本软件及其相关服务的安全性和功能的一致性，ZWO有权在未向您特别通知的情况下而对软件进行更新，或者对软件的部分功能效果进行改变或限制。
+5.1.3 本软件及相关服务新版本发布后，旧版本的软件可能无法使用。ZWO不保证旧版本软件及相关服务继续可用及相应的客户服务，请您随时核对并下载最新版本。
+5.1.4 若存在上述情形由此给您造成损失的，您同意放弃追究ZWO的责任。
+
+5.2 信息收集的免责
+一旦您同意本协议或使用本软件及相关服务，您即同意ZWO按照以下条款来使用和披露您的个人信息。
+5.2.1 用户名和密码
+在您注册为本软件及相关服务用户时，我们会要求您设置用户名和密码来识别您的身份。您仅可通过您设置的密码来使用该账户，如果您泄漏了密码，您可能会丢失您的个人信息，并可能导致对您不利的法律后果。该账户和密码因任何原因受到潜在或现实危险时，您应该立即和ZWO取得联系，在ZWO采取行动前，ZWO对此不负任何责任。
+5.2.2 注册信息
+您注册该账户时可能向ZWO提供您的真实姓名、地址、电话号码和电子邮件地址，您还可以选择来填写相关附加信息（包括但不限于您公司所在的省份和城市、性别、生日和您的职务）。为有针对性地向您提供新的服务，您了解并同意ZWO及其关联公司或您登录的其他网站将通过您的电子邮件地址或该手机通知您这些信息。
+5.2.3 手机信息
+您应保护好您的手机，一旦您手机出借、被盗、遗失或被他人窥视等，均可能引起您本软件及相关服务账户相关个人信息之外泄，ZWO对此不承担任何责任。
+5.2.4 登录记录
+为了保障您使用本软件及相关服务的安全以及不断改进服务质量，ZWO将记录并保存您登录和使用本软件及相关服务的相关信息，但ZWO承诺不将此类信息提供给任何第三方（除双方另有约定或法律法规另有规定及ZWO关联公司外）。
+5.2.5 广告
+ZWO会对本软件及相关服务用户的身份数据进行综合统计，并出于销售和奖励的需要使用或披露，如果您不想接收我们给您发送的商业性电子信息，您可通过短信或邮件方式予以退订。
+5.2.6 外部链接
+本软件及相关服务含有到其他第三方服务提供商的链接，但ZWO对其他第三方服务提供商的隐私保护措施不负任何责任。ZWO可能在任何需要的时候增加第三方为您提供服务。
+5.2.7 安全
+ZWO仅按现有技术提供相应的安全措施来使ZWO掌握的个人信息不丢失，不被滥用和变造。这些安全措施包括但不限于向其他服务器备份数据和对用户密码加密。尽管有这些安全措施，但ZWO不保证这些信息的绝对安全。
+5.2.8 若存在上述情形给您造成损失的，您同意放弃追究ZWO的责任。
+
+5.3 不可抗力
+您理解并同意：在使用本软件及相关服务的过程中，可能会遇到不可抗力等风险因素，使本软件及相关服务发生中断。不可抗力是指不能预见、不能克服并不能避免且对一方或双方造成重大影响的客观事件，包括但不限于自然灾害如洪水、地震、瘟疫流行和风暴等以及社会事件如战争、动乱、政府行为等。>出现上述情况时，ZWO将努力在第一时间与相关单位配合，及时进行修复，若由此给您造成损失的，您同意放弃追究ZWO的责任。
+
+5.4 其他免责条款
+5.4.1 您理解并同意：鉴于网络服务的特殊性，ZWO有权在无需通知您的情况下根据本软件及相关服务的整体运营情况或相关运营规范、规则等，可以随时变更、中止或终止部分或全部的服务，若由此给您造成损失的，您同意放弃追究ZWO的责任。
+5.4.2 您理解并同意：为了向您提供更完善的服务，ZWO有权定期或不定期地对提供本软件及相关服务的平台或相关设备进行检修、维护、升级等，此类情况可能会造成相关服务在合理时间内中断或暂停的，若由此给您造成损失的，您同意放弃追究ZWO的责任。
+5.4.3 您理解并同意：ZWO的服务是按照现有技术和条件所能达到的现状提供的。ZWO会尽最大努力向您提供服务，确保服务的连贯性和安全性；但ZWO不能保证其所提供的服务毫无瑕疵，也无法随时预见和防范法律、技术以及其他风险，包括但不限于不可抗力、病毒、木马、黑客攻击、系统不稳定、第三方服务瑕疵、政府行为等原因可能导致的服务中断、数据丢失以及其他的损失和风险。所以您也同意：即使ZWO提供的服务存在瑕疵，但上述瑕疵是当时行业技术水平所无法避免的，其将不被视为ZWO违约，同时，由此给您造成的数据或信息丢失等损失的，您同意放弃追究ZWO的责任。
+5.4.4 您理解并同意：若由于对以下情形导致的服务中断或受阻，给您造成损失的，您同意放弃追究ZWO的责任：
+5.4.4.1 受到计算机病毒、木马或其他恶意程序、黑客攻击的破坏；
+5.4.4.2 您或ZWO的服务器硬件、网络、系统故障或者终端设备故障；
+5.4.4.3 您操作不当；
+5.4.4.4 您通过非ZWO授权的方式使用本软件及相关服务；
+5.4.4.5 其他ZWO无法控制或合理预见的情形。
+
+六、关于通知
+
+6.1 ZWO可能会以网页公告、网页提示、电子邮箱、手机短信、常规的信件传送、您注册的本软件及相关服务账号的管理系统内发送站内信等方式中的一种或多种，向您送达关于本软件及相关服务的各种规则、通知、提示等信息，该等信息一经ZWO采取前述任何一种方式公布或发送，即视为您已经接受并同意，对您产生约束力。若您不接受的，请您书面通知ZWO，否则视为您已经接受、同意。
+
+6.2 若由于您提供的电子邮箱、手机号码、通讯地址等信息错误，导致您未收到相关规则、通知、提示等信息的，您同意仍然视为您已经收到相关信息并受其约束，一切后果及责任由您自行承担。
+
+6.3 若您有事项需要通知ZWO的，应当按照本软件及相关服务对外正式公布的联系方式通知ZWO。
+
+七、责任限制
+
+7.1 ZWO仅对本协议中列明的责任承担范围负责。
+
+ 
+7.2 本软件及相关服务的用户信息是由您本人自行提供的，ZWO无法保证该信息之准确、及时和完整。
+
+ 
+7.3 ZWO不对本软件及相关服务提供任何形式的保证，包括但不限于以下事项：
+ 7.3.1 本软件及相关服务符合您的需求；
+7.3.2 本软件及相关服务不受干扰、及时提供或免于出错。
+7.4 本软件及相关服务之合作单位，所提供之服务品质及内容由该合作单位自行负责。 
+
+7.5 在法律允许的情况下，ZWO对于与本协议有关或由本协议引起的任何间接的、惩罚性的、特殊的、派生的损失（包括但不限于业务损失、收益损失、利润损失或其他经济利益的损失），不论是如何产生的，也不论是由对本协议的违约（包括但不限于违反保证）还是由侵权造成的，均不负有任何责任。
+
+7.6 除本协议另有规定外，在任何情况下，ZWO对本协议所承担的违约赔偿责任总额不超过向您收取的当次服务费用总额。
+
+八、知识产权
+
+8.1 本软件及相关服务上所有内容，包括但不限于著作、图片、档案、资讯、资料、App架构、App画面的安排、设计，均由ZWO或ZWO关联企业依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等，但您自行上传的作品除外。
+
+8.2 非经ZWO或ZWO关联企业书面同意，任何人不得为商业或非商业目的擅自或许可第三方实施包括但不限于使用、修改、复制、公开传播、改变、散布、发行或公开发表上述内容等行为。 
+
+8.3 尊重知识产权是您应尽的义务，如有违反，您应承担损害赔偿责任
+
+九、法律适用与管辖
+
+9.1 适用范围
+本协议的成立、生效、履行、解释及纠纷解决，适用中华人民共和国大陆地区法律（不包括冲突法）。 
+
+9.2 争议解决
+在协议执行期间如果各方发生争议，友好协商解决。如果协商不成，各方同意提交本协议签订地（即江苏省苏州市工业园区）有管辖权的人民法院管辖。
+
+9.3 不可抗力
+9.3.1 由于地震、台风、战争、罢工、政府行为、非因各方原因发生的火灾、基础电信网络、黑客攻击、尚无有效防御措施的计算机病毒的发作及其它各方不能预见并且对其发生和后果不能防止并避免的不可抗力原因，致使任何一方不能履行其在本协议项下的义务，该方不承担由此给他方造成的损失；该方应及时通知他方不可抗力发生的情况，各方按不可抗力对本协议的影响程度，协商是否终止本协议，免除或部分免除本协议的义务。
+9.3.2 鉴于网络安全技术的局限性、相对性以及该等行为的不可预见性，因此如因本软件及相关服务遭遇病毒、网络入侵和攻击破坏（包括但不限于DDOS）等危害网络安全事项或行为，给您或者其他用户的网络或本软件及相关服务（包括但不限于本地及外地和国际的网络、服务器等）带来危害，或影响您与国际互联网或者您与特定网络、服务器及您内部的通畅联系，您可决定暂停或终止服务。
+
+9.4 保密
+9.4.1 任何一方（以下简称“接受方”）对在本协议履行过程中以任何方式获知的另一方（以下简称“披露方”）商业秘密或其他技术及经营信息（以下简称“保密信息”），包括但不限于产品资料，产品计划，价格，财务及营销规划，业务战略，客户信息，客户数据，研发，软件，硬件，API应用数据接口，技术说明，设计，特殊公式，特殊算法等，均负有保密义务，无论上述信息和资料以何种形式或载于何种载体，无论披露方在披露时是否以口头、图像或书面等方式表明其具有保密性。
+9.4.2 接收方不得向任何其他第三方透露或泄露上述保密信息。
+9.4.3 本条上述限制条款不适用于以下情况：
+9.4.3.1 在签署本协议之时或之前，该保密信息已以合法方式属接受方所有；
+9.4.3.2 保密信息在通知给接受方时，已经公开或能从公开领域获得；
+9.4.3.3 保密信息是接受方从与其没有保密或不透露义务的第三方获得的；
+9.4.3.4 在不违反本协议约定责任的前提下，该保密信息已经公开或能从公开领域获得；
+9.4.3.5 该保密信息是接受方或其关联或附属公司独立开发，而且未从通知方或其关联或附属公司获得的信息中获益；
+9.4.3.6 接受方应法院或其它法律、行政管理部门要求（通过口头提问、询问、要求资料或文件、传唤、民事或刑事调查或其他程序）因而透露保密信息；
+9.4.3.7 接受方为向行政管理部门、行业协会等机构申请某项业务资质、获得某项认定、或符合国家、行业标准/认证，需结合对方情况向前述机构提交材料或进行说明的而披露的信息，在该等情况下，接受方应秉持必要情况下最少披露原则及要求因此获知保密信息的机构按不低于本协议的标准予以保密。
+9.4.4 您和ZWO都应尽最大的努力保护上述保密信息不被泄露。一旦发现有上述保密信息泄露事件，双方应合作采取一切合理措施避免或者减轻损害后果的产生。如因此给对方造成损失的，应赔偿因此给对方造成的直接经济损失。
+
+9.5 权利保留
+任何一方没有行使其权利或没有就对方的违约行为采取任何行动，不应被视为是对权利的放弃或对追究违约责任或义务的放弃。任何一方放弃针对对方的任何权利，或放弃追究对方的任何过失，不应视为对任何其他权利或追究任何其他过失的放弃。所有放弃权利的声明应以书面形式作出。
+
+9.6 附件
+本协议所属附件及补充协议与本协议具有同等法律效力。
+
+十、其他
+
+10.1 本协议签订地为中华人民共和国江苏省苏州市工业园区。
+
+10.2 本协议所有条款的标题仅为阅读方便，本身并无实际涵义，不能作为本协议涵义解释的依据。
+
+（以下无正文）
+
+苏州振旺光电有限公司
+
+Copyright © 2011 - 2021 ZWO Company."</string>
+    <string name="dialog_policy_content2">"法律声明及隐私权政策
+提示条款：
+
+苏州振旺光电有限公司是依据中华人民共和国法律成立的有限责任公司。我们重视维护和保护用户的个人信息。有鉴于此，我们制定本《法律声明及隐私权政策》（以下简称“本政策”），本政策仅适用于ZWO自主研发的ASIAIR软件产品或服务。我们提醒您：在使用产品或服务前，请您务必仔细阅读并透彻理解本政策，在确认充分理解并同意后方使用产品或服务。一旦您开始使用产品或服务，将被视为对本政策内容的接受和认可。
+
+最近更新日期：2021年9月22日
+
+定义条款：
+
+本协议是用户与ZWO之间关于用户购买AIR硬件，下载、安装、使用AIR软件所订立的协议。购买和使用AIR的个人或组织，本协议统称为“用户”。
+您：指使用我们产品或服务的个人，包括通过机构客户名下账号使用我们产品或服务的个人。
+我们：指软件产品或服务的提供者苏州振旺光电有限公司及其母公司、子公司、关联公司等（或称“ZWO”）。
+产品或服务：指ZWO自主研发的ASIAIR软件产品或服务。
+个人信息： 是指您提交的或者我们收集的以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息，包括姓名、身份证件号码、通信通讯联系方式、住址、账号密码、财产状况、行踪轨迹等。
+儿童：指不满十四周岁的未成年人。
+
+本政策将帮助您了解以下内容：
+
+一、我们如何收集和使用您的个人信息
+二、我们如何使用 Cookie 和同类技术
+三、我们如何共享、转让、公开披露您的个人信息
+四、我们如何保护您的个人信息
+五、您的权利
+六、我们如何处理儿童的个人信息
+七、您的个人信息如何储存及如何在全球范围转移
+八、本政策如何更新
+九、如何联系我们
+
+我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。
+
+一、我们如何收集和使用您的个人信息
+
+1.1 您使用ZWO软件产品或服务过程中我们收集和使用的个人信息
+1.1.1 在您使用我们产品或服务的过程中，我们仅会出于本政策所述的业务功能，收集和使用您的个人信息，收集个人信息的目的在于向您提供产品或服务、优化我们的产品或服务，以及保障您的账号安全，您有权自行选择是否提供该个人信息，但多数情况下，如果您不提供，我们可能无法向您提供相应的服务，也无法回应您遇到的问题。
+1.1.2 具体而言，在您使用我们的产品或服务时，允许我们收集您自行向我们提供的或为向您提供服务所必要的个人信息包括：账户昵称、密码、密码保护选项、电子邮箱、手机号码、位置信息（如登录IP地址、GPS位置以及能够提供相关信息的WiFi接入点等相关信息）、设备信息（包括设备型号、操作系统、唯一设备标识符）等。
+1.1.3 如您提供以下额外个人信息，将有助于我们给您提供更好的服务和体验：您的生日、性别、所在地、工作行业。如果您不提供这些个人信息，将不会影响使用产品或服务的基本功能。
+1.1.4 对于我们收集的个人信息，我们将用于为您创建账号、提供查看附近的人或观测点服务、内容分享服务、搜索服务、提供发布服务等。
+1.1.5 您提供的上述个人信息，将在您使用本服务期间持续授权我们使用。在您停止使用产品或服务时，我们将停止使用并删除上述个人信息。
+1.1.6 我们保证会依法对收集后的个人信息进行去标识化或匿名化处理，对于无法单独或者与其他信息结合识别自然人个人身份的信息，不属于需要进行去标识化或匿名化处理的个人信息。如果我们将不属于需要进行去标识化或匿名化处理的信息与其他信息结合识别到您的个人身份时，或者与您的个人信息结合使用时，我们会在结合使用期间，将此类信息作为您的个人信息按照本政策对其进行去标识化或匿名化处理。
+1.1.7 为了更好运营和改善我们的技术和服务，或出于商业策略的变化，当我们提供的产品或服务所需的个人信息收集、使用、处理超出上述范围或者要将收集到的个人信息用于本政策未载明的其他用途，或当我们要将基于特定目的收集而来的信息用于其他目的时，我们会在获取个人信息后的合理期限内或处理个人信息前通知您，并获得您的授权同意。
+
+1.2 征得授权同意的例外 请您理解，根据法律法规及相关国家标准，以下情形中，我们收集和使用您的个人信息无需征得您的授权同意：
+1.2.1 与国家安全、国防安全直接相关的；
+1.2.2 与公共安全、公共卫生、重大公共利益直接相关的；
+1.2.3 与犯罪侦查、起诉、审判和判决执行等直接相关的；
+1.2.4 出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；
+1.2.5 所收集的您的个人信息是您自行向社会公众公开的；
+1.2.6 从合法公开披露的信息中收集的您的个人信息，如合法的新闻报道、政府信息公开等渠道；
+1.2.7 根据您的要求签订或履行合同以及其他书面文件所必需的；
+1.2.8 用于维护所提供的产品及/或服务的安全稳定运行所必需的，例如发现、处置产品及/或服务的故障；
+1.2.9 个人信息控制者为新闻单位且为公共利益其在开展合法的新闻报道所必需的；
+1.2.10 学术研究机构基于公共利益开展统计或学术研究所必要，且对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化或匿名化处理的。
+1.2.11 法律法规规定的其他情形。
+
+二、我们如何使用Cookie和同类技术
+
+2.1 Cookie
+2.1.1 为确保产品或服务正常运转，我们会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。Cookie 通常包含标识符、站点名称以及一些号码和字符。借助于 Cookie，产品或服务能够存储您的访问偏好数据，我们只能读取我们提供的Cookies。
+2.1.2 我们不会将 Cookie 用于本政策所述目的之外的任何用途。您可根据自己的偏好管理或删除 Cookie。您可以清除计算机上保存的所有 Cookie，大部分网络浏览器都设有阻止Cookie 的功能。但如果您这么做，则需要在每一次访问我们的产品或服务时亲自更改用户设置。
+
+2.2 网站信标和像素标签
+2.2.1 除 Cookie 外，我们还会在产品或服务上使用网站信标和像素标签等其他同类技术。例如，我们向您发送的电子邮件可能含有链接至我们产品或服务内容的点击链接。
+2.2.2 如果您点击该链接，我们则会跟踪此次点击，帮助我们了解您的产品或服务偏好并改善客户服务。网站信标通常是一种嵌入到网站或电子邮件中的透明图像。借助于电子邮件中的像素标签，我们能够获知电子邮件是否被打开。如果您不希望自己的活动以这种方式被追踪，则可以随时从我们的寄信名单中退订，退订方式如本政策第九条所述。
+
+2.3 如果您的浏览器启用了 Do Not Track，那么我们的所有产品或服务都会尊重您的选择。
+
+三、我们如何共享、转让、公开披露您的个人信息
+
+3.1 共享
+我们不会与其他的任何公司、组织和个人分享您的个人信息，但以下情况除外：
+3.1.1 在获取明确同意的情况下共享：获得您的明确同意后，我们会与其他方共享您的个人信息。
+3.1.2 我们可能会根据法律法规规定，或按政府主管部门的强制性要求，对外共享您的个人信息。
+3.1.3 与我们的关联公司共享：您的个人信息可能会与我们的关联公司共享。我们只会共享必要的个人信息，且受本政策中所声明目的的约束。关联公司如要改变个人信息的处理目的，将再次征求您的授权同意。
+3.1.4 与授权合作伙伴共享：仅为实现本政策中声明的目的，我们的某些服务将由授权合作伙伴提供。我们可能会与合作伙伴共享您的某些个人信息，以提供更好的客户服务和用户体验。我们仅会出于合法、正当、必要、特定、明确的目的共享您的个人信息，并且只会共享提供服务所必要的个人信息。为了更好运营和改善技术和服务，您同意我们和授权合作伙伴在符合相关法律法规的前提下可将收集的信息用于其他服务和用途。
+
+3.2 以下列举了具体的授权合作伙伴，并提供了该第三方的隐私权政策链接，我们建议您阅读该第三方的隐私权政策：
+3.2.1 消息推送服务供应商：
+第三方SDK名称：极光推送
+收集个人信息目的：信息推送
+收集个人数据类型：设备平台、设备厂商及品牌、设备型号及系统版本、设备识别码、设备序列号等设备信息，应用列表信息、网络信息以及位置相关信息，我们在向您推送消息时，我们可能会授权极光推送进行链路调节，相互促活被关闭的SDK推送进程，保障您可以及时接收到我们向您推送的消息；
+第三方SDK隐私声明或者开发指南：https://docs.jiguang.cn/jpush/guideline/intro
+3.2.2 地图服务供应商
+第三方SDK名称：高德
+收集个人信息目的：为您提供查看附近的人或观星点服务
+收集个人数据类型：设备信息、位置信息、WLAN及其他传感器信息 第三方SDK隐私声明或者开发指南：https://lbs.amap.com/home/privacy
+3.2.3 意见收集服务供应商
+第三方服务：腾讯兔小巢
+收集个人信息目的：收集用户意见反馈
+收集个人数据类型：我们会将您的手机号、邮箱地址、昵称、头像提供给腾讯公司
+第三方SDK隐私声明或者开发指南：https://docs.qq.com/doc/DTVZuZE9ncFhtekFW
+3.2.4 缺陷收集供应商
+第三方SDK名称：Bugly Android SDK
+收集个人信息目的：收集App崩溃信息
+收集个人数据类型：日志信息（包括：Logcat日志以及App奔溃堆栈信息）、设备ID、联网信息、系统名称、系统版本以及国家码
+第三方SDK隐私声明或者开发指南：https://static.bugly.qq.com/bugly-sdk-privacy-statement.pdf
+3.2.5 广告、媒体：我们可能会将收集到的信息共享给广告、媒体以及我们的其他授权合作伙伴，用于包括优化广告投放和提升营销效果等商业化用途。如果您不想接收我们给您发送的商业性电子信息，您可以联系我们退订；
+
+3.3 对我们与之共享个人信息的公司、组织和个人，我们会与其签署严格的保密协定，要求他们按照我们的说明、本政策以及其他任何相关的保密和安全措施来处理个人信息。
+
+3.4 转让我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外：
+3.4.1 在获取明确同意的情况下转让：获得您的明确同意后，我们会向其他方转让您的个人信息；
+3.4.2 在涉及合并、收购或破产清算时，如涉及到个人信息转让，我们会再要求新的持有您个人信息的公司、组织继续受本政策的约束，否则我们将要求该公司、组织就新的隐私权政策重新向您征求授权同意。
+
+3.5 公开披露我们仅会在以下情况下，公开披露您的个人信息：
+3.5.1 获得您明确同意后；
+3.5.2 基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。
+
+3.6 共享、转让、公开披露信息时事先征得授权同意的例外
+请您理解，根据法律法规及相关国家标准，以下情形中，我们共享、转让、公开披露您的个人信息无需征得您的授权同意：
+3.6.1 与国家安全、国防安全直接相关的；
+3.6.2 与公共安全、公共卫生、重大公共利益直接相关的；
+3.6.3 与犯罪侦查、起诉、审判和判决执行等直接相关的；
+3.6.4 出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的； 3.6.5 您自行向社会公众公开的信息；
+3.6.6 从合法公开披露的信息中收集的，如合法的新闻报道、政府信息公开等渠道。
+
+四、我们如何保护您的个人信息
+
+4.1 我们已使用符合业界标准的安全防护措施保护您提供的个人信息，防止个人信息遭到未经授权的访问、公开披露、使用、修改、损坏或丢失。我们会采取一切合理可行的措施，保护您的个人信息。例如，我们会使用加密技术确保个人信息的保密性；我们会使用受信赖的保护机制防止个人信息遭到恶意攻击；我们会部署访问控制机制，确保只有授权人员才可访问个人信息；以及我们会举办安全和隐私保护培训课程，加强员工对于保护个人信息重要性的认识。
+
+4.2 我们会采取一切合理可行的措施，确保未收集无关的个人信息。我们只会在达成本政策所述目的所需的期限内保留您的个人信息，除非需要延长保留期或受到法律的允许。
+
+4.3 互联网并非绝对安全的环境，而且电子邮件、即时通讯、及与其他个人的交流方式并未加密，我们强烈建议您不要通过此类方式发送个人信息。
+
+4.4 保障您的个人信息安全，需要您和我们的共同配合，请您不向他人泄露登录账号和密码，如您发现自己的个人信息尤其是您的账号或密码发生泄露时，请您立即联络我们，以便我们根据您的申请采取相应合理措施。
+
+4.5 互联网环境并非百分之百安全，我们将尽力确保您发送给我们的任何信息的安全性。即使我们做出了很大努力，采取了一切合理且必要的措施，仍然有可能无法杜绝您的个人信息被非法访问、被非法盗取，被非法篡改或毁坏，导致您的合法权益受损，请您理解信息网络的上述风险并自愿承担。
+4.6 在不幸发生个人信息安全事件后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施等。我们将及时将事件相关情况以邮件、信函、电话、推送通知等方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。
+
+五、您的权利
+
+5.1 访问您的个人信息
+您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使访问权，可以通过以下方式自行访问：
+5.1.1 个人信息--如果您希望访问或修改您的个人资料信息，可以通过访问ASIAIR软件应用中的个人信息相关页面执行此类操作；个人密码--如果您希望访问修改您的个人密码，可以通过访问ASIAIR软件应用中的账号安全页面执行此类操作。
+5.1.2 如果您无法通过上述方式访问这些个人信息，您可以随时发送电子邮箱至support@zwoptical.com，我们会尽快回复您的访问请求。
+
+5.2 更正您的个人信息
+当您发现我们处理的关于您的个人信息有错误时，您有权要求我们作出更正。您可以随时发送电子邮箱至support@zwoptical.com，我们会尽快回复您的访问请求。
+
+5.3 删除您的个人信息
+在以下情形中，您可以向我们提出删除个人信息的请求：
+5.3.1 如果我们处理个人信息的行为违反法律法规；
+5.3.2 如果我们收集、使用您的个人信息，却未征得您的同意；
+5.3.3 如果我们处理个人信息的行为违反了与您的约定；
+5.3.4 如果您不再使用我们的产品或服务，并且您注销了账号；
+5.3.5 如果我们不再为您提供产品或服务。
+我们将会根据您的删除请求进行评估，若满足相应规定，我们将会采取相应步骤进行处理。
+5.3.6 当您向我们提出删除请求时，我们可能会要求您进行身份验证，以保障账户的安全。当您从我们的服务中删除信息后，因为适用的法律和安全技术，我们可能不会立即从备份系统中删除相应的信息，我们将安全存储您的信息直到备份可以清除或实现匿名化。但您删除的决定，不会影响我们此前基于您的授权而开展的个人信息处理。
+
+5.4 改变您授权同意的范围
+每个业务功能需要一些基本的个人信息才能得以完成（见本政策“鉴于部分”）。对于个人信息的收集和使用，您可以随时给予或收回您的授权同意。您可以通过以下方式自行操作：
+5.4.1 通过访问ASIAIR软件应用中的授权页面，对您个人信息的授权同意情况进行重新设置。
+5.4.2 当您收回同意后，我们将不再处理相应的个人信息。同时也请您注意，您撤销授权同意可能会导致某些后果，例如我们可能无法继续为您提供相应的服务或特定的功能，但您收回同意的决定，不会影响此前基于您的授权而开展的个人信息处理。
+
+5.5 个人信息主体注销账户
+5.5.1 您随时可注销注册的账户，请发送邮件至support@zwoptical.com。
+5.5.2 在注销账户之后，我们将停止为您提供产品或服务并依据您的要求，删除或匿名化您的信息，法律法规另有规定的除外。这也将可能导致您失去对您账户中数据的访问权，请您谨慎操作。
+
+5.6 约束信息系统自动决策
+在某些业务功能中，我们可能仅依据信息系统、算法等在内的非人工自动决策机制作出决定。如果这些决定显著影响您的合法权益，您有权要求我们作出解释，我们也将提供适当的救济方式。
+
+5.7 响应您的上述请求
+5.7.1 为保障安全，您可能需要提供书面请求，或以其他方式证明您的身份。我们可能会先要求您验证自己的身份，然后再处理您的请求。
+5.7.2 我们将在十五个工作日内作出答复。如您不满意，还可以通过以下途径投诉：补充其他的申诉途径。
+5.7.3 对于您合理的请求，我们原则上不收取费用，但对多次重复、超出合理限度的请求，我们将视情况收取一定成本费用。对于那些无端重复、需要过多技术手段（例如，需要开发新系统或从根本上改变现行惯例）、给他人合法权益带来风险或者非常不切实际的请求，我们可能会予以拒绝。也请您理解，出于安全保障的考虑、相关法律法规的要求或技术上的限制，对于您的某些请求我们可能无法做出响应，例如以下情形：
+5.7.3.1 与个人信息控制者履行法律法规规定的义务相关的；
+5.7.3.2与国家安全、国防安全直接相关的；
+5.7.3.3 与公共安全、公共卫生、重大公共利益直接相关的；
+5.7.3.4 与犯罪侦查、起诉、审判和执行判决等直接相关的；
+5.7.3.5 个人信息控制者有充分证据表明个人信息主体存在主观恶意或滥用权利的；
+5.7.3.6 出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；
+5.7.3.7 响应个人信息主体的请求将导致个人信息主体或其他个人、组织的合法权益受到严重损害的；
+5.7.3.8 涉及商业秘密的。
+
+六、我们如何处理儿童的个人信息
+
+6.1 我们非常重视儿童个人信息的保护。如果没有父母或监护人的同意，儿童不应创建自己的用户账户。如您为儿童，我们要求您请您的父母或监护人仔细阅读本政策，并在征得您的父母或监护人同意的前提下使用我们的产品或服务并向我们提供信息。
+6.2 对于经父母或监护人同意而收集儿童个人信息的情况，我们只会在受到法律允许、父母或监护人明确同意或者保护儿童所必要的情况下储存、使用、共享、转让或公开披露此信息，否则我们会设法尽快删除相关数据。
+6.3 鉴于现有技术和业务模式的限制，我们很难主动识别儿童的个人信息，如果您发现我们在不知情的情况下或在未事先获得可证实的监护人同意的情况下收集了儿童的个人信息，您可以及时联系我们，我们将在发现后设法及时删除，如果我们自己发现前述情形的，我们也会及时删除，法律要求我们保留的除外。
+
+七、您的个人信息如何储存及如何在全球范围转移
+
+7.1 原则上，我们在中华人民共和国境内收集和产生的个人信息，将存储在中华人民共和国境内。我们只会在本政策所述目的和用途所需的期限内和法律法规规定的最短期限内保留您的个人信息，超出上述保留期间后，我们会根据适用法律法规的要求删除您的个人信息或匿名化处理。法律法规另有规定，或出于公共利益、科学历史研究等的目的，或您的另行授权同意的除外，我们可能需要较长时间保留相关数据。
+7.2 由于我们通过遍布全球的资源和服务器提供产品或服务，这意味着，在获得您的授权同意后，您的个人信息可能会被转移到您使用产品或服务所在国家/地区的境外管辖区，或者受到来自这些管辖区的访问。
+7.3 此类管辖区可能设有不同的数据保护法，甚至未设立相关法律。在实施上述行为前，我们会征求您的同意。若您同意将您的个人信息进行转移，我们会确保您的个人信息得到在中华人民共和国境内足够同等的保护。例如，我们会请求您对跨境转移个人信息的同意，或者在跨境数据转移之前实施数据去标识化等安全举措。
+
+八、本政策如何更新
+
+8.1 本政策可能变更。未经您明确同意，我们不会削减您按照本政策所应享有的权利。我们会在本页面上发布对本政策所做的任何变更。
+8.2 对于重大变更，我们还会提供更为显著的通知。本政策所指的重大变更包括但不限于：
+8.2.1 我们的服务模式发生重大变化。如处理个人信息的目的、处理的个人信息类型、个人信息的使用方式等； 8.2.2 我们在所有权结构、组织架构等方面发生重大变化。如业务调整、破产并购等引起的所有者变更等；
+8.2.3 个人信息共享、转让或公开披露的主要对象发生变化；
+8.2.4 您参与个人信息处理方面的权利及其行使方式发生重大变化；
+8.2.5 我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化时；
+8.2.6 个人信息安全影响评估报告表明存在高风险时。
+
+九、如何联系我们
+
+9.1 如果您对本政策有任何疑问、意见或建议，或者希望撤回已授权我们使用的个人信息（注销账号、取消授权但会导致部分功能不能正常使用），您可以通过以下方式与我们联系：
+电子邮件：support@zwoptical.com
+电　　话：+86 051265923102
+9.2 如果您对我们的回复不满意，特别是我们的个人信息处理行为损害了您的合法权益，您还可以向网信、电信、公安及工商等监管部门进行投诉或举报。
+
+（以下无正文）
+
+Copyright © 2011 - 2021 ZWO Company.
+"</string>
+    <string name="dialog_policy_tip">"欢迎使用ASIAIR。请你务必审慎阅读、充分理解“用户协议和隐私政策”各条款。
+你可阅读《用户协议》和《隐私政策》了解详细信息。
+如你同意，请点击“同意”开始接受我们的服务。"</string>
+    <string name="dialog_policy_title">用户协议和隐私政策</string>
+    <string name="dialog_policy_title_0">协议和隐私</string>
+    <string name="dialog_policy_title_1">用户协议</string>
+    <string name="dialog_policy_title_2">隐私政策</string>
+    <string name="dialog_reject_294_bin1_content">ASI294MM Pro Bin1 exposure is not supported. Use the newest ASIAIR for the best experience</string>
+    <string name="dialog_reject_6200_content">ASI6200 series cameras are not supported. Use the newest ASIAIR for the best experience</string>
+    <string name="dialog_switch_device_manual_enter_ip_hint">Device IP</string>
+    <string name="dialog_tip_auto_run_fail_auto_exp_abort">Autorun stopped due to Auto-Flat stopped manually</string>
+    <string name="dialog_tip_auto_run_fail_dither_timeout">Dither timeout, the Autorun stopped</string>
+    <string name="dialog_tip_auto_run_fail_exposure">Exposure failed, the Autorun stopped</string>
+    <string name="dialog_tip_auto_run_fail_img_saved">Image saved failed, the Autorun stopped</string>
+    <string name="dialog_tip_auto_run_fail_set_bin">Failed to set the camera Bin, the Autorun stopped</string>
+    <string name="dialog_tip_auto_run_fail_set_or_get_efw">Failed to set the EFW, the Autorun stopped</string>
+    <string name="dialog_tip_auto_run_fail_turn_on_guide">Failed to turn on the Guide after Meridian flipped, the Autorun stopped</string>
+    <string name="dialog_tip_calibration_data">"Calibration data shows the guide direction in the RA and Dec
+You can use the calibration data from last calibration. If you do not often reinstall your equipment, we suggest you turn on 'Auto Restore Calibration' in Guide Settings page, so the calibration data will be saved after power disconnection
+If the camera is rotated or graph is not good, try to clear the calibration data, stop the current guide and restart. The calibration step will automatically restart and generate new calibration data
+The RA of the calibration data will be reversed after the mount carry outs Meridian Flip, and ASIAIR will complete this process automatically. However, ASIAIR will not know the orientation of the mount if the power is disconnected, so the RA of the calibration will be incorrect, and you will need to tap Flip to correct the calibration data"</string>
+    <string name="dialog_tip_for_dslr_cable_1">Some DSLRs cameras have exposure limits, you can use a Shutter Release Cable to connect ASIAIR and DSLR to enable longer exposure</string>
+    <string name="dialog_tip_for_dslr_cable_2">The following Nikon models need a Shutter Release Cable: D300, D300s, D3200, D3300, D3400, D700, D90, D5000, D5100, D7000, D3, D3s, D3x</string>
+    <string name="dialog_tip_for_flat_auto_exp">"Place the flat device before capturing. ASIAIR will calculate the exposure time automatically, and the maximum exposure time is 10s
+Please reduce brightness of the light source if the image shows horizontal lines"</string>
+    <string name="dialog_tip_for_flat_auto_exp_fail">Auto EXP calculation failed, capture stopped. Try to lower the Gain/ISO or light source brightness</string>
+    <string name="dialog_tip_for_merid_flip_recalibrate">The calibration data of some mount before Meridian Flip may not be usable after Meridian Flip, you can enable it in such case</string>
+    <string name="dialog_tip_for_mono_bin_1">"Mono Bin is a special pixel combination for color cameras only
+Bin refers to the merging of adjacent pixels into a large pixel. For color camera, it will combine the closest pixel with the same color, while Mono Bin ignores the information of the Bayer matrix and select the closest pixel value to merge and get a grayscale image"</string>
+    <string name="dialog_tip_for_mono_bin_2">You can consider enabling Mono Bin for narrowband photography when you are using a color camera, in order to save storage space and reduce the difficulty in post-processing</string>
+    <string name="dialog_tip_mount_off_line_content">Please check the cable or WiFi connection status</string>
+    <string name="dialog_tip_mount_off_line_title">Mount Disconnected</string>
+    <string name="dialog_tip_tracking_err_content">Telescope pointing maybe near the meridian, or will below the horizon</string>
+    <string name="dialog_tip_tracking_err_title">Enable Tracking Failed</string>
+    <string name="discover_date">Date: </string>
+    <string name="discoverer">Discoverer: </string>
+    <string name="dismiss">Dismiss</string>
+    <string name="display_correction">Corrections</string>
+    <string name="dither_distance">Pixels</string>
+    <string name="dither_distance_tip">Defines the upper limit that the move in a random direction and distance</string>
+    <string name="dither_enable_tip">Dither only works with Lights in Autorun, Live and Plan Modes</string>
+    <string name="dither_enable_title">Dither</string>
+    <string name="dither_interval">Interval</string>
+    <string name="dither_interval_tip">Defines how many images to take before making dithering. 1 means to make dithering after every image</string>
+    <string name="dither_mark">Dither</string>
+    <string name="dither_ra_only">RA Only</string>
+    <string name="dither_setting">Dither Settings</string>
+    <string name="done">Done</string>
+    <string name="e_g_ip">eg: 192.168.12.21</string>
+    <string name="east_long">East</string>
+    <string name="edit_exist_sequence">Edit Sequence</string>
+    <string name="edit_filter_name">Filter Settings</string>
+    <string name="edit_txt">Edit</string>
+    <string name="edit_wifi_name">SSID</string>
+    <string name="edit_wifi_name_title">Edit Name</string>
+    <string name="edit_wifi_pwd">Passwd</string>
+    <string name="edit_wifi_pwd_title">Edit Password</string>
+    <string name="edit_wifi_title">Edit WiFi</string>
+    <string name="empty_list_tip">No data</string>
+    <string name="empty_list_tip_image">No image yet</string>
+    <string name="empty_result">"You haven't added any objects yet. Go and add"</string>
+    <string name="empty_result_for_search">No search results, try another keyword</string>
+    <string name="empty_tip_of_objects_in_plan">Tap the button below to add a target</string>
+    <string name="empty_tip_of_plans_in_autorun">Tap the top right corner and create a Plan to start your shooting journey!</string>
+    <string name="empty_tip_of_plans_in_list">"Tap 'Add' to create a plan"</string>
+    <string name="enter">Enter</string>
+    <string name="eqmod_celestron_avx_dialog_connect_success">Complete the Quick Align on the NexStar HC</string>
+    <string name="eqmod_celestron_avx_dialog_content">"1 Power on the mount and Set to Index according to the prompt on HC
+2 Choose [Celestron AVX/CGE/CGEM/CGX] in ASIAIR app and turn on the Switch
+3 Go back to NexStar HC and complete the Quick Align"</string>
+    <string name="eqmod_celestron_avx_dialog_content_tip">Ensure the firmware of the NexStar HC and motor control is the latest</string>
+    <string name="eqmod_celestron_dialog_content">"1 Power on the mount and adjust the index position follow the prompt
+2 Enter the current local time (not DST), time zone and date (Press BACK to modify)
+3 Select 'One Star Align' and follow the prompt to complete the Alignment
+4 Back to the ASIAIR app and tap the 'switch' to complete the connection"</string>
+    <string name="eqmod_celestron_dialog_content_tip">Ensure the firmware of the NexStar HC and motor control is the latest</string>
+    <string name="eqmod_celestron_dialog_title">Celestron Connection Procedure</string>
+    <string name="eqmod_mount_dialog_content">"For AZEQ-5 and EQ6-R, if you are using the built-in USB port on the mount body to connect ASIAIR, please use Baud 115200, otherwise, please use Baud 9600.
+For other mounts connecting via EQMod, please use Baud 9600"</string>
+    <string name="eqmod_mount_dialog_title">EQMod Mount Settings</string>
+    <string name="eqmod_synscan_wifi_dialog_content">"1 Switch to 2.4G WiFi in ASIAIR app
+2 Open SynScan Pro app then configure the 'Modify Station' section with your ASIAIR hotspot, disable the 'Use DHCP' and enter 10.0.0.10 to the 'Fixed IP'"</string>
+    <string name="eqmod_synscan_wifi_dialog_title">SkyWatcher AZ-GTi</string>
+    <string name="eqmod_with_skysafari_dialog_content">"The mount must be turned on at Zero Position
+1 Go to Settings > Telescope > Setup
+2 Select [Meade LX-200 Classic] in Scope Type
+3 Disable Auto-Detect SkyFi
+4 Enter IP Address with 10.0.0.1 (using hotspot) or the IP of ASIAIR on the network (using STA mode)
+5 Enter Port Number with 9624
+6 Close SkySafari to get better guiding result"</string>
+    <string name="eqmod_with_skysafari_dialog_title">SkySafari Settings</string>
+    <string name="err_208_autorun_plan">Disk space is not enough, reduce Selected Frames</string>
+    <string name="err_260">Stack error, format error, only RAW16 format is supported</string>
+    <string name="err_261">Stack error, image size does not match previous</string>
+    <string name="err_262">Stack error, image calibration failed</string>
+    <string name="err_263">Stack error, not enough stars</string>
+    <string name="err_264">Stack error, star match failed</string>
+    <string name="err_265">Stack error, star align failed</string>
+    <string name="err_306">Please connect the mount first</string>
+    <string name="err_dark_stack">The video is too dark to stack</string>
+    <string name="err_low_frame">Too few frames to stack</string>
+    <string name="err_open_file_failed">Open File Failed</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_null_cursor">Oops, something went wrong!</string>
+    <string name="eth0_automatic">Automatic</string>
+    <string name="eth0_ip_config_succeeded">IP configuration succeeded</string>
+    <string name="eth0_ip_invalid">Invalid format of IP</string>
+    <string name="eth0_ip_setting">Configure IP</string>
+    <string name="eth0_ip_setting_conflict_or_incrrect">IP conflict or incorrect IP configuration</string>
+    <string name="eth0_ip_setting_save">Save Configuration</string>
+    <string name="eth0_manual">Manual</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="exit">Exit</string>
+    <string name="exp_state_calculate">Calculate EXP...</string>
+    <string name="exp_state_dither">Dithering</string>
+    <string name="exp_state_downloading">Loading</string>
+    <string name="exp_state_exposing">Shooting</string>
+    <string name="exp_state_fail">Exposure Failed</string>
+    <string name="exp_state_idle">Idle</string>
+    <string name="exp_state_settle">Settling</string>
+    <string name="exp_suffix"><Data> &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> s</Data></string>
+    <string name="expand_button_title">Advanced</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="exposure_will_cancel">Current exposure will be stopped</string>
+    <string name="exposure_will_cancel_flip">Meridian flip will be failed while the flipping is in progress</string>
+    <string name="exposure_will_cancel_title">Pause Autorun</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="filter_position">Position</string>
+    <string name="finish">Finish</string>
+    <string name="firmware_update_install_ed">Firmware Installed</string>
+    <string name="firmware_update_install_err">Installing Firmware Failed</string>
+    <string name="firmware_update_install_ing">Installing Firmware ...</string>
+    <string name="firmware_update_page_title">Firmware Update</string>
+    <string name="firmware_update_ready_info">"Current Version %1$s 
+Latest Version %2$s"</string>
+    <string name="firmware_update_ready_process">Not started</string>
+    <string name="firmware_update_ready_tip_1">"It'll take several minutes. Don't leave this page or power the device off"</string>
+    <string name="firmware_update_ready_tip_2">Please retry after reopening app or rebooting ASIAIR device. If still failed please contact us at: support@zwoptical.com</string>
+    <string name="firmware_update_ready_tip_3">Update failed. Tap Retry</string>
+    <string name="firmware_update_ready_tip_4">File transfer takes too long, try quitting and reopening the app, if this does not resolve the issue, try restarting ASIAIR device</string>
+    <string name="firmware_update_ready_tip_5">Installing firmware takes too long, try quitting and reopening the app, if this does not resolve the issue, try restarting ASIAIR device</string>
+    <string name="firmware_update_ready_tip_os_rollback">A problem has been fixed during booting. Update firmware to enter the App</string>
+    <string name="firmware_update_ready_title">Update Firmware</string>
+    <string name="firmware_update_reboot_ed">ASIAIR Restarted</string>
+    <string name="firmware_update_reboot_err">Restarting ASIAIR Failed</string>
+    <string name="firmware_update_reboot_ing">Restarting ASIAIR ...</string>
+    <string name="firmware_update_transfer_ed">Firmware Transferred</string>
+    <string name="firmware_update_transfer_err">Transferring Firmware Failed</string>
+    <string name="firmware_update_transfer_ing">Transferring Firmware ...</string>
+    <string name="firmware_ver">Firmware </string>
+    <string name="flat">Flat</string>
+    <string name="flip_state_doing">Flipping</string>
+    <string name="flip_state_waiting">Flipping in: </string>
+    <string name="focus_backlash">Backlash</string>
+    <string name="focus_beep">Beep</string>
+    <string name="focus_beep_tip">Audibly beep when focusing (1=success, 2=error)</string>
+    <string name="focus_box_brightness">Brightness</string>
+    <string name="focus_box_hfd">HFD: </string>
+    <string name="focus_box_max">Max: %.0f</string>
+    <string name="focus_coarse_steps">Fast</string>
+    <string name="focus_coarse_steps_setting">Coarse (Fast) Step</string>
+    <string name="focus_current_position">Current: </string>
+    <string name="focus_edit_goto_position_hint">The valid range is 0-65535</string>
+    <string name="focus_edit_goto_position_title">Edit Current Position</string>
+    <string name="focus_fine_steps">Slow</string>
+    <string name="focus_fine_steps_setting">Fine (Slow) Step</string>
+    <string name="focus_goto_position">GoTo</string>
+    <string name="focus_goto_position_btn_go">GO</string>
+    <string name="focus_goto_position_btn_stop">STOP</string>
+    <string name="focus_itself">Focuser</string>
+    <string name="focus_max_steps">Max Step Limit</string>
+    <string name="focus_motor_reverse">Reverse</string>
+    <string name="focus_position_info">Position Info</string>
+    <string name="focus_setting">Focuser Settings</string>
+    <string name="focus_step_setting">Parameters</string>
+    <string name="focus_temp">Temp</string>
+    <string name="focus_update_content">Current firmware of EAF is out of date, please use PC to download from ZWO website and upgrade</string>
+    <string name="focus_update_tip">"Attention
+Current FW version may work abnormally when using in temperature below 0°C and cause the failure of upgrading"</string>
+    <string name="focus_update_title">EAF Firmware Update</string>
+    <string name="focusing_max_peak">Peak (The higher value is better): %.0f</string>
+    <string name="focusing_star_hfd">Star Size (The lower value is better): </string>
+    <string name="format">Format</string>
+    <string name="format_error">Format Error</string>
+    <string name="fov_narrow" formatted="false">Fov %.1fº x %.1fº</string>
+    <string name="fps">fps</string>
+    <string name="gain_symbol">Gain: </string>
+    <string name="gateway">Gateway</string>
+    <string name="go_to">GoTo</string>
+    <string name="got_it">Got it!</string>
+    <string name="goto_in_focus_content">You should restart Focusing after GoTo because it will stop when GoTo</string>
+    <string name="goto_in_focus_title">GoTo</string>
+    <string name="goto_rejected_content_camera_disconnect">You have turned on GoTo Auto-Center, Please make sure the Main Camera is connected before GoTo</string>
+    <string name="goto_rejected_object_underground">"The current position of the target is below the horizon, can't GoTo"</string>
+    <string name="goto_rejected_title">Cannot GoTo</string>
+    <string name="goto_setting_to_permission">Permission denied, go to change</string>
+    <string name="group_fixed_star">Named Stars</string>
+    <string name="group_object_c">C Objects</string>
+    <string name="group_object_ds">Double Stars</string>
+    <string name="group_object_ds_short">DS</string>
+    <string name="group_object_ic">IC Objects</string>
+    <string name="group_object_m">Messier Objects</string>
+    <string name="group_object_ngc">NGC Objects</string>
+    <string name="group_object_sh2">SH2 Objects</string>
+    <string name="group_planet_comet">Comets</string>
+    <string name="group_planet_star">Sun &amp; Planets</string>
+    <string name="group_tonight_best">"Tonight's Best"</string>
+    <string name="guide_box_click_for">Tap on me for guiding</string>
+    <string name="guide_calibration">Calibration</string>
+    <string name="guide_camera">Guide Camera</string>
+    <string name="guide_focal_length">Guide Scope Focal Length</string>
+    <string name="guide_rate1">0.25X</string>
+    <string name="guide_rate2">0.5X</string>
+    <string name="guide_rate3">0.75X</string>
+    <string name="guide_rate4">0.9X</string>
+    <string name="guide_star">Guide Star</string>
+    <string name="guide_star_peak">Peak</string>
+    <string name="guide_star_size">Size</string>
+    <string name="guide_state_calibrating">Calibrating</string>
+    <string name="guide_state_guiding">Guiding</string>
+    <string name="guide_state_looping">Looping</string>
+    <string name="guide_state_start_guiding">StartGuiding</string>
+    <string name="guide_state_stopped">Stopped</string>
+    <string name="guide_state_wait_guide">Wait for guide</string>
+    <string name="guide_step_two_ip_connect">Connect via IP</string>
+    <string name="guide_step_two_ip_is_empty">Input can not be empty</string>
+    <string name="guide_step_two_not_found_air">ASIAIR not found</string>
+    <string name="guide_step_two_scan_null">No result?</string>
+    <string name="guide_step_two_scan_null_dialog_content">"If the home WiFi is not configured, connect direct to ASIAIR hotspot.
+
+If the home WiFi is configured, check the status of your home WiFi and ASIAIR
+
+If there are still no results from scan, enter ASIAIR IP in the LAN to connect"</string>
+    <string name="guide_tip_before_loop">The DEC guide is off, only RA will be calibrated</string>
+    <string name="guider_camera_bin">Guide Camera Bin2</string>
+    <string name="guider_camera_bin_desc">When the faint guide star or over-sampling image occurs, using the Bin2 feature to get better guiding result</string>
+    <string name="guider_service_not_initiated">Guiding Service Starts Failed</string>
+    <string name="guider_service_not_initiated_tip">Please check if the Guide Camera is connected properly, try to re-plug in the camera, and try to restart the ASIAIR device if still failed</string>
+    <string name="guider_setting">Guide Settings</string>
+    <string name="help">Help</string>
+    <string name="hide">Hide</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="high">H</string>
+    <string name="hint">Hint</string>
+    <string name="hint_exp_out_of_range">Exp time out of range 32μs-2000s</string>
+    <string name="hint_for_input_gps">Get the GPS location failed. Please manually enter the lat. and long. of your location</string>
+    <string name="hint_for_restart_content">ASIAIR device and app will be restarted in 5s</string>
+    <string name="hint_for_restart_title">Restart ASIAIR and App</string>
+    <string name="hint_for_shut_down_content">ASIAIR device and App will be shut down in 5s</string>
+    <string name="hint_for_shut_down_content_power">, including the DC outputs</string>
+    <string name="hint_for_shut_down_title">Shut Down ASIAIR and App</string>
+    <string name="hint_for_step_mount">"Turn on the 'Reverse Dec after Meridian Flip' option in Guide Settings"</string>
+    <string name="hint_for_synscan_mount">"The mount must be turned on at Zero Position and did the One Star Align,
+FW of SynScan HC should be
+V3>3.38 or V4/5>4.38.06"</string>
+    <string name="hint_for_synscan_mount2">Ensure the mount is powered on at Index position, and the firmware of the NexStar HC and motor control is the latest</string>
+    <string name="hint_for_synscan_mount_avx">Ensure the mount is powered on at Index position, and the firmware of the NexStar HC and motor control is the latest</string>
+    <string name="hint_for_synscan_mount_title">Preparations</string>
+    <string name="hint_for_synscan_mount_when_guiding">"Current slew rate is %1$s
+Please adjust the mount's slew rate to 1X when guiding"</string>
+    <string name="hint_need_input">"Any field can't be empty"</string>
+    <string name="hint_need_input_guider_focal">Please enter the focal length of guide scope</string>
+    <string name="hint_need_input_guider_focal_title">Focal length required</string>
+    <string name="hint_same_camera">Guider camera and Imaging camera can not be the same one</string>
+    <string name="hint_target_ra_dec_need_input">Please input target RA or DEC</string>
+    <string name="hist_statistic">Information</string>
+    <string name="histograms_nonlinear">Histogram Nonlinear Stretching</string>
+    <string name="histograms_using_a_log_scale">Histograms Using a Log Scale</string>
+    <string name="hotspot_frequency_band">Frequency</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="ignore">Ignore</string>
+    <string name="ijkplayer_dummy" />
+    <string name="image_credit_and_copyrights">Image Credit &amp; Copyrights: </string>
+    <string name="image_view">Click to select</string>
+    <string name="img_file_preview_loading">loading image...</string>
+    <string name="img_mgn_goto_btn">GoTo</string>
+    <string name="img_mgn_goto_plate_solve_fail">Plate Solve failed</string>
+    <string name="img_mgn_goto_plate_solve_succeed_and_goto">Plate Solve succeeded, GoTo now</string>
+    <string name="img_mgn_goto_plate_solving_this_position">Plate Solving coordinate(Center RA/DEC) of this image...</string>
+    <string name="img_mgn_goto_succeed">GoTo succeed</string>
+    <string name="img_mgn_goto_tip_camera_exp">Stop Camera exposure first</string>
+    <string name="img_mgn_goto_tip_camera_exp_ask">GoTo Target will stop the exposure, continue GoTo?</string>
+    <string name="img_mgn_goto_tip_page_mode">Please switch to Preview before using GoTo in Image Management</string>
+    <string name="input_digits_object_name">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_</string>
+    <string name="input_digits_pwd">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&amp;*?()[]-+_.?</string>
+    <string name="invert">Flip</string>
+    <string name="ip_address">IP Address</string>
+    <string name="ip_format_error">IP format error, please re-enter</string>
+    <string name="issue_quick_report">Quick Report</string>
+    <string name="issue_quick_report_toast">Copied !</string>
+    <string name="issue_report">Feedback</string>
+    <string name="issue_report_content">Issue description (All log of this session will be uploaded)</string>
+    <string name="issue_report_download_log">Getting logs...</string>
+    <string name="issue_report_download_log_err">Get log failed, please ensure the device was connected to ASIAIR WiFi</string>
+    <string name="issue_report_email">* Email</string>
+    <string name="issue_report_email_needed">Please enter your email address</string>
+    <string name="issue_report_photo">App screenshot or picture</string>
+    <string name="issue_report_submit">Upload Log</string>
+    <string name="issue_report_success">Thanks for your feedback</string>
+    <string name="issue_report_tip">"Submit logs before shutdown. Let's make ASIAIR better"</string>
+    <string name="issue_report_type">* Please select the type of issue</string>
+    <string name="issue_report_type_needed">Please select the type of issue</string>
+    <string name="issue_report_upload_log">Uploading log...</string>
+    <string name="issue_report_upload_log_err">Upload log failed, please ensure the device was connected to the Internet</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="launch_step_before_unzip_obb">"Checking Data Integrity. It'll take several minutes..."</string>
+    <string name="launch_step_check_auth">Connected, Device Auth Checking…</string>
+    <string name="launch_step_check_data">Checking Data Integrity...</string>
+    <string name="launch_step_check_data_fail">Data Verification Failed</string>
+    <string name="launch_step_connect_air">Connecting Services...</string>
+    <string name="launch_step_download_obb">Downloading Data...</string>
+    <string name="launch_step_enter">Redirecting…</string>
+    <string name="launch_step_permissions" />
+    <string name="launch_step_prepare">Starting...</string>
+    <string name="launch_step_privacy_policy" />
+    <string name="launch_step_unzip_obb">"Decompressing Data. It'll take several minutes..."</string>
+    <string name="led_abnormal">LED STATES</string>
+    <string name="led_state_desc">LED STATES</string>
+    <string name="led_state_irr_shake">"Irregular
+Blinking"</string>
+    <string name="led_state_off">Off</string>
+    <string name="led_state_on">On</string>
+    <string name="led_state_reset">RESET</string>
+    <string name="led_state_shake">Blinking</string>
+    <string name="led_state_text_os_normal">ASIAIR Plus is working normally</string>
+    <string name="led_state_text_os_power_off">ASIAIR Plus is not turned on, or no system I/O</string>
+    <string name="led_state_text_os_power_on">If startup is normal, the LED will be on for 15-20s, otherwise it will always be on</string>
+    <string name="led_state_text_power_formal">ASIAIR Plus is powered on</string>
+    <string name="led_state_text_power_none">ASIAIR Plus is not powered</string>
+    <string name="led_state_text_wifi_error">ASIAIR Plus WiFi is working abnormally</string>
+    <string name="led_state_text_wifi_normal">ASIAIR Plus WiFi is working normally</string>
+    <string name="led_state_text_wifi_reset">Long press RESET button for 5 seconds to reset ASIAIR Plus WiFi</string>
+    <string name="led_state_text_wifi_resetting">ASIAIR Plus WiFi is resetting</string>
+    <string name="light">Light</string>
+    <string name="limit_exceeded">Limit the selection of %d photos</string>
+    <string name="limit_length_tip">The valid length of %1$s is %2$s - %3$s</string>
+    <string name="limit_maximum_connections">You have reached the limit of connections</string>
+    <string name="limit_tip">The valid range of %1$s is %2$d - %3$d</string>
+    <string name="limit_tip_short">The valid range is %1$d - %2$d</string>
+    <string name="limit_tip_str">The valid range of %1$s is %2$s - %3$s</string>
+    <string name="live_drop">Ignored: </string>
+    <string name="live_setting_copies">Number</string>
+    <string name="live_setting_exp">EXP</string>
+    <string name="live_setting_light_duration">Stack Duration</string>
+    <string name="live_setting_light_duration_complete">Completed</string>
+    <string name="live_setting_light_duration_less_than_exp_warning">The exposure time should be shorter than the stack duration</string>
+    <string name="live_setting_light_duration_unlimited">No Limit</string>
+    <string name="live_setting_save_all">Save Every Frame when Stacking</string>
+    <string name="live_setting_time_coast">Estimate Time: </string>
+    <string name="live_setting_tip_bias">"Cover the lens, shoot with the same gain, temperature as the Light and a shorter exposure time to eliminate the camera's inherent noise"</string>
+    <string name="live_setting_tip_dark">Cover the lens, use the same exposure time, gain, temperature as the Light to eliminate the thermal noise and glow of the camera</string>
+    <string name="live_setting_tip_flat">Point the telescope at a uniform light source and use the same gain with the light frames. Adjust the EXP to make sure average value between 20,000-40,000. Flat is used to remove dark corners and dust from the Light</string>
+    <string name="live_setting_tip_light">To create a better image by calibrating with flat, dark and bias frames</string>
+    <string name="live_state_stacking">Stacking</string>
+    <string name="live_tip_bias_required_content">To get the correct stacking result, Bias was required after adding Flat</string>
+    <string name="live_tip_bias_required_title">Bias Required</string>
+    <string name="live_tip_btn_continue">Continue</string>
+    <string name="live_tip_btn_restart">Restart</string>
+    <string name="live_tip_calibrations_no_exist_content">Failed to open the %1$s file, please check</string>
+    <string name="live_tip_calibrations_no_exist_title">Calibrations nonexistent</string>
+    <string name="live_tip_clear_content">Stacked image of current session is not auto-saved</string>
+    <string name="live_tip_clear_title">Clear Image?</string>
+    <string name="live_tip_complete_content"><Data>%1$s images were stacked, took %2$s , It has been saved as file&lt;font color=#259B24> %3$s&lt;/font></Data></string>
+    <string name="live_tip_complete_title">%1$s frames, stacking is complete</string>
+    <string name="live_tip_continue_content">Continue stacking on the current image, or restart</string>
+    <string name="live_tip_continue_title">Start Stacking</string>
+    <string name="live_tip_enable_content">Stop current session first</string>
+    <string name="live_tip_enable_title">Cannot Change</string>
+    <string name="live_tip_exp_err_content">Cannot stack. Please check the main camera status</string>
+    <string name="live_tip_exp_err_title">Shooting Failure</string>
+    <string name="live_tip_leave_content">Exit will clear all the data. Are you sure you want to exit</string>
+    <string name="live_tip_leave_exit">Exit</string>
+    <string name="live_tip_leave_title">Exit</string>
+    <string name="live_tip_restart_content">You have changed the image size and need to clear the previous image and Stack again</string>
+    <string name="live_tip_restart_content_2">The calibration subs stacking is completed, are you sure to restart stack?</string>
+    <string name="live_tip_restart_title">Restart Stacking</string>
+    <string name="live_tip_save_image_success">"Saved as %1$s 
+ you can view it in image management"</string>
+    <string name="live_tip_save_setting_content">Stacked image of current session will be cleared</string>
+    <string name="live_tip_save_setting_title">Change Settings?</string>
+    <string name="live_tip_start_error_content">The dimensions of the %1$s and light frame does not match</string>
+    <string name="live_tip_start_error_title">Error</string>
+    <string name="live_tip_stop_content">Do you want to stop live stack?</string>
+    <string name="live_tip_stop_title">Stop</string>
+    <string name="live_used">Stacked: </string>
+    <string name="load_cost">load-cost</string>
+    <string name="location_hint">We need to use your location information to synchronize the equatorial, please grant location permission</string>
+    <string name="low">L</string>
+    <string name="lunar_solar_surface">Solar or Lunar Surface</string>
+    <string name="main_camera">Main Camera</string>
+    <string name="main_focal_length">Main Scope Focal Length</string>
+    <string name="manual_enter_device_ip">Device IP</string>
+    <string name="map_align">Align</string>
+    <string name="map_cancel">Cancel</string>
+    <string name="map_center">Center</string>
+    <string name="map_confirm">Confirm</string>
+    <string name="map_context_pop8">There may be magnetic field interference nearby, please calibrate your compass by moving your device in a figure 8 motion</string>
+    <string name="map_goto">GoObject</string>
+    <string name="map_goto_center">GoCross</string>
+    <string name="map_gotosun_action">Go to the Sun</string>
+    <string name="map_object_un_goto_ncp">"ASIAIR doesn't support to align the mount within 5° of the NCP"</string>
+    <string name="map_object_un_goto_scp">"ASIAIR doesn't support to align the mount within 5° of the SCP"</string>
+    <string name="map_object_un_goto_title">Align Out of Range</string>
+    <string name="map_pick_sun_hint">Viewing the Sun without proper equipment can be dangerous. Do you want to go to the Sun?</string>
+    <string name="map_stop">Stop</string>
+    <string name="map_title_pop8">Compass Calibration</string>
+    <string name="map_warning">WARNING</string>
+    <string name="material_clock_display_divider">:</string>
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+    <string name="material_hour_selection">Select hour</string>
+    <string name="material_hour_suffix">"%1$s o'clock"</string>
+    <string name="material_minute_selection">Select minutes</string>
+    <string name="material_minute_suffix">%1$s minutes</string>
+    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="material_slider_range_end">Range end,</string>
+    <string name="material_slider_range_start">Range start,</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Select time</string>
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="max_dec_duration">Max DEC Duration</string>
+    <string name="max_ra_duration">Max RA Duration</string>
+    <string name="media_information">Media Information</string>
+    <string name="menu_annotate">Annotate</string>
+    <string name="menu_cross_hair">Crosshair</string>
+    <string name="menu_debayer">Debayer</string>
+    <string name="menu_focuser">Focuser</string>
+    <string name="menu_guide">Guide</string>
+    <string name="menu_guide_graph">Graph</string>
+    <string name="menu_histogram">Histogram</string>
+    <string name="menu_plate_solve">Plate Solve</string>
+    <string name="menu_process">Process</string>
+    <string name="menu_single">Single</string>
+    <string name="menu_stack">Live</string>
+    <string name="menu_tool">Tools</string>
+    <string name="merid_flip_setting_recalibrate">Recalibrate Guiding after AMF</string>
+    <string name="meridian_flip_switch_title">Meridian Flip</string>
+    <string name="meridian_flip_tip_dialog_disclaimer">Please use with caution</string>
+    <string name="meridian_flip_tip_dialog_main_process">Main Routine</string>
+    <string name="meridian_flip_tip_dialog_main_process_1">Stop tracking x min before Meridian, default is 0 min, can be changed under Mount Settings page</string>
+    <string name="meridian_flip_tip_dialog_main_process_2">Do AMF x min after Meridian, default is 5 min, can be changed under Mount Settings page</string>
+    <string name="meridian_flip_tip_dialog_main_process_3">After Meridian Flip, the Tracking and Guiding will automatically resume and Autorun will continue(If the Guiding is turned on before the flip, it will be automatically turned on after the flip)</string>
+    <string name="meridian_flip_tip_dialog_tips">Attention</string>
+    <string name="meridian_flip_tip_dialog_tips_1">1 Please ensure your mount meridian flip settings are disabled</string>
+    <string name="meridian_flip_tip_dialog_tips_2">2 Please turn off Daylight Saving Time on the mount hand control</string>
+    <string name="meridian_flip_tip_dialog_tips_3">3 ASIAIR will attempt 30 times if meridian flip fails</string>
+    <string name="mf_speed_level_fast">Fast</string>
+    <string name="mf_speed_level_slow">Slow</string>
+    <string name="mi__selected_audio_track">*</string>
+    <string name="mi__selected_subtitle_track">*</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="middle">M</string>
+    <string name="mono_bin">Mono Bin</string>
+    <string name="more">More</string>
+    <string name="move">Move</string>
+    <string name="move_to">Move to</string>
+    <string name="mp4_video_save_tip_success">MP4 saved</string>
+    <string name="msg_compress_failed">There are pictures of compress failures.</string>
+    <string name="msg_crop_canceled">" canceled crop"</string>
+    <string name="msg_crop_failed">There are pictures of crop failures.</string>
+    <string name="msg_operation_canceled">Operation canceled.</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="my_favorite">My Favorites</string>
+    <string name="network_cable_inserted">Network cable plugged in</string>
+    <string name="network_cable_unplugged">Network cable unplugged</string>
+    <string name="network_details">Details</string>
+    <string name="network_page_title">WiFi Settings</string>
+    <string name="new_wifi_name_is_empty">Please type in new name</string>
+    <string name="new_wifi_name_is_valid_range">The valid length of WiFi Name is 1 - 20</string>
+    <string name="next">Next</string>
+    <string name="next_continue">Next</string>
+    <string name="no">NO</string>
+    <string name="no_bu">No</string>
+    <string name="no_network">No Network</string>
+    <string name="no_remind_again">Never Remind</string>
+    <string name="no_selected_sequence">To select one sequence at least</string>
+    <string name="no_selected_sequence_title">No sequence selected</string>
+    <string name="north_lat">North</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="not_found">Not Found</string>
+    <string name="not_set">Not set</string>
+    <string name="notification_content">App is running</string>
+    <string name="notification_download_complete">Download complete</string>
+    <string name="notification_download_failed">Download unsuccessful</string>
+    <string name="notification_third_notify_txt">Smart mobile networking is turned on</string>
+    <string name="notification_title">ASIAIR</string>
+    <string name="obb_dialog_content">ASIAIR needs to download 646MB of additional data files. Please keep ASIAIR active while downloading, to prevent interruption</string>
+    <string name="obb_dialog_download">Download</string>
+    <string name="obb_dialog_title">Download Needed</string>
+    <string name="obb_downloading">Downloading the resource file</string>
+    <string name="object_az_east">E</string>
+    <string name="object_az_east_north">NE</string>
+    <string name="object_az_east_south">SE</string>
+    <string name="object_az_north">N</string>
+    <string name="object_az_south">S</string>
+    <string name="object_az_west">W</string>
+    <string name="object_az_west_north">NW</string>
+    <string name="object_az_west_south">SW</string>
+    <string name="object_list_top">Top</string>
+    <string name="object_search_input_hint">Enter Object Name/Number</string>
+    <string name="object_un_goto_ncp">"ASIAIR doesn't support to align the mount within 5° of the NCP"</string>
+    <string name="object_un_goto_scp">"ASIAIR doesn't support to align the mount within 5° of the SCP"</string>
+    <string name="object_un_goto_title">Align Out of Range</string>
+    <string name="object_underground">Chose object is below the horizon</string>
+    <string name="object_underground_title">Unable to choose</string>
+    <string name="objects">Object(s)</string>
+    <string name="off">Off</string>
+    <string name="off_up">OFF</string>
+    <string name="ok">OK</string>
+    <string name="ok_all_right">OK</string>
+    <string name="ok_i_known">OK</string>
+    <string name="on">On</string>
+    <string name="on_up">ON</string>
+    <string name="pa3_exp_1">Taking 1st image...</string>
+    <string name="pa3_exp_2">Taking 2nd image...</string>
+    <string name="pa3_exp_3">Taking 3rd image...</string>
+    <string name="pa3_finish_tip">Do PA again may increase accuracy</string>
+    <string name="pa3_manually_rotate_n_2"><Data>Rotate RA axis &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> west manually</Data></string>
+    <string name="pa3_manually_rotate_n_3"><Data>Continue to rotate RA axis &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> west manually</Data></string>
+    <string name="pa3_manually_rotate_s_2"><Data>Rotate RA axis &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> east manually</Data></string>
+    <string name="pa3_manually_rotate_s_3"><Data>Continue to rotate RA axis &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> east manually</Data></string>
+    <string name="pa3_msg_preparation_n">"1 Set the mount RA axis to Northward/Southward
+2 Connect the Main Camera and Mount and confirm the Plate Solve works in Preview
+3 Point scope at the visible sky area except Due East and Due West
+4 RA axis will rotate about 40° west, confirm the scope won't collide with the tripod"</string>
+    <string name="pa3_msg_preparation_s">"1 Set the mount RA axis to Northward/Southward
+2 Connect the Main Camera and Mount and confirm the Plate Solve works in Preview
+3 Point scope at the visible sky area except Due East and Due West
+4 RA axis will rotate about 40° east, confirm the scope won't collide with the tripod"</string>
+    <string name="pa3_rotate_2"><Data>RA rotated &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> degrees</Data></string>
+    <string name="pa3_rotate_3"><Data>RA rotated &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> degrees</Data></string>
+    <string name="pa3_rotate_stopped">Rotation Stopped</string>
+    <string name="pa3_rotate_stopped_msg">RA axis rotation stopped</string>
+    <string name="pa3_rotate_stopped_tip">Tap the Finish button on the right and do PA again</string>
+    <string name="pa_calculating_results">"Congratulation! 
+Calculating global rank..."</string>
+    <string name="pa_dialog_mount_ooc_content">Skip while using manual mount</string>
+    <string name="pa_dialog_mount_ooc_title">Mount No Connection</string>
+    <string name="pa_dialog_stop_pa_title">Stop Polar Align</string>
+    <string name="pa_msg_error_calculated"><Data>Tap the button below to start your &lt;font color=#259B24>last step&lt;/font> of alignment</Data></string>
+    <string name="pa_msg_preparation">"1 Setup the scope and mount as shown
+2 Connect the main camera and mount
+3 Confirm the Plate Solve works in Preview"</string>
+    <string name="pa_msg_preparation_tip">Tap the right Play button to start</string>
+    <string name="pa_msg_rotating"><Data>RA axis rotated &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> degrees</Data></string>
+    <string name="pa_msg_rotating_after_60"><Data>Rotate RA axis in around &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> degrees for calculating</Data></string>
+    <string name="pa_msg_rotating_before_60"><Data>RA axis will be auto-rotated in about &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> degrees for calculating</Data></string>
+    <string name="pa_msg_shooting_error">Please check the main camera connection</string>
+    <string name="pa_msg_solved_error_30">"Please confirm the telescope points 
+ within 30 degrees nearly the NCP"</string>
+    <string name="pa_ncp">NCP</string>
+    <string name="pa_opt_btn_finish_rotate">Rotated</string>
+    <string name="pa_opt_btn_start">"Let's Go"</string>
+    <string name="pa_ra_axis">RA axis</string>
+    <string name="pa_refresh_tip_cancel">Refresh Canceled</string>
+    <string name="pa_refresh_tip_fail">Refresh Fail</string>
+    <string name="pa_refresh_tip_shooting_fail">Shooting failed, please retry</string>
+    <string name="pa_refresh_tip_solved_fail">Plate solving failed, please retry</string>
+    <string name="pa_refresh_tip_solved_overtime">Plate solving overtime, please retry</string>
+    <string name="pa_refresh_tip_success">Refresh succeeded</string>
+    <string name="pa_result_alt_err">Alt Error</string>
+    <string name="pa_result_az_err">Az Error</string>
+    <string name="pa_result_err_tip">"Move scope using Az/Alt bolts
+Then tap the Refresh button
+Within 2' is reasonable"</string>
+    <string name="pa_result_remark_1_cont">Like driving a spaceship, ultra-fast!</string>
+    <string name="pa_result_remark_1_title">Perfect</string>
+    <string name="pa_result_remark_2_cont">Like driving a racing car, super fast!</string>
+    <string name="pa_result_remark_2_title">Incredible</string>
+    <string name="pa_result_remark_3_cont">Like riding a motorcycle, very fast!</string>
+    <string name="pa_result_remark_3_title">Awesome</string>
+    <string name="pa_result_remark_4_cont">Like riding a bicycle, a bit slow!</string>
+    <string name="pa_result_remark_4_title">Good</string>
+    <string name="pa_result_remark_5_cont">Guess you are walking, very slow!</string>
+    <string name="pa_result_remark_5_title">Fair</string>
+    <string name="pa_result_remark_local">Connect network to get the global ranking</string>
+    <string name="pa_result_remark_network"><Data>Global ranking &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font>, &lt;br>defeated &lt;font color=#259B24>&lt;strong>%2$s%%&lt;/strong>&lt;/font> ASIAIR users</Data></string>
+    <string name="pa_result_time">Time</string>
+    <string name="pa_result_total_err">Total Error</string>
+    <string name="pa_scp">SCP</string>
+    <string name="pa_step_1">Prepare</string>
+    <string name="pa_step_2">Calculate</string>
+    <string name="pa_step_3">Align</string>
+    <string name="pa_tip_rotating">Notice if the scope will hit the tripods</string>
+    <string name="pa_tip_share">Screenshot saved to album, now you can share</string>
+    <string name="pa_tip_solved_exp">Try to adjust exposure time</string>
+    <string name="pa_tip_solved_focal_length">Ensure the FL is correct, if unsure enter 0</string>
+    <string name="pa_tip_solved_tip1">FOV out of range(0.4°-33°), This image may not be solved</string>
+    <string name="pa_tip_solved_tip2">Please make sure the focal length is correct, Otherwise the image may not be solved</string>
+    <string name="pa_tip_solved_tip3"><Data>Maybe too few stars or cloud interference, ensure the focal length &lt;font color=#259B24>%1$smm&lt;/font> is correct, if unsure, please enter 0</Data></string>
+    <string name="pa_tip_solved_tip4"><Data>FOV is beyond the solving range(0.4°-33°), ensure the focal length &lt;font color=#259B24>%1$smm&lt;/font> is correct, if unsure, please enter 0</Data></string>
+    <string name="pa_tip_solved_tip5">Maybe FOV is beyond the solving range, or too few stars or cloud interference</string>
+    <string name="pa_title_downloading">Loading...</string>
+    <string name="pa_title_error_calculated">Calculated</string>
+    <string name="pa_title_preparation">Preparation</string>
+    <string name="pa_title_re_shooting">Solving failure, re-shooting...</string>
+    <string name="pa_title_re_shooting_sec"><Data>Solving failure, re-shooting... &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> s</Data></string>
+    <string name="pa_title_rotated">RA axis rotated</string>
+    <string name="pa_title_rotating">RA axis rotating...</string>
+    <string name="pa_title_shooting">Shooting...</string>
+    <string name="pa_title_shooting_error">Shooting Failed</string>
+    <string name="pa_title_shooting_sec"><Data>Shooting... &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> s</Data></string>
+    <string name="pa_title_solved_cancel">Plate solve cancelled</string>
+    <string name="pa_title_solved_error">Plate solve failed</string>
+    <string name="pa_title_solved_error_big">Plate solved, too far away</string>
+    <string name="pa_title_solved_success"><Data>Plate solves, took &lt;font color=#259B24>&lt;strong>%1$.1f&lt;/strong>&lt;/font> s</Data></string>
+    <string name="pa_title_solved_success_0">Plate solved</string>
+    <string name="pa_title_solved_success_info"><Data>Focal Length:&amp;#160;&lt;font color=#259B24>%1$s&lt;/font>&lt;br>Chip Size:&amp;#160;&lt;font color=#259B24>%2$s&lt;/font>&lt;br>FOV:&amp;#160;&lt;font color=#259B24>%3$s&lt;/font></Data></string>
+    <string name="pa_title_solving"><Data>Solving... &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> s</Data></string>
+    <string name="pa_title_solving_with_star"><Data>Detected &lt;font color=#259B24>&lt;strong>%1$s&lt;/strong>&lt;/font> stars, Solving... &lt;font color=#259B24>&lt;strong>%2$s&lt;/strong>&lt;/font> s</Data></string>
+    <string name="park_mount">Goto Home POS</string>
+    <string name="park_start">Start</string>
+    <string name="park_stop">Stop</string>
+    <string name="password_less_than_8_digits">Password is less than 8 digits, please re-enter</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pause">Pause</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_force">App requires permission to Storage to view images. Tap Settings and go to Permissions to grant permission.</string>
+    <string name="permission_info">App requires permission to Storage to view images.</string>
+    <string name="permission_ok">OK</string>
+    <string name="permission_package">package</string>
+    <string name="permission_settings">Settings</string>
+    <string name="personal_setting">Personalize Settings</string>
+    <string name="personal_setting_sound">Sound Mode</string>
+    <string name="personal_setting_sound_backyard">Backyard</string>
+    <string name="personal_setting_sound_field">Field</string>
+    <string name="personal_setting_sound_off">Off</string>
+    <string name="personal_setting_temp">Temperature Unit</string>
+    <string name="personal_setting_temp_c">Celsius (℃)</string>
+    <string name="personal_setting_temp_f">Fahrenheit (℉)</string>
+    <string name="phone_info">Phone Info</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="plan_add_limit">You can add up to %1$d plans</string>
+    <string name="plan_add_seq_first">Set sequence first</string>
+    <string name="plan_apply_seqs_to_other_target_success">Applied to all imported targets</string>
+    <string name="plan_copy_to_share">Plan copied to clipboard, you can share it now</string>
+    <string name="plan_csv_format_err">Incorrect format, check and input again</string>
+    <string name="plan_dailog_for_apply_seqs_to_other_target">Apply Sequence and Settings</string>
+    <string name="plan_dailog_for_apply_seqs_to_other_target_content">Apply current sequence and settings to all importing targets</string>
+    <string name="plan_dailog_for_apply_seqs_to_other_target_content_multi_select">Apply current sequence and settings to all selected targets?</string>
+    <string name="plan_dialog_for_below_horizon_btn_cancel">Back to Edit</string>
+    <string name="plan_dialog_for_below_horizon_less_5">"%1$s may be below the horizon during the shooting. If it's below, the remaining sequence will be skipped"</string>
+    <string name="plan_dialog_for_below_horizon_more_5">"%1$s etc. %2$s targets may be below the horizon during the shooting. If it's below, the remaining sequence will be skipped"</string>
+    <string name="plan_dialog_for_below_horizon_title">Targets below the Horizon</string>
+    <string name="plan_dialog_for_err_count">%1$s target(s) failed in this Plan, go to the plan detail page to check</string>
+    <string name="plan_dialog_for_reset_plan">Plan complete, please reset the plan first.</string>
+    <string name="plan_dialog_for_stop_auto_center_content">Plan will be interrupted</string>
+    <string name="plan_dialog_for_stop_auto_center_title">Stop GoTo</string>
+    <string name="plan_dialog_for_stop_content">Current exposure will be stopped</string>
+    <string name="plan_dialog_for_stop_title">Pause Plan</string>
+    <string name="plan_error_238">Exposure failed</string>
+    <string name="plan_error_240">Dither timeout</string>
+    <string name="plan_error_245">Failed to run Guide</string>
+    <string name="plan_error_252">GoTo Auto-Center failed</string>
+    <string name="plan_error_270">Target below the horizon</string>
+    <string name="plan_error_272">Meridian Flip failed</string>
+    <string name="plan_error_504">Image saved failed</string>
+    <string name="plan_error_506">Failed to set the camera Bin</string>
+    <string name="plan_error_508">Failed to set the EFW</string>
+    <string name="plan_error_509">Auto exposure time calculation failed</string>
+    <string name="plan_error_511">End at timer</string>
+    <string name="plan_error_512">End at astro morning light</string>
+    <string name="plan_error_516">Auto exposure time calculation failed</string>
+    <string name="plan_import_csv">Import Plan</string>
+    <string name="plan_import_csv_hint">"Paste the Plan text (Coord. in J2000) here
+If importing a mosaic plan (e.g. from Telescopius.com), recommended the overlap area is at least 15%"</string>
+    <string name="plan_no_ready">Plan mode is initializing</string>
+    <string name="plan_reconfirm_air_shutdown">Shutdown ASIAIR</string>
+    <string name="plan_reconfirm_auto_amf">Auto Meridian Flip</string>
+    <string name="plan_reconfirm_auto_cooler">Auto Cooling</string>
+    <string name="plan_reconfirm_auto_guiding">Start guiding</string>
+    <string name="plan_reconfirm_close_cooler">Turn off Cooler</string>
+    <string name="plan_reconfirm_eaf_park">EAF Back to Zero Position</string>
+    <string name="plan_reconfirm_finish_tip">End Options</string>
+    <string name="plan_reconfirm_park">GoTo Home POS</string>
+    <string name="plan_reconfirm_title">Plan</string>
+    <string name="plan_state_complete_time">End at </string>
+    <string name="plan_state_disable">Unchecked</string>
+    <string name="plan_state_estimate_complete_time">Estimate to End at </string>
+    <string name="plan_state_estimate_flip_time">Meridian: </string>
+    <string name="plan_state_estimate_size">Estimate Size: </string>
+    <string name="plan_state_estimate_time">Estimate Duration: </string>
+    <string name="plan_state_failed">Failed</string>
+    <string name="plan_state_finished">Finished</string>
+    <string name="plan_state_left_size">Remaining Size: </string>
+    <string name="plan_state_left_time">Remaining Duration: </string>
+    <string name="plan_state_pause">Pause</string>
+    <string name="plan_state_shooting">Shooting</string>
+    <string name="plan_state_size_cost">Size: </string>
+    <string name="plan_state_time_cost">Required Time: </string>
+    <string name="plan_state_wait_to_start">Wait to start</string>
+    <string name="plan_target_move_backward">Move Backward</string>
+    <string name="plan_target_move_forward">Move Forward</string>
+    <string name="plan_tip_need_reset_plan">Please reset the plan first</string>
+    <string name="plan_tip_need_reset_target">Please reset the target first</string>
+    <string name="plan_tip_need_stop_plan">Please pause the current Plan first</string>
+    <string name="plan_tip_need_stop_plan_for_del">Cannot delete while Plan is in progress</string>
+    <string name="plan_tip_need_stop_plan_for_reset">Please pause the Plan before reset</string>
+    <string name="plan_tip_no_any_seq">No Sequence has been added yet</string>
+    <string name="plan_tip_no_enable_seq">No Sequence has been selected yet</string>
+    <string name="plan_tip_reject_in_import">Cannot be modified while Importing</string>
+    <string name="plan_tip_reject_sort_as_event_doing">Cannot sort because the Sequence is in progress</string>
+    <string name="plan_tip_reject_sort_as_event_done">Cannot sort because the Sequence is complete</string>
+    <string name="plan_tip_reject_sort_as_target_doing">Cannot sort because the Target is in progress</string>
+    <string name="plan_tip_reject_sort_as_target_done">Cannot sort because the Target is complete</string>
+    <string name="planet_earth">Earth</string>
+    <string name="planet_jupiter">Jupiter</string>
+    <string name="planet_mars">Mars</string>
+    <string name="planet_mercury">Mercury</string>
+    <string name="planet_moon">Moon</string>
+    <string name="planet_neptune">Neptune</string>
+    <string name="planet_pluto">Pluto</string>
+    <string name="planet_saturn">Saturn</string>
+    <string name="planet_sun">Sun</string>
+    <string name="planet_uranus">Uranus</string>
+    <string name="planet_venus">Venus</string>
+    <string name="please_enter_password">Password</string>
+    <string name="policy_exit">Reject and quit</string>
+    <string name="port">Port</string>
+    <string name="power_off_device">Power off %1$s device</string>
+    <string name="power_on_device">Power on %1$s device</string>
+    <string name="power_on_off_4_dc_12v_plus"><Data>Current input &lt;font color=%1$s>%2$s&lt;/font>/&lt;font color=%3$s>%4$s&lt;/font></Data></string>
+    <string name="pre_cent">%1$d%%</string>
+    <string name="pref_key_enable_background_play">pref.enable_background_play</string>
+    <string name="pref_key_enable_detached_surface_texture">pref.enable_detached_surface_texture</string>
+    <string name="pref_key_enable_no_view">pref.enable_no_view</string>
+    <string name="pref_key_enable_surface_view">pref.enable_surface_view</string>
+    <string name="pref_key_enable_texture_view">pref.enable_texture_view</string>
+    <string name="pref_key_last_directory" />
+    <string name="pref_key_media_codec_handle_resolution_change">pref.media_codec_handle_resolution_change</string>
+    <string name="pref_key_pixel_format">pref.pixel_format</string>
+    <string name="pref_key_player">pref.player</string>
+    <string name="pref_key_using_android_player">pref.using_android_player</string>
+    <string name="pref_key_using_media_codec">pref.using_media_codec</string>
+    <string name="pref_key_using_media_codec_auto_rotate">pref.using_media_codec_auto_rotate</string>
+    <string name="pref_key_using_mediadatasource">pref.using_mediadatasource</string>
+    <string name="pref_key_using_opensl_es">pref.using_opensl_es</string>
+    <string name="pref_summary_enable_background_play">need Android 4.0+</string>
+    <string name="pref_summary_enable_detached_surface_texture" />
+    <string name="pref_summary_enable_no_view" />
+    <string name="pref_summary_enable_surface_view" />
+    <string name="pref_summary_enable_texture_view" />
+    <string name="pref_summary_media_codec_handle_resolution_change" />
+    <string name="pref_summary_using_android_player" />
+    <string name="pref_summary_using_media_codec" />
+    <string name="pref_summary_using_media_codec_auto_rotate" />
+    <string name="pref_summary_using_mediadatasource" />
+    <string name="pref_summary_using_opensl_es" />
+    <string name="pref_title_enable_background_play">Enable background play</string>
+    <string name="pref_title_enable_detached_surface_texture">Enable detached SurfaceTexture</string>
+    <string name="pref_title_enable_no_view">Enable NoView</string>
+    <string name="pref_title_enable_surface_view">Enable SurfaceView</string>
+    <string name="pref_title_enable_texture_view">Enable TextureView</string>
+    <string name="pref_title_general">General</string>
+    <string name="pref_title_ijkplayer_audio">Audio: ijkplayer</string>
+    <string name="pref_title_ijkplayer_video">Video: ijkplayer</string>
+    <string name="pref_title_media_codec_handle_resolution_change">MediaCodec handle resolution change</string>
+    <string name="pref_title_misc">Misc</string>
+    <string name="pref_title_pixel_format">Pixel Format</string>
+    <string name="pref_title_player">Choose Player</string>
+    <string name="pref_title_render_view">RenderView</string>
+    <string name="pref_title_using_android_player">Using system player</string>
+    <string name="pref_title_using_media_codec">Using MediaCodec</string>
+    <string name="pref_title_using_media_codec_auto_rotate">Using MediaCodec auto rotate</string>
+    <string name="pref_title_using_mediadatasource">Using MediaDataSource</string>
+    <string name="pref_title_using_opensl_es">Using OpenSL ES</string>
+    <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
+    <string name="prompt_asiair_connect_success">Reconnection Succeeded</string>
+    <string name="prompt_auto_reconnect">Auto Reconnect...</string>
+    <string name="prompt_sure_change_channel_to_2_4_G">Network will be auto reconnected</string>
+    <string name="prompt_sure_change_channel_to_5G">Station Mode will be disabled and Network will be auto reconnected</string>
+    <string name="qmui_cancel">取 消</string>
+    <string name="qmui_tool_fixellipsize">​</string>
+    <string name="ra_aggressive">RA Aggr</string>
+    <string name="rank_all_frames">rank all frames</string>
+    <string name="rationale_ask">This app may not work correctly without the requested permissions.</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="read_all_frames">Read and rank all frames</string>
+    <string name="recent">Recent</string>
+    <string name="refresh">Refresh</string>
+    <string name="remark_powered_device">Remark powered device</string>
+    <string name="remove">Remove</string>
+    <string name="rename">Rename</string>
+    <string name="required">required</string>
+    <string name="requires_dec_flip_after_amf">Reverse Dec after Meridian Flip</string>
+    <string name="requires_dec_flip_after_amf_tip">This option only for Celestron AVX and OnStep mounts. If DEC runs away in guiding Graph, then clear the calibration data, enable it and recalibrate to start guiding</string>
+    <string name="reset">Reset</string>
+    <string name="reset_progress">Reset Progress</string>
+    <string name="reset_progress_hint">All of the sequences progress will be reset</string>
+    <string name="reset_progress_title">Reset Progress</string>
+    <string name="reset_wifi_name_hint">Changing the Name will disconnect any currently connected devices</string>
+    <string name="reset_wifi_pwd_hint">Changing the Password will disconnect any currently connected devices</string>
+    <string name="restart">Restart</string>
+    <string name="restart_asiair">Restart ASIAIR</string>
+    <string name="restart_asiair_hint">The Guide Service started failed, Please restart the ASIAIR and App</string>
+    <string name="retry">Retry</string>
+    <string name="rollback_can_not">Unable to recover. Firmware of app is too low</string>
+    <string name="rollback_completed">Reset completed</string>
+    <string name="rollback_err">Reset firmware Failed</string>
+    <string name="rollback_in_progress">Resetting...</string>
+    <string name="rollback_no_need">No need to recover. Firmware of app is too low</string>
+    <string name="rollback_sub_title">Reset Firmware</string>
+    <string name="rollback_tip">The firmware will be reset to the factory version. ASIAIR device cannot be connected during resetting</string>
+    <string name="rollback_title">Reset Firmware</string>
+    <string name="rollback_to_version"><Data>Current Version %1$s &lt;br>&lt;font color=#FF5640>Reset to %2$s&lt;/font></Data></string>
+    <string name="rotate_in_one_way">Rotate in One-Way</string>
+    <string name="rtmp_fps">%1$.1f fps</string>
+    <string name="run_log_viewer_title">Autorun and Plan Log</string>
+    <string name="sample">Sample</string>
+    <string name="save">Save</string>
+    <string name="scan">Scan</string>
+    <string name="scan_current_network_asiair">Scan ASIAIR in current network</string>
+    <string name="scan_existed_license_to_authorize">Do not scan the QR code from ASIAIR packing box</string>
+    <string name="scan_fail_no_qr">Authorization code not detected, please try again</string>
+    <string name="scan_tip">Place the code within the frame</string>
+    <string name="scankit_confirm">OK</string>
+    <string name="scankit_light">Touch for more light</string>
+    <string name="scankit_light_off">Turn off light</string>
+    <string name="scankit_no_code_tip">No code detected.</string>
+    <string name="scankit_scan_tip">Place the code within the frame</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">Scan</string>
+    <string name="schedule_end_event">End Events</string>
+    <string name="scope_current_ra_dec">Current RA/DEC</string>
+    <string name="scope_goto_auto_center">GoTo Auto-Center</string>
+    <string name="scope_goto_auto_exp">Center EXP Time</string>
+    <string name="scope_guiding_rate">Guiding Rate</string>
+    <string name="scope_info">Mount Info</string>
+    <string name="scope_location_tip">Please tap Sync to Mount when the location info of mount and phone are inconsistent</string>
+    <string name="scope_park">Goto Home Position</string>
+    <string name="scope_setting_open_objects">View Objects</string>
+    <string name="scope_target">Target</string>
+    <string name="scope_time_zone">Time Zone: </string>
+    <string name="scope_time_zone_tip">"Please ensure DST is disabled on HC. It's normal that the time on the mount is 1 hour earlier than your local time"</string>
+    <string name="scope_tracking">Tracking</string>
+    <string name="scope_tracking_rate">Tracking Rate</string>
+    <string name="scope_tracking_rate_1">SIDEREAL</string>
+    <string name="scope_tracking_rate_2">SOLAR</string>
+    <string name="scope_tracking_rate_3">LUNAR</string>
+    <string name="sdcard_eg_air_os">ASIAIR OS</string>
+    <string name="sdcard_eg_free">Available</string>
+    <string name="sdcard_eg_used">Used</string>
+    <string name="sdcard_free_sign">Free: </string>
+    <string name="sdcard_free_total">%1$s of %2$s Used</string>
+    <string name="sdcard_image_manage">Image Management</string>
+    <string name="sdcard_setting">Storage Settings</string>
+    <string name="search">Search</string>
+    <string name="search_history">History</string>
+    <string name="search_menu_title">Search</string>
+    <string name="search_object_not_found">Objects not included or enter error, please re-enter</string>
+    <string name="search_object_not_found_title">Not Found</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="select">Select</string>
+    <string name="selected">Selected</string>
+    <string name="selected_star_at">Star</string>
+    <string name="serial">Serial</string>
+    <string name="set_1x_then_continue_guide">Set to 1X</string>
+    <string name="setting_dream_partner">Dream Partners</string>
+    <string name="setting_exp_with_cable">EXP with Shutter Release Cable</string>
+    <string name="setting_filename_eg">Example: </string>
+    <string name="setting_filename_eg_camera">_6200MM</string>
+    <string name="setting_filename_eg_end">_0001.fit</string>
+    <string name="setting_filename_eg_gain">_gain120</string>
+    <string name="setting_filename_eg_iso">_ISO1600</string>
+    <string name="setting_filename_eg_start">Light_M81_10s_Bin1_R</string>
+    <string name="setting_filename_eg_temp">_-20C</string>
+    <string name="setting_filename_eg_temp_f">_-20F</string>
+    <string name="setting_filename_eg_time">_20200101-080808</string>
+    <string name="setting_filename_rb_bin">Bin</string>
+    <string name="setting_filename_rb_camera">ASI Camera Model</string>
+    <string name="setting_filename_rb_gain">Gain</string>
+    <string name="setting_filename_rb_iso">ISO</string>
+    <string name="setting_filename_rb_temp">Temp</string>
+    <string name="setting_filename_rb_time">Date</string>
+    <string name="setting_filename_selected_tip">Selected</string>
+    <string name="setting_filename_tip">Select the parameter to define your filename</string>
+    <string name="setting_filename_title">Customize File Name</string>
+    <string name="setting_lab_test">Experimental Feature</string>
+    <string name="setting_lab_test_3pa">All-Sky Polar Align</string>
+    <string name="setting_lab_test_3pa_angle">RA Axis Rotation Distance</string>
+    <string name="setting_lab_test_alpha">Alpha</string>
+    <string name="setting_lab_test_empty">--- No features available ---</string>
+    <string name="setting_lab_test_multi_star">Multi Star</string>
+    <string name="setting_lab_test_multi_star_tip">Only takes effect when guiding select the star automatically. If you manually select the star, it will switch to the single star guiding</string>
+    <string name="setting_lab_test_plan">Turn off Auto-Center when GoTo in Plan</string>
+    <string name="setting_lab_test_solve">New Plate-solving Algorithm</string>
+    <string name="setting_lab_test_solve_tip">More accurate star detection under a faint environment</string>
+    <string name="setting_lab_test_sub_title">Explore recently released ASIAIR features</string>
+    <string name="setting_lab_test_threshold">GoTo Centering Accuracy</string>
+    <string name="setting_lab_test_threshold_tip">The range is 1-100%. The number is smaller, the accuracy is higher, and the Auto-center is more difficult</string>
+    <string name="setting_lab_test_title">Welcome to ASIAIR Labs</string>
+    <string name="setting_main_camera_aps_c">APS-C</string>
+    <string name="setting_main_camera_format">Frame ROI</string>
+    <string name="setting_main_camera_full_frame">Full Frame</string>
+    <string name="setting_save_2_camera">Save Image to DSLR Simultaneously</string>
+    <string name="setting_service_agreements">Service Agreements</string>
+    <string name="setting_update_log">Update Log</string>
+    <string name="setting_update_log_title"> New Features Introduction</string>
+    <string name="setting_wheel_calibration">Calibrate</string>
+    <string name="setting_wheel_calibration_dialog_content">There is no need to calibrate when EFW works well, EFW will be reset after recalibrating</string>
+    <string name="setting_wheel_calibration_dialog_title">Recalibrate EFW</string>
+    <string name="setting_wheel_calibration_fail_275">Initialization failed, please try to clean the sensor</string>
+    <string name="setting_wheel_calibration_fail_276">It is detected that the carousel is slipping or blocked. There is a possibility that the space between motor shaft/stalk and carousel might too loose or too tight, or the O-ring is damaged, or the central fixing screw of the carousel is too tight</string>
+    <string name="setting_wheel_calibration_fail_277">Failed to run to the specified position, the filter wheel may be blocked or slipping, Please make sure it is installed correctly</string>
+    <string name="setting_wheel_calibration_fail_title">Calibration Failed</string>
+    <string name="setting_wheel_calibration_ing">Wait a minute, calibrating…</string>
+    <string name="setting_wheel_calibration_start">Start</string>
+    <string name="setting_wheel_calibration_success">Calibrate completed</string>
+    <string name="setting_wheel_exp">AF EXP</string>
+    <string name="setting_wheel_index">Slot</string>
+    <string name="setting_wheel_name">Name</string>
+    <string name="setting_wheel_recalibration_desc">Recalibrate EFW</string>
+    <string name="setting_wheel_tip">Tap &lt;img src=\"%1$d\"> to edit Name, which is limited 4 numbers or letters</string>
+    <string name="settings">Settings</string>
+    <string name="settle_state_complete">Settle Complete</string>
+    <string name="settle_state_dither_settling">Dither Settling</string>
+    <string name="settle_state_fail">Settle Fail</string>
+    <string name="settle_state_guide_settling">Guide Settling</string>
+    <string name="settle_state_wait_dither_settling">Wait Dither Settling</string>
+    <string name="settle_state_wait_guide_settling">Wait Guide Settling</string>
+    <string name="settle_state_wait_settling">Wait Settling</string>
+    <string name="settle_state_wait_settling_dayu">Distance %1$s″ > %2$s″, waiting</string>
+    <string name="settle_state_wait_settling_xiaoyu">Distance %1$s″ &lt; %2$s″ for %3$ss</string>
+    <string name="shape_circular">Circular</string>
+    <string name="shape_elliptical">Elliptical</string>
+    <string name="shape_irregular">Irregular</string>
+    <string name="share">Share</string>
+    <string name="shooting_schedule">Shooting Schedule</string>
+    <string name="show">Show</string>
+    <string name="show_info">Info</string>
+    <string name="shut_down_air">Shutdown ASIAIR</string>
+    <string name="shutdown">Shutdown</string>
+    <string name="skip">Skip</string>
+    <string name="sky_tip_air_off">ASIAIR disconnected</string>
+    <string name="sky_tip_air_on">ASIAIR connected</string>
+    <string name="sky_tip_camera_off">Main Camera disconnected, please check it</string>
+    <string name="sky_tip_camera_on">Main Camera connected</string>
+    <string name="sky_tip_mount_off">Mount disconnected, please check it</string>
+    <string name="sky_tip_mount_on">Mount connected</string>
+    <string name="sky_tip_resourse_no_found">No resource is found. Please restart the APP and try again</string>
+    <string name="slide_to_adjust_histogram">Slide to adjust histogram</string>
+    <string name="software_update_page_title">App Update</string>
+    <string name="software_update_ready_info">Current Version %1$s</string>
+    <string name="software_update_ready_tip">"The app and firmware version are not consistent
+ users are encouraged to update to the latest version"</string>
+    <string name="software_update_ready_title">App version is out of date</string>
+    <string name="solar_classify_object">Solar Object</string>
+    <string name="solar_classify_planets">"Solar System's Planets"</string>
+    <string name="solar_classify_satellite">"Solar System's Satellite"</string>
+    <string name="solar_classify_star">Solar Star</string>
+    <string name="solved_angle">Angle: </string>
+    <string name="solved_failed_msg1"><Data>&lt;font color=#259B24>%1$d&lt;/font> stars detected &lt;br> FOV:&amp;#160;&lt;font color=#259B24>%2$s&lt;/font> &lt;br> Maybe too few stars or cloud interference, ensure the focal length &lt;br> &lt;font color=#259B24>%3$dmm&lt;/font> is correct, if unsure, please enter 0</Data></string>
+    <string name="solved_failed_msg2"><Data>&lt;font color=#259B24>%1$d&lt;/font> stars detected &lt;br> FOV:&amp;#160;&lt;font color=#259B24>%2$s&lt;/font> &lt;br> FOV is beyond the solving range(0.4°-33°), ensure the focal length &lt;br> &lt;font color=#259B24>%3$dmm&lt;/font> is correct, if unsure, please enter 0</Data></string>
+    <string name="solved_failed_msg3"><Data>&lt;font color=#259B24>%1$d&lt;/font> stars detected &lt;br> FOV:&amp;#160;&lt;font color=#259B24>%2$s&lt;/font> &lt;br> Maybe FOV is beyond the solving range, or too few stars or cloud interference</Data></string>
+    <string name="solved_failed_title_info"><Data>Failed! Solve took &lt;font color=#259B24>%1$.1f&lt;/font> Seconds</Data></string>
+    <string name="solved_focal_length">Focal Length: </string>
+    <string name="solved_fov">FOV: </string>
+    <string name="solved_title_info"><Data>Success! Solve took &lt;font color=#259B24>%1$.1f&lt;/font> Seconds</Data></string>
+    <string name="solving">Solving...</string>
+    <string name="solving_chip_size">Chip size: </string>
+    <string name="solving_focal_length">Focal length: </string>
+    <string name="solving_fov">FOV: </string>
+    <string name="solving_hint"><Data>&lt;font color=#259B24>Hint&lt;/font>:&amp;#160;Please make sure the focal length is correct&lt;br>Otherwise the image may not be solved </Data></string>
+    <string name="solving_msg1"><Data>&lt;font color=#259B24>%1$d&lt;/font> Stars Detected, Solving...&lt;font color=#259B24>%2$d&lt;/font> Seconds </Data></string>
+    <string name="solving_msg2"><Data>Solving... &lt;font color=#259B24>%1$d&lt;/font> Seconds</Data></string>
+    <string name="solving_warning"><Data>&lt;font color=#e0444a>Warning&lt;/font>:&amp;#160;FOV out of range(0.4°-33°)&lt;br>This image may not be solved </Data></string>
+    <string name="south_lat">South</string>
+    <string name="speed">Speed</string>
+    <string name="splash_dialog_btn_open">Open</string>
+    <string name="splash_dialog_content">Enable location service so that you can use some functions normally</string>
+    <string name="splash_dialog_title">Open GPS</string>
+    <string name="src_import">Import</string>
+    <string name="stability_setting">Guide Stability Settings</string>
+    <string name="stability_setting_tip">Works with Lights in Autorun and Live</string>
+    <string name="stability_settle_time">Settle Time</string>
+    <string name="stability_settle_time_tip">Guide stability should lower than %2$s and maintain for %1$s</string>
+    <string name="stability_stability">Stability</string>
+    <string name="stability_time_out">Timeout</string>
+    <string name="stability_time_out_stop">Continue Shooting after Timeout</string>
+    <string name="stability_time_out_tip">Defines the max time for waiting the dithering process to finish, min time is 30s. After that the timeout it will continue shooting</string>
+    <string name="stack_all_frames">Stacking best frames</string>
+    <string name="stack_exp_time_customize">Customize</string>
+    <string name="stack_exp_time_customize_exp_s">EXP(s)</string>
+    <string name="stack_exp_time_duration_2000">0.000032–2000</string>
+    <string name="stack_exp_time_duration_30">0.000032–30</string>
+    <string name="stack_exp_time_duration_dslr_max_limit_tip">The exposure limit of some DSLR is 30s</string>
+    <string name="stack_save_to_album">Save to Album</string>
+    <string name="stack_save_txt"><Data>Go and edit the image in &lt;font color=#FF8600>%d&lt;/font>s</Data></string>
+    <string name="stack_title_pop">Select Stack Mode</string>
+    <string name="star_add_to">Add to</string>
+    <string name="star_add_to_title">Add to Category</string>
+    <string name="star_brightness">Brightness: </string>
+    <string name="star_brightness_only">BRT</string>
+    <string name="star_category_create">Create New Category</string>
+    <string name="star_category_create_hint">Enter the name</string>
+    <string name="star_category_delete">Delete Category</string>
+    <string name="star_category_delete_hint">Are you sure you want to delete this category?</string>
+    <string name="star_category_rename">Edit Category</string>
+    <string name="star_constellation">Con: </string>
+    <string name="star_constellation_only">Con</string>
+    <string name="star_detect_and_calculate_hfd">Detect and calculate star HFD...</string>
+    <string name="star_detect_no">No star detected</string>
+    <string name="star_diameter">Diameter: </string>
+    <string name="star_hfd_detect">Detect star</string>
+    <string name="star_mag">Mag: </string>
+    <string name="star_mag_only">Mag</string>
+    <string name="star_mass">Mass: </string>
+    <string name="star_multi_select_sun_hint">Do you want to apply current sequence and settings to all selected targets?</string>
+    <string name="star_obj_delete">Delete Plant</string>
+    <string name="star_obj_delete_hint">Remove this object?</string>
+    <string name="star_pick_sun_hint">Viewing the Sun without proper equipment can be dangerous. Do you want to go to the Sun?</string>
+    <string name="star_shape">Shape: </string>
+    <string name="star_size">Size: </string>
+    <string name="star_size_only">Size</string>
+    <string name="star_type_align_star">AlignStar</string>
+    <string name="star_type_cald_well">C-Caldwell</string>
+    <string name="star_type_comet">Comet</string>
+    <string name="star_type_custom">Custom</string>
+    <string name="star_type_double_stars">Double Stars</string>
+    <string name="star_type_galactic_nebula">Galactic Nebula</string>
+    <string name="star_type_galaxy">Galaxy</string>
+    <string name="star_type_globular_cluster">Globular Cluster</string>
+    <string name="star_type_ngc_duplicate">NGC Duplicate</string>
+    <string name="star_type_not_found">Not Found</string>
+    <string name="star_type_open_cluster">Open Cluster</string>
+    <string name="star_type_part_of_nebula">Part of Nebula</string>
+    <string name="star_type_planetary_nebula">Planetary Nebula</string>
+    <string name="star_type_sh2">SH2</string>
+    <string name="star_type_stars">Star(s)</string>
+    <string name="start">Start</string>
+    <string name="start_guiding">Start Guiding</string>
+    <string name="start_lost">Star Lost</string>
+    <string name="state_completed">Download finished</string>
+    <string name="state_connecting">Connecting to the download server</string>
+    <string name="state_downloading">Downloading resources</string>
+    <string name="state_failed">Download failed</string>
+    <string name="state_failed_cancelled">Download cancelled</string>
+    <string name="state_failed_fetching_url">Download failed because the resources could not be found</string>
+    <string name="state_failed_sdcard_full">Download failed because the external storage is full</string>
+    <string name="state_failed_unlicensed">Download failed because you may not have purchased this app</string>
+    <string name="state_fetching_url">Looking for resources to download</string>
+    <string name="state_idle">Waiting for download to start</string>
+    <string name="state_paused_by_request">Download paused</string>
+    <string name="state_paused_network_setup_failure">Download paused. Test a website in browser</string>
+    <string name="state_paused_network_unavailable">Download paused because no network is available</string>
+    <string name="state_paused_roaming">Download paused because you are roaming</string>
+    <string name="state_paused_sdcard_unavailable">Download paused because the external storage is unavailable</string>
+    <string name="state_paused_wifi_disabled">Download paused because wifi is disabled</string>
+    <string name="state_paused_wifi_unavailable">Download paused because wifi is unavailable</string>
+    <string name="state_start_guiding">Start Guiding: </string>
+    <string name="state_unknown">Starting...</string>
+    <string name="station_frequency_match_failed">Frequency Match Failed</string>
+    <string name="station_scan_network_hint_off_status">Enable STA Mode to scan all available %1$sGhz networks</string>
+    <string name="station_scan_network_hint_on_status">Available %1$sGhz networks (Do not connect to ASIAIR Hotspot)</string>
+    <string name="station_state_disconnected">Network Disconnected</string>
+    <string name="station_state_off">OFF</string>
+    <string name="station_wifi_connecting">Connecting...</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop">Stop</string>
+    <string name="str_dec_only">DEC </string>
+    <string name="str_dec_symbol">DEC: </string>
+    <string name="str_latitude_only">Latitude </string>
+    <string name="str_latitude_symbol">Latitude: </string>
+    <string name="str_longitude_only">Longitude </string>
+    <string name="str_longitude_symbol">Longitude: </string>
+    <string name="str_ra_only">RA </string>
+    <string name="str_ra_symbol">RA: </string>
+    <string name="str_time_symbol">Time: </string>
+    <string name="string_adv">Avg</string>
+    <string name="string_max">Max</string>
+    <string name="string_min">Min</string>
+    <string name="string_rms_total">Tot</string>
+    <string name="string_std">Std</string>
+    <string name="submit">Submit</string>
+    <string name="subnet_mask">Subnet Mask</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="support_5g_content">"Your device does't support 5G WiFi and can't be switched 5G WiFi"</string>
+    <string name="support_5g_title">"Can't switch"</string>
+    <string name="sure_to_switch_24G">Switch to 2.4G WiFi</string>
+    <string name="sure_to_switch_5G">Switch to 5G WiFi</string>
+    <string name="switch_btn">Switch</string>
+    <string name="sync">Align Mount</string>
+    <string name="sync_fail">Align failed</string>
+    <string name="sync_ok">Align succeeded</string>
+    <string name="sync_retry">Align &amp; GoTo</string>
+    <string name="sync_to_scope">Sync to Mount</string>
+    <string name="target_add_limit">You can add up to %1$d targets</string>
+    <string name="target_multi_add_limit">Cannot add more targets</string>
+    <string name="target_temp">Target T: </string>
+    <string name="tcp">TCP</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="telescope">Mount</string>
+    <string name="telescope_setting">Mount Settings</string>
+    <string name="temp">Temp: </string>
+    <string name="time_format_hour">%dh</string>
+    <string name="time_format_hour_min" formatted="false">%dh %dm</string>
+    <string name="time_format_hour_min_sec" formatted="false">%dh %dm %ds</string>
+    <string name="time_format_min">%dm</string>
+    <string name="time_format_min_sec" formatted="false">%dm %ds</string>
+    <string name="time_format_sec">%ds</string>
+    <string name="time_in_chart">Time/h</string>
+    <string name="time_remaining">Time remaining: %1$s</string>
+    <string name="time_remaining_notification">%1$s left</string>
+    <string name="tip_change_frame_forbid">Switch unsupported while exposing</string>
+    <string name="tip_change_wifi_name_fail">Change failed</string>
+    <string name="tip_change_wifi_name_ok">Change Succeeded</string>
+    <string name="tip_compress">Being compressed...</string>
+    <string name="tip_compress_failed">%1$s Picture compression failure:%2$s picturePath:%3$s</string>
+    <string name="tip_coord_in_jnow">Coord. in JNow</string>
+    <string name="tip_copy_success">Copy succeeded</string>
+    <string name="tip_empty_fov">Plate solve to get target FOV</string>
+    <string name="tip_equatorial_grid_off">Equatorial Coordintes Off</string>
+    <string name="tip_equatorial_grid_on">Equatorial Coordintes On</string>
+    <string name="tip_for_guide_scope_focal_length">Please enter the Guide Scope Focal Length accurately</string>
+    <string name="tip_forbid_align_because_shooting">Exposing, cannot Align</string>
+    <string name="tip_forbid_because_goto">Cannot be done while GoTo</string>
+    <string name="tip_forbid_goto_because_shooting">Exposing, cannot GoTo</string>
+    <string name="tip_guide_noimage_content">"Check below possible reasons and retry
+1 Guide camera works abnormally
+2 The USB or hub port connected to Guide Camera is abnormal
+3 The cable connected to the Guide Camera is too long or damaged"</string>
+    <string name="tip_guide_noimage_title">Image refresh failed</string>
+    <string name="tip_gyro_no_support">Compass is not detected, sensor mode is disabled</string>
+    <string name="tip_gyro_off">Compass Off</string>
+    <string name="tip_gyro_on">Compass On</string>
+    <string name="tip_image_save_already_saved">Image is existed</string>
+    <string name="tip_image_save_no_image">No Image</string>
+    <string name="tip_image_save_success">Save succeed</string>
+    <string name="tip_landscape_off">Landscape Off</string>
+    <string name="tip_landscape_on">Landscape On</string>
+    <string name="tip_local_bin_image">Mobile phone available memory limited, image will be reduced</string>
+    <string name="tip_no_calibrate_data">"No calibration data, can't flip"</string>
+    <string name="tip_no_camera">No camera</string>
+    <string name="tip_permission_camera">No permission to use the camera, open the rights management</string>
+    <string name="tip_permission_camera_storage">No permission to use the camera and SD card, open the rights management</string>
+    <string name="tip_permission_storage">No permission to use the SD card, open the rights management</string>
+    <string name="tip_save_failure">fail to save</string>
+    <string name="tip_save_success">success</string>
+    <string name="tip_saved">Saved</string>
+    <string name="tip_tips">Tips</string>
+    <string name="tip_type_not_image">Choose not pictures</string>
+    <string name="title_for_input_gps">Read GPS location failed</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="toast_add_done">Add succeeded</string>
+    <string name="toast_add_failed_has_exists">Item already exists</string>
+    <string name="toast_check_shutter_cable_connected">Exposure failed, please check if the Shutter Release Cable is connected properly</string>
+    <string name="toast_clear_done">Clear succeeded</string>
+    <string name="toast_copy_done">Copied</string>
+    <string name="toast_create_failed">Add failed</string>
+    <string name="toast_create_success">Add succeeded</string>
+    <string name="toast_cut_done">Moved</string>
+    <string name="toast_del_done">Deleted</string>
+    <string name="toast_del_failed">Delete Failed</string>
+    <string name="toast_format_done">Format completed</string>
+    <string name="toast_gps_get_location">Locating</string>
+    <string name="toast_gps_location_fail">Locate failed</string>
+    <string name="toast_gps_location_success">Locate success</string>
+    <string name="toast_please_open_camera">Please connect Main Camera first</string>
+    <string name="toast_rename_failed">Rename Failed</string>
+    <string name="toast_rename_success">Rename succeeded</string>
+    <string name="toast_stop_exp_without_bulb">"Can't stop immediately, please wait for seconds"</string>
+    <string name="toast_wifi_no_connected">Check your device network to ensure it is connected to WiFi</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="toggle_render">Render</string>
+    <string name="top_exit_app">Tap again to exit ASIAIR</string>
+    <string name="tracks">Tracks</string>
+    <string name="txt_cant_stack">Cannot Stack</string>
+    <string name="txt_nope">Nope</string>
+    <string name="txt_planet">Planet</string>
+    <string name="txt_sharpen">Sharpness</string>
+    <string name="txt_stack">Stack</string>
+    <string name="txt_stacking">Stacking</string>
+    <string name="txt_stacking_complete">Stack Finished</string>
+    <string name="txt_stacking_complete_context">Image saved to ASIAIR Device. You can load and edit it</string>
+    <string name="txt_stacking_failed">Stack Failed</string>
+    <string name="udp">UDP</string>
+    <string name="unable_to_access_the_internet">Connected but unable to access the internet</string>
+    <string name="unknown">Unknown</string>
+    <string name="unknown_na">N/A</string>
+    <string name="use_subframe">Use Subframes</string>
+    <string name="v7_preference_off">OFF</string>
+    <string name="v7_preference_on">ON</string>
+    <string name="v_cache">v-cache</string>
+    <string name="vdec">vdec</string>
+    <string name="verify_active_tip">Connect your device to ASIAIR WiFi (ASIAIR_xxxxxxxx), and tap Activate</string>
+    <string name="verify_error_and_exit">Activation of this ASIAIR is abnormal，ASIAIR will stop service and exit</string>
+    <string name="verify_fail">Activation Failed</string>
+    <string name="verify_fail_tip">Tap Reactivate to retry, if still failed, please contact us</string>
+    <string name="verify_from_album">Select from Album</string>
+    <string name="verify_get_auth_success_tip">Authorization code is obtained</string>
+    <string name="verify_no_air_tip">Check your device network to ensure it is connected to ASIAIR WiFi</string>
+    <string name="verify_no_internet">Connect your device to the Internet, and tap Get Authorization Code</string>
+    <string name="verify_no_internet_tip">Check your device network to ensure it can access the Internet</string>
+    <string name="verify_page_title">ASIAIR Activation</string>
+    <string name="verify_succeeded">Activated</string>
+    <string name="verify_succeeded_tip">Saved to Album, you can scan it to authorize directly next time</string>
+    <string name="verify_welcome_tip">Follow the prompts to activate your ASIAIR</string>
+    <string name="video_adjust_balance_b">WB(B)</string>
+    <string name="video_adjust_balance_b_auto">AWB(B)</string>
+    <string name="video_adjust_balance_r">WB(R)</string>
+    <string name="video_adjust_balance_r_auto">AWB(R)</string>
+    <string name="video_adjust_exp">EXP</string>
+    <string name="video_adjust_exp_auto">"Auto
+EXP"</string>
+    <string name="video_adjust_gain">Gain</string>
+    <string name="video_adjust_gain_auto">"Auto
+Gain"</string>
+    <string name="video_nginx_service_fail_exp_tip">Please check the connection of the Main Camera and retry</string>
+    <string name="video_nginx_service_fail_startup_tip">The Video Service starts failed, please retry later</string>
+    <string name="video_record_larger_than_4G_tip">"The file system type of your storage device doesn't support writing single file larger than 4G, recording stopped and saved as"</string>
+    <string name="video_recording">Recording...</string>
+    <string name="video_save_success">Save Succeeded</string>
+    <string name="video_save_tip_failed">Save failed</string>
+    <string name="video_save_tip_failed_no_space_left">No space left on device</string>
+    <string name="video_save_tip_failed_no_space_left_with_file_name">No space left on device, recording stopped and saved as %1$s</string>
+    <string name="video_save_tip_success_with_file_name">AVI saved as %1$s, recorded time %2$s</string>
+    <string name="video_save_tosat_success">Record Succeeded</string>
+    <string name="video_setting_bgm">Audio</string>
+    <string name="video_setting_bgm_music">Music</string>
+    <string name="video_setting_bgm_none">Mute</string>
+    <string name="video_setting_exp">EXP</string>
+    <string name="video_setting_exp_ms">ms</string>
+    <string name="video_setting_exp_us">μs</string>
+    <string name="video_setting_format">Video Format</string>
+    <string name="video_setting_format_tip">MP4 will be saved on your phone and AVI(RAW) on SD Card or external storage device</string>
+    <string name="video_setting_reverse_in_horizontal">Flip Horizontally</string>
+    <string name="video_setting_reverse_in_vertical">Flip Vertically</string>
+    <string name="video_setting_title">Video Settings</string>
+    <string name="video_tip_change_bgm">Can not change audio while recording</string>
+    <string name="video_tip_change_bin">Can not change Bin while recording</string>
+    <string name="video_tip_change_format">Can not change video format while recording</string>
+    <string name="view_center">FOV Cross</string>
+    <string name="view_element_fwhm">FWHM</string>
+    <string name="view_element_hfd">HFD</string>
+    <string name="view_element_peak">Peak</string>
+    <string name="view_the_guide_curve">Check the guiding graph and adjust settings</string>
+    <string name="visual_mag">Visual Mag: </string>
+    <string name="warning">WARNING</string>
+    <string name="warning_msg_1">"GoTo location can't be beyond the horizon"</string>
+    <string name="warning_msg_2">Telescope points beyond the horizon</string>
+    <string name="warning_msg_3">Telescope points beyond the horizon</string>
+    <string name="warning_msg_4">Telescope points beyond the horizon</string>
+    <string name="warning_msg_5">Telescope points beyond the horizon</string>
+    <string name="warning_title_1">Horizon Limits</string>
+    <string name="warning_title_2">Warning</string>
+    <string name="warning_title_3">Abort Tracking</string>
+    <string name="warning_title_4">Abort GoTo</string>
+    <string name="warning_title_5">Abort Slewing</string>
+    <string name="west_long">West</string>
+    <string name="wheel">Filter Wheel</string>
+    <string name="wheel_setting">Filter Wheel Settings</string>
+    <string name="wifi_bridge_mode_title">Station Mode</string>
+    <string name="wifi_bridging_on_off_hint_2">Switch to 2.4Ghz to enable Station mode</string>
+    <string name="wifi_name_2_4_G">2.4G WiFi</string>
+    <string name="wifi_name_5_G">5G WiFi</string>
+    <string name="wifi_setting">%1$s Settings</string>
+    <string name="wifi_station_desc">Configure ASIAIR to make it controllable through the home WiFi</string>
+    <string name="wired_ethernet">Wired Ethernet</string>
+    <string name="wired_ethernet_tip">"ASIAIR ethernet port can't be connected to ST4 cable"</string>
+    <string name="wireless_hotspot">Name</string>
+    <string name="wireless_hotspot_pwd">Password</string>
+    <string name="work_scene_auto_run">Autorun</string>
+    <string name="work_scene_focus">Focus</string>
+    <string name="work_scene_pa">PA</string>
+    <string name="work_scene_plan">Plan</string>
+    <string name="work_scene_preview">Preview</string>
+    <string name="work_scene_stack">Live</string>
+    <string name="work_scene_video">Video</string>
+    <string name="xpopup_cancel">Cancel</string>
+    <string name="xpopup_image_not_exist">Image not exist</string>
+    <string name="xpopup_ok">OK</string>
+    <string name="xpopup_ok_zwo">OK</string>
+    <string name="xpopup_save">Save</string>
+    <string name="xpopup_saved_fail">Image save failed</string>
+    <string name="xpopup_saved_to_gallery">Saved to album</string>
+    <string name="xpopup_success2see">View Image</string>
+    <string name="yes">YES</string>
+</resources>

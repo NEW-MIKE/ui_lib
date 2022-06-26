@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ra_dec_info_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_12" android:minWidth="@dimen/dp_80" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/color_ra" android:text="@string/str_ra_only" style="@style/ra_dec_info_tv" />
+            <TextView android:gravity="center|right" android:id="@id/guider_graph_ra" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/color_dec" android:text="@string/str_dec_only" style="@style/ra_dec_info_tv" />
+            <TextView android:gravity="center|right" android:id="@id/guider_graph_dec" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/color_text_888888" android:text="@string/string_rms_total" style="@style/ra_dec_info_tv" />
+            <TextView android:gravity="center|right" android:id="@id/guider_graph_total" android:layout_width="fill_parent" android:text="0.00″" style="@style/ra_dec_info_tv" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/dynamic_chart" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ra_dec_info_layout" />
+</RelativeLayout>

@@ -79,13 +79,13 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent">
 
-                            <com.example.ui_demo_start.view.widget.AutoRunProgressView
+<!--                            <com.example.ui_demo_start.view.widget.AutoRunTotalProgressView
                                 android:id="@+id/update_process_bar"
                                 android:layout_width="@dimen/dp_200"
                                 android:layout_height="@dimen/dp_200"
                                 android:layout_centerInParent="true"
                                 app:center_background_color="@android:color/transparent"
-                                app:progress_bar_width_percent="0.05" />
+                                app:progress_bar_width_percent="0.05" />-->
 
                             <LinearLayout
                                 android:layout_width="wrap_content"

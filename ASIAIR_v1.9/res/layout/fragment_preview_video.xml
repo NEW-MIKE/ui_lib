@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout android:orientation="vertical" android:id="@id/preview_preview_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wang.avi.AVLoadingIndicatorView android:id="@id/pb_loading" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_27" style="@style/loading_bar_style" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="@dimen/dp_56" android:layout_height="fill_parent" android:layout_below="@id/top_layout" android:layout_alignParentRight="true">
+        <CheckBox android:textStyle="bold" android:textColor="@color/preview_type_text_color" android:id="@id/video_check_box" android:background="@drawable/mode_compound_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_6" android:button="@null" android:text="@string/work_scene_video" android:layout_above="@id/video_setting_btn" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/video_setting_btn" android:background="@drawable/autorun_setting_btn_selector" android:layout_marginBottom="@dimen/dp_26" android:layout_above="@id/start_check_box" style="@style/checkbox_textview" />
+        <com.zwoasi.asiair.view.widget.MyCheckBox android:id="@id/start_check_box" android:background="@drawable/record_compound_selector" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_centerInParent="true" style="@style/checkbox_textview" />
+        <CheckBox android:id="@id/resolution_check_box" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:textAllCaps="false" style="@style/checkbox_textview" />
+        <CheckBox android:id="@id/tiaojie_check_box" android:background="@drawable/video_tools_compound_selector" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_26" android:button="@null" android:layout_below="@id/start_check_box" style="@style/checkbox_textview" />
+        <ImageButton android:id="@id/save_img_list_btn" android:background="@drawable/autorun_file_list_selector" android:layout_marginTop="@dimen/dp_4" android:layout_below="@id/tiaojie_check_box" style="@style/checkbox_textview" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_28" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bottom_layout_video" />
+    </RelativeLayout>
+    <include android:id="@id/preview_include" android:visibility="invisible" android:layout_width="@dimen/dp_100" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_layout" layout="@layout/preview_preview_layout" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

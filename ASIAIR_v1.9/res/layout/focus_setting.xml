@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/focus_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/focus_setting_title" android:text="@string/focus_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" style="@style/setting_block">
+                        <TextView android:id="@id/focus_device_tv" android:text="@string/focus_itself" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/text_setting_item_name" />
+                        <Spinner android:id="@id/focus_device_spinner" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_50" android:layout_toLeftOf="@id/focus_device_switch" android:layout_toRightOf="@id/focus_device_tv" android:layout_centerVertical="true" style="@style/MySpinner" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/focus_device_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/open_af_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_title" style="@style/text_setting_item_name" />
+                        <ImageView android:id="@id/iv_dc_12v_output_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <TextView android:visibility="gone" android:text="@string/af_desc" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/focus_temp_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/focus_temp" style="@style/text_setting_item_name" />
+                        <TextView android:textColor="@color/color_text_setting_hub_title" android:id="@id/focus_goto_pos_temp" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_sub_obj">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/setting_sub_obj">
+                            <TextView android:text="@string/focus_position_info" style="@style/text_setting_hub_title" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_alignParentStart="true" style="@style/setting_sub_obj">
+                            <TextView android:textSize="@dimen/sp_13" android:text="@string/focus_current_position" style="@style/text_setting_item_name" />
+                            <TextView android:textSize="@dimen/sp_13" android:id="@id/focus_current_pos_val" android:hint="@string/unknown_na" style="@style/text_setting_item_name" />
+                            <ImageView android:id="@id/focus_current_pos_reset" android:background="?android:selectableItemBackground" android:clickable="true" android:src="@drawable/common_icon_edit" android:layout_marginStart="@dimen/dp_16" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_alignParentEnd="true" style="@style/setting_sub_obj">
+                            <TextView android:textSize="@dimen/sp_13" android:text="@string/focus_goto_position" style="@style/text_setting_item_name" />
+                            <EditText android:id="@id/focus_goto_pos_et" android:text="" android:hint="@string/unknown_na" android:digits="\ 0123456789" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_marginStart="@dimen/dp_16" style="@style/style_15_dark_edit_text_small" />
+                            <ToggleButton android:id="@id/focus_goto_pos_btn" android:layout_width="@dimen/dp_60" android:checked="false" android:button="@null" android:textOn="@string/focus_goto_position_btn_stop" android:textOff="@string/focus_goto_position_btn_go" android:layout_marginStart="@dimen/dp_16" style="@style/style_15_button_small" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/focus_motor_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/focus_motor_reverse" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/focus_motor_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_sub_obj">
+                    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_block">
+                        <LinearLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/setting_sub_obj">
+                            <TextView android:text="@string/focus_step_setting" style="@style/text_setting_hub_title" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/focus_fine_steps_setting" style="@style/text_setting_item_name" />
+                            <EditText android:id="@id/focus_fine_step_et" android:text="" android:hint="@string/unknown_na" android:digits="\ 0123456789" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/focus_coarse_steps_setting" style="@style/text_setting_item_name" />
+                            <EditText android:id="@id/focus_coarse_step_et" android:text="" android:hint="@string/unknown_na" android:digits="\ 0123456789" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/focus_max_steps" style="@style/text_setting_item_name" />
+                            <EditText android:id="@id/focus_max_steps_et" android:text="" android:hint="@string/unknown_na" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/focus_backlash" style="@style/text_setting_item_name" />
+                            <EditText android:id="@id/focus_backlash_et" android:text="" android:hint="@string/unknown_na" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/focus_beep" style="@style/text_setting_item_name" />
+                            <Switch android:id="@id/focus_beep_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <TextView android:text="@string/focus_beep_tip" style="@style/text_setting_item_tip" />
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/af_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/close_af_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/af_setting_title" android:text="@string/af_title" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_exp_time" style="@style/text_setting_item_name" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_af_exp_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                            <Spinner android:id="@id/af_exp_time_spinner" android:clickable="false" android:layout_width="@dimen/dp_100" android:layout_alignParentEnd="true" style="@style/MySpinner" />
+                            <TextView android:layout_marginLeft="@dimen/dp_8" android:text="s" style="@style/text_setting_item_name" />
+                        </LinearLayout>
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/af_exp_time_radio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                            <RadioButton android:id="@id/af_exp_time_1" android:text="2s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_exp_time_2" android:text="5s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_exp_time_5" android:text="10s" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_exp_time_10" android:text="20s" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <TextView android:id="@id/tv_af_exp_time_tip" android:text="@string/af_exp_time_desc" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_eaf_step" style="@style/text_setting_item_name" />
+                        <EditText android:id="@id/af_eaf_step_et" android:text="" android:hint="@string/unknown_na" android:digits="\ 0123456789" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+                    </RelativeLayout>
+                    <TextView android:text="@string/af_eaf_step_desc" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_title" style="@style/text_setting_item_name" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_condition_temperature" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/af_temperature_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_20" android:layout_toStartOf="@id/af_temperature_switch">
+                            <RadioButton android:id="@id/af_temperature_2" android:text="1℃" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_temperature_5" android:text="2℃" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_temperature_8" android:text="5℃" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                        <Switch android:id="@id/af_temperature_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_condition_time_interval" style="@style/text_setting_item_name" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/af_time_interval_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_20" android:layout_toStartOf="@id/af_time_interval_switch">
+                            <RadioButton android:id="@id/af_time_interval_1" android:text="0.5H" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_time_interval_2" android:text="1H" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/af_time_interval_3" android:text="2H" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                        <Switch android:id="@id/af_time_interval_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_condition_change_filter_wheel" style="@style/text_setting_item_name" />
+                        <Switch android:id="@id/af_change_filter_wheel_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_condition_before_shoot" style="@style/text_setting_item_name" />
+                        <Switch android:id="@id/af_before_shoot_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/af_auto_run_condition_after_med_flip" style="@style/text_setting_item_name" />
+                        <Switch android:id="@id/af_med_flip_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                    </RelativeLayout>
+                    <TextView android:layout_marginTop="@dimen/dp_8" android:text="@string/af_auto_run_condition_attention" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar android:id="@id/focuser_setting_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

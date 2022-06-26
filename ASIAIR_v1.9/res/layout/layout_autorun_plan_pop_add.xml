@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="horizontal" android:id="@id/pop_plan_add_left_layout" android:background="@color/transparent_40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/right_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_black" android:clickable="true" android:layout_width="@dimen/dp_484" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <RelativeLayout android:id="@id/plan_edit_layout" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_marginBottom="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:gravity="center_vertical" android:id="@id/tv_create_plan_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_toLeftOf="@id/tv_create_plan_save" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/air_colorAccent" android:gravity="center_vertical" android:id="@id/tv_create_plan_save" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ok" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ScrollView android:id="@id/autorun_info_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_name" style="@style/text_setting_item_name" />
+                            <EditText android:textColor="@color/color_text_setting_item_name" android:gravity="right" android:id="@id/edt_plan_title" android:background="@null" android:paddingRight="@dimen/dp_16" android:layout_width="@dimen/dp_200" android:layout_height="wrap_content" android:hint="@string/autorun_plan_name_hint" android:layout_alignParentRight="true" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                            <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_auto_guiding" style="@style/text_setting_item_name" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_auto_guiding_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:id="@id/meridian_flip_switch_title" android:text="@string/autorun_plan_auto_amf" style="@style/text_setting_item_name" />
+                            <ImageView android:id="@id/meridian_flip_switch_unknown_plan" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/meridian_flip_switch_title" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_auto_amf_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:id="@id/auto_cooler_switch_title" android:text="@string/autorun_plan_auto_cooler" style="@style/text_setting_item_name" />
+                            <ImageView android:id="@id/auto_cooler_switch_unknown_plan" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/auto_cooler_switch_title" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_auto_cooler_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:padding="@dimen/dp_16" android:text="@string/autorun_plan_time" style="@style/text_setting_hub_title" />
+                <LinearLayout android:orientation="vertical" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_autorun_star_time" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_time_star" style="@style/text_setting_item_name" />
+                            <TextView android:id="@id/tv_autorun_star_time" android:drawableRight="@drawable/common_icon_more" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_autorun_end_time" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_time_complete" style="@style/text_setting_item_name" />
+                            <TextView android:id="@id/tv_autorun_end_time" android:drawableRight="@drawable/common_icon_more" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:padding="@dimen/dp_16" android:text="@string/autorun_plan_complete" style="@style/text_setting_hub_title" />
+                <LinearLayout android:orientation="vertical" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_40">
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_close_cooler" style="@style/text_setting_item_name" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_close_cooler_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_park" style="@style/text_setting_item_name" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_park_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/plan_reconfirm_eaf_park" style="@style/text_setting_item_name" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_eaf_park_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                        <View style="@style/style_15_divider_horizontal_padding_left" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/setting_block">
+                            <TextView android:text="@string/autorun_plan_power_off" style="@style/text_setting_item_name" />
+                            <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/autorun_plan_power_off_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/plan_opt_layout" android:background="@color/color_15_dark_background_mainland" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_40">
+                    <TextView android:textColor="@color/color_15_function_red" android:gravity="center" android:id="@id/tv_autorun_delete_plan" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:text="@string/autorun_plan_delete" style="@style/text_setting_item_name" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

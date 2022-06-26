@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_round_muti_choose_object" android:layout_width="wrap_content" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_17" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_choose_count" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_6" android:clickable="true" android:layout_height="fill_parent" android:text="0" android:drawableRight="@drawable/tonight_best_target_fold" style="@style/style_15_light_paragraph_body" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/choose_recycler_view" android:paddingRight="@dimen/dp_20" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_m_5" />
+</LinearLayout>

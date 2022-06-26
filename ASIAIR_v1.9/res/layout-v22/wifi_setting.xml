@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wifi_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/wifi_setting_title" android:text="@string/wifi_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_wifi_current_net_speed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/current_net_speed_down" style="@style/text_setting_item_name" />
+                        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_dcdcdc_50" android:id="@id/tv_wifi_current_net_speed" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/tv_speed_style" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/firmware_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/air_serial" style="@style/text_setting_item_name" />
+                        <TextView android:textColor="@color/color_text_setting_hub_title" android:textColorHint="@color/color_text_setting_hub_title" android:id="@id/serial_tv" android:hint="@string/unknown_na" android:layout_alignParentEnd="true" style="@style/text_setting_item_name" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/air_panel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:background="@drawable/ic_air_panel_bg" android:paddingLeft="@dimen/dp_12" android:layout_width="@dimen/dp_192" android:layout_height="@dimen/dp_218" android:layout_marginLeft="@dimen/dp_20">
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_air_panel_1" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_5" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_14">
+                                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <TextView android:textSize="@dimen/sp_12" android:ellipsize="end" android:id="@id/tv_wifi_network_status_in_panel" android:lines="1" android:drawableLeft="@drawable/ic_box_wifi" android:drawablePadding="@dimen/dp_4" android:layout_toLeftOf="@id/tv_wifi_network_type_in_panel" android:layout_alignParentLeft="true" style="@style/text_setting_item_name" />
+                                    <TextView android:textSize="@dimen/sp_10" android:gravity="center" android:id="@id/tv_wifi_network_type_in_panel" android:background="@drawable/shape_border_in_air_panel_select" android:padding="@dimen/dp_1" android:layout_width="@dimen/dp_30" android:text="2.4G" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                                </RelativeLayout>
+                                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <TextView android:textSize="@dimen/sp_12" android:ellipsize="end" android:id="@id/tv_sta_name_in_panel" android:lines="1" android:drawableLeft="@drawable/ic_box_bridging" android:drawablePadding="@dimen/dp_4" android:layout_toLeftOf="@id/tv_sta_status_in_panel" android:layout_alignParentLeft="true" style="@style/text_setting_item_name" />
+                                    <TextView android:textSize="@dimen/sp_10" android:gravity="center" android:id="@id/tv_sta_status_in_panel" android:background="@drawable/selector_border_in_air_panel" android:padding="@dimen/dp_1" android:layout_width="@dimen/dp_30" android:text="STA" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_3" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_3" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_104" android:layout_marginTop="@dimen/dp_8" android:layout_below="@id/ll_air_panel_1">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageView android:id="@id/iv_cpu_temp_in_panel" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_box_cpu" />
+                                        <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:id="@id/tv_cpu_temp_in_panel" android:layout_marginLeft="@dimen/dp_4" android:lines="1" android:layout_toRightOf="@id/iv_cpu_temp_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:layout_marginTop="@dimen/dp_3" android:text="@string/air_temp_short" android:lines="1" android:layout_below="@id/iv_cpu_temp_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                    </RelativeLayout>
+                                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageView android:id="@id/iv_input_v_in_panel" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_box_voltage" />
+                                        <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:id="@id/tv_input_v_in_panel" android:layout_marginLeft="@dimen/dp_4" android:lines="1" android:layout_toRightOf="@id/iv_input_v_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:layout_marginTop="@dimen/dp_3" android:text="@string/air_input_voltage" android:lines="1" android:layout_below="@id/iv_input_v_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageView android:id="@id/iv_input_a_in_panel" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_box_current" />
+                                        <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:id="@id/tv_input_a_in_panel" android:layout_marginLeft="@dimen/dp_4" android:lines="1" android:layout_toRightOf="@id/iv_input_a_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:layout_marginTop="@dimen/dp_3" android:text="@string/air_input_current" android:lines="1" android:layout_below="@id/iv_input_a_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                    </RelativeLayout>
+                                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageView android:id="@id/iv_power_in_panel" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_box_power" />
+                                        <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:id="@id/tv_power_in_panel" android:layout_marginLeft="@dimen/dp_4" android:lines="1" android:layout_toRightOf="@id/iv_power_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:layout_marginTop="@dimen/dp_3" android:text="@string/air_power_draw" android:lines="1" android:layout_below="@id/iv_power_in_panel" android:layout_centerVertical="false" style="@style/text_setting_item_name" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/sp_10" android:textColor="#ffee7b8d" android:id="@id/serial_tv_2" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/text_base" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view_dc_av_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:id="@id/tv_pro_tip" android:paddingBottom="@dimen/dp_0" android:layout_marginTop="@dimen/dp_5" android:text="@string/air_plus_tip" android:drawableLeft="@drawable/asiairsetting_image_overload" android:drawablePadding="@dimen/dp_5" android:drawableTint="@color/color_15_dark_background_mainland" style="@style/text_setting_item_tip" />
+                    <TextView android:id="@id/air_over_current_desc" android:paddingBottom="@dimen/dp_0" android:layout_marginTop="@dimen/dp_5" android:text="@string/air_power_draw_desc" android:drawableLeft="@drawable/asiairsetting_image_overload" android:drawablePadding="@dimen/dp_5" style="@style/text_setting_item_tip" />
+                    <TextView android:id="@id/air_temp_desc_tv_2" android:paddingBottom="@dimen/dp_0" android:layout_marginTop="@dimen/dp_5" android:text="@string/air_temp_desc" android:drawableLeft="@drawable/asiairsetting_image_cputemperature" android:drawablePadding="@dimen/dp_5" style="@style/text_setting_item_tip" />
+                    <TextView android:id="@id/air_undervoltage_desc_tv_2" android:paddingBottom="@dimen/dp_0" android:layout_marginTop="@dimen/dp_5" android:text="@string/air_undervoltage_desc" android:drawableLeft="@drawable/asiairsetting_image_undervoltagewarning" android:drawablePadding="@dimen/dp_5" style="@style/text_setting_item_tip" />
+                    <View android:layout_marginTop="@dimen/dp_16" style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_dc_12v_output" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/dc_12v_output" style="@style/text_setting_item_name" />
+                        <ImageView android:id="@id/iv_dc_12v_output_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_wifi_network" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/network_page_title" style="@style/text_setting_item_name" />
+                        <ImageView android:id="@id/iv_wifi_network_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_wifi_network_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_wifi_network_arrow" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_wired_ethernet" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/wired_ethernet" style="@style/text_setting_item_name" />
+                        <ImageView android:id="@id/iv_wired_ethernet_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_wired_ethernet_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_wired_ethernet_arrow" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_personal_setting" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/personal_setting" style="@style/text_setting_item_name" />
+                        <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/air_temp_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:text="@string/air_temp" style="@style/text_setting_item_name" />
+                        <TextView android:textColor="@color/color_text_setting_hub_title" android:textColorHint="@color/color_text_setting_hub_title" android:id="@id/air_temp_tv" android:hint="@string/unknown_na" android:layout_alignParentEnd="true" style="@style/text_setting_item_name" />
+                    </RelativeLayout>
+                    <TextView android:id="@id/air_temp_desc_tv" android:text="@string/air_temp_desc" android:drawableLeft="@drawable/asiairsetting_image_cputemperature" android:drawablePadding="@dimen/dp_5" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/undervoltage_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/setting_block">
+                        <TextView android:id="@id/tv" android:text="@string/air_undervoltage" style="@style/text_setting_item_name" />
+                        <TextView android:textColor="@color/color_text_setting_hub_title" android:textColorHint="@color/color_text_setting_hub_title" android:id="@id/undervoltage_tv" android:hint="@string/unknown_na" android:layout_alignParentEnd="true" style="@style/text_setting_item_name" />
+                    </RelativeLayout>
+                    <TextView android:id="@id/air_undervoltage_desc_tv" android:text="@string/air_undervoltage_desc" android:drawableLeft="@drawable/asiairsetting_image_undervoltagewarning" android:drawablePadding="@dimen/dp_5" style="@style/text_setting_item_tip" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                    <TextView android:gravity="center" android:id="@id/ll_change_device" android:background="?android:selectableItemBackground" android:padding="@dimen/dp_16" android:clickable="true" android:layout_width="fill_parent" android:text="@string/change_device" style="@style/text_setting_item_name" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                    <TextView android:textColor="@color/air_colorAccent" android:gravity="center" android:background="?android:selectableItemBackground" android:padding="@dimen/dp_16" android:clickable="true" android:layout_width="fill_parent" android:text="@string/restart" android:onClick="askForRestart" style="@style/text_setting_item_name" />
+                    <View style="@style/style_15_divider_horizontal_padding_left" />
+                    <TextView android:textColor="@color/color_15_function_red" android:gravity="center" android:background="?android:selectableItemBackground" android:padding="@dimen/dp_16" android:clickable="true" android:layout_width="fill_parent" android:text="@string/shutdown" android:onClick="askForPoweroff" style="@style/text_setting_item_name" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_network_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_network_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/main_network_layout_title" android:text="@string/network_page_title" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wifi_5g_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:text="@string/hotspot_frequency_band" style="@style/text_setting_item_name" />
+                <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/radio_group_change_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <RadioButton android:id="@id/radio_btn_2_4_G" android:text="@string/wifi_name_2_4_G" android:paddingStart="@dimen/dp_2" android:paddingEnd="@dimen/dp_2" style="@style/style_15_dark_radio_button" />
+                    <RadioButton android:id="@id/radio_btn_5_G" android:text="@string/wifi_name_5_G" style="@style/style_15_dark_radio_button" />
+                </com.zwoasi.asiair.view.widget.MyRadioGroup>
+            </RelativeLayout>
+            <TextView android:text="@string/air_wifi_5g_desc" style="@style/text_setting_item_tip" />
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/wifi_name_rl" style="@style/setting_block">
+                <TextView android:text="@string/wireless_hotspot" android:singleLine="true" style="@style/text_setting_item_name" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/wifi_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/wifi_pwd_rl" style="@style/setting_block">
+                <TextView android:id="@id/wifi_pwd_tv_title" android:text="@string/wireless_hotspot_pwd" android:singleLine="true" style="@style/text_setting_item_name" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:gravity="center|right" android:id="@id/wifi_pwd_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:singleLine="true" android:layout_toLeftOf="@id/wifi_pwd_more_ll" android:layout_toRightOf="@id/wifi_pwd_tv_title" android:layout_centerVertical="true" android:inputType="textPassword" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/wifi_pwd_more_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <ImageView android:id="@id/wifi_pwd_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_icon_more" />
+                    <ToggleButton android:id="@id/iv_pwd_visible_pi3" android:background="@drawable/selector_password_visiable_andr_invisable" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_marginLeft="@dimen/dp_10" android:textOn="" android:textOff="" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_wifi_bridge_mode" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:text="@string/wifi_bridge_mode_title" style="@style/text_setting_item_name" />
+                <ImageView android:id="@id/iv_wifi_bridge_right_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/common_icon_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_wifi_bridge_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_wifi_bridge_right_arrow" />
+            </RelativeLayout>
+            <TextView android:text="@string/wifi_station_desc" style="@style/text_setting_item_tip" />
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_wifi_bridge_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_wifi_bridge_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/main_wifi_bridge_layout_title" android:text="@string/wifi_bridge_mode_title" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_bridge_mode_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+                    <com.zwoasi.asiair.view.widget.MySwitch android:id="@id/switch_wifi_bridge_on_off" android:visibility="visible" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+                </RelativeLayout>
+                <View style="@style/style_15_divider_horizontal_padding_left" />
+                <RelativeLayout android:id="@id/rl_wifi_connected_status" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+                    <ImageView android:id="@id/iv_wifi_bridge_connected_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_selected" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+                    <ImageView android:id="@id/iv_wifi_bridge_strength" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/wifi_strengy_4" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@id/iv_wifi_bridge_connected_selected" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:id="@id/tv_wifi_bridge_connected_ssid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@id/iv_wifi_bridge_strength" />
+                    <ImageView android:id="@id/iv_wifi_bridge_detail_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_warning_icon" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+                    <ImageView android:id="@id/iv_wifi_bridge_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_lock" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_8" android:layout_toStartOf="@id/iv_wifi_bridge_detail_info" />
+                    <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal_padding_left" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_dcdcdc_50" android:id="@id/tv_wifi_bridge_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/station_scan_network_hint_off_status" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" />
+                    <com.wang.avi.AVLoadingIndicatorView android:id="@id/iv_scan_network_loading" android:padding="@dimen/dp_3" android:visibility="invisible" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/tv_wifi_bridge_search_hint" app:indicatorColor="@color/color_text_999999" app:indicatorName="BallSpinFadeLoaderIndicator" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/lv_wifi_bridge_all_net_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_wifi_bridge_connected_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_wifi_bridge_connected_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/main_wifi_bridge_connected_layout_title" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_address" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:gravity="center_vertical" android:id="@id/wifi_bridge_detail_info_ip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subnet_mask" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:id="@id/wifi_bridge_detail_info_subnet_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gateway" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:id="@id/wifi_bridge_detail_info_gateway" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_wired_ethernet_connected_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_wired_ethernet_connected_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:id="@id/main_wired_ethernet_connected_layout_title" android:text="@string/network_details" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eth0_ip_setting" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+            <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/rg_eth0_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+                <RadioButton android:id="@id/radio_btn_eth0_automatic" android:text="@string/eth0_automatic" style="@style/style_15_dark_radio_button" />
+                <RadioButton android:id="@id/radio_btn_eth0_manual" android:text="@string/eth0_manual" style="@style/style_15_dark_radio_button" />
+            </com.zwoasi.asiair.view.widget.MyRadioGroup>
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_wired_ethernet_detail_info_ip" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_address" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+            <EditText android:gravity="end|center" android:id="@id/wired_ethernet_detail_info_ip" android:layout_width="wrap_content" android:minWidth="@dimen/dp_160" android:text="" android:hint="@string/ip_address" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone|flagNoExtractUi" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" style="@style/style_15_dark_edit_text_small" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subnet_mask" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:id="@id/wired_ethernet_detail_info_subnet_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_28" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gateway" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc_50" android:id="@id/wired_ethernet_detail_info_gateway" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_28" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/style_15_divider_horizontal_padding_left" />
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rl_eth0_ip_setting_manual_save" android:padding="@dimen/dp_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_save_eth0_config" android:layout_width="fill_parent" android:text="@string/eth0_ip_setting_save" style="@style/style_15_button_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_dc_12v_output_detail_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_dc_12v_output_detail_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/dc_12v_output" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_dc_manager_sub_title" android:paddingBottom="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:text="@string/power_on_off_4_dc_12v_plus" style="@style/text_setting_item_tip" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_4">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view_dc_output" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_ssid_pwd_detail_layout" android:background="@color/color_15_dark_background_mainland" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/tv_change_ssid_pwd_cancel" android:background="?android:selectableItemBackground" android:padding="@dimen/dp_16" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tv_change_ssid_pwd_title" style="@style/text_setting_title" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/air_colorAccent" android:id="@id/tv_change_ssid_pwd_submit" android:background="?android:selectableItemBackground" android:padding="@dimen/dp_16" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_change_ssid" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:id="@id/tv_change_ssid_title" android:text="@string/wireless_hotspot" android:singleLine="true" style="@style/text_setting_item_name" />
+                <EditText android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/et_ssid_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:singleLine="true" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_" android:layout_toLeftOf="@id/iv_clear_ssid_input" android:layout_toRightOf="@id/tv_change_ssid_title" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone|flagNoExtractUi" />
+                <ImageView android:id="@id/iv_clear_ssid_input" android:visibility="invisible" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/tonight_best_icon_search_clean" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_change_pwd" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:id="@id/tv_change_pwd_title" android:text="@string/wireless_hotspot_pwd" android:singleLine="true" style="@style/text_setting_item_name" />
+                <EditText android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_hub_title" android:id="@id/et_pwd_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:singleLine="true" android:digits="@string/input_digits_pwd" android:layout_toLeftOf="@id/iv_clear_pwd_input" android:layout_toRightOf="@id/tv_change_pwd_title" android:layout_centerVertical="true" android:inputType="textPassword" android:imeOptions="actionDone|flagNoExtractUi" />
+                <ImageView android:id="@id/iv_clear_pwd_input" android:visibility="invisible" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/tonight_best_icon_search_clean" android:layout_toLeftOf="@id/iv_pwd_visible" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/iv_pwd_visible" android:background="@drawable/selector_password_visiable_andr_invisable" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:textOn="" android:textOff="" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_change_ssid_pwd_tip" android:paddingBottom="@dimen/dp_10" android:focusableInTouchMode="true" android:layout_marginTop="@dimen/dp_10" android:text="@string/reset_wifi_name_hint" style="@style/text_setting_item_tip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/main_personal_setting_layout" android:background="@color/color_15_dark_background_mainland" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_personal_setting_layout_back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tonight_best_icon_back" android:layout_centerVertical="true" />
+            <TextView android:text="@string/personal_setting" style="@style/text_setting_title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_personal_setting_sound" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_setting_sound" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+                <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/rg_sound_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+                    <RadioButton android:id="@id/radio_btn_sound_off" android:text="@string/personal_setting_sound_off" style="@style/style_15_dark_radio_button" />
+                    <RadioButton android:id="@id/radio_btn_sound_backyard" android:text="@string/personal_setting_sound_backyard" style="@style/style_15_dark_radio_button" />
+                    <RadioButton android:id="@id/radio_sound_field" android:checked="true" android:text="@string/personal_setting_sound_field" style="@style/style_15_dark_radio_button" />
+                </com.zwoasi.asiair.view.widget.MyRadioGroup>
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_dcdcdc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_setting_temp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+                <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/rg_temp_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+                    <RadioButton android:id="@id/radio_btn_temp_f" android:text="@string/personal_setting_temp_f" style="@style/style_15_dark_radio_button" />
+                    <RadioButton android:id="@id/radio_btn_temp_c" android:checked="true" android:text="@string/personal_setting_temp_c" style="@style/style_15_dark_radio_button" />
+                </com.zwoasi.asiair.view.widget.MyRadioGroup>
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/auto_cooler_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/setting_block">
+                <TextView android:text="@string/camera_auto_cooler" style="@style/text_setting_item_name" />
+                <Switch android:id="@id/auto_cooler_switch" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/switch_ios_style" />
+            </RelativeLayout>
+            <View style="@style/style_15_divider_horizontal_padding_left" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/wifi_setting_progress" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

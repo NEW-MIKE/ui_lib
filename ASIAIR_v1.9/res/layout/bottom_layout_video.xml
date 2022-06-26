@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:id="@id/resolution_val_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_gain_tv" android:visibility="gone" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_temp_tv" android:visibility="gone" android:minWidth="@dimen/dp_50" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/fps_tv" android:minWidth="@dimen/dp_45" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/tv_avi_fps" android:visibility="gone" android:minWidth="@dimen/dp_65" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/disk_space_tv" android:visibility="visible" android:minWidth="@dimen/dp_76" style="@style/app_state_bottom_text_style" />
+        <ImageView android:id="@id/record_indicator_iv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/point_red" android:layout_centerVertical="true" />
+        <TextView android:id="@id/record_time_tv" android:visibility="invisible" android:layout_marginLeft="@dimen/dp_5" android:text="00:00:00" style="@style/app_state_bottom_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/dp_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <TextView android:id="@id/net_speed_tv" android:visibility="visible" style="@style/tv_speed_style" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/target_title" android:paddingTop="@dimen/dp_21" android:text="@string/ac_custom_center_here" style="@style/custom_dialog_text_title" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rv_solving" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_188">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_solving_result" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:src="@drawable/popovers_icon_complete" />
+            <com.wang.avi.AVLoadingIndicatorView android:id="@id/iv_solving_loading" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" app:indicatorColor="@color/color_text_999999" app:indicatorName="BallSpinFadeLoaderIndicator" />
+            <TextView android:ellipsize="end" android:id="@id/tv_solving_and_calculate" android:padding="@dimen/dp_2" android:layout_marginLeft="@dimen/dp_4" android:text="@string/ac_custom_solving_and_calculate_current_pos" android:maxLines="2" style="@style/custom_dialog_text_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_12" android:id="@id/tv_solving_hint" android:layout_alignParentBottom="true" style="@style/custom_dialog_text_content" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_custom_center_goto_target" android:padding="@dimen/dp_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_188">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:padding="@dimen/dp_4" android:text="@string/ac_dialog_target" style="@style/custom_dialog_text_content" />
+                <TextView android:id="@id/target_ra_dec" android:padding="@dimen/dp_0" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:padding="@dimen/dp_0" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" android:text="@string/ac_dialog_current" style="@style/custom_dialog_text_content" />
+                <TextView android:textColor="@color/air_colorAccent" android:id="@id/current_ra_dec" android:padding="@dimen/dp_0" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <ImageView android:id="@id/iv_step_finish_1" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:src="@drawable/popovers_icon_complete" />
+                <com.wang.avi.AVLoadingIndicatorView android:id="@id/iv_step_loading_1" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" app:indicatorColor="@color/color_text_999999" app:indicatorName="BallSpinFadeLoaderIndicator" />
+                <TextView android:ellipsize="end" android:padding="@dimen/dp_2" android:layout_marginLeft="@dimen/dp_4" android:text="@string/ac_dialog_move_to_target_pos" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_step_finish_2" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:src="@drawable/popovers_icon_complete" />
+                <com.wang.avi.AVLoadingIndicatorView android:id="@id/iv_step_loading_2" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" app:indicatorColor="@color/color_text_999999" app:indicatorName="BallSpinFadeLoaderIndicator" />
+                <TextView android:ellipsize="end" android:id="@id/tv_step_msg" android:padding="@dimen/dp_2" android:layout_marginLeft="@dimen/dp_4" android:text="@string/ac_dialog_check_in_center" android:lines="1" style="@style/custom_dialog_text_content" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv" android:visibility="invisible" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:src="@drawable/popovers_icon_complete" android:layout_alignParentLeft="true" />
+                <TextView android:gravity="left" android:id="@id/tv_step_log" android:padding="@dimen/dp_0" android:layout_marginLeft="@dimen/dp_6" android:lines="2" android:layout_toLeftOf="@id/tv_step_log_time" android:layout_toRightOf="@id/iv" style="@style/custom_dialog_text_content" />
+                <TextView android:id="@id/tv_step_log_time" android:padding="@dimen/dp_0" android:layout_marginRight="@dimen/dp_50" android:layout_alignParentRight="true" style="@style/custom_dialog_text_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/color_15_function_red" android:id="@id/tv_cancel" android:text="@string/stop" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_custom_auto_center_retry" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/tv_retry" android:text="@string/retry" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_custom_auto_center_finish" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:visibility="gone" style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/tv_finish" android:text="@string/finish" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

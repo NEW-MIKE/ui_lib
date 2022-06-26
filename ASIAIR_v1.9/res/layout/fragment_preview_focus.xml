@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:id="@id/roi_layout" android:background="@color/color_15_dark_background_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zhy.android.percent.support.PercentLinearLayout android:orientation="horizontal" android:paddingRight="@dimen/dp_56" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_paddingBottomPercent="27.2%h" app:layout_paddingLeftPercent="17.9%h" app:layout_paddingTopPercent="10.5%h">
+            <View android:gravity="center_vertical" android:orientation="vertical" android:id="@id/focuser_btn_layout2" android:visibility="gone" android:layout_width="@dimen/dp_60" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+            <com.zwoasi.asiair.view.widget.FocusView android:id="@id/focus_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/focuser_btn_layout2" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/right_layout" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="@dimen/dp_56" android:layout_height="fill_parent" android:layout_below="@id/top_layout" android:layout_alignParentRight="true">
+        <CheckBox android:textStyle="bold" android:textColor="@color/preview_type_text_color" android:id="@id/preview_check_box" android:background="@drawable/mode_compound_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_6" android:button="@null" android:text="@string/work_scene_focus" android:layout_above="@id/focus_bin_check_box" style="@style/checkbox_textview" />
+        <com.zwoasi.asiair.view.widget.LevelImageView android:id="@id/focus_bin_check_box_2" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_26" android:src="@drawable/level_bin" android:layout_above="@id/start_check_box" style="@style/checkbox_textview" />
+        <CheckBox android:enabled="false" android:id="@id/focus_bin_check_box" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_26" android:button="@null" android:layout_above="@id/start_check_box" style="@style/checkbox_textview" />
+        <com.zwoasi.asiair.view.widget.MyCheckBox android:id="@id/start_check_box" android:background="@drawable/guiding_compound_selector" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_centerInParent="true" style="@style/checkbox_textview" />
+        <CheckBox android:id="@id/exp_check_box" android:background="@drawable/exp_compound_selector" android:layout_marginTop="@dimen/dp_26" android:button="@null" android:layout_below="@id/start_check_box" style="@style/checkbox_textview" />
+        <CheckedTextView android:textSize="@dimen/sp_10" android:id="@id/exp_display_tv" android:text="" android:lines="1" android:layout_alignBottom="@id/exp_check_box" android:layout_centerHorizontal="true" style="@style/main_textview" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/click_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_layout" />
+    <com.zhy.android.percent.support.PercentFrameLayout android:id="@id/roi_layer" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <com.zwoasi.asiair.view.widget.FocusMarkView android:id="@id/choose_box" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    </com.zhy.android.percent.support.PercentFrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_28" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentBottom="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bottom_layout_focus" />
+    </RelativeLayout>
+    <include android:id="@id/preview_include" android:visibility="invisible" android:layout_width="@dimen/dp_100" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_layout" layout="@layout/preview_preview_layout" />
+    <include android:id="@id/bin_include" android:visibility="invisible" android:layout_toLeftOf="@id/right_layout" app:layout_heightPercent="100%h" app:layout_widthPercent="21.6%h" layout="@layout/preview_bin_layout" />
+    <include android:id="@id/exp_include" android:visibility="invisible" android:layout_toLeftOf="@id/right_layout" app:layout_heightPercent="100%h" app:layout_widthPercent="21.6%h" layout="@layout/preview_exp_layout" />
+    <com.zhy.android.percent.support.PercentLinearLayout android:orientation="horizontal" android:id="@id/left_roi_layout" android:paddingLeft="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:enabled="true" android:id="@id/into_roi" android:background="@drawable/roi_compound_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:src="@drawable/toolbar_icon_roi_in" android:elevation="4.0dip" app:layout_heightPercent="8.1%h" app:layout_marginLeftPercent="0.5%h" app:layout_marginTopPercent="12%h" app:layout_widthPercent="8.1%h" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

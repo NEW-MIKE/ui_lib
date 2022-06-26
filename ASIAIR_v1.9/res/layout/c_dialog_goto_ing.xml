@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/target_title" android:paddingBottom="@dimen/dp_10" style="@style/custom_dialog_text_title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/target_ra_dec" style="@style/custom_dialog_text_content" />
+            <TextView android:padding="@dimen/dp_10" android:text="@string/scope_current_ra_dec" style="@style/custom_dialog_text_content" />
+            <TextView android:textColor="@color/air_colorAccent" android:id="@id/current_ra_dec" style="@style/custom_dialog_text_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+        <TextView android:textColor="@color/color_15_function_red" android:id="@id/goto_cancel_btn" android:text="@string/stop" style="@style/custom_dialog_text_button" />
+    </LinearLayout>
+</LinearLayout>

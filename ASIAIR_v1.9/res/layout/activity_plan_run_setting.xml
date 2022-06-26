@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_light_text_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/color_dcdcdc_50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_tip_of_plans_in_autorun" android:drawableTop="@drawable/image_multiple_target" android:drawablePadding="@dimen/dp_10" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/back_btn" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_state" android:visibility="visible" style="@style/custom_dialog_text_content" />
+            <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_plan_title" android:visibility="visible" android:text="@string/work_scene_plan" style="@style/page_title" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_import_plan" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/icon_import" android:layout_toLeftOf="@id/iv_reset_plan" android:layout_centerVertical="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_reset_plan" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/icon_card_reset" android:layout_toLeftOf="@id/iv_plan_info" android:layout_centerVertical="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_plan_info" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/icon_card_set" android:layout_toLeftOf="@id/plan_list" android:layout_centerVertical="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/plan_list" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_plan_info" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/color_15_function_yellow" android:ellipsize="end" android:id="@id/tv_plan_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:lines="1" />
+                <TextView android:textColor="@color/color_15_function_red" android:ellipsize="end" android:id="@id/tv_plan_state_err" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:lines="1" />
+                <TextView android:textColor="@color/color_text_setting_item_name" android:ellipsize="end" android:id="@id/tv_plan_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/object_list_recycler" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_above="@id/pos_change_layout" android:layout_below="@id/ll_plan_info" />
+            <RelativeLayout android:id="@id/pos_change_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+                <View android:id="@id/center_view" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_1" android:layout_centerInParent="true" />
+                <TextView android:textColor="@color/color_text_setting_item_name" android:gravity="center" android:id="@id/btn_move_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_70" android:text="@string/plan_target_move_forward" android:lines="1" android:drawableLeft="@drawable/icon_card_backward" android:drawablePadding="@dimen/dp_8" android:layout_toLeftOf="@id/center_view" />
+                <TextView android:textColor="@color/color_text_setting_item_name" android:gravity="center" android:id="@id/btn_move_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_70" android:text="@string/plan_target_move_backward" android:lines="1" android:drawableRight="@drawable/icon_card_forward" android:drawablePadding="@dimen/dp_8" android:layout_toRightOf="@id/center_view" />
+                <TextView android:textColor="@color/color_text_setting_item_name" android:gravity="center" android:id="@id/btn_share" android:paddingRight="@dimen/dp_20" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/share" android:lines="1" android:drawableLeft="@drawable/icon_share" android:drawablePadding="@dimen/dp_8" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" style="@style/loading_bar_style" />
+        <include android:id="@id/pop_plan_list_layout" android:visibility="gone" layout="@layout/layout_autorun_plan_pop_list" />
+        <include android:id="@id/pop_plan_info_layout" android:visibility="gone" layout="@layout/layout_autorun_plan_pop_add" />
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

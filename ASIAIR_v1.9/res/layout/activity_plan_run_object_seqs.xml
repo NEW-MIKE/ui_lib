@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_15_dark_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:layout_alignParentTop="true">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/close_btn" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/tonight_best_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_state_target" android:visibility="visible" style="@style/custom_dialog_text_content" />
+                <TextView android:textSize="@dimen/sp_16" android:id="@id/tv_title" android:visibility="visible" style="@style/page_title" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_reset_target" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/icon_card_reset" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/setting_page_layout" android:background="@color/color_15_dark_background_mainland" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/setting_page_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_hub_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_target_original_name" android:background="@drawable/bg_input_text_object_search" android:paddingLeft="@dimen/dp_30" android:paddingRight="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_10" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" style="@style/text_setting_item_name" />
+                            <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dp_18" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:src="@drawable/tonight_best_icon_search" android:layout_centerVertical="true" app:tint="#ffb0b0b0" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" style="@style/setting_block">
+                                    <TextView android:textSize="@dimen/sp_13" android:id="@id/tip_object_title" android:text="@string/autorun_object_config_setting_object_name" style="@style/text_setting_item_name" />
+                                    <EditText android:textSize="@dimen/sp_13" android:textColor="@color/color_text_setting_item_name" android:ellipsize="end" android:gravity="right" android:id="@id/edt_object_title" android:background="@null" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:lines="1" android:singleLine="true" android:digits="@string/input_digits_object_name" android:layout_toRightOf="@id/tip_object_title" android:layout_alignParentRight="true" android:imeOptions="actionDone|flagNoExtractUi" style="@style/style_15_dark_edit_text" />
+                                    <ImageView android:background="@drawable/common_icon_more" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                                <View android:layout_marginRight="@dimen/dp_16" style="@style/style_15_divider_horizontal_padding_left" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_object_first_delay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" style="@style/setting_block">
+                                    <TextView android:textSize="@dimen/sp_13" android:id="@id/tip_object_first_delay" android:text="@string/autorun_object_config_setting_first_delay" style="@style/text_setting_item_name" />
+                                    <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:gravity="right" android:id="@id/tv_object_first_delay" android:layout_marginLeft="@dimen/dp_16" android:text="0 h 0m 0 s" android:lines="1" android:singleLine="true" android:drawableRight="@drawable/common_icon_more" android:layout_toRightOf="@id/tip_object_first_delay" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                                </RelativeLayout>
+                                <View android:layout_marginRight="@dimen/dp_16" style="@style/style_15_divider_horizontal_padding_left" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_object_ra" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" style="@style/setting_block">
+                                    <TextView android:textSize="@dimen/sp_13" android:id="@id/tip_object_ra" android:text="@string/str_ra_only" style="@style/text_setting_item_name" />
+                                    <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:gravity="right" android:id="@id/tv_object_ra" android:layout_marginLeft="@dimen/dp_16" android:lines="1" android:singleLine="true" android:drawableRight="@drawable/common_icon_more" android:layout_toRightOf="@id/tip_object_ra" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                                </RelativeLayout>
+                                <View android:layout_marginRight="@dimen/dp_16" style="@style/style_15_divider_horizontal_padding_left" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_object_dec" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" style="@style/setting_block">
+                                    <TextView android:textSize="@dimen/sp_13" android:id="@id/tip_object_dec" android:text="@string/str_dec_only" style="@style/text_setting_item_name" />
+                                    <TextView android:textSize="@dimen/sp_13" android:ellipsize="end" android:gravity="right" android:id="@id/tv_object_dec" android:layout_marginLeft="@dimen/dp_16" android:lines="1" android:singleLine="true" android:drawableRight="@drawable/common_icon_more" android:layout_toRightOf="@id/tip_object_dec" android:layout_alignParentRight="true" style="@style/text_setting_item_name" />
+                                </RelativeLayout>
+                                <View android:layout_marginRight="@dimen/dp_16" style="@style/style_15_divider_horizontal_padding_left" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/setting_page_ll">
+                        <com.github.mikephil.charting.charts.LineChart android:id="@id/line_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/seq_page_layout" android:padding="@dimen/dp_5" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/object_seq_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

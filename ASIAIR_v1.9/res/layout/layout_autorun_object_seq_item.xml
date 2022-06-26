@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/dp_100" app:cardBackgroundColor="@color/color_15_dark_background_mainland" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="16.0dip">
+        <RelativeLayout android:id="@id/card_top_bar" android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="@dimen/dp_34">
+            <ImageView android:id="@id/iv_seq_check" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_34" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_0" android:src="@drawable/icon_card_selected" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:ellipsize="end" android:gravity="center" android:id="@id/tv_seq_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_seq_delete" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_34" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_0" android:src="@drawable/icon_card_close" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/dp_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_34">
+            <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_seq_process_tip">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:gravity="left" android:id="@id/tv_seq_exp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:gravity="center_horizontal" android:id="@id/tv_seq_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_text_setting_item_name" android:gravity="right" android:id="@id/tv_seq_bin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_dcdcdc_40" android:id="@id/tv_seq_process_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_setting_light_duration_complete" android:layout_above="@id/seq_progress" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_dcdcdc" android:id="@id/tv_seq_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="0/0" android:layout_toRightOf="@id/tv_seq_process_tip" android:layout_above="@id/seq_progress" />
+            <ProgressBar android:id="@id/seq_progress" android:layout_width="fill_parent" android:layout_height="@dimen/dp_3" android:layout_marginTop="@dimen/dp_6" android:progressDrawable="@drawable/bg_plan_progress_bar" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

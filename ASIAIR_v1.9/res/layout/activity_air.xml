@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/frame_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/air_setting_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" layout="@layout/air_setting_layout" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/guide_tip_focus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/high_tip_for_focus" />
+            <include android:id="@id/guide_tip_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/high_tip_for_main" />
+            <include android:id="@id/guide_tip_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/high_tip_for_guide" />
+        </FrameLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</RelativeLayout>

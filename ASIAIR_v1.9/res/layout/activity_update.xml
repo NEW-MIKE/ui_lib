@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/firmware_update_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <ImageButton android:id="@id/back_btn" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tonight_best_icon_back" android:scaleType="fitCenter" />
+                <TextView android:ellipsize="end" android:id="@id/tv_wifi_state_1" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:lines="1" android:layout_toLeftOf="@id/tv_firmware_title" android:layout_toRightOf="@id/back_btn" style="@style/activity_sub_title" />
+                <TextView android:id="@id/tv_firmware_title" android:text="@string/firmware_update_page_title" style="@style/style_15_light_page_title" />
+                <TextView android:id="@id/tv_connect_state_1" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentEnd="true" style="@style/activity_sub_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <RelativeLayout android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_16" android:layout_above="@id/btn_update_firmware">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <com.zwoasi.asiair.view.widget.AutoRunTotalProgressView android:id="@id/update_process_bar" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_200" android:layout_centerInParent="true" app:center_background_color="@android:color/transparent" app:progress_bar_width_percent="0.05" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="@dimen/sp_38" android:id="@id/tv_process" android:text="" style="@style/style_15_light_paragraph_body" />
+                                <TextView android:id="@id/tv_process_tip" style="@style/style_15_light_paragraph_body" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/dp_16">
+                        <LinearLayout android:orientation="vertical" android:id="@id/firmware_update_a" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:id="@id/tv_firmware_sub_title" android:layout_marginBottom="@dimen/dp_16" android:text="@string/firmware_update_ready_title" style="@style/style_15_light_paragraph_title" />
+                            <TextView android:id="@id/tv_firmware_info" android:layout_marginBottom="@dimen/dp_16" android:text="@string/firmware_update_ready_info" style="@style/style_15_light_paragraph_tip" />
+                            <TextView android:id="@id/tv_firmware_update_tip_a" android:text="@string/firmware_update_ready_tip_1" android:layout_alignParentBottom="true" style="@style/style_15_light_paragraph_tip" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/firmware_update_b" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tv_firmware_update_tip" android:layout_alignParentTop="true">
+                                <ImageView android:id="@id/iv_transfer" android:visibility="invisible" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/icon_correct" />
+                                <TextView android:id="@id/tv_transfer" android:visibility="invisible" android:text="@string/firmware_update_transfer_ed" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/iv_transfer" style="@style/style_15_light_paragraph_body" />
+                                <ImageView android:id="@id/iv_install" android:visibility="invisible" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_10" android:src="@drawable/icon_correct" android:layout_below="@id/iv_transfer" />
+                                <TextView android:id="@id/tv_install" android:visibility="invisible" android:text="@string/firmware_update_install_ed" android:layout_alignBottom="@id/iv_install" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/iv_install" style="@style/style_15_light_paragraph_body" />
+                                <ImageView android:id="@id/iv_reboot" android:visibility="invisible" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_10" android:src="@drawable/icon_correct" android:layout_below="@id/iv_install" />
+                                <TextView android:id="@id/tv_reboot" android:visibility="invisible" android:text="@string/firmware_update_reboot_ed" android:layout_alignBottom="@id/iv_reboot" android:layout_marginStart="@dimen/dp_5" android:layout_toEndOf="@id/iv_reboot" style="@style/style_15_light_paragraph_body" />
+                            </RelativeLayout>
+                            <TextView android:id="@id/tv_firmware_update_tip" android:text="@string/firmware_update_ready_tip_1" android:layout_alignParentBottom="true" style="@style/style_15_light_paragraph_tip" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:id="@id/btn_update_firmware" android:layout_width="fill_parent" android:text="@string/btn_firmware_update" android:layout_alignParentBottom="true" style="@style/style_15_button_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/software_update_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:text="@string/software_update_page_title" style="@style/style_15_light_page_title" />
+                <TextView android:id="@id/tv_wifi_state_2" android:layout_marginLeft="@dimen/dp_16" android:layout_alignParentLeft="true" style="@style/activity_sub_title" />
+                <TextView android:id="@id/tv_connect_state_2" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentEnd="true" style="@style/activity_sub_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <RelativeLayout android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_drop_update_software">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tv_software_update_tip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                        <TextView android:layout_marginBottom="@dimen/dp_16" android:text="@string/software_update_ready_title" style="@style/style_15_light_paragraph_title" />
+                        <TextView android:id="@id/tv_software_info" android:layout_marginBottom="@dimen/dp_16" android:text="@string/software_update_ready_info" style="@style/style_15_light_paragraph_tip" />
+                    </LinearLayout>
+                    <TextView android:id="@id/tv_software_update_tip" android:text="@string/software_update_ready_tip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/style_15_light_paragraph_tip" />
+                </RelativeLayout>
+                <Button android:textColor="@color/air_colorPrimary" android:id="@id/btn_drop_update_software" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginBottom="@dimen/dp_16" android:text="@string/btn_not_now" android:layout_above="@id/btn_update_software" android:layout_alignParentEnd="true" style="@style/style_15_button_normal" />
+                <Button android:id="@id/btn_update_software" android:layout_width="fill_parent" android:text="@string/btn_software_update" android:layout_alignParentBottom="true" style="@style/style_15_button_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

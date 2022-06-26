@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/target_title" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_box_telescope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/live_setting_hub_radios" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/hub_light" android:text="@string/light" style="@style/style_15_light_tab_host" />
+                <RadioButton android:id="@id/hub_flat" android:text="@string/flat" style="@style/style_15_light_tab_host" />
+                <RadioButton android:id="@id/hub_dark" android:text="@string/dark" style="@style/style_15_light_tab_host" />
+                <RadioButton android:id="@id/hub_bias" android:text="@string/bias" style="@style/style_15_light_tab_host" />
+            </com.zwoasi.asiair.view.widget.MyRadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/live_setting_title_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_25" />
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider" android:layout_below="@id/target_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/live_setting_exp" android:clickable="true" style="@style/live_setting_block">
+                        <TextView android:id="@id/live_setting_exp_key" android:text="@string/live_setting_exp" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                        <ImageView android:id="@id/tip_for_live_exp" android:padding="@dimen/dp_3" android:visibility="gone" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/ic_help_2" android:layout_toRightOf="@id/live_setting_exp_key" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5" />
+                        <TextView android:id="@id/live_setting_exp_value" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginLeft="@dimen/dp_16" android:layout_toRightOf="@id/tip_for_live_exp" style="@style/live_setting_text_value" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/live_setting_bin" style="@style/live_setting_block">
+                        <TextView android:text="Bin" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                        <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/live_setting_bin_radios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <RadioButton android:id="@id/live_radio_bin_1" android:text="Bin1" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/live_radio_bin_2" android:text="Bin2" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/live_radio_bin_3" android:text="Bin3" style="@style/style_15_dark_radio_button" />
+                            <RadioButton android:id="@id/live_radio_bin_4" android:text="Bin4" style="@style/style_15_dark_radio_button" />
+                        </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/live_setting_light_duration" android:clickable="true" style="@style/live_setting_block">
+                        <TextView android:id="@id/live_setting_light_duration_key" android:text="@string/live_setting_light_duration" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                        <TextView android:id="@id/live_setting_light_duration_value" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginLeft="@dimen/dp_16" android:layout_toRightOf="@id/live_setting_light_duration_key" style="@style/live_setting_text_value" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/live_setting_copy" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/live_setting_block">
+                            <TextView android:text="@string/live_setting_copies" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                            <com.zwoasi.asiair.view.widget.MyRadioGroup android:orientation="horizontal" android:id="@id/live_setting_copy_radios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                                <RadioButton android:id="@id/live_radio_copy_1" android:text="5" style="@style/style_15_dark_radio_button" />
+                                <RadioButton android:id="@id/live_radio_copy_2" android:text="10" style="@style/style_15_dark_radio_button" />
+                                <RadioButton android:id="@id/live_radio_copy_3" android:text="15" style="@style/style_15_dark_radio_button" />
+                                <RadioButton android:id="@id/live_radio_copy_4" android:text="20" style="@style/style_15_dark_radio_button" />
+                            </com.zwoasi.asiair.view.widget.MyRadioGroup>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/live_setting_time_layout" style="@style/live_setting_block">
+                            <TextView android:id="@id/live_setting_time" android:text="@string/live_setting_time_coast" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/live_setting_other_modes" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:paddingLeft="@dimen/dp_10" style="@style/live_setting_block">
+                            <CheckBox android:theme="@style/style_15_check_box_default" android:id="@id/save_all_check_box" android:text="@string/live_setting_save_all" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/live_setting_include_flat" android:paddingLeft="@dimen/dp_10" style="@style/live_setting_block">
+                            <CheckBox android:theme="@style/style_15_check_box_default" android:id="@id/flat_check_box" android:checked="false" android:text="@string/flat" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                            <TextView android:id="@id/live_setting_flat_value" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@id/flat_check_box" style="@style/live_setting_text_value" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/live_setting_include_dark" android:paddingLeft="@dimen/dp_10" style="@style/live_setting_block">
+                            <CheckBox android:theme="@style/style_15_check_box_default" android:id="@id/dark_check_box" android:text="@string/dark" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                            <TextView android:id="@id/live_setting_dark_value" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@id/dark_check_box" style="@style/live_setting_text_value" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/live_setting_include_bias" android:paddingLeft="@dimen/dp_10" style="@style/live_setting_block">
+                            <CheckBox android:theme="@style/style_15_check_box_default" android:id="@id/bias_check_box" android:text="@string/bias" android:layout_alignParentLeft="true" style="@style/live_setting_text_key" />
+                            <TextView android:id="@id/live_setting_bias_value" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@id/bias_check_box" style="@style/live_setting_text_value" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_dialog_content" android:id="@id/live_setting_tip" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_setting_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@id/divider" android:layout_marginTop="@dimen/dp_5" android:layout_above="@id/ll_opt" style="@style/style_15_divider_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_opt" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/color_dialog_title" android:id="@id/dialog_negative_btn" android:text="@string/cancel" android:layout_weight="1.0" style="@style/custom_dialog_text_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_ok" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View style="@style/style_15_divider_vertical" />
+            <TextView android:id="@id/dialog_positive_btn" android:text="@string/ok" style="@style/custom_dialog_text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

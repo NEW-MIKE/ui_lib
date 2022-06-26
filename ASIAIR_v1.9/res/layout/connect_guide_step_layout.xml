@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zwoasi.asiair.view.QMUINotchConsumeLayout android:id="@id/connect_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <ImageView android:id="@id/iv_home" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/ic_air_home" android:layout_alignParentLeft="true" />
+                <TextView android:id="@id/curren_net_name" android:layout_marginLeft="@dimen/dp_16" android:text="@string/current_network" android:layout_toRightOf="@id/iv_home" style="@style/activity_sub_title" />
+                <TextView android:textColor="@color/color_15_function_red" android:gravity="center_vertical" android:id="@id/curren_connect_state" android:layout_height="fill_parent" android:text="@string/air_unconnected" android:layout_centerInParent="true" style="@style/style_15_light_paragraph_body" />
+                <TextView android:gravity="center" android:id="@id/tv_help" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_16" android:text="@string/help" android:layout_alignParentRight="true" style="@style/activity_sub_title" />
+                <View android:layout_alignParentBottom="true" style="@style/style_15_divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+                <ScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:id="@id/tv_connect_log" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/b_dp_20" android:lineSpacingExtra="@dimen/b_dp_5" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_15" android:layout_marginBottom="@dimen/dp_11" android:text="@string/connect_guide_power_title" style="@style/style_15_light_paragraph_title" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_policy" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:text="@string/connect_guide_policy" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_tip_1" android:text="@string/connect_guide_power_content" android:maxLines="1" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_more_1" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:text="@string/more" android:drawableRight="@drawable/guide_more_down" android:drawablePadding="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_15" android:layout_marginTop="@dimen/dp_16" android:text="@string/connect_guide_connect_title" style="@style/style_15_light_paragraph_title" />
+                        <ImageView android:id="@id/iv_wifi_con" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:src="@drawable/guide_wifi_and_en" android:maxWidth="@dimen/dp_300" android:maxHeight="@dimen/dp_88" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_tip_2" android:layout_marginTop="@dimen/dp_12" android:text="@string/connect_guide_connect_content" android:maxLines="2" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/tv_more_2" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:text="@string/more" android:drawableRight="@drawable/guide_more_down" android:drawablePadding="@dimen/dp_5" style="@style/style_15_light_paragraph_tip" />
+                        <TextView android:textSize="@dimen/sp_13" android:id="@id/led_abnormal" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_5" android:text="@string/connect_guide_led" style="@style/style_15_light_paragraph_tip" />
+                    </LinearLayout>
+                </ScrollView>
+                <View android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" style="@style/style_15_divider_vertical" />
+                <RelativeLayout android:padding="@dimen/dp_20" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:id="@id/ll_scan" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30">
+                        <RelativeLayout android:id="@id/ll_manual_enter_ip_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_scan" android:layout_alignParentBottom="true">
+                            <TextView android:id="@id/tv_scan_not_found_device_hint" android:background="?android:selectableItemBackground" android:clickable="true" android:text="@string/guide_step_two_scan_null" android:layout_alignParentEnd="true" style="@style/common_button_15" />
+                            <TextView android:textColor="@color/air_colorPrimary" android:id="@id/tv_ip_connect" android:background="?android:selectableItemBackground" android:clickable="true" android:text="@string/guide_step_two_ip_connect" android:paddingStart="@dimen/dp_0" style="@style/common_button_15" />
+                        </RelativeLayout>
+                        <com.wang.avi.AVLoadingIndicatorView android:id="@id/iv_loading" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_toRightOf="@id/ll_manual_enter_ip_layout" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" app:indicatorColor="@color/color_text_999999" app:indicatorName="BallSpinFadeLoaderIndicator" />
+                        <Button android:id="@id/btn_scan" android:text="@string/scan" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" style="@style/style_15_button_small" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:layout_above="@id/connect_btn" android:layout_below="@id/ll_scan">
+                        <TextView android:id="@id/tv_not_found_air_hint" android:paddingTop="@dimen/dp_13" android:paddingBottom="@dimen/dp_13" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/guide_step_two_not_found_air" style="@style/style_15_light_paragraph_tip" />
+                        <View android:id="@id/tv_not_found_air_hint_line" style="@style/style_15_divider_horizontal" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/lv_air_device" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <Button android:id="@id/connect_btn" android:layout_width="fill_parent" android:text="@string/connect" android:layout_alignParentBottom="true" style="@style/style_15_button_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/connect_enter_cover" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wang.avi.AVLoadingIndicatorView android:layout_centerInParent="true" style="@style/loading_bar_style" />
+        </RelativeLayout>
+    </com.zwoasi.asiair.view.QMUINotchConsumeLayout>
+</FrameLayout>

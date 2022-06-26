@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/color_15_dark_background_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/focus_mode_radio_btn" android:text="@string/work_scene_focus" style="@style/right_expand_tv" />
+            <TextView android:id="@id/pa_mode_radio_btn" android:text="@string/work_scene_pa" style="@style/right_expand_tv" />
+            <TextView android:id="@id/preview_mode_radio_btn" android:text="@string/work_scene_preview" style="@style/right_expand_tv" />
+            <TextView android:id="@id/auto_run_mode_radio_btn" android:text="@string/work_scene_auto_run" style="@style/right_expand_tv" />
+            <TextView android:id="@id/plan_mode_radio_btn" android:text="@string/work_scene_plan" style="@style/right_expand_tv" />
+            <TextView android:id="@id/live_mode_radio_btn" android:text="@string/work_scene_stack" style="@style/right_expand_tv" />
+            <TextView android:id="@id/video_mode_radio_btn" android:text="@string/work_scene_video" style="@style/right_expand_tv" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

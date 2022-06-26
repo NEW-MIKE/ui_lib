@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_box_card" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_12" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:text="@string/string_max" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:id="@id/max_val_tv" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_20" android:text="0" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:text="@string/string_min" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:id="@id/min_val_tv" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_20" android:text="0" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:text="@string/string_adv" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:id="@id/adv_val_tv" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_20" android:text="0" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:text="@string/string_std" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:id="@id/std_val_tv" android:layout_marginLeft="@dimen/dp_5" android:text="0" style="@style/style_15_light_paragraph_body" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/hist_stretch_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_process_value" android:layout_below="@id/ll_info">
+            <com.zwoasi.asiair.view.widget.HistImageView android:id="@id/hist_img_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:scaleType="fitXY" />
+            <com.jaygoo.widget.RangeSeekBar android:layout_gravity="center_vertical" android:id="@id/sb_range" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36" app:rsb_min_interval="20.0" app:rsb_mode="range" app:rsb_progress_color="@android:color/transparent" app:rsb_progress_default_color="@android:color/transparent" app:rsb_thumb_drawable="@drawable/ic_slide_left" app:rsb_thumb_height="@dimen/dp_36" app:rsb_thumb_width="@dimen/dp_36" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/rl_process_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_4" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:id="@id/tv_process_min" android:layout_alignParentLeft="true" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:id="@id/tv_process_middle" android:layout_centerHorizontal="true" style="@style/style_15_light_paragraph_body" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_text_888888" android:id="@id/tv_process_max" android:layout_alignParentRight="true" style="@style/style_15_light_paragraph_body" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:layout_gravity="center" android:id="@id/btn_zoom" android:background="?android:selectableItemBackground" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_12" android:src="@drawable/histview_zoom_selector" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/auto_ll" android:layout_width="@dimen/dp_72" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_12" android:layout_alignParentRight="true">
+            <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/sp_12" android:textColor="@color/color_selector_dark_radio_button" android:gravity="center" android:layout_gravity="center" android:id="@id/hist_adjust_auto_check_box" android:background="@drawable/bg_selector_dark_radio_button" android:layout_width="fill_parent" android:layout_height="@dimen/dp_26" android:button="@null" android:text="@string/auto" android:textAllCaps="false" />
+            <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/sp_12" android:textColor="@color/color_selector_dark_radio_button" android:gravity="center" android:layout_gravity="center" android:id="@id/hist_adjust_reset_btn" android:background="@drawable/bg_selector_dark_radio_button" android:layout_width="fill_parent" android:layout_height="@dimen/dp_26" android:layout_marginTop="@dimen/dp_8" android:button="@null" android:text="@string/reset" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:id="@id/resolution_val_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_gain_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/fps_tv" style="@style/app_state_bottom_text_style" />
+        <TextView android:id="@id/bottom_battery_tv" style="@style/app_state_bottom_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/dp_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <TextView android:textColor="@color/color_15_function_yellow" android:gravity="right" android:id="@id/guider_state" style="@style/app_state_bottom_text_style" />
+        <TextView android:gravity="right" android:id="@id/guider_star_state" style="@style/app_state_bottom_text_style" />
+    </LinearLayout>
+</RelativeLayout>
