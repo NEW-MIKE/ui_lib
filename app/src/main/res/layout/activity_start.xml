@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/layout"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="布局相关" />
+
+            <Button
+                android:id="@+id/animation"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="动画相关" />
+
+            <Button
+                android:id="@+id/datasql"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="数据库相关" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/vediow"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="音视频相关" />
+
+            <Button
+                android:id="@+id/subass"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="组件相关" />
+
+            <Button
+                android:id="@+id/webconnect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="网络相关" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/defineview"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="自定义view" />
+
+            <Button
+                android:id="@+id/jetpack"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="jetpack相关" />
+
+            <Button
+                android:id="@+id/material"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="material相关" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Air"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Air" />
+
+            <Button
+                android:id="@+id/LedAbnormal"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="LedAbnormal" />
+
+            <Button
+                android:id="@+id/ConnectGuideStep"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ConnectGuideStep" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ImageManagement"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="ImageManagement" />
+
+            <Button
+                android:id="@+id/ImagePreview"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImagePreview" />
+
+            <Button
+                android:id="@+id/ImagePreviewVideo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImagePreviewVideo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/PlanRunSetting"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="PlanRunSetting" />
+
+            <Button
+                android:id="@+id/PlanRunObjectSeqs"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="PlanRunObjectSeqs" />
+
+            <Button
+                android:id="@+id/Empty"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Empty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Dream"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Dream" />
+
+            <Button
+                android:id="@+id/Web"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Web" />
+
+            <Button
+                android:id="@+id/SkMap"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="SkMap" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CropImage"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="CropImage" />
+
+            <Button
+                android:id="@+id/AlbumSelect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="AlbumSelect" />
+
+            <Button
+                android:id="@+id/ImageSelect"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="ImageSelect" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="update" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,5 +1,7 @@
 package com.example.ui_demo_start
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         init()
     }
 
+    companion object{
+        fun actionStart(context: Context) {
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
+    }
     private fun init(){
         binding.Air.setOnClickListener {
             AirActivity.actionStart(this)
