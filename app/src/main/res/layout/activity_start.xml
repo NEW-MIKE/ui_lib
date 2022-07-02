@@ -103,12 +103,14 @@
             android:layout_height="90dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/Air"
+            <android.widget.Button
+                android:background="@drawable/btn_style"
+                android:id="@+id/workView"
                 android:layout_width="0dp"
+                android:textColor="@color/green"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:text="Air" />
+                android:text="工作View" />
 
             <Button
                 android:id="@+id/LedAbnormal"

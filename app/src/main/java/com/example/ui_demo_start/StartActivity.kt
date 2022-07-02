@@ -3,7 +3,9 @@ package com.example.ui_demo_start
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ui_demo_start.databinding.ActivityStartBinding
+import com.example.ui_demo_start.subass.SubassActivity
 import com.example.ui_demo_start.util.inflate
+import com.example.ui_demo_start.workview.WorkActivity
 
 class StartActivity : AppCompatActivity() {
 
@@ -18,6 +20,14 @@ class StartActivity : AppCompatActivity() {
     {
         binding.layout.setOnClickListener {
             MainActivity.actionStart(this)
+        }
+
+        binding.subass.setOnClickListener {
+            SubassActivity.actionStart(this)
+        }
+
+        binding.workView.setOnClickListener {
+            WorkActivity.actionStart(this)
         }
     }
 }

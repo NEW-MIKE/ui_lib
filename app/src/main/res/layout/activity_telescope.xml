@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pickerview_wheelview_textcolor_center"
+    tools:context=".workview.TelescopeActivity">
+    <TextView
+        android:id="@+id/telescopeView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Telescope"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/pickerview_topbar_title"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/mount_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Mount"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/telescopeView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/spinner_mount"
+        />
+
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:id="@+id/spinner_mount"
+        android:background="@color/darker_blue"
+        app:layout_constraintTop_toTopOf="@id/mount_view"
+        app:layout_constraintBottom_toBottomOf="@id/mount_view"
+        app:layout_constraintLeft_toRightOf="@id/mount_view"
+        app:layout_constraintRight_toLeftOf="@id/cycleview"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:id="@+id/cycleview"
+        android:src="@color/white"
+        app:layout_constraintTop_toTopOf="@id/mount_view"
+        app:layout_constraintBottom_toBottomOf="@id/mount_view"
+        app:layout_constraintLeft_toRightOf="@id/spinner_mount"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        app:track="@drawable/track"
+        app:layout_constraintLeft_toLeftOf="@id/mount_view"
+        app:layout_constraintTop_toBottomOf="@id/mount_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
