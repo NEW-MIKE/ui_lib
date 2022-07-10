@@ -9,12 +9,20 @@
     <android.widget.Button
         android:id="@+id/btn0"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="@color/darker_blue"
-        android:text="btn0"
+        style="@style/btn_setting"
+
         android:textColor="#F4FF81"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <android.widget.Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/b_dp_60"
+
+        android:textColor="#F4FF81"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn0"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

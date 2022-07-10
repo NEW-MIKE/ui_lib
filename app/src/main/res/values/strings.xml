@@ -7,6 +7,7 @@
     <string name="TrackType_timedtext">Timed text</string>
     <string name="TrackType_unknown">Unknown</string>
     <string name="TrackType_video">Video</string>
+    <string name="btn_0">btn0</string>
     <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
     <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
     <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>

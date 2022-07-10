@@ -13,7 +13,11 @@
         <item name="android:layout_height">@dimen/dp_44</item>
         <item name="android:button">@null</item>
     </style>
-
+    <style name="btn_setting">
+        <item name="android:layout_height">@dimen/b_dp_60</item>
+        <item name="android:background">@drawable/btn_circle</item>
+        <item name="android:text">@string/btn_0</item>
+    </style>
 
     <style name="common_button_15">
         <item name="android:textSize">@dimen/sp_14</item>
