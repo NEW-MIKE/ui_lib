@@ -29,6 +29,10 @@ class SubassActivity : AppCompatActivity() {
         binding.btnbtn.setOnClickListener {
             BtnActivity.actionStart(this)
         }
+
+        binding.btndialog.setOnClickListener {
+            DialogActivity.actionStart(this)
+        }
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

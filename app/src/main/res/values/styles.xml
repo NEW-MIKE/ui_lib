@@ -30,7 +30,28 @@
         <item name="android:paddingStart">@dimen/dp_10</item>
         <item name="android:paddingEnd">@dimen/dp_10</item>
     </style>
+    <!--对话框的样式-->
+    <style name="NormalDialogStyle">
+        <!--对话框背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否有覆盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 
+    <style name="dialog_normal_btn">
+        <item name="android:layout_width">@dimen/dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/dialog_btn_height</item>
+    </style>
     <style name="style_15_button_base">
         <item name="android:textSize">@dimen/sp_14</item>
         <item name="android:ellipsize">end</item>

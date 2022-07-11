@@ -2,6 +2,6 @@
 <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android">
     android:propertyName="translationX"
     android:valueFrom="0dp"
-    android:valueTo="-70dp"
+    android:valueTo="-700dp"
     android:valueType="floatType"
 </objectAnimator>
