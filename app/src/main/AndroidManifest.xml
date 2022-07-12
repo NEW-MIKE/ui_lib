@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ui_demo_start.NoActionBar">
         <activity
+            android:screenOrientation="landscape"
+            android:name=".subass.PopWindowActivity"
+            android:exported="false" />
+        <activity
             android:name=".subass.DialogActivity"
             android:exported="false" />
         <activity

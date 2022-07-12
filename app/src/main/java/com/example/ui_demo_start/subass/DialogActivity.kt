@@ -27,11 +27,12 @@ class DialogActivity : AppCompatActivity() {
     fun inite(){
         binding.showDialog.setOnClickListener {
 
-            val norDialog = NormalDialog(this)
+            val norDialog = NormalDialog(this,R.style.NormalDialogStyle)
             norDialog.setOnClickLisener(object :NormalDialogListenter{
                 override fun flattv() {
 
                     Log.e("TAG", "inite: ", )
+                    //Toast.makeText(DialogActivity::class.java,"dd",Toast.LENGTH_LONG).show()
                 }
 
             }).show()

@@ -33,6 +33,10 @@ class SubassActivity : AppCompatActivity() {
         binding.btndialog.setOnClickListener {
             DialogActivity.actionStart(this)
         }
+
+        binding.popwindowBtn.setOnClickListener{
+            PopWindowActivity.actionStart(this)
+        }
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

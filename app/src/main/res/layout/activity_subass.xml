@@ -45,13 +45,26 @@
 
 
     <Button
-        android:layout_marginTop="10dp"
         android:id="@+id/btndialog"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="15dp"
-        android:text="Dialog"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
+        android:text="Dialog"
         app:layout_constraintLeft_toLeftOf="@id/btnbtn"
-        app:layout_constraintTop_toBottomOf="@id/btnbtn"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnbtn" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popwindow_btn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Popwindow"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@id/btnradio"
+        app:layout_constraintTop_toBottomOf="@id/btnradio" />
 </androidx.constraintlayout.widget.ConstraintLayout>

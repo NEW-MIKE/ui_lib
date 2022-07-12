@@ -1,168 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/date_picker_text_normal"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
+    android:layout_margin="16dp"
+    android:background="@color/date_picker_text_normal"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/b_dp_56"
-        android:gravity="center"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Live Stacking"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="Type"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="@dimen/b_dp_70"
-        android:layout_marginLeft="@dimen/b_dp_20"
-        android:id="@+id/type_tv"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b_dp_56"
+            android:gravity="center"
+            android:text="Live Stacking"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginLeft="40dp"
-        android:id="@+id/light_btn"
-        style="@style/dialog_normal_btn"
-        android:text="Light"
-        app:layout_constraintLeft_toRightOf="@id/type_tv"
-        app:layout_constraintBottom_toBottomOf="@id/type_tv"
-        app:layout_constraintTop_toTopOf="@id/type_tv"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bias_btn"
-        style="@style/dialog_normal_btn"
-        android:text="Bias"
-        app:layout_constraintLeft_toRightOf="@id/light_btn"
-        app:layout_constraintBottom_toBottomOf="@id/type_tv"
-        app:layout_constraintTop_toTopOf="@id/type_tv"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/dark_btn"
-        style="@style/dialog_normal_btn"
-        android:text="Dark"
-        app:layout_constraintLeft_toRightOf="@id/bias_btn"
-        app:layout_constraintBottom_toBottomOf="@id/type_tv"
-        app:layout_constraintTop_toTopOf="@id/type_tv"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/flat_btn"
-        style="@style/dialog_normal_btn"
-        android:text="Flat"
-        app:layout_constraintLeft_toRightOf="@id/dark_btn"
-        app:layout_constraintBottom_toBottomOf="@id/type_tv"
-        app:layout_constraintTop_toTopOf="@id/type_tv"/>
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/b_dp_20"
+            android:layout_marginTop="@dimen/b_dp_70"
+            android:gravity="center"
+            android:text="Type"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Stack Time"
-        app:layout_constraintTop_toBottomOf="@id/type_tv"
-        app:layout_constraintLeft_toLeftOf="@id/type_tv"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:paddingLeft="5dp"
-        android:id="@+id/stacktime_tv"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/light_btn"
+            style="@style/dialog_normal_btn"
+            android:layout_marginLeft="40dp"
+            android:text="Light"
+            app:layout_constraintBottom_toBottomOf="@id/type_tv"
+            app:layout_constraintLeft_toRightOf="@id/type_tv"
+            app:layout_constraintTop_toTopOf="@id/type_tv" />
 
-    <TextView
-        android:layout_width="@dimen/b_dp_100"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@id/stacktime_tv"
-        app:layout_constraintBottom_toBottomOf="@id/stacktime_tv"
-        app:layout_constraintLeft_toRightOf="@id/stacktime_tv"
-        android:layout_marginLeft="@dimen/b_dp_50"
-        android:id="@+id/stakctimetv_show"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bias_btn"
+            style="@style/dialog_normal_btn"
+            android:text="Bias"
+            app:layout_constraintBottom_toBottomOf="@id/type_tv"
+            app:layout_constraintLeft_toRightOf="@id/light_btn"
+            app:layout_constraintTop_toTopOf="@id/type_tv" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/b_dp_50"
-        android:text="Save all frames used for stacking"
-        app:layout_constraintTop_toBottomOf="@id/stacktime_tv"
-        app:layout_constraintLeft_toLeftOf="@id/stacktime_tv"
-        android:layout_marginTop="@dimen/b_dp_10"
-        android:gravity="center"
-        android:id="@+id/safufs_tv"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dark_btn"
+            style="@style/dialog_normal_btn"
+            android:text="Dark"
+            app:layout_constraintBottom_toBottomOf="@id/type_tv"
+            app:layout_constraintLeft_toRightOf="@id/bias_btn"
+            app:layout_constraintTop_toTopOf="@id/type_tv" />
 
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@id/safufs_tv"
-        app:layout_constraintBottom_toBottomOf="@id/safufs_tv"
-        app:layout_constraintLeft_toRightOf="@id/safufs_tv"
-        android:layout_marginLeft="@dimen/b_dp_50"
-        android:src="@drawable/ic_lab"
-        android:id="@+id/safufs_ib"
-        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/flat_btn"
+            style="@style/dialog_normal_btn"
+            android:text="Flat"
+            app:layout_constraintBottom_toBottomOf="@id/type_tv"
+            app:layout_constraintLeft_toRightOf="@id/dark_btn"
+            app:layout_constraintTop_toTopOf="@id/type_tv" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/b_dp_50"
-        android:text="Flat"
-        android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="@id/safufs_tv"
-        app:layout_constraintTop_toBottomOf="@id/safufs_tv"
-        android:layout_marginTop="@dimen/b_dp_10"
-        android:gravity="center"
-        android:id="@+id/flat_tv"/>
+        <TextView
+            android:id="@+id/stacktime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Stack Time"
+            app:layout_constraintLeft_toLeftOf="@id/type_tv"
+            app:layout_constraintTop_toBottomOf="@id/type_tv" />
 
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="@dimen/b_dp_50"
-        app:layout_constraintLeft_toLeftOf="@id/safufs_ib"
-        app:layout_constraintRight_toRightOf="@id/safufs_ib"
-        app:layout_constraintTop_toBottomOf="@id/safufs_ib"
-        android:id="@+id/flat_ib"/>
+        <TextView
+            android:id="@+id/stakctimetv_show"
+            android:layout_width="@dimen/b_dp_100"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/b_dp_50"
+            app:layout_constraintBottom_toBottomOf="@id/stacktime_tv"
+            app:layout_constraintLeft_toRightOf="@id/stacktime_tv"
+            app:layout_constraintTop_toTopOf="@id/stacktime_tv" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/b_dp_50"
-        android:text="Bias"
-        android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="@id/flat_tv"
-        app:layout_constraintTop_toBottomOf="@id/flat_tv"
-        android:layout_marginTop="@dimen/b_dp_10"
-        android:gravity="center"
-        android:id="@+id/bias_tv"/>
+        <TextView
+            android:id="@+id/safufs_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/b_dp_50"
+            android:layout_marginTop="@dimen/b_dp_10"
+            android:gravity="center"
+            android:text="Save all frames used for stacking"
+            app:layout_constraintLeft_toLeftOf="@id/stacktime_tv"
+            app:layout_constraintTop_toBottomOf="@id/stacktime_tv" />
 
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="@dimen/b_dp_50"
-        app:layout_constraintLeft_toLeftOf="@id/flat_ib"
-        app:layout_constraintRight_toRightOf="@id/flat_ib"
-        app:layout_constraintTop_toBottomOf="@id/flat_ib"
-        android:id="@+id/bias_ib"/>
+        <ImageButton
+            android:id="@+id/safufs_ib"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/b_dp_50"
+            android:src="@drawable/ic_lab"
+            app:layout_constraintBottom_toBottomOf="@id/safufs_tv"
+            app:layout_constraintLeft_toRightOf="@id/safufs_tv"
+            app:layout_constraintTop_toTopOf="@id/safufs_tv" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Dark"
-        android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="@id/bias_tv"
-        app:layout_constraintTop_toBottomOf="@id/bias_tv"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:id="@+id/dark_tv"/>
+        <TextView
+            android:id="@+id/flat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/b_dp_50"
+            android:layout_marginTop="@dimen/b_dp_10"
+            android:gravity="center"
+            android:text="Flat"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@id/safufs_tv"
+            app:layout_constraintTop_toBottomOf="@id/safufs_tv" />
 
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="@id/bias_ib"
-        app:layout_constraintTop_toBottomOf="@id/bias_ib"
-        app:layout_constraintRight_toRightOf="@id/bias_ib"
-        android:id="@+id/dark_ib"/>
+        <ImageButton
+            android:id="@+id/flat_ib"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/b_dp_50"
+            android:layout_marginTop="2dp"
+            app:layout_constraintLeft_toLeftOf="@id/safufs_ib"
+            app:layout_constraintRight_toRightOf="@id/safufs_ib"
+            app:layout_constraintTop_toBottomOf="@id/safufs_ib" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/bias_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/b_dp_50"
+            android:layout_marginTop="@dimen/b_dp_10"
+            android:gravity="center"
+            android:text="Bias"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@id/flat_tv"
+            app:layout_constraintTop_toBottomOf="@id/flat_tv" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        <ImageButton
+            android:id="@+id/bias_ib"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/b_dp_50"
+            android:layout_marginTop="2dp"
+            app:layout_constraintLeft_toLeftOf="@id/flat_ib"
+            app:layout_constraintRight_toRightOf="@id/flat_ib"
+            app:layout_constraintTop_toBottomOf="@id/flat_ib" />
+
+        <TextView
+            android:id="@+id/dark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Dark"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@id/bias_tv"
+            app:layout_constraintTop_toBottomOf="@id/bias_tv" />
+
+        <ImageButton
+            android:id="@+id/dark_ib"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintLeft_toLeftOf="@id/bias_ib"
+            app:layout_constraintRight_toRightOf="@id/bias_ib"
+            app:layout_constraintTop_toBottomOf="@id/bias_ib" />
+
+        <Button
+            android:layout_marginTop="@dimen/b_dp_50"
+            android:id="@+id/btn_001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dark_ib"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/btn_001"
+            app:layout_constraintRight_toRightOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -11,8 +11,9 @@ import com.example.ui_demo_start.util.inflate
 interface NormalDialogListenter{
     fun flattv()
 }
-class NormalDialog(context: Context) : Dialog(context) {
+class NormalDialog(context: Context, themeResId: Int) : Dialog(context,themeResId) {
     val binding:DialogLayoutOneBinding by inflate(DialogLayoutOneBinding::inflate)
+
 
     var listenter:NormalDialogListenter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
