@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touptek.MainDeviceActivity">
+    <com.example.ui_demo_start.touptek.view.RecyclerCoverFlowView
+        android:layout_width="@dimen/b_dp_400"
+        android:layout_height="@dimen/b_dp_180"
+        android:layout_marginRight="@dimen/b_dp_150"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/green_sea"
+        android:id="@+id/cover_flow_rv"/>
+    <LinearLayout
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/leftcontrol"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@color/primary_dark"
+        app:layout_constraintTop_toBottomOf="@id/toptitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/photobtn"
+            android:layout_width="match_parent"
+            android:background="@color/green_sea"
+            android:layout_height="80dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rightcontrol"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@color/day_textColor"
+        app:layout_constraintTop_toBottomOf="@id/toptitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.example.ui_demo_start.touptek.view.RecyclerCoverFlowView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b_dp_80"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/green_sea"
+            android:id="@+id/cover_flow_rv1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/browserBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/screenBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toTopOf="@id/browserBtn"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.example.ui_demo_start.touptek.view.VolumeView
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:id="@+id/volumeUp"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:id="@+id/dockPanel"
+        android:background="@color/yellow"
+        android:layout_marginRight="@dimen/b_dp_80"
+        android:layout_marginLeft="@dimen/b_dp_80"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/b_dp_100"
+        app:layout_constraintBottom_toTopOf="@id/bottomtitle"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="match_parent"
+            android:alpha="00"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomtitle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

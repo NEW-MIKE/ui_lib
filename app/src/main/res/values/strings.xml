@@ -2481,4 +2481,6 @@ Gain"</string>
     <string name="xpopup_saved_to_gallery">Saved to album</string>
     <string name="xpopup_success2see">View Image</string>
     <string name="yes">YES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

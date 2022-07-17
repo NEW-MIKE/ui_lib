@@ -67,4 +67,15 @@
         android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="@id/btnradio"
         app:layout_constraintTop_toBottomOf="@id/btnradio" />
+    <com.example.ui_demo_start.view.MountCtrlView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Popwindow"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnradio" />
 </androidx.constraintlayout.widget.ConstraintLayout>

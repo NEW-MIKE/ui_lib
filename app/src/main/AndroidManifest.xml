@@ -8,11 +8,40 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="landscape"
         android:theme="@style/Theme.Ui_demo_start.NoActionBar">
         <activity
+            android:name=".touptek.LibraryActivity"
             android:screenOrientation="landscape"
-            android:name=".subass.PopWindowActivity"
             android:exported="false" />
+        <activity
+            android:name=".touptek.TaskActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".touptek.BrowserActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".touptek.SettingActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".touptek.GuideActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".touptek.MainDeviceActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".touptek.BeginActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".subass.PopWindowActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".subass.DialogActivity"
             android:exported="false" />

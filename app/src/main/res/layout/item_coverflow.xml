@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/b_dp_60">
+
+    <TextView
+        android:id="@+id/choosetv"
+        android:background="@color/day_textColor"
+        android:layout_width="@dimen/b_dp_100"
+        android:text="item"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -22,11 +22,16 @@ class PopWindowActivity : AppCompatActivity() {
 
     fun init(){
         menu_popwindows = menu_popwindow(this)
-        menu_popwindows.width = ViewGroup.LayoutParams.WRAP_CONTENT
-        menu_popwindows.height = 700
+        menu_popwindows.width = 400
+        menu_popwindows.height = ViewGroup.LayoutParams.MATCH_PARENT
 
         binding.textId1.setOnClickListener {
-            menu_popwindows.showAtLocation(it, Gravity.TOP or Gravity.RIGHT,420,0)
+            if (!menu_popwindows.isShowing)
+                menu_popwindows.showAtLocation(it, Gravity.TOP or Gravity.RIGHT,it.width+40,400)
+            else   menu_popwindows.dismiss()
+        }
+
+        binding.btn02.setOnClickListener {
         }
     }
 

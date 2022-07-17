@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF4444">
+
+    <FrameLayout
+        android:id="@+id/view_list_repo_action_container"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+        <TextView
+            android:id="@+id/add_to_favorite_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:text="ADD TO FAVORITE"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/go_to_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="GO TO TARGET"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/swipLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/star_iv"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_control"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/darker_blue">
+            <TextView
+                android:id="@+id/star_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="left"
+                android:paddingLeft="@dimen/b_dp_12"
+                android:text="star name"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/ra_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHorizontal_weight="0.33"
+                android:text="RA 16H 12M 17s   alt 48"
+                app:layout_constraintTop_toBottomOf="@id/star_name_tv"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/de_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="00 05 00"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintTop_toBottomOf="@id/ra_tv"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/day_textColor"/>
+    </LinearLayout>
+
+</FrameLayout>
