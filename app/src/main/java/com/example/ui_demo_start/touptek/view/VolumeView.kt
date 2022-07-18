@@ -1,20 +1,14 @@
 package com.example.ui_demo_start.touptek.view
 
-import android.graphics.RectF
-import com.example.ui_demo_start.touptek.view.VolumeView
-import android.view.View.MeasureSpec
 import android.animation.ValueAnimator
-import android.animation.ValueAnimator.AnimatorUpdateListener
 import android.content.Context
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
+import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 
 class VolumeView : View {
     private val mPaint = Paint()
-    private val mBackgroundColor = 0x60000000
+    private val mBackgroundColor = Color.BLACK
     private var mBorderWidth = 0
     private val mVolumeBgColor = -0x80000000
     private var mRadius = 0
@@ -27,6 +21,8 @@ class VolumeView : View {
     private val mMaxVolume = 10
     private val mUniteDegree = 360 / mMaxVolume
     private var mAnimatedDegree = 0
+
+    private var mMode = 0
 
     constructor(context: Context) : super(context) {
         init(context)
@@ -84,41 +80,33 @@ class VolumeView : View {
         }
     }
 
+    val rect = Rect(0, 0, mRadius, mRadius)
+    var rect_width = 0.0
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        canvas.save()
-        canvas.translate(mCenterX.toFloat(), mCenterY.toFloat())
-        mPaint.color = mBackgroundColor
-        mPaint.style = Paint.Style.FILL
-        canvas.drawCircle(0f, 0f, mRadius.toFloat(), mPaint)
-        mPaint.style = Paint.Style.STROKE
-        mPaint.color = mVolumeBgColor
-        mPaint.strokeWidth = mBorderWidth.toFloat()
-
-        //画音量背景
-        canvas.drawCircle(0f, 0f, mVolumeRadius.toFloat(), mPaint)
-        mPaint.color = mVolumeColor
+       // doneMode(canvas)
+        //idleMode(canvas)
+        doingMode(canvas)
         //画音量
-        if (mIsVolumeUp) {
-            val num = if (mVolumeNum - 1 > 0) mVolumeNum - 1 else 0
-            canvas.drawArc(
-                mVolumeRect!!,
-                -90f,
-                (mUniteDegree * num + mAnimatedDegree).toFloat(),
-                false,
-                mPaint
-            )
-        } else {
-            val num = mVolumeNum + 1
-            canvas.drawArc(
-                mVolumeRect!!,
-                -90f,
-                (mUniteDegree * num - mAnimatedDegree).toFloat(),
-                false,
-                mPaint
-            )
-        }
-        canvas.restore()
+        /* if (mIsVolumeUp) {
+             val num = if (mVolumeNum - 1 > 0) mVolumeNum - 1 else 0
+             canvas.drawArc(
+                 mVolumeRect!!,
+                 -90f,
+                 (mUniteDegree * num + mAnimatedDegree).toFloat(),
+                 false,
+                 mPaint
+             )
+         } else {
+             val num = mVolumeNum + 1
+             canvas.drawArc(
+                 mVolumeRect!!,
+                 -90f,
+                 (mUniteDegree * num - mAnimatedDegree).toFloat(),
+                 false,
+                 mPaint
+             )
+         }*/
     }
 
     /**
@@ -158,6 +146,75 @@ class VolumeView : View {
         }
     }
 
+    fun setMode(mode:Int){
+        mMode = mode
+    }
+
+    fun idleMode(canvas: Canvas){
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+        mPaint.style = Paint.Style.STROKE
+        mPaint.strokeWidth = 2.0F
+        mPaint.color = Color.BLACK
+        canvas.translate(mCenterX.toFloat(), mCenterY.toFloat())
+        canvas.drawCircle(0f, 0f, mRadius.toFloat()-80, mPaint)
+        mPaint.style = Paint.Style.STROKE
+        mPaint.strokeWidth = 40.0F
+        canvas.drawCircle(0f, 0f, mRadius.toFloat()-140, mPaint)
+    }
+
+    fun doneMode(canvas: Canvas){
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+        mPaint.style = Paint.Style.FILL
+        //mPaint.strokeWidth = 20.0F
+        mPaint.color = Color.RED
+        canvas.translate(mCenterX.toFloat(), mCenterY.toFloat())
+        canvas.drawCircle(0f, 0f, mRadius.toFloat(), mPaint)
+        mPaint.color = Color.BLACK
+        mPaint.style = Paint.Style.FILL
+        canvas.drawCircle(0f, 0f, mRadius.toFloat()-80, mPaint)
+        rect_width = mRadius / Math.sqrt(2.0) - 100
+        rect.top = (-rect_width).toInt()
+        rect.left = (-rect_width).toInt()
+        rect.bottom = (rect_width).toInt()
+        rect.right = (rect_width).toInt()
+        mPaint.color = Color.RED
+        canvas.drawRect(rect, mPaint)
+    }
+    fun doingMode(canvas: Canvas){
+        canvas.save()
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+
+        mPaint.style = Paint.Style.STROKE
+       // mPaint.strokeWidth = 20.0F
+        mPaint.color = Color.BLACK
+        canvas.translate(mCenterX.toFloat(), mCenterY.toFloat())
+       // canvas.drawCircle(0f, 0f, mRadius.toFloat(), mPaint)
+        mPaint.style = Paint.Style.FILL
+        canvas.drawCircle(0f, 0f, mRadius.toFloat()-80, mPaint)
+        mPaint.color = mBackgroundColor
+        mPaint.style = Paint.Style.FILL_AND_STROKE
+        //canvas.drawCircle(0f, 0f, mRadius.toFloat() - 80, mPaint)
+        rect_width = mRadius / Math.sqrt(2.0) - 120
+        rect.top = (-rect_width).toInt()
+        rect.left = (-rect_width).toInt()
+        rect.bottom = (rect_width).toInt()
+        rect.right = (rect_width).toInt()
+        mPaint.color = Color.RED
+        canvas.drawRect(rect, mPaint)
+        mPaint.style = Paint.Style.STROKE
+        mPaint.color = mVolumeBgColor
+        mPaint.strokeWidth = 40f
+
+        mPaint.color = Color.YELLOW
+        canvas.drawArc(
+            mVolumeRect!!,
+            -90f,
+            (mUniteDegree * 4 + mAnimatedDegree).toFloat(),
+            false,
+            mPaint
+        )
+        canvas.restore()
+    }
     companion object {
         private var DEFAULT_DIMENSION = 0
     }
