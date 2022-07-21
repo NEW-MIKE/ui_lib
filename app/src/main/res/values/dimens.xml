@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="iconSize">50.0dip</dimen>
+    <dimen name="icon_gap">2.2221985dip</dimen>
+    <dimen name="icon_size">60.0dip</dimen>
+    <dimen name="img_height">220.0dip</dimen>
+    <dimen name="img_width">293.32812dip</dimen>
+    <dimen name="largeIconSize">80.0dip</dimen>
+    <dimen name="magnifier_size">320.0dip</dimen>
+    <dimen name="marginLarge">24.0dip</dimen>
+    <dimen name="marginMid">10.0dip</dimen>
+    <dimen name="network_btn_size">44.444397dip</dimen>
+    <dimen name="panel_height">240.0dip</dimen>
+    <dimen name="panel_width">320.0dip</dimen>
+    <dimen name="playPanelWidth">100.0dip</dimen>
+    <dimen name="popWindow_marginLarge">5.0dip</dimen>
+    <dimen name="popWindow_marginSmall">5.0dip</dimen>
+    <dimen name="popWindow_textSize">17.777771sp</dimen>
+    <dimen name="popWindow_textSizeSmall">13.333282sp</dimen>
+    <dimen name="popWindow_textViewWidth">111.111084dip</dimen>
+    <dimen name="popWindow_titleHeight">33.333282dip</dimen>
+    <dimen name="popWindow_titleTextSize">22.222198sp</dimen>
+    <dimen name="popWindow_width">300.0dip</dimen>
+    <dimen name="switch_height">102.2222dip</dimen>
+    <dimen name="bar_gap">4.444397dip</dimen>
+
+
     <dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72.0dip</dimen>
     <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>

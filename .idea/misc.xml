@@ -7,10 +7,12 @@
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable-xxhdpi/gray_track.xml" value="0.1045" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable-xxhdpi/green_track.xml" value="0.1045" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable-xxhdpi/track.xml" value="0.1045" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/bg_gradient.xml" value="0.1375" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/bg_input_text_dark.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/btn_circle.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/common_setting_compound_selector.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/demo.xml" value="0.1" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/divider_black.xml" value="0.102" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/ic_more.xml" value="0.137" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/ic_stack.xml" value="0.137" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/drawable/selector_shape_round_corner_green.xml" value="0.1" />
@@ -87,8 +89,11 @@
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/item_coverflow.xml" value="0.14270833333333333" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/layout_choose_object_pop_list.xml" value="0.10520833333333333" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/layout_multi_choose_object.xml" value="0.10520833333333333" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/lyt_colorpicker.xml" value="0.14074074074074075" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/lyt_thicknesspicker.xml" value="0.18297101449275363" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/maindevicemenu_layout.xml" value="0.15104166666666666" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/menu_pop_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/panel_propset.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/screen_add_goto_item_layout.xml" value="0.33" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>

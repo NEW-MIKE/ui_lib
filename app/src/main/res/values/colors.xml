@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="line_color1">#ffff0000</color>
+    <color name="line_color2">#ffff8000</color>
+    <color name="line_color3">#ffffff00</color>
+    <color name="line_color4">#ff00ff00</color>
+    <color name="line_color5">#ff0000ff</color>
+    <color name="line_color6">#ff000000</color>
+    <color name="line_color7">#ffffffff</color>
+
+    <color name="item_background">#ff515659</color>
+    <color name="item_foreground">#ffb8b8b8</color>
+
+
     <color name="DimGray">#ff696969</color>
     <color name="_xpopup_content_color">@color/_xpopup_title_zwo_color</color>
     <color name="_xpopup_dark_color">#ff232323</color>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:divider="@drawable/divider_black"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/black" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color1" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color3" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color4" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color5" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color6" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/line_color7" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/black" />
+    </LinearLayout>
+</ScrollView>

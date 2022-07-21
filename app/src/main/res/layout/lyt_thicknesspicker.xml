@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:divider="@drawable/divider_black"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@color/text"
+            android:textSize="@dimen/popWindow_textSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:text="M"
+            android:textColor="@color/text"
+            android:textSize="@dimen/popWindow_textSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:text="L"
+            android:textColor="@color/text"
+            android:textSize="@dimen/popWindow_textSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:text="XL"
+            android:textColor="@color/text"
+            android:textSize="@dimen/popWindow_textSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:text="XXL"
+            android:textColor="@color/text"
+            android:textSize="@dimen/popWindow_textSize" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popWindow_titleHeight" />
+    </LinearLayout>
+</ScrollView>
