@@ -34,7 +34,7 @@ import com.example.ui_demo_start.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
+public class ItemTouchHelperExtension123 extends RecyclerView.ItemDecoration
         implements RecyclerView.OnChildAttachStateChangeListener {
 
     private boolean mClickToRecoverAnimation = true;
@@ -107,7 +107,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
 
     private static final String TAG = "ItemTouchHelper";
 
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     private static final int ACTIVE_POINTER_ID_NONE = -1;
 
@@ -387,7 +387,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
                     break;
                 }
                 default:
-                    //mClick = false;
+                    mClick = false;
                     break;
             }
         }
@@ -487,7 +487,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
      *
      * @param callback The Callback which controls the behavior of this touch helper.
      */
-    public ItemTouchHelperExtension(Callback callback) {
+    public ItemTouchHelperExtension123(Callback callback) {
         mCallback = callback;
     }
 
@@ -1370,12 +1370,12 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
 
     /**
      * An interface which can be implemented by LayoutManager for better integration with
-     * {@link ItemTouchHelperExtension}.
+     * {@link ItemTouchHelperExtension123}.
      */
     public static interface ViewDropHandler {
 
         /**
-         * Called by the {@link ItemTouchHelperExtension} after a View is dropped over another View.
+         * Called by the {@link ItemTouchHelperExtension123} after a View is dropped over another View.
          * <p>
          * A LayoutManager should implement this interface to get ready for the upcoming move
          * operation.
@@ -1396,37 +1396,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
         public void prepareForDrop(View view, View target, int x, int y);
     }
 
-    /**
-     * This class is the contract between ItemTouchHelper and your application. It lets you control
-     * which touch behaviors are enabled per each ViewHolder and also receive callbacks when user
-     * performs these actions.
-     * <p>
-     * To control which actions user can take on each view, you should override
-     * {@link #getMovementFlags(RecyclerView, ViewHolder)} and return appropriate set
-     * of direction flags. ({@link #LEFT}, {@link #RIGHT}, {@link #START}, {@link #END},
-     * {@link #UP}, {@link #DOWN}). You can use
-     * {@link #makeMovementFlags(int, int)} to easily construct it. Alternatively, you can use
-     * {@link SimpleCallback}.
-     * <p>
-     * If user drags an item, ItemTouchHelper will call
-     * {@link Callback#onMove(RecyclerView, ViewHolder, ViewHolder)
-     * onMove(recyclerView, dragged, target)}.
-     * Upon receiving this callback, you should move the item from the old position
-     * ({@code dragged.getAdapterPosition()}) to new position ({@code target.getAdapterPosition()})
-     * in your adapter and also call {@link RecyclerView.Adapter#notifyItemMoved(int, int)}.
-     * To control where a View can be dropped, you can override
-     * {@link #canDropOver(RecyclerView, ViewHolder, ViewHolder)}. When a
-     * dragging View overlaps multiple other views, Callback chooses the closest View with which
-     * dragged View might have changed positions. Although this approach works for many use cases,
-     * if you have a custom LayoutManager, you can override
-     * {@link #chooseDropTarget(ViewHolder, List, int, int)} to select a
-     * custom drop target.
-     * <p>
-     * When a View is swiped, ItemTouchHelper animates it until it goes out of bounds, then calls
-     * {@link #onSwiped(ViewHolder, int)}. At this point, you should update your
-     * adapter (e.g. remove the item) and call related Adapter#notify event.
-     */
-    @SuppressWarnings("UnusedParameters")
+
     public abstract static class Callback {
 
         public static final int DEFAULT_DRAG_ANIMATION_DURATION = 200;
@@ -1589,7 +1559,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
          * This flag is composed of 3 sets of 8 bits, where first 8 bits are for IDLE state, next
          * 8 bits are for SWIPE state and third 8 bits are for DRAG state.
          * Each 8 bit sections can be constructed by simply OR'ing direction flags defined in
-         * {@link ItemTouchHelperExtension}.
+         * {@link ItemTouchHelperExtension123}.
          * <p>
          * For example, if you want it to allow swiping LEFT and RIGHT but only allow starting to
          * swipe by swiping RIGHT, you can return:
@@ -1943,9 +1913,9 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
          *
          * @param viewHolder  The new ViewHolder that is being swiped or dragged. Might be null if
          *                    it is cleared.
-         * @param actionState One of {@link ItemTouchHelperExtension#ACTION_STATE_IDLE},
-         *                    {@link ItemTouchHelperExtension#ACTION_STATE_SWIPE} or
-         *                    {@link ItemTouchHelperExtension#ACTION_STATE_DRAG}.
+         * @param actionState One of {@link ItemTouchHelperExtension123#ACTION_STATE_IDLE},
+         *                    {@link ItemTouchHelperExtension123#ACTION_STATE_SWIPE} or
+         *                    {@link ItemTouchHelperExtension123#ACTION_STATE_DRAG}.
          * @see #clearView(RecyclerView, ViewHolder)
          */
         public void onSelectedChanged(ViewHolder viewHolder, int actionState) {
@@ -2095,33 +2065,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
             sUICallback.clearView(viewHolder.itemView);
         }
 
-        /**
-         * Called by ItemTouchHelper on RecyclerView's onDraw callback.
-         * <p>
-         * If you would like to customize how your View's respond to user interactions, this is
-         * a good place to override.
-         * <p>
-         * Default implementation translates the child by the given <code>dX</code>,
-         * <code>dY</code>.
-         * ItemTouchHelper also takes care of drawing the child after other children if it is being
-         * dragged. This is done using child re-ordering mechanism. On platforms prior to L, this
-         * is
-         * achieved via {@link ViewGroup#(int, int)} and on L
-         * and after, it changes View's elevation value to be greater than all other children.)
-         *
-         * @param c                 The canvas which RecyclerView is drawing its children
-         * @param recyclerView      The RecyclerView to which ItemTouchHelper is attached to
-         * @param viewHolder        The ViewHolder which is being interacted by the User or it was
-         *                          interacted and simply animating to its original position
-         * @param dX                The amount of horizontal displacement caused by user's action
-         * @param dY                The amount of vertical displacement caused by user's action
-         * @param actionState       The type of interaction on the View. Is either {@link
-         *                          #ACTION_STATE_DRAG} or {@link #ACTION_STATE_SWIPE}.
-         * @param isCurrentlyActive True if this view is currently being controlled by the user or
-         *                          false it is simply animating back to its original state.
-         * @see #onChildDrawOver(Canvas, RecyclerView, ViewHolder, float, float, int,
-         * boolean)
-         */
+
         public void onChildDraw(Canvas c, RecyclerView recyclerView,
                                 ViewHolder viewHolder,
                                 float dX, float dY, int actionState, boolean isCurrentlyActive) {
@@ -2129,33 +2073,6 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
                     isCurrentlyActive);
         }
 
-        /**
-         * Called by ItemTouchHelper on RecyclerView's onDraw callback.
-         * <p>
-         * If you would like to customize how your View's respond to user interactions, this is
-         * a good place to override.
-         * <p>
-         * Default implementation translates the child by the given <code>dX</code>,
-         * <code>dY</code>.
-         * ItemTouchHelper also takes care of drawing the child after other children if it is being
-         * dragged. This is done using child re-ordering mechanism. On platforms prior to L, this
-         * is
-         * achieved via {@link ViewGroup#(int, int)} and on L
-         * and after, it changes View's elevation value to be greater than all other children.)
-         *
-         * @param c                 The canvas which RecyclerView is drawing its children
-         * @param recyclerView      The RecyclerView to which ItemTouchHelper is attached to
-         * @param viewHolder        The ViewHolder which is being interacted by the User or it was
-         *                          interacted and simply animating to its original position
-         * @param dX                The amount of horizontal displacement caused by user's action
-         * @param dY                The amount of vertical displacement caused by user's action
-         * @param actionState       The type of interaction on the View. Is either {@link
-         *                          #ACTION_STATE_DRAG} or {@link #ACTION_STATE_SWIPE}.
-         * @param isCurrentlyActive True if this view is currently being controlled by the user or
-         *                          false it is simply animating back to its original state.
-         * @see #onChildDrawOver(Canvas, RecyclerView, ViewHolder, float, float, int,
-         * boolean)
-         */
         public void onChildDrawOver(Canvas c, RecyclerView recyclerView,
                                     ViewHolder viewHolder,
                                     float dX, float dY, int actionState, boolean isCurrentlyActive) {

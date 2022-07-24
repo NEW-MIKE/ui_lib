@@ -13,7 +13,13 @@
         <activity
             android:name=".touptek.LibraryActivity"
             android:screenOrientation="landscape"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".touptek.TaskActivity"
             android:screenOrientation="landscape"
@@ -60,11 +66,6 @@
         <activity
             android:name=".StartActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.stack.StackVideoInfoActivity"

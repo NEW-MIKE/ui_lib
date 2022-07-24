@@ -4,11 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
-import android.view.View
 import android.view.ViewGroup
 import com.example.ui_demo_start.R
 import com.example.ui_demo_start.databinding.ActivityMainDeviceBinding
-import com.example.ui_demo_start.touptek.adapter.CoverFlowAdapter
 import com.example.ui_demo_start.touptek.view.CoverFlowLayoutManager
 import com.example.ui_demo_start.util.inflate
 
@@ -57,8 +55,6 @@ class MainDeviceActivity : BaseActivity() {
         binding.coverFlowRv.apply {
             layoutManager = CoverFlowLayoutManager()
 
-            val madapter = CoverFlowAdapter(this@MainDeviceActivity, mDatas)
-            adapter = madapter
         }
     }
 

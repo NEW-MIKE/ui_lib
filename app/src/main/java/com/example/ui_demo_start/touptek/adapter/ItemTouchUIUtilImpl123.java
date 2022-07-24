@@ -31,13 +31,13 @@ import com.example.ui_demo_start.R;
  * Package private class to keep implementations. Putting them inside ItemTouchUIUtil makes them
  * public API, which is not desired in this case.
  */
-class ItemTouchUIUtilImpl {
+class ItemTouchUIUtilImpl123 {
     static class Lollipop extends Honeycomb {
         @Override
         public void onDraw(Canvas c, RecyclerView recyclerView, View view,
                            float dX, float dY, int actionState, boolean isCurrentlyActive) {
             if (isCurrentlyActive) {
-                Object originalElevation = view.getTag(R.id.tag_first);
+                Object originalElevation = view.getTag(R.id.tag_second);
                 if (originalElevation == null) {
                     originalElevation = ViewCompat.getElevation(view);
                     float newElevation = 1f + findMaxElevation(recyclerView, view);
@@ -66,7 +66,7 @@ class ItemTouchUIUtilImpl {
 
         @Override
         public void clearView(View view) {
-            final Object tag = view.getTag(R.id.tag_first);
+            final Object tag = view.getTag(1);
             if (tag != null && tag instanceof Float) {
                 ViewCompat.setElevation(view, (Float) tag);
             }

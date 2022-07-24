@@ -42,13 +42,14 @@
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_guide.xml" value="0.15104166666666666" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_image_preview_video.xml" value="0.16485507246376813" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_led_abnormal.xml" value="0.16485507246376813" />
-        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_library.xml" value="0.15104166666666666" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_library.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_log_list.xml" value="0.16485507246376813" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_log_viewer.xml" value="0.16485507246376813" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_main_device.xml" value="0.137546468401487" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_pop_window.xml" value="0.1" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_qqdelete.xml" value="0.11614583333333334" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_setting.xml" value="0.15104166666666666" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_stack_video_info.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/activity_stack_video_show.xml" value="0.1" />
@@ -87,6 +88,7 @@
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/high_tip_for_main_4.xml" value="0.14791666666666667" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/high_tip_for_main_5.xml" value="0.14791666666666667" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/item_coverflow.xml" value="0.14270833333333333" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/item_linear.xml" value="0.11041666666666666" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/layout_choose_object_pop_list.xml" value="0.10520833333333333" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/layout_multi_choose_object.xml" value="0.10520833333333333" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/lyt_colorpicker.xml" value="0.14074074074074075" />
@@ -94,6 +96,7 @@
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/maindevicemenu_layout.xml" value="0.15104166666666666" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/menu_pop_layout.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/panel_propset.xml" value="0.1" />
+        <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/qq_delete_item_layout.xml" value="0.1" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/layout/screen_add_goto_item_layout.xml" value="0.33" />
         <entry key="..\:/AndroidStudyTempDir/ui_demo_start/app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>

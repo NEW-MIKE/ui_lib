@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.ui_demo_start.touptek.adapter;
+package com.example.ui_demo_start.touptek.qqdelete.library;
 
 import android.graphics.Canvas;
 import android.view.View;

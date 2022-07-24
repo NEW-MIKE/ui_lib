@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
     <string name="N_A">N/A</string>
     <string name="TrackType_audio">Audio</string>
     <string name="TrackType_metadata">Meta data</string>

@@ -68,10 +68,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toptitle">
 
-        <include
+<!--        <include
             layout="@layout/panel_propset"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" />-->
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -86,7 +86,6 @@
             android:id="@+id/screenBtn"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@id/browserBtn"
             app:layout_constraintRight_toRightOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

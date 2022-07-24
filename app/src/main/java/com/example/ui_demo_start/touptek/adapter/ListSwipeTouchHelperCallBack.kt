@@ -1,17 +1,20 @@
 package com.example.ui_demo_start.touptek.adapter
 
 import android.graphics.Canvas
+import android.util.Log
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 
 class ListSwipeTouchHelperCallBack(val datas:ArrayList<String>,
-adapter: ListSwipeAdapter) : ItemTouchHelperExtension.Callback() {
+                                   adapter: ListSwipeAdapter) : ItemTouchHelperExtension.Callback() {
+/*    class ListSwipeTouchHelperCallBack(val datas:ArrayList<String>,
+                                       adapter: ListSwipeAdapter) : ItemTouchHelper.Callback() {*/
     override fun getMovementFlags(
         recyclerView: RecyclerView,
         viewHolder: RecyclerView.ViewHolder
     ): Int {
         val dragFlag = 0
-        val swipeFlags = ItemTouchHelper.LEFT
+        val swipeFlags =  ItemTouchHelper.LEFT
         val flags = makeMovementFlags(dragFlag,swipeFlags)
         return flags
     }
@@ -43,6 +46,9 @@ adapter: ListSwipeAdapter) : ItemTouchHelperExtension.Callback() {
             (viewHolder as ListSwipeAdapter.NormalHolder).swipLL.translationX = dX
             //viewHolder.cl_control.translationX = dX
             //viewHolder.swipLL.translationX = dX
+            if (dX == 0f)viewHolder.clickable = false
+            else viewHolder.clickable = true
+            Log.e("TAG", "onChildDraw: "+dX, )
         }
     }
 }

@@ -1,6 +1,7 @@
 package com.example.ui_demo_start.touptek.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,11 +22,17 @@ class ListSwipeAdapter(val datas:ArrayList<String>): RecyclerView.Adapter<ListSw
 
     override fun onBindViewHolder(holder: NormalHolder, position: Int) {
         holder.goToTargetTv.setOnClickListener {
-
+            if (holder.clickable) Log.e("TAG", "onBindViewHolder: gototarget", )
         }
 
         holder.addToFavoriteTv.setOnClickListener {
 
+            if (holder.clickable) Log.e("TAG", "onBindViewHolder: addToFavoriteTv", )
+        }
+
+        holder.startIV.setOnClickListener {
+
+            Log.e("TAG", "onBindViewHolder: addToFavoriteTv", )
         }
     }
 
@@ -39,6 +46,7 @@ class ListSwipeAdapter(val datas:ArrayList<String>): RecyclerView.Adapter<ListSw
 
         val addToFavoriteTv:TextView = itemView.findViewById(R.id.add_to_favorite_tv)
 
+        var clickable = false
         val cl_control: ConstraintLayout = itemView.findViewById(R.id.cl_control)
 
         val startIV : ImageView = itemView.findViewById((R.id.star_iv))
@@ -47,7 +55,7 @@ class ListSwipeAdapter(val datas:ArrayList<String>): RecyclerView.Adapter<ListSw
 
         val swipLL:LinearLayout = itemView.findViewById(R.id.swipLL)
         override fun getActionWidth(): Float {
-            return goToTargetTv.width.toFloat()
+            return goToTargetTv.width.toFloat()+addToFavoriteTv.width.toFloat()
         }
     }
 }

@@ -12,6 +12,7 @@ import com.example.ui_demo_start.R
 import com.example.ui_demo_start.databinding.ActivityLibraryBinding
 import com.example.ui_demo_start.touptek.adapter.ItemTouchHelperExtension
 import com.example.ui_demo_start.touptek.adapter.ListSwipeAdapter
+import com.example.ui_demo_start.touptek.adapter.ListSwipeAdapter2
 import com.example.ui_demo_start.touptek.adapter.ListSwipeTouchHelperCallBack
 import com.example.ui_demo_start.util.inflate
 
@@ -27,6 +28,7 @@ class LibraryActivity  : BaseActivity() {
     }
 
     fun init(){
+        datas.add("12")
         datas.add("12")
         datas.add("12")
         datas.add("12")

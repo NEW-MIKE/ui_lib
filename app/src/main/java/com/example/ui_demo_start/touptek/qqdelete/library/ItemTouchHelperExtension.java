@@ -1,4 +1,4 @@
-package com.example.ui_demo_start.touptek.adapter;
+package com.example.ui_demo_start.touptek.qqdelete.library;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
+
 
 import androidx.annotation.Nullable;
 import androidx.core.view.GestureDetectorCompat;
@@ -107,7 +108,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
 
     private static final String TAG = "ItemTouchHelper";
 
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     private static final int ACTIVE_POINTER_ID_NONE = -1;
 
@@ -139,8 +140,8 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
     /**
      * Currently selected view holder
      */
-    ViewHolder mSelected = null;
-    ViewHolder mPreOpened = null;
+    RecyclerView.ViewHolder mSelected = null;
+    RecyclerView.ViewHolder mPreOpened = null;
 
     /**
      * The reference coordinates for the action start. For drag & drop, this is the time long
@@ -341,7 +342,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
             if (activePointerIndex >= 0) {
                 checkSelectForSwipe(action, event, activePointerIndex);
             }
-            ViewHolder viewHolder = mSelected;
+            RecyclerView.ViewHolder viewHolder = mSelected;
             if (viewHolder == null) {
                 return;
             }
@@ -387,7 +388,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
                     break;
                 }
                 default:
-                    //mClick = false;
+                    mClick = false;
                     break;
             }
         }
@@ -1474,9 +1475,9 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
         }
 
         /**
-         * Returns the {@link ItemTouchUIUtil} that is used by the {@link Callback} class for
+         * Returns the {@link } that is used by the {@link Callback} class for
          * visual
-         * changes on Views in response to user interactions. {@link ItemTouchUIUtil} has different
+         * changes on Views in response to user interactions. {@link } has different
          * implementations for different platform versions.
          * <p>
          * By default, {@link Callback} applies these changes on
@@ -1511,7 +1512,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
          *     }
          * </pre>
          *
-         * @return The {@link ItemTouchUIUtil} instance that is used by the {@link Callback}
+         * @return The {@link } instance that is used by the {@link Callback}
          */
         public static ItemTouchUIUtil getDefaultUIUtil() {
             return sUICallback;
@@ -1523,7 +1524,7 @@ public class ItemTouchHelperExtension extends RecyclerView.ItemDecoration
          *
          * @param flags           The flag value that include any number of movement flags.
          * @param layoutDirection The layout direction of the View. Can be obtained from
-         *                        {@link ViewCompat#getLayoutDirection(View)}.
+         *                        {@link #(View)}.
          * @return Updated flags which uses relative flags ({@link #START}, {@link #END}) instead
          * of {@link #LEFT}, {@link #RIGHT}.
          * @see #convertToAbsoluteDirection(int, int)
